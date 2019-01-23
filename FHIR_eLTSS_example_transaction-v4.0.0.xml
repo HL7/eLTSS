@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Original : 5/22/2018
+    Updated : 
+    FHIR version : 3.4 (build 14355)
+    Description : Sample XML instance based on mapping of Electronic Long Term Service and Support (eLTSS) consensus 
+                  data elements mapped to the FHIR Care Plan resource. XML comments are used to indicate
+                  the eLTSS consensus data element(s) being represented by FHIR data elements in this XML sample. For
+                  example, the notation "[eLTSS Person Name]" indicates that the FHIR data element(s) following 
+                  correspond to the eLTSS consensus data element "Person Name". 
+                  NOTE 1: This sample has been generated as a FHIR bundle to illustrate the mapped FHIR resources in 
+                  a single instance for convenience and in order to provide a sense of how the pieces fit together. 
+                  However, the use of a bundle here does not indicate that implementers must use a bundle. A 
+                  transaction bundle is being used here so that the sample can be easily added to a HAPI FHIR server.
+                  NOTE 2: This sample includes displayable text in many of the resources. These text elements are not
+                  documented as part of the FHIR mapping to the eLTSS consensus data elements, but are included here
+                  to provide human readable representations of some of the key aspects of the service plan.
+-->
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ./FHIR%204.0.0/bundle.xsd">
+	<type value="transaction"/>
+	<!--  eLTSS Service Plan / FHIR Care Plan  -->
+	<entry>
+		<resource>
+			<CarePlan>
+				<id value="careplan1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Sally Person's Long Term Services and Supports (LTSS) Service Plan</b>
+						</p>
+						<p>
+							<b>Plan Effective Date:</b> 2018-05-01 - 2018-12-31</p>
+						<p>
+							<b>Step or Action:</b> client action - manage diet</p>
+						<p>
+							<b>Step or Action:</b> client action - exercise / join a fitness club</p>
+					</div>
+				</text>
+				<status value="active"/>
+				<intent value="plan"/>
+				<subject>
+            		<reference value="Patient/patient1"/>
+            	</subject>
+				<!--  R4 change, R4 change, old version allowed context which could reference EpisodeOfCare 
+                    this version doesn't have any link between the CarePlan and the EpisodeOfCare, so 
+                    instance will need to be updated once we determine how we want to handle eLTSS Plan Monitor
+                <context>
+                    <reference value="EpisodeOfCare/episode1"/>
+				</context>
+                -->
+				<!--  [eLTSS Plan Effective Date]  -->
+				<period>
+					<start value="2018-05-01"/>
+					<end value="2018-12-31"/>
+				</period>
+				<author>
+                    <reference value="Practitioner/planner1"/>
+				</author>
+				<addresses>
+                    <reference value="Condition/need1"/>
+				</addresses>
+				<addresses>
+                    <reference value="Condition/need2"/>
+				</addresses>
+				<addresses>
+                    <reference value="Condition/need3"/>
+				</addresses>
+				<supportingInfo>
+                    <reference value="Observation/strength1"/>
+				</supportingInfo>
+				<supportingInfo>
+                    <reference value="Questionnaire/questionnaire1"/>
+				</supportingInfo>
+				<supportingInfo>
+                    <reference value="Contract/contract1"/>
+				</supportingInfo>
+				<supportingInfo>
+                    <reference value="RiskAssessment/risk1"/>
+				</supportingInfo>
+				<goal>
+                    <reference value="Goal/goal1"/>
+				</goal>
+				<goal>
+                    <reference value="Goal/goal2"/>
+				</goal>
+				<activity>
+					<!--  [eLTSS Step or Action]  -->
+					<detail>
+						<goal>
+                            <reference value="Goal/goal1"/>
+						</goal>
+						<status value="not-started"/>
+						<description value="manage diet"/>
+					</detail>
+				</activity>
+				<activity>
+					<!--  [eLTSS Step or Action]  -->
+					<detail>
+						<goal>
+                            <reference value="Goal/goal2"/>
+						</goal>
+						<status value="not-started"/>
+						<description value="exercise / join a fitness club"/>
+					</detail>
+				</activity>
+				<activity>
+					<reference>
+                        <reference value="ServiceRequest/service1"/>
+					</reference>
+				</activity>
+				<activity>
+					<reference>
+                        <reference value="ServiceRequest/service2"/>
+					</reference>
+				</activity>
+				<activity>
+					<reference>
+                        <reference value="ServiceRequest/service3"/>
+					</reference>
+				</activity>
+			</CarePlan>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="CarePlan"/> 
+        </request>
+	</entry>
+	<!--  Support Planner (CarePlan author) -->
+	<entry>
+		<resource>
+			<Practitioner>
+				<id value="planner1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Support Planner / Phone:</b> Mark Planner / (678) 555 1221</p>
+					</div>
+				</text>
+				<!-- identifier is required by US Core -->
+				<identifier>
+					<system value="http://www.acme.org/practitioners"/>
+					<value value="23"/>
+				</identifier>
+				<!-- [eLTSS Support Planner Name] -->
+				<name>
+					<text value="Mark Planner"/>
+					<family value="Planner"/>
+					<given value="Mark"/>
+				</name>
+				<!-- [eLTSS Support Planner Phone Number] -->
+				<telecom>
+					<system value="phone"/>
+					<value value="(678) 555 1221"/>
+				</telecom>
+			</Practitioner>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Practitioner"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Practitioner>
+				<id value="caremgr1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Plan Monitor / Phone:</b> Sam Monitor / (770) 224 1599</p>
+					</div>
+				</text>
+				<!-- identifier is required by US Core -->
+				<identifier>
+					<system value="http://www.acme.org/practitioners"/>
+					<value value="24"/>
+				</identifier>
+				<!-- [eLTSS Plan Monitor Name] -->
+				<name>
+					<text value="Sam Monitor"/>
+					<family value="Monitor"/>
+					<given value="Sam"/>
+				</name>
+				<!-- [eLTSS Plan Monitor Phone Number] -->
+				<telecom>
+					<system value="phone"/>
+					<value value="(770) 224 1599"/>
+				</telecom>
+			</Practitioner>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Practitioner"/> 
+        </request>
+	</entry>
+	<!--     The person (Patient) who is the subject of the document. -->
+	<entry>
+		<resource>
+			<Patient>
+				<id value="patient1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Person Name:</b> Sally Person</p>
+						<p>
+							<b>Person Identifier | Type:</b> 123456ABC | MRN</p>
+						<p>
+							<b>Person Phone:</b> (404) 555 1212</p>
+						<p>
+							<b>Person Date of Birth:</b> 1935-05-01</p>
+						<p>
+							<b>Person Address:</b> 2222 Peachtree Street, Atlanta GA, 30318</p>
+						<p>
+							<b>Emergency Contact Name:</b> Jane Daughter</p>
+						<p>
+							<b>Emergency Contact Relationship:</b> daughter</p>
+						<p>
+							<b>Emergency Contact Phone Number:</b> (770) 224 1544</p>
+					</div>
+				</text>
+				<!-- [eLTSS Person Identifier] & [eLTSS Person Identifier Type]  -->
+				<identifier>
+					<type>
+						<text value="MRN"/>
+					</type>
+					<value value="123456ABC"/>
+				</identifier>
+				<!--  [eLTSS Person Name]  -->
+				<name>
+					<text value="Sally Person"/>
+					<family value="Person"/>
+					<given value="Sally"/>
+				</name>
+				<!--  [eLTSS Person Phone Number]  -->
+				<telecom>
+					<system value="phone"/>
+					<value value="(404) 555 1212"/>
+				</telecom>
+				<!--  [eLTSS Person Date of Birth]  -->
+				<birthDate value="1935-05-01"/>
+				<!--  [eLTSS Person Address]  -->
+				<address>
+					<text value="2222 Peachtree Street, Atlanta GA, 30318"/>
+					<line value="2222 Peachtree Street"/>
+					<city value="Atlanta"/>
+					<district value="Fulton"/>
+					<state value="GA"/>
+					<postalCode value="30318"/>
+				</address>
+				<!--  [eLTSS Emergency Contact Name] & [eLTSS Emergency Contact Relationship] & [eLTSS Emergency Contact Phone Number] -->
+				<contact>
+					<relationship>
+						<!-- code value indicates emergency contact -->
+						<coding>
+							<system value="http://hl7.org/fhir/v2/0131"/>
+							<code value="C"/>
+						</coding>
+					</relationship>
+					<relationship>
+						<!-- code value indicates daughter -->
+						<coding>
+							<system value="http://hl7.org/fhir/v3/RoleCode"/>
+							<code value="DAUG"/>
+						</coding>
+					</relationship>
+					<name>
+						<text value="Jane Daughter"/>
+						<family value="Daughter"/>
+						<given value="Jane"/>
+					</name>
+					<telecom>
+						<system value="phone"/>
+						<value value="(770) 224 1544"/>
+					</telecom>
+				</contact>
+			</Patient>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Patient"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  links the care plan to the plan monitor/case manager  -->
+			<!--  [eLTSS Plan Monitor Name] & [eLTSS Plan Monitor Phone Number]  -->
+			<EpisodeOfCare>
+				<id value="episode1"/>
+				<status value="active"/>
+				<patient>
+                    <reference value="Patient/patient1"/>
+				</patient>
+				<careManager>
+                    <reference value="Practitioner/caremgr1"/>
+				</careManager>
+			</EpisodeOfCare>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="EpisodeOfCare"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Emergency Backup Plan]  -->
+			<CarePlan>
+				<id value="careplan2"/>
+				<!-- reference to the "main" care plan -->
+				<partOf>
+                    <reference value="CarePlan/careplan1"/>
+				</partOf>
+				<status value="active"/>
+				<intent value="plan"/>
+				<description value="Snow Emergencies: A shelf stable blizzard meal is delivered to Meals On Wheels clients in early winter. It is to be eaten in the unlikely event of cancellation. Blizzard meals are donated by the Sheboygan Service Club."/>
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+			</CarePlan>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="CarePlan"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Goal]  -->
+			<Goal>
+				<id value="goal1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Person Goal:</b> lose weight</p>
+					</div>
+				</text>
+				<!--  R4 change, old version <status value="accepted"/>  -->
+				<lifecycleStatus value="accepted"/>
+				<description>
+					<text value="lose weight"/>
+				</description>
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+			</Goal>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Goal"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Goal]  -->
+			<Goal>
+				<id value="goal2"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Person Goal:</b> dance at daughter's wedding</p>
+					</div>
+				</text>
+				<!--  R4 change, old version <status value="accepted"/>  -->
+				<lifecycleStatus value="accepted"/>
+				<description>
+					<text value="dance at daughter's wedding"/>
+				</description>
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+			</Goal>			
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Goal"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Assessed Need]  -->
+			<Condition>
+				<id value="need1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Assessed Need:</b> lack of transportation</p>
+					</div>
+				</text>
+				<!-- US Core requires the use of the Condition Category Codes valueset, which does not have a value -->
+				<!-- corresponding to "assessed need". The code list is extensible, but for the purposes of this sample -->
+				<!-- just using the text data element. -->
+				<category>
+					<text value="assessed-need"/>
+				</category>
+				<code>
+					<text value="lack of transportation"/>
+				</code>
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+			</Condition>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Condition"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Assessed Need]  -->
+			<Condition>
+				<id value="need2"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Assessed Need:</b> difficulty in bathing</p>
+					</div>
+				</text>
+				<category>
+					<text value="assessed-need"/>
+				</category>
+				<code>
+					<text value="difficulty in bathing"/>
+				</code>
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+			</Condition>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Condition"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Assessed Need]  -->
+			<Condition>
+				<id value="need3"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Assessed Need:</b> difficulty in dressing</p>
+					</div>
+				</text>
+				<category>
+					<text value="assessed-need"/>
+				</category>
+				<code>
+					<text value="difficulty in dressing"/>
+				</code>
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+			</Condition>			
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Condition"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Practitioner>
+				<id value="provider1"/>
+				<!-- identifier is required by US Core -->
+				<identifier>
+					<system value="http://www.acme.org/practitioners"/>
+					<value value="987654"/>
+				</identifier>
+				<!-- [eLTSS Service Provider Name] -->
+				<name>
+					<text value="Lisa Performer"/>
+					<family value="Performer"/>
+					<given value="Lisa"/>
+				</name>
+				<!-- [eLTSS Service Provider Phone Number] -->
+				<telecom>
+					<system value="phone"/>
+					<value value="(404) 555 1213"/>
+				</telecom>
+			</Practitioner>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Practitioner"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Organization>
+				<id value="provider2"/>
+				<!-- identifier is required by US Core -->
+				<identifier>
+					<value value="24680"/>
+				</identifier>
+				<!-- [eLTSS Service Provider Name] -->
+				<name value="The Transporter, Inc."/>
+				<!-- [eLTSS Service Provider Phone Number] -->
+				<telecom>
+					<system value="phone"/>
+					<value value="(404) 555 1313"/>
+				</telecom>
+				<!-- address is required by US Core -->
+				<address>
+					<text value="111 Business Street, Atlanta GA, 30318"/>
+				</address>
+			</Organization>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Organization"/> 
+        </request>
+	</entry>
+	<entry>
+		<!-- This practitioner is the person signing for the transportation provider organization -->
+		<resource>
+			<Practitioner>
+				<id value="provider3"/>
+				<!-- identifier is required by US Core -->
+				<identifier>
+					<system value="http://www.acme.org/practitioners"/>
+					<value value="11223344"/>
+				</identifier>
+				<!-- [eLTSS Service Provider Name] -->
+				<name>
+					<text value="Bill Driver"/>
+					<family value="Driver"/>
+					<given value="Bill"/>
+				</name>
+				<!-- [eLTSS Service Provider Phone Number] -->
+				<telecom>
+					<system value="phone"/>
+					<value value="(678) 111 2222"/>
+				</telecom>
+			</Practitioner>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Practitioner"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Organization>
+				<id value="funding1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Service Funding Source:</b> Georgia Department of Community Health</p>
+					</div>
+				</text>
+				<!-- identifier is required by US Core -->
+				<identifier>
+					<value value="ICWP"/>
+				</identifier>
+				<!-- [eLTSS Service Funding Source] -->
+				<name value="Georgia Department of Community Health"/>
+				<!-- address is required by US Core -->
+				<address>
+					<text value="2 Main Street, Atlanta GA, 30318"/>
+				</address>
+			</Organization>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Organization"/> 
+        </request>
+	</entry>
+	<!-- daughter, who is emergency contact and performing a non-paid service -->
+	<entry>
+		<resource>
+			<RelatedPerson>
+				<id id="daughter1"/>
+				<patient>
+                    <reference value="Patient/patient1"/>
+				</patient>
+				<relationship>
+					<!-- [eLTSS Non-Paid Service Provider Relationship]  -->
+					<!-- code value indicates daughter -->
+					<coding>
+						<system value="http://hl7.org/fhir/v3/RoleCode"/>
+						<code value="DAUG"/>
+					</coding>
+				</relationship>
+				<name>
+					<text value="Jane Daughter"/>
+					<family value="Daughter"/>
+					<given value="Jane"/>
+				</name>
+			</RelatedPerson>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="RelatedPerson"/> 
+        </request>
+	</entry>
+	<!-- person's legal guardian -->
+	<entry>
+		<resource>
+			<RelatedPerson>
+				<id id="guardian1"/>
+				<patient>
+                    <reference value="Patient/patient1"/>
+				</patient>
+				<name>
+					<text value="William Barrister"/>
+					<family value="Barrister"/>
+					<given value="William"/>
+				</name>
+			</RelatedPerson>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="RelatedPerson"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!-- Service #1 -->
+			<ServiceRequest>
+				<id id="service1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Service Name:</b> Personal care services, per 15 minutes - 5 units per week</p>
+						<p>
+							<b>Service Start Date / End Date:</b> 2018-05-01 / 2018-12-31</p>
+					</div>
+				</text>
+				<status value="active"/>
+				<intent value="plan"/>
+				<!-- [eLTSS Service Name]  -->
+				<code>
+					<coding>
+						<system value="2.16.840.1.113883.6.14"/>
+						<code value="T1019"/>
+					</coding>
+					<text value="Personal care services, per 15 minutes"/>
+				</code>
+				<!-- Data below represents 5 quarter hours of service per week -->
+                <quantityRatio>
+                    <numerator>
+                        <!--  [eLTSS Service Unit Quantity]  -->
+                        <value value="5"/>
+                        <!--  [eLTSS Unit of Service Type]  -->
+                        <unit value="quarter hour"/>
+                    </numerator>
+                    <!-- [eLTSS Service Unit Quantity Interval]  -->
+                    <denominator>
+                        <value value="1"/>
+                        <unit value="week"/>
+                    </denominator>
+                </quantityRatio>
+				<!-- subject is required by FHIR -->
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+				<occurrencePeriod>
+					<!-- [eLTSS Service Start Date] -->
+					<start value="2018-05-01"/>
+					<!-- [eLTSS Service End Date] -->
+					<end value="2018-12-31"/>
+				</occurrencePeriod>
+				<performer>
+					<reference value="Practitioner/provider1"/>
+				</performer>
+				<!-- [eLTSS Service Delivery Address] -->
+				<locationReference>
+                    <reference value="Location/location1"/>
+				</locationReference>
+			</ServiceRequest>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="ServiceRequest"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!-- Service #2 -->
+			<ServiceRequest>
+				<id id="service2"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Service Name:</b> Non-emergency transportation; encounter/trip - 10 trips total</p>
+						<p>
+							<b>Service Start Date / End Date:</b> 2018-07-01 / 2018-12-31</p>
+					</div>
+				</text>
+				<!-- [eLTSS Self-directed Service Indicator] -->
+				<extension url="http://hl7.org/fhir/StructureDefinition/procedure-directedBy">
+                    <valueCodeableConcept>
+                        <text value="self"/>
+                    </valueCodeableConcept>
+				</extension>
+				<status value="active"/>
+				<intent value="plan"/>
+				<!-- [eLTSS Service Name]  -->
+				<code>
+					<coding>
+						<system value="2.16.840.1.113883.6.14"/>
+						<code value="T2003"/>
+					</coding>
+					<text value="Non-emergency transportation; encounter/trip"/>
+				</code>
+				<quantityQuantity>
+                    <!--  [eLTSS Service Unit Quantity]  -->
+                    <value value="10"/>
+                    <!--  [eLTSS Unit of Service Type]  -->
+                    <unit value="trips"/>
+				</quantityQuantity>
+				<!-- subject is required by FHIR -->
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+				<occurrencePeriod>
+					<!-- [eLTSS Service Start Date] -->
+					<start value="2018-07-01"/>
+					<!-- [eLTSS Service End Date] -->
+					<end value="2018-12-31"/>
+				</occurrencePeriod>
+				<performer>
+					<reference value="Organization/provider2"/>
+				</performer>
+				<insurance>
+                    <reference value="Coverage/coverage1"/>
+				</insurance>
+				<supportingInfo>
+                    <reference value="Claim/claim1"/>
+				</supportingInfo>
+				<!--  [eLTSS Service Comment]  -->
+				<note>
+					<text value="Service provider will provide a reminder the business day before the trip, and will call when on the way."/>
+				</note>
+			</ServiceRequest>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="ServiceRequest"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!-- Service #3 -->
+			<ServiceRequest>
+				<id id="service3"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Service Name:</b> House cleaning - one per week</p>
+						<p>
+							<b>Service Start Date / End Date:</b> 2018-05-01 / 2018-12-31</p>
+					</div>
+				</text>
+				<status value="active"/>
+				<intent value="plan"/>
+				<!-- [eLTSS Service Name]  -->
+				<code>
+					<text value="House cleaning"/>
+				</code>
+                <!-- Data below represents 1 visit per 1 week -->
+				<quantityRatio>
+                    <numerator>
+                        <!--  [eLTSS Service Unit Quantity]  -->
+                        <value value="1"/>
+                        <!--  [eLTSS Unit of Service Type]  -->
+                        <unit value="visit"/>
+                    </numerator>
+                    <!--  [eLTSS Service Unit Quantity Interval]  -->
+                    <denominator>
+                        <value value="1"/>
+                        <unit value="week"/>
+                    </denominator>
+				</quantityRatio>
+				<!-- subject is required by FHIR -->
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+				<occurrencePeriod>
+					<!-- [eLTSS Service Start Date] -->
+					<start value="2018-05-01"/>
+					<!-- [eLTSS Service End Date] -->
+					<end value="2018-12-31"/>
+				</occurrencePeriod>
+				<performer>
+					<reference value="RelatedPerson/daughter1"/>
+				</performer>
+			</ServiceRequest>			
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="ServiceRequest"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Strength]  -->
+			<Observation>
+				<id id="strength1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Person Strength:</b> Able to manage her bills. Has strong family support.</p>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<text value="Strength"/>
+				</code>
+				<valueString value="Able to manage her bills. Has strong family support."/>
+			</Observation>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Observation"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<!--  [eLTSS Preference]  -->
+			<Observation>
+				<id id="pref1"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>
+							<b>Person Preference:</b> Accessing the ICWP Waiver for her current service needs, and would like to remain on ICWP and continue with her current services.</p>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<!-- code and system indicates "discussion about preferences" -->
+					<coding>
+						<system value="2.16.840.1.113883.3.88.12.80.28"/>
+						<code value="223486007"/>
+					</coding>
+				</code>
+				<valueString value="Accessing the ICWP Waiver for her current service needs, and would like to remain on ICWP and continue with her current services."/>
+			</Observation>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Observation"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<RiskAssessment>
+				<id id="risk1"/>
+				<status value="final"/>
+				<!-- subject is required by FHIR (starting with 3.4.0) -->
+				<subject>
+                    <reference value="Patient/patient1"/>
+				</subject>
+				<!-- [eLTSS Identified Risk]  -->
+				<prediction>
+					<outcome>
+						<coding>
+							<!-- code indicates at risk for falls -->
+							<system value="2.16.840.1.113883.6.96"/>
+							<code value="129839007"/>
+						</coding>
+					</outcome>
+				</prediction>
+				<!-- [eLTSS Risk Management Plan]  -->
+				<mitigation value="risk management plan text goes here"/>
+			</RiskAssessment>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="RiskAssessment"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Questionnaire>
+				<id value="questionnaire1"/>
+				<status value="active"/>
+				<!-- [eLTSS Person Setting Choice Indicator]  -->
+				<item>
+					<linkId value="q1"/>
+					<text value="Did you choose the setting in which you reside?"/>
+					<type value="boolean"/>
+				</item>
+				<!-- [eLTSS Person Setting Choice Options]  -->
+				<item>
+					<linkId value="q2"/>
+					<text value="What alternative home and community-based settings were considered?"/>
+					<type value="string"/>
+				</item>
+				<!-- [eLTSS Service Options Given Indicator]  -->
+				<item>
+					<linkId value="q3"/>
+					<text value="Were you given a choice of services outlined in the plan?"/>
+					<type value="boolean"/>
+				</item>
+				<!-- [eLTSS Service Selection Indicator]  -->
+				<item>
+					<linkId value="q4"/>
+					<text value="Did you participate in the selection of services outlined in the plan?"/>
+					<type value="boolean"/>
+				</item>
+				<!-- [eLTSS Service Plan Agreement Indicator]  -->
+				<item>
+					<linkId value="q5"/>
+					<text value="Do you agree to the services outlined in the plan?"/>
+					<type value="boolean"/>
+				</item>
+				<!-- [eLTSS Service Provider Options Given Indicator]  -->
+				<item>
+					<linkId value="q6"/>
+					<text value="Were you offerred a choice of providers for each service?"/>
+					<type value="boolean"/>
+				</item>
+				<!-- [eLTSS Service Provider Selection Agreement Indicator]  -->
+				<item>
+					<linkId value="q7"/>
+					<text value="Do you feel you made an informed choice in selecting the provider for each service?"/>
+					<type value="boolean"/>
+				</item>
+			</Questionnaire>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Questionnaire"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<QuestionnaireResponse>
+				<id value="questionnaireresponse1"/>
+				<questionnaire value="Questionnaire/questionnaire1"/>
+				<status value="completed"/>
+				<!-- [eLTSS Person Setting Choice Indicator]  -->
+				<item>
+					<linkId value="q1"/>
+					<answer>
+						<valueBoolean value="true"/>
+					</answer>
+				</item>
+				<!-- [eLTSS Person Setting Choice Options]  -->
+				<item>
+					<linkId value="q2"/>
+					<answer>
+						<valueString value="Assisted living facility"/>
+					</answer>
+				</item>
+				<!-- [eLTSS Service Options Given Indicator]  -->
+				<item>
+					<linkId value="q3"/>
+					<answer>
+						<valueBoolean value="true"/>
+					</answer>
+				</item>
+				<!-- [eLTSS Service Selection Indicator]  -->
+				<item>
+					<linkId value="q4"/>
+					<answer>
+						<valueBoolean value="true"/>
+					</answer>
+				</item>
+				<!-- [eLTSS Service Plan Agreement Indicator]  -->
+				<item>
+					<linkId value="q5"/>
+					<answer>
+						<valueBoolean value="true"/>
+					</answer>
+				</item>
+				<!-- [eLTSS Service Provider Options Given Indicator]  -->
+				<item>
+					<linkId value="q6"/>
+					<answer>
+						<valueBoolean value="true"/>
+					</answer>
+				</item>
+				<!-- [eLTSS Service Provider Selection Agreement Indicator]  -->
+				<item>
+					<linkId value="q7"/>
+					<answer>
+						<valueBoolean value="true"/>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="QuestionnaireResponse"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Contract>
+				<id id="contract1"/>
+				<!-- [eLTSS Person Signature], [eLTSS Person Printed Name], [eLTSS Person Signature Date]  -->
+				<signer>
+					<type>
+						<system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+						<code value="PAT"/>
+					</type>
+					<party>
+						<reference value="Patient/patient1"/>
+					</party>
+					<signature>
+						<type>
+							<system value="urn:iso-astm:E1762-95:2013"/>
+							<code value="1.2.840.10065.1.12.1.7"/>
+						</type>
+						<when value="2018-04-02T03:00:00Z"/>
+						<!-- R4 change, old version 
+                        <whoReference>
+							<reference value="Patient/patient1"/>
+						</whoReference>
+                        -->
+						<who>
+							<reference value="Patient/patient1"/>
+						</who>
+						<!-- note that all signature blobs in the sample are identical, and are base64 versions of a Windows icon -->
+						<data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+					</signature>
+				</signer>
+				<!-- [eLTSS Guardian/Legal Representative Signature], [eLTSS Guardian/Legal Representative Printed Name], -->
+				<!-- [eLTSS Guardian/Legal Representative Signature Date]  -->
+				<signer>
+					<type>
+						<system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+						<code value="GUARD"/>
+					</type>
+					<party>
+						<reference value="RelatedPerson/guardian1"/>
+					</party>
+					<signature>
+						<type>
+							<system value="urn:iso-astm:E1762-95:2013"/>
+							<code value="1.2.840.10065.1.12.1.7"/>
+						</type>
+						<when value="2018-04-02T03:00:00Z"/>
+						<!-- R4 change, old version 
+                        <whoReference>
+							<reference value="RelatedPerson/guardian1"/>
+						</whoReference>
+                        -->
+						<who>
+							<reference value="RelatedPerson/guardian1"/>
+						</who>
+						<!-- note that all signature blobs in the sample are identical, and are base64 versions of a Windows icon -->
+						<data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+					</signature>
+				</signer>
+				<!-- [eLTSS Support Planner Signature], [eLTSS Support Planner Printed Name], [eLTSS Support Planner Signature Date]  -->
+				<signer>
+					<type>
+						<system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+						<code value="AUT"/>
+					</type>
+					<party>
+						<reference value="Practitioner/planner1"/>
+					</party>
+					<signature>
+						<type>
+							<system value="urn:iso-astm:E1762-95:2013"/>
+							<code value="1.2.840.10065.1.12.1.1"/>
+						</type>
+						<when value="2018-04-02T03:00:00Z"/>
+						<!-- older version
+                        <whoReference>
+							<reference value="Practitioner/planner1"/>
+						</whoReference>
+                        -->
+						<who>
+							<reference value="Practitioner/planner1"/>
+						</who>
+						<!-- note that all signature blobs in the sample are identical, and are base64 versions of a Windows icon -->
+						<data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+					</signature>
+				</signer>
+				<!-- Service Provider #1 -->
+				<!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
+				<signer>
+					<type>
+						<system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+						<code value="HPROV"/>
+					</type>
+					<party>
+						<reference value="Practitioner/provider1"/>
+					</party>
+					<signature>
+						<type>
+							<system value="urn:iso-astm:E1762-95:2013"/>
+							<code value="1.2.840.10065.1.12.1.7"/>
+						</type>
+						<when value="2018-04-02T03:00:00Z"/>
+						<!-- R4 change, old version
+                        <whoReference>
+							<reference value="Practitioner/provider1"/>
+						</whoReference>
+                        -->
+						<who>
+							<reference value="Practitioner/provider1"/>
+						</who>
+						<!-- note that all signature blobs in the sample are identical, and are base64 versions of a Windows icon -->
+						<data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+					</signature>
+				</signer>
+				<!-- Service Provider #2 -->
+				<!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
+				<signer>
+					<type>
+						<system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+						<code value="HPROV"/>
+					</type>
+					<party>
+						<reference value="Organization/provider2"/>
+					</party>
+					<signature>
+						<type>
+							<system value="urn:iso-astm:E1762-95:2013"/>
+							<code value="1.2.840.10065.1.12.1.7"/>
+						</type>
+						<when value="2018-04-02T03:00:00Z"/>
+						<!-- In this example, the service provider is the transportation company, and the signer is a representative of that company -->
+						<!-- R4 change, old version <whoReference>
+							<reference value="Practitioner/provider3"/>
+						</whoReference>
+                        -->
+						<who>
+							<reference value="Practitioner/provider3"/>
+						</who>
+						<!-- note that all signature blobs in the sample are identical, and are base64 versions of a Windows icon -->
+						<data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+					</signature>
+				</signer>
+				<!-- Service Provider #3 -->
+				<!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
+				<signer>
+					<type>
+						<system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+						<code value="HPROV"/>
+					</type>
+					<party>
+						<reference value="RelatedPerson/daughter1"/>
+					</party>
+					<signature>
+						<type>
+							<system value="urn:iso-astm:E1762-95:2013"/>
+							<code value="1.2.840.10065.1.12.1.7"/>
+						</type>
+						<when value="2018-04-02T03:00:00Z"/>
+						<!-- R4 change, old version
+                        <whoReference>
+							<reference value="RelatedPerson/daughter1"/>
+						</whoReference>
+						-->
+						<who>
+							<reference value="RelatedPerson/daughter1"/>
+						</who>
+						<!-- note that all signature blobs in the sample are identical, and are base64 versions of a Windows icon -->
+						<data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+					</signature>
+				</signer>
+			</Contract>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Contract"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Location>
+				<id id="location1"/>
+				<!-- [eLTSS Service Delivery Address]  -->
+				<address>
+					<text value="2222 Peachtree Street, Atlanta GA, 30318"/>
+				</address>
+			</Location>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Location"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Coverage>
+				<id id="coverage1"/>
+				<!-- R4 change, old version, status was optional -->
+				<status value="active"/>
+				<!-- R4 change, old version, beneficiary was optional -->
+				<beneficiary>
+                    <reference value="Patient/patient1"/>
+				</beneficiary>
+				<!-- Links to the eLTSS Service Funding Source  -->
+				<payor>
+                    <reference value="Organization/funding1"/>
+				</payor>
+			</Coverage>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Coverage"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+			<Claim>
+				<id id="claim1"/>
+				<!-- R4 change, old version, status was optional -->
+				<status value="active"/>
+				<!-- R4 change, old version, type was optional -->
+				<type> 
+                    <coding> 
+                      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/> 
+                      <code value="professional"/> 
+                    </coding> 
+                </type>
+                <!-- R4 change, old version, use was optional -->
+                <use value="preauthorization"/>
+                <!-- R4 change, old version, patient was optional -->
+                <patient>
+                    <reference value="Patient/patient1"/>
+                </patient>
+                <!-- R4 change, old version, created was optional -->
+                <created value="2018-04-02T03:00:00Z"/>
+                <!-- R4 change, old version, provider is optional -->
+                <provider>
+                    <reference value="Organization/funding1"/>
+                </provider>
+                <!-- R4 change, old version, priority is optional -->
+                <priority>
+                    <coding> 
+                      <code value="normal"/> 
+                    </coding>
+                </priority>
+                <!-- R4 change, old version, insurance was optional -->
+                <insurance>
+                    <sequence value="1"/> 
+                    <focal value="true"/> 
+                    <coverage> 
+                        <reference value="Coverage/coverage1"/> 
+                    </coverage>
+                </insurance>
+				<item>
+					<sequence value="1"/>
+					<!-- R4 change, old version, service was optional and replaced by mandatory productOrService -->
+					<productOrService> 
+                        <coding> 
+                            <system value="http://hl7.org/fhir/ValueSet/service-uscls"/> 
+                            <code value="99555"/>    <!-- value represents and expense --> 
+                        </coding> 
+                    </productOrService> 
+					<!-- eLTSS Service Rate per Unit]  -->
+					<unitPrice>
+						<value value="60.00"/>
+					</unitPrice>
+					<!-- eLTSS Total Cost of Service]  -->
+					<net>
+						<value value="600.00"/>
+					</net>
+				</item>
+			</Claim>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Claim"/> 
+        </request>
+	</entry>
+</Bundle>
