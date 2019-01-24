@@ -42,13 +42,12 @@
 				<subject>
             		<reference value="Patient/patient1"/>
             	</subject>
-				<!--  R4 change, R4 change, old version allowed context which could reference EpisodeOfCare 
-                    this version doesn't have any link between the CarePlan and the EpisodeOfCare, so 
-                    instance will need to be updated once we determine how we want to handle eLTSS Plan Monitor
-                <context>
-                    <reference value="EpisodeOfCare/episode1"/>
-				</context>
+		<!--  R4 change, old version allowed context which could reference EpisodeOfCare 
+                      R4 links CarePlan to EpisodeOfCare through an Encounter to handle eLTSS Plan Monitor
                 -->
+		<encounter>
+                    <reference value="Encounter/encounter1"/>
+		</encounter>
 				<!--  [eLTSS Plan Effective Date]  -->
 				<period>
 					<start value="2018-05-01"/>
@@ -285,6 +284,28 @@
 		<request> 
             <method value="POST"/> 
             <url value="Patient"/> 
+        </request>
+	</entry>
+	<entry>
+		<resource>
+            <!-- R4 change - added resource to provide link between CarePlan and EpisodeOfCare  -->
+            <!-- links the care plan to the episode of care where the plan monitor/case manager information resides -->
+            <Encounter>
+                <id value="enounter1"/>
+                <status value="planned"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/> 
+                    <code value="HH"/> 
+                </class>
+                <episodeOfCare>
+                    <reference value="EpisodeOfCare/episode1"/>
+                </episodeOfCare>
+            </Encounter>
+		</resource>
+		<!-- Action to create this resource in a FHIR server -->
+		<request> 
+            <method value="POST"/> 
+            <url value="Encounter"/> 
         </request>
 	</entry>
 	<entry>
