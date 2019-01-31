@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
+  <id value="eLTSS"/>
+  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eLTSS"/>
+  <name value="eLTSS"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
+  <description value="Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services & Supports (eLTSS) Dataset data elements"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.uv.eLTSS"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+<!-- Don't actually have any profiles --> 
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="device-profile-spreadsheet.xml"/>
+    </extension>
+
+    <grouping id="general">
+      <name value="General Profiles"/>
+      <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of genomics are of interest"/>
+    </grouping>
+
+    <grouping id="extensions">
+      <name value="Extensions"/>
+      <description value="Extensions defined as part of the eLTSS implementation guide"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Example(s)"/>
+      <description value="Example(s) showing the use of the eLTSS profiles"/>
+    </grouping>
+<!-- Here be the resources listed in the IG -->  
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-base"/>
+      </reference>
+      <name value="Genetic Observation Common Properties"/>
+      <description value="Base profile that defines characteristics shared by all genetic observations"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport"/>
+      </reference>
+      <name value="Genomics Report"/>
+      <description value="Defines the overall genomic report"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/specimen"/>
+      </reference>
+      <name value="Specimen"/>
+      <description value="Constraints on Specimen for use with clinical genomics reporting"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/task-rec-followup"/>
+      </reference>
+      <name value="Recomended Followup"/>
+      <description value="Task describing the followup that is recommended"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/servicerequest"/>
+      </reference>
+      <name value="Request for Genetics Test"/>
+      <description value="The lab order or request that triggered the execution of the genetics test"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-gen-panel"/>
+      </reference>
+      <name value="Genomics Panel"/>
+      <description value="Organizes information within a genetic report"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-overall"/>
+      </reference>
+      <name value="Genomic analysis overall interpretation"/>
+      <description value="Provides a coarse overall interpretation of the genetic results reported."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-deletion-dup"/>
+      </reference>
+      <name value="Deletion-duplication overall interpretation"/>
+      <description value="Provides an overall interpretation of whether any deletions or duplications were found as part of the genetic analysis"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-comp-gen-finding"/>
+      </reference>
+      <name value="Computable Genetic Finding"/>
+      <description value="Properties common to genetic findings whose results are expressed as computable discrete elements (e.g. genotypes, haplotypes, variants, etc.)"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-haplotype"/>
+      </reference>
+      <name value="Haplotype"/>
+      <description value="Assertion of a particular haplotype on the basis of one or more variants"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-genotype"/>
+      </reference>
+      <name value="Genotype"/>
+      <description value="Assertion of a particular genotype on the basis of one or more variants or haplotypes"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-cytogenetic-nomenclature"/>
+      </reference>
+      <name value="Cytogenetic Nomenclature"/>
+      <description value="Fully describes a variant with a single code.  Typically a large variant such as a mosaic, abnormal chromosome numbers, etc."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-complex-variant"/>
+      </reference>
+      <name value="Complex Variant"/>
+      <description value="A variant consisting of multiple independent consecutive variations"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-described-variant"/>
+      </reference>
+      <name value="Described Variant"/>
+      <description value="Details about a set of changes in the tested sample compared to a reference sequence."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-sequence-phase-reltn"/>
+      </reference>
+      <name value="Sequence Phase Relationship"/>
+      <description value="Indicates whether two entities are in Cis (same strand) or Trans (opposite strand) relationship to each other"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-impact"/>
+      </reference>
+      <name value="Genetic Impact"/>
+      <description value="Abstract profile for observations describing the impact of one or more genetic observations."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-inh-dis-path"/>
+      </reference>
+      <name value="Inherited Disease Pathogenicity"/>
+      <description value="Provides an indication of whether there's a pathologic risk associated with a particular genotype, haplotype, variant or combination there-of, and if so, what the associated pathology is."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obs-region-studied"/>
+      </reference>
+      <name value="Region Studied"/>
+      <description value="Provides a description of the region studied."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+<!-- document structure starts here -->
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="IG Home Page"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="background.html"/>
+          <title value="Genomics Background"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="general.html"/>
+          <title value="General Genomic Reporting"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="sequencing.html"/>
+          <title value="Variant Reporting"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="cytogenomics.html"/>
+          <title value="Cytogenomic Reporting"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="pharmacogenomics.html"/>
+          <title value="Pharmacogenomic Reporting"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="somatics.html"/>
+          <title value="Somatic Reporting"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="histocompatibility.html"/>
+          <title value="Histocompatibility and Immunogenetics Reporting"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="conversion.html"/>
+          <title value="Conversion from STU3"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="v2.html"/>
+          <title value="Appendix A: Relation to v2 reporting"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="eLTSSapps.html"/>
+          <title value="Appendix B: Clinical Genomic Apps"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="domain.html"/>
+          <title value="Appendix C: Querying Genomics Information"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="HL7 Domain Analysis Use Cases"/>
+        <generation value="html"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>
