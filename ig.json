@@ -1,83 +1,52 @@
  {
-   "source": "ig.xml",
-   "license" : "CC0-1.0",
-   "suppress-qa" : true | false, // suppress the generation of the QA folder content. default = don't suppress
-   "paths" : { // see paths below. optional- defaults apply
-     "resources" : [  // optional; default = "resources"
-       "[resourcesFolder]" 
-      ],
-     "pages" : [ // optional; default = "pages"
-       "[pagesFolder]"
-     ],
-     "temp" : "[temp]",  // optional; default = "temp"
-     "output" : "[output]",  // optional; default = "output" (and must be output for auto-build)
-     "txCache" : "[txCache]",  // optional; default = "no value - txCache not in version control (slower builds)"
-     "qa" : "[qa]",  // optional; default = "qc"
-     "history" : "[history page]",  // optional; default = no page marked as history page
-     "specification" : "[specification]"  // optional; default = "http://hl7.org/fhir"
-   },
-   "npm-name" : "[node Package Name - see below]",
-   "npm-template" : "[Optional npm package template file]",
-   "jurisdiction" : "[code]", // see Jurisdiction below. optional
-   "language" : "[language]", // see 'Language support' below. optional
-   "languages" : [ // optional 
-     "[language]"
-   ],
-   "pre-process" : [{ // optional section see below
-      "folder" : "[folder]",
-      "transform" : "[xslt file (conditional)]",
-      "relativePath" : "[relative path (conditional)]"
-   }],
-   "sct-edition" : "[uri - see below", // optional - defaults to SCT International
-   "no-inactive-codes" : true | false,  // optional; default = false
-   "broken-links" : "warning | error", // optional; default to warning, but can be error (stops the build)
-   "check-aggregation" : true, // Warning if aggregation not declared on differential elements of type Reference
-   "check-mustSupport" : true, // Warning if mustSupport not declared on elements appearing in differential
-   "anyExtensionsAllowed" : false, // If false, raises an error if unrecognized encounters are encountered, otherwise only an 'information' message
-   "hintAboutNonMustSupport", : true //Info validation if elements appear in examples when not marked as mustSupport=true in one of the corresponding profiles
-   "gen-examples" : true, // optional, see below (processing options)
-   "do-transforms" : true, // optional, see below (processing options)
-   "canonicalBase": "[where this will be published - see above]. Mandatory",
-   "dependencyList": [  
-     {
-        "USCoreR4" : "[name of the IG, for logging, and Jekyll variable name for location]",
-        "https://build.fhir.org/ig/HL7/US-Core-R4" : "[http address where the IG lives]",
-        "dev" : "[version, or 'current' or 'dev']",
-        
-     }
-   ],
- 
-   // Templates lists any additional templates beyond "base" and "format" that can be generated for one or more artifact types
-   // The list of template names below are examples
-    "defaults": {
-     // this object contains the default publishing policy for different types. 
-     // Anything not mentioned defaults to true
-     "Any": {
-       // fragment and template options - see below. example:
-       "xml" : true, // don't produce xml example
-       "template-base" : "sometemplatefile.html"  // use this as the default template for all base pages if not overridden
-     },
-     "[Type]": {
-       // fragment and template options - see below
-     }
-   },
-   "spreadsheets" : [
-     "[filename]" // see using spreadsheets
-   ], 
-   "bundles" : [
-     "[id]" // see using bundles below
-   ],
-   "resources": {
-     "[Type]/[id]": {
-       "source" : "[optional source file]", 
-       "version" : "[optional version]",
-       // template and fragment options - see below.  E.g.
-       "base": "[overridden name for destination page for things referring to this resource]",
-       "template-defns": "[template to use for resource definitions]",
-     }
-   },
-   "special-urls" : [
-     // list of special URLs - see below
-   ],
-   "tool" : "jekyll" // the tool used for the 3rd step of the build. See tooling below
- }
+	"name": "IG_eLTSS",
+	"status": "draft",
+	"no-inactive-codes": "false",
+	"version": "4.0.0",
+	"pub_url": "johnmoehrke@gmail.com",
+	"npm-name": "eltss-fhir",
+	"structuremaps": ["Foo"],
+	"extraTemplates": ["mappings"],
+	"paths": {
+		"qa": "generated_output/qa",
+		"specification": "http://build.fhir.org",
+		"pages": ["framework",
+		"source/pages",
+		"source/history"],
+		"txCache": "generated_output/txCache",
+		"resources": ["source/resources",
+		"source/examples"],
+		"output": "docs",
+		"temp": "generated_output/temp"
+	},
+	"tool": "jekyll",
+	"canonicalBase": "http://www.fhir.org/guides/eltss",
+	"title": "IG_eLTSS",
+	"allviews": "true",
+	"license": "CC0-1.0",
+	"do-transforms": "false",
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"topofpage": "true",
+	"source": "ig.xml",
+	"logging": ["progress"],
+	"publisher": "ONC",
+	"mappings": "true",
+	"broken-links": "warning",
+	"fixed-business-version": "0.0.0",
+	"dependencyList": [{
+		"name": "uscore",
+		"source": "dependencies/uscore-vp",
+		"version": "current",
+		"location": "http://hl7.org/fhir/us/core"
+	}],
+	"swagger": [{
+		"mode": "single",
+		"capabilities": "server"
+	}],
+	"spreadsheets": ["careplan-profile-spreadsheet.xml",
+	"claim-profile-spreadsheet.xml",
+	"contract-profile-spreadsheet.xml",
+	"patient-profile-spreadsheet",
+	"servicerequest-profile-spreadsheet"],
+	"gen-examples": "false"
+}
