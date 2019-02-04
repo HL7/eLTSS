@@ -26,7 +26,7 @@
 	"do-transforms": "false",
 	"sct-edition": "http://snomed.info/sct/731000124108",
 	"topofpage": "true",
-	"source": "src/resources/ig.xml",
+	"source": "ig.xml",
 	"logging": ["progress"],
 	"publisher": "ONC",
 	"mappings": "true",
