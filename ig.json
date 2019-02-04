@@ -13,8 +13,7 @@
 		"pages": ["framework",
 		"src/pagecontent"],
 		"txCache": "generated_output/txCache",
-		"resources": ["src/resources",
-		"src/examples"],
+		"resources": ["src/resources"],
 		"output": "docs",
 		"temp": "generated_output/temp"
 	},
