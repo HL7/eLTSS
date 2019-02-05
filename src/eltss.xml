@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
-  <id value="eLTSS"/>
-  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eLTSS"/>
-  <name value="eLTSS"/>
+  <id value="eltss"/>
+  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss"/>
+  <name value="eltss"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
@@ -13,7 +13,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.uv.eLTSS"/>
+  <packageId value="hl7.fhir.uv.eltss"/>
   <fhirVersion value="4.0.0"/>
   <definition>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">

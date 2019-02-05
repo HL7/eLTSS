@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "eLTSS",
+  "id" : "eltss",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
     "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src-generated\\resources"
@@ -25,9 +25,9 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src-generated\\pages"
   }],
-  "url" : "http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eLTSS",
+  "url" : "http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss",
   "version" : "0.1",
-  "name" : "eLTSS",
+  "name" : "eltss",
   "status" : "draft",
   "experimental" : false,
   "publisher" : "HL7 International Community-Based Care and Privacy Work Group",
@@ -38,7 +38,7 @@
       "code" : "001"
     }]
   }],
-  "packageId" : "hl7.fhir.uv.eLTSS",
+  "packageId" : "hl7.fhir.uv.eltss",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
   "4.0.0"],

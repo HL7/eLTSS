@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="eLTSS"/>
+  <id value="eltss"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\resources"/>
   </extension>
@@ -20,9 +20,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\pages"/>
   </extension>
-  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eLTSS"/>
+  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss"/>
   <version value="0.1"/>
-  <name value="eLTSS"/>
+  <name value="eltss"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
@@ -33,7 +33,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.uv.eLTSS"/>
+  <packageId value="hl7.fhir.uv.eltss"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>

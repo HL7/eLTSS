@@ -7,7 +7,7 @@
   "html-template": "template-page.html",
   "md-template": "template-page-md.html",
   "license": "CC0-1.0",
-  "npm-name": "hl7.fhir.uv.eLTSS",
+  "npm-name": "hl7.fhir.uv.eltss",
   "paths": {
     "resources": ["resources", "../src/resources", "../src/vocabulary", "../src/examples"],
     "pages": ["../src/images", "pages"],
@@ -96,7 +96,7 @@
   "sct-edition" : "http://snomed.info/sct/900000000000207008",
   "no-inactive-codes" : "true",
   "canonicalBase": "http://hl7.org/fhir/uv/eLTSS",
-  "source": "eLTSS.xml",
+  "source": "eltss.xml",
   "spreadsheets": [
     "careplan-profile-spreadsheet.xml",
     "claim-profile-spreadsheet.xml",
