@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="eLTSS"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\vocabulary"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\images"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\pages"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eLTSS"/>
+  <version value="0.1"/>
+  <name value="eLTSS"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
+  <description value="Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data elements"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.uv.eLTSS"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="general">
+      <name value="General Profiles"/>
+      <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
+    </grouping>
+    <grouping id="extensions">
+      <name value="Extensions"/>
+      <description value="Extensions defined as part of the eLTSS implementation guide"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Example(s)"/>
+      <description value="Example(s) showing the use of the eLTSS profiles"/>
+    </grouping>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="IG Home Page"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="background.html"/>
+          <title value="Genomics Background"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="general.html"/>
+          <title value="General eLTSS flow"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="careplan-eltss.html"/>
+          <title value="CarePlan Common Properties"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="claim-eltss.html"/>
+          <title value="Claim"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="contract-eltss.html"/>
+          <title value="Contract"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="patient-eltss.html"/>
+          <title value="Patient"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="HL7 Domain Analysis Use Cases"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="html-template"/>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

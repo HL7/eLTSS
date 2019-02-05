@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
+  <id value="eLTSS"/>
+  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eLTSS"/>
+  <name value="eLTSS"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
+  <description value="Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data elements"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.uv.eLTSS"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="careplan-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="claim-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="contract-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="patient-profile-spreadsheet.xml"/>
+    </extension>
+	<!--
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="servicerequest-profile-spreadsheet.xml"/>
+    </extension>
+-->
+    <grouping id="general">
+      <name value="General Profiles"/>
+      <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
+    </grouping>
+
+    <grouping id="extensions">
+      <name value="Extensions"/>
+      <description value="Extensions defined as part of the eLTSS implementation guide"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Example(s)"/>
+      <description value="Example(s) showing the use of the eLTSS profiles"/>
+    </grouping>
+<!-- Here be the resources listed in the IG -->  
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-eltss"/>
+      </reference>
+      <name value="CarePlan Common Properties"/>
+      <description value="Base profile that defines characteristics shared by all CarePlan resources in eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/claim-eltss"/>
+      </reference>
+      <name value="Claim"/>
+      <description value="Defines the overall Claim constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contract-eltss"/>
+      </reference>
+      <name value="Contract"/>
+      <description value="Defines the overall Contract constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-eltss"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="Defines the overall Patient constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+	<!--
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/servicerequest-eltss"/>
+      </reference>
+      <name value="ServiceRequest"/>
+      <description value="Defines the overall ServiceRequest constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+	-->
+<!-- document structure starts here -->
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="IG Home Page"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="background.html"/>
+          <title value="Genomics Background"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="general.html"/>
+          <title value="General eLTSS flow"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="HL7 Domain Analysis Use Cases"/>
+        <generation value="html"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>

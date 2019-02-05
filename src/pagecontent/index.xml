@@ -28,3 +28,4 @@
 
 <H2>1.4	 US Core Dependency</H2>
 <p>Please note that implementations using this eLTSS FHIR IG must comply with US Core when applicable. US Core defines the minimum conformance requirements for accessing patient data as defined by the Argonaut pilot implementations and the ONC 2015 Edition Common Clinical Data Set (CCDS). These profiles are intended to be the foundation for US Realm FHIR implementation guides. Therefore, US Core Profiles, US Core Terminology,  US Core Capability Statements / Conformance Requirements, and Security Considerations not specifically noted in this guide must be included when applicable.</p>
+</div>
