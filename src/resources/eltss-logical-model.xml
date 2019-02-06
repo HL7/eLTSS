@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="eltss-logical-model"/>
+<!--
+  <url value="http://example.org/fhir/StructureDefinition/eltss-logical-model" />
+-->
+  <name value="eltss-logical-model" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="Element" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="eLTSS FHIR Logical Model">
+      <path value="eLTSS FHIR Logical Model" />
+      <short value="eLTSS Model" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person">
+      <path value="eLTSS FHIR Logical Model.Person" />
+      <definition value="The person whom the plan is for." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.name">
+      <path value="eLTSS FHIR Logical Model.Person.name" />
+      <definition value="The name of the person whom the plan is for." />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.identifier">
+      <path value="eLTSS FHIR Logical Model.Person.identifier" />
+      <definition value="A string of characters used to dientify the person whom the plan is for. This may be the Medicaid ID number where applicable." />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.identifierType">
+      <path value="eLTSS FHIR Logical Model.Person.identifierType" />
+      <definition value="The type of unique identifier used to identify the person whom the plan is for." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <text value="Medicaid Number, State ID, Medical Record Number, Other" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.dateOfBirth">
+      <path value="eLTSS FHIR Logical Model.Person.dateOfBirth" />
+      <definition value="The birth date of the person whom the plan is for." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.phoneNumber">
+      <path value="eLTSS FHIR Logical Model.Person.phoneNumber" />
+      <definition value="The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.address">
+      <path value="eLTSS FHIR Logical Model.Person.address" />
+      <definition value="The address of the person whom the plan is for." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Address" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.emergencyContactName">
+      <path value="eLTSS FHIR Logical Model.Person.emergencyContactName" />
+      <definition value="The name of the individual or entity identified to contact in case of emergency." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.emergencyContactPhoneNumber">
+      <path value="eLTSS FHIR Logical Model.Person.emergencyContactPhoneNumber" />
+      <definition value="The primary phone number (and extension when applicable) of the individual or entity identified to contact in case of emergency." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.Person.emergencyContactRelationship">
+      <path value="eLTSS FHIR Logical Model.Person.emergencyContactRelationship" />
+      <definition value="The relationship (e.g., spouse, neighbor, guardian, daughter) of the individual identified to contact in case of emergency." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.EmergencyBackupPlan">
+      <path value="eLTSS FHIR Logical Model.EmergencyBackupPlan" />
+      <definition value="Description of how to adress unforeseen events, emergency health events, emergency events, problems with medical equipment and supplies, and unavailable staffing situations for critical services that put the person's health and safety at risk." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan">
+      <path value="eLTSS FHIR Logical Model.ServicePlan" />
+      <definition value="Structured, longitudinal person-centered service plan that can be exchanged electronically across multiple community-based LTSS settings, institutional settings, and with beneficiaries and payers. The content or data elements of the eLTSS Plan is specific to the types of services rendered and information collected for CB-LTSS." />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.planEffectiveDate">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.planEffectiveDate" />
+      <definition value="The date upon which the plan goes into effect. Start date is required, end date is optional." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.assessedNeed">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.assessedNeed" />
+      <definition value="The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service. " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.strength">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.strength" />
+      <definition value="A favorable attribute of oneself, his/her support network, environment and/or elements of his/her life." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.preference">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.preference" />
+      <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.goal">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.goal" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.stepOrAction">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.stepOrAction" />
+      <definition value="A planned measurable step or action that needs to be taken to accomplish a goal identified by the person." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.planMonitorName">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.planMonitorName" />
+      <definition value="The name of the person responsible for monitoring the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.planMonitorPhoneNumber">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.planMonitorPhoneNumber" />
+      <definition value="The primary phone number (and extension when applicable) of the plan monitor." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.settingChoiceIndicator">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.settingChoiceIndicator" />
+      <definition value="Indicator that reflects the setting in which the person resides is chosen by the individual." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.settingChoiceOptions">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.settingChoiceOptions" />
+      <definition value="The alternative home and community-based settings that were considered by the individual. " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.serviceOptionsGivenIndicator">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.serviceOptionsGivenIndicator" />
+      <definition value="States whether or not the person was given a choice of services outlined in the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.serviceSelectionIndicator">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.serviceSelectionIndicator" />
+      <definition value="States whether or not the person participated in the selection of the services outlined in the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.serviceProviderOptionsGivenIndicator">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.serviceProviderOptionsGivenIndicator" />
+      <definition value="States whether or not the person was offered a choice of providers for each service." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.serviceProviderSelectionAgreementIndicator">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.serviceProviderSelectionAgreementIndicator" />
+      <definition value="States whether or not the person feels he/she made an informed choice in selecting the provider for each service." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlan.servicePlanAgreementIndicator">
+      <path value="eLTSS FHIR Logical Model.ServicePlan.servicePlanAgreementIndicator" />
+      <definition value="States whether or not the person agrees to the services outlined in the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures" />
+      <definition value="The signatures, printed names and dates for those who offered proof of identiy and intent for the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.personSignature">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.personSignature" />
+      <definition value="The depiction of the person's signature as proof of identity and intent for the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Signature" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Signature" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.personPrintedName">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.personPrintedName" />
+      <definition value="The printed or typed name of the person." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.personSignatureDate">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.personSignatureDate" />
+      <definition value="The date the person signed the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.guardianLegalRepresentativeSignature">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.guardianLegalRepresentativeSignature" />
+      <definition value="The depiction of the guardian or legally authorized representative’s signature as proof of identity and intent for the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Signature" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Signature" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.guardianLegalRepresentativePrintedName">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.guardianLegalRepresentativePrintedName" />
+      <definition value="The printed or typed name of the guardian or legally authorized representative." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.guardianLegalRepresentativeSignatureDate">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.guardianLegalRepresentativeSignatureDate" />
+      <definition value="The date the guardian or legally authorized representative signed the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.supportPlannerSignature">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.supportPlannerSignature" />
+      <definition value="The depiction of the support planner's signature as proof of identity and intent for the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Signature" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Signature" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.supportPlannerPrintedName">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.supportPlannerPrintedName" />
+      <definition value="The printed or typed name of the support planner." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.supportPlannerSignatureDate">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.supportPlannerSignatureDate" />
+      <definition value="The date the support planner signed the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.serviceProviderSignature">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.serviceProviderSignature" />
+      <definition value="The depiction of the service provider’s signature as proof they agree to the services they will provide." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Signature" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Signature" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.serviceProviderPrintedName">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.serviceProviderPrintedName" />
+      <definition value="The printed or typed name of the service provider." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServicePlanSignatures.serviceProviderSignatureDate">
+      <path value="eLTSS FHIR Logical Model.ServicePlanSignatures.serviceProviderSignatureDate" />
+      <definition value="The date the service provider signed the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Risk">
+      <path value="eLTSS FHIR Logical Model.Risk" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Risk.identifiedRisk">
+      <path value="eLTSS FHIR Logical Model.Risk.identifiedRisk" />
+      <definition value="An aspect of a person’s life, behavior, environmental exposure, personal characteristic, or barrier that increases the likelihood of disease, condition, injury to self or others, or interaction with the criminal justice system." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Risk.riskManagementPlan">
+      <path value="eLTSS FHIR Logical Model.Risk.riskManagementPlan" />
+      <definition value="Description of planned activities to minimize identified risks that endanger the person’s health and safety. This can be included as free text or attachment." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service">
+      <path value="eLTSS FHIR Logical Model.Service" />
+      <definition value="The paid and/or non-paid service provided to a person." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.name">
+      <path value="eLTSS FHIR Logical Model.Service.name" />
+      <definition value="Identifies the paid and/or non-paid service provided to a person. Include the code and display name plus any modifiers when a coding system (e.g., Healthcare Common Procedure Coding System (HCPCS), Home Health Revenue Codes) is used." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.selfDirectedServiceIndicator">
+      <path value="eLTSS FHIR Logical Model.Service.selfDirectedServiceIndicator" />
+      <definition value="Indicates whether the individual chose to self-direct the service." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.startDate">
+      <path value="eLTSS FHIR Logical Model.Service.startDate" />
+      <definition value="The start date of the service being provided." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.endDate">
+      <path value="eLTSS FHIR Logical Model.Service.endDate" />
+      <definition value="The end date of the service being provided." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.deliveryAddress">
+      <path value="eLTSS FHIR Logical Model.Service.deliveryAddress" />
+      <definition value="The address where service delivery will take place if service will not be provided at the person's address." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.comment">
+      <path value="eLTSS FHIR Logical Model.Service.comment" />
+      <definition value="Additional information related to the service being provided. This field could capture additional information of the frequency of the service, how the person wants the service delivered and only used when the comment provides additional detail of the service not already handled by another element." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.fundingSource">
+      <path value="eLTSS FHIR Logical Model.Service.fundingSource" />
+      <definition value="The source of payment for the service." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.unitQuantity">
+      <path value="eLTSS FHIR Logical Model.Service.unitQuantity" />
+      <definition value="The numerical amount of the service unit being provided for a frequency. This element is slated to be used in conjunction with Service Quantity Interval and Unit of Service Type elements to form a full description of how often a service is provided. For example, a service being provided 7 units per week, the Service Unit Quantity = 7. For a service being provided 8 hours a day, the Service Unit Value = 8" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.unitOfServiceType">
+      <path value="eLTSS FHIR Logical Model.Service.unitOfServiceType" />
+      <definition value="A named quantity in terms of which services are measured or specified, used as a standard measurement of like services. Values include: minute(s), 8 hour(s), quarter hour(s), hour(s), half day(s), full day(s), day(s), week(s), month(s), dollar(s), meal(s), mile(s), visit(s)/session(s), installation(s), none, other (free text). This element is slated to be used in conjunction with Service Unit Quantity interval and Service Unit Quantity elements to form a full description of how often a service is provided. For example, a service being provided 7 units per week, the Unit of Service Type = units. For a service being provided 8 hours a day, the Unit of Service Type = hours." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.unitQuantityInterval">
+      <path value="eLTSS FHIR Logical Model.Service.unitQuantityInterval" />
+      <definition value="A period of time corresponding to the quantity of service(s) indicated. Values include: per day, per week, per month, per year, one time only, other (free text). This element is slated to be used in conjunction with Unit of Service Type and Service Unit Quantity elements to form a full description of how often a service is provided. For example, a service being provided 7 units per week, the Service Unit Quantity Interval = per week;. For a service being provided 8 hours a day, the Service Unit Quantity Interval = per day." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.ratePerUnit">
+      <path value="eLTSS FHIR Logical Model.Service.ratePerUnit" />
+      <definition value="The rate of one unit for a service." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Money" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Money" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.Service.totalCost">
+      <path value="eLTSS FHIR Logical Model.Service.totalCost" />
+      <definition value="The total cost of a service for the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Money" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Money" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.SupportPlanner">
+      <path value="eLTSS FHIR Logical Model.SupportPlanner" />
+      <definition value="The person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.SupportPlanner.name">
+      <path value="eLTSS FHIR Logical Model.SupportPlanner.name" />
+      <definition value="The name of the person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.SupportPlanner.phoneNumber">
+      <path value="eLTSS FHIR Logical Model.SupportPlanner.phoneNumber" />
+      <definition value="The primary phone number (and extension when applicable) of the support planner." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServiceProvider">
+      <path value="eLTSS FHIR Logical Model.ServiceProvider" />
+      <definition value="The entity or individual providing the service." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServiceProvider.name">
+      <path value="eLTSS FHIR Logical Model.ServiceProvider.name" />
+      <definition value="The name of the entity or individual providing the service. For paid services use the organization/agency name, for non-paid services use the first and last name of the individual providing the service." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServiceProvider.phoneNumber">
+      <path value="eLTSS FHIR Logical Model.ServiceProvider.phoneNumber" />
+      <definition value="The primary phone number (and extension when applicable) of the service provider." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="eLTSS FHIR Logical Model.ServiceProvider.nonPaidRelationship">
+      <path value="eLTSS FHIR Logical Model.ServiceProvider.nonPaidRelationship" />
+      <definition value="The relationship (e.g., spouse, neighbor, guardian, daughter) of the individual providing a non-paid service or support to the person." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>
