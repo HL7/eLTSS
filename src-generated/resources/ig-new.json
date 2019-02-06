@@ -68,7 +68,7 @@
         "generation" : "html",
         "page" : [{
           "nameUrl" : "background.html",
-          "title" : "Genomics Background",
+          "title" : "eLTSS Background",
           "generation" : "html"
         },
         {
@@ -99,6 +99,11 @@
         {
           "nameUrl" : "patient-eltss.html",
           "title" : "Patient",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "extension-servicerequest-eltss.html",
+          "title" : "ServiceRequest",
           "generation" : "generated"
         }]
       },

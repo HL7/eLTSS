@@ -60,7 +60,7 @@
         <generation value="html"/>
         <page>
           <nameUrl value="background.html"/>
-          <title value="Genomics Background"/>
+          <title value="eLTSS Background"/>
           <generation value="html"/>
         </page>
         <page>
@@ -91,6 +91,11 @@
         <page>
           <nameUrl value="patient-eltss.html"/>
           <title value="Patient"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="extension-servicerequest-eltss.html"/>
+          <title value="ServiceRequest"/>
           <generation value="generated"/>
         </page>
       </page>

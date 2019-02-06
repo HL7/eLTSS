@@ -28,11 +28,9 @@
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="patient-profile-spreadsheet.xml"/>
     </extension>
-	<!--
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="servicerequest-profile-spreadsheet.xml"/>
     </extension>
--->
     <grouping id="general">
       <name value="General Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
@@ -95,7 +93,7 @@
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
-	<!--
+    <!-- Extensions -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
@@ -106,9 +104,33 @@
       <name value="ServiceRequest"/>
       <description value="Defines the overall ServiceRequest constraints for eLTSS."/>
       <exampleBoolean value="false"/>
+      <groupingId value="extensions"/>
+    </resource>
+    <!-- Logical Model -->
+	<!--
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/eltss-logical-model"/>
+      </reference>
+      <name value="LogicalModel"/>
+      <description value="Defines the Logocal Model for eLTSS."/>
+      <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
-	-->
+-->
+    <!-- Examples -->
+<!-- TODO figure out why this example makes the IG build fail with a NullPointerException
+    <resource>
+      <reference>
+        <reference value="Bundle/careplan1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/careplan1"/>
+      <groupingId value="examples"/>
+    </resource>
+-->
+
 <!-- document structure starts here -->
     <page>
       <nameUrl value="toc.html"/>
@@ -120,7 +142,7 @@
         <generation value="html"/>
         <page>
           <nameUrl value="background.html"/>
-          <title value="Genomics Background"/>
+          <title value="eLTSS Background"/>
           <generation value="html"/>
         </page>
         <page>

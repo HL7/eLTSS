@@ -4,8 +4,9 @@
     Updated :  01/23/2019
     FHIR version : 4.0
 -->
-<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/fhir/schema/fhir-all.xsd">
-  <type value="transaction"/>
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
+  <id value="careplan1"/>
+  <type value="collection"/>
   <!--  eLTSS Service Plan / FHIR Care Plan  -->
   <entry>
     <resource>
@@ -52,7 +53,7 @@
           <reference value="Observation/strength1"/>
         </supportingInfo>
         <supportingInfo>
-          <reference value="Questionnaire/questionnaire1"/>
+          <reference value="QuestionnaireResponse/questionnaireresponse1"/>
         </supportingInfo>
         <supportingInfo>
           <reference value="Contract/contract1"/>
@@ -103,11 +104,7 @@
         </activity>
       </CarePlan>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="CarePlan"/>
-    </request>
+
   </entry>
   <!--  Support Planner (CarePlan author) -->
   <entry>
@@ -138,11 +135,7 @@
         </telecom>
       </Practitioner>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Practitioner"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -172,11 +165,7 @@
         </telecom>
       </Practitioner>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Practitioner"/>
-    </request>
+
   </entry>
   <!--     The person (Patient) who is the subject of the document. -->
   <entry>
@@ -238,7 +227,7 @@
             <!-- code value indicates daughter -->
             <coding>
               <system value="http://hl7.org/fhir/v3/RoleCode"/>
-              <code value="DAUG"/>
+              <code value="DAUC"/>
             </coding>
           </relationship>
           <name>
@@ -253,11 +242,7 @@
         </contact>
       </Patient>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Patient"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -274,11 +259,7 @@
         </careManager>
       </EpisodeOfCare>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="EpisodeOfCare"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -297,11 +278,7 @@
         </subject>
       </CarePlan>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="CarePlan"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -324,11 +301,7 @@
         </subject>
       </Goal>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Goal"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -351,11 +324,6 @@
         </subject>
       </Goal>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Goal"/>
-    </request>
   </entry>
   <entry>
     <resource>
@@ -382,11 +350,7 @@
         </subject>
       </Condition>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Condition"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -410,11 +374,6 @@
         </subject>
       </Condition>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Condition"/>
-    </request>
   </entry>
   <entry>
     <resource>
@@ -438,11 +397,7 @@
         </subject>
       </Condition>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Condition"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -466,11 +421,7 @@
         </telecom>
       </Practitioner>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Practitioner"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -493,11 +444,7 @@
         </address>
       </Organization>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Organization"/>
-    </request>
+
   </entry>
   <entry>
     <!-- This practitioner is the person signing for the transportation provider organization -->
@@ -522,11 +469,7 @@
         </telecom>
       </Practitioner>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Practitioner"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
@@ -550,17 +493,13 @@
         </address>
       </Organization>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Organization"/>
-    </request>
+  
   </entry>
   <!-- daughter, who is emergency contact and performing a non-paid service -->
   <entry>
     <resource>
       <RelatedPerson>
-        <id id="daughter1"/>
+        <id value="daughter1"/>
         <patient>
           <reference value="Patient/patient1"/>
         </patient>
@@ -569,7 +508,7 @@
           <!-- code value indicates daughter -->
           <coding>
             <system value="http://hl7.org/fhir/v3/RoleCode"/>
-            <code value="DAUG"/>
+            <code value="DAUC"/>
           </coding>
         </relationship>
         <name>
@@ -579,17 +518,13 @@
         </name>
       </RelatedPerson>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="RelatedPerson"/>
-    </request>
+
   </entry>
   <!-- person's legal guardian -->
   <entry>
     <resource>
       <RelatedPerson>
-        <id id="guardian1"/>
+        <id value="guardian1"/>
         <patient>
           <reference value="Patient/patient1"/>
         </patient>
@@ -600,17 +535,13 @@
         </name>
       </RelatedPerson>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="RelatedPerson"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <!-- Service #1 -->
       <ServiceRequest>
-        <id id="service1"/>
+        <id value="service1"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -661,17 +592,13 @@
         </locationReference>
       </ServiceRequest>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="ServiceRequest"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <!-- Service #2 -->
       <ServiceRequest>
-        <id id="service2"/>
+        <id value="service2"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -726,17 +653,13 @@
         </note>
       </ServiceRequest>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="ServiceRequest"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <!-- Service #3 -->
       <ServiceRequest>
-        <id id="service3"/>
+        <id value="service3"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -779,17 +702,13 @@
         </performer>
       </ServiceRequest>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="ServiceRequest"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <!--  [eLTSS Strength]  -->
       <Observation>
-        <id id="strength1"/>
+        <id value="strength1"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -803,17 +722,13 @@
         <valueString value="Able to manage her bills. Has strong family support."/>
       </Observation>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Observation"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <!--  [eLTSS Preference]  -->
       <Observation>
-        <id id="pref1"/>
+        <id value="pref1"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -831,16 +746,12 @@
         <valueString value="Accessing the ICWP Waiver for her current service needs, and would like to remain on ICWP and continue with her current services."/>
       </Observation>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Observation"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <RiskAssessment>
-        <id id="risk1"/>
+        <id value="risk1"/>
         <status value="final"/>
         <!-- subject is required by FHIR (starting with 3.4.0) -->
         <subject>
@@ -851,7 +762,8 @@
           <outcome>
             <coding>
               <!-- code indicates at risk for falls -->
-              <system value="2.16.840.1.113883.6.96"/>
+<!--              <system value="2.16.840.1.113883.6.96"/>   -->
+              <system value="http://snomed.info/sct"/>
               <code value="129839007"/>
             </coding>
           </outcome>
@@ -860,54 +772,44 @@
         <mitigation value="risk management plan text goes here"/>
       </RiskAssessment>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="RiskAssessment"/>
-    </request>
+
   </entry>
+  <!--
   <entry>
     <resource>
       <Questionnaire>
         <id value="questionnaire1"/>
         <status value="active"/>
-        <!-- [eLTSS Person Setting Choice Indicator]  -->
         <item>
           <linkId value="q1"/>
           <text value="Did you choose the setting in which you reside?"/>
           <type value="boolean"/>
         </item>
-        <!-- [eLTSS Person Setting Choice Options]  -->
         <item>
           <linkId value="q2"/>
           <text value="What alternative home and community-based settings were considered?"/>
           <type value="string"/>
         </item>
-        <!-- [eLTSS Service Options Given Indicator]  -->
         <item>
           <linkId value="q3"/>
           <text value="Were you given a choice of services outlined in the plan?"/>
           <type value="boolean"/>
         </item>
-        <!-- [eLTSS Service Selection Indicator]  -->
         <item>
           <linkId value="q4"/>
           <text value="Did you participate in the selection of services outlined in the plan?"/>
           <type value="boolean"/>
         </item>
-        <!-- [eLTSS Service Plan Agreement Indicator]  -->
         <item>
           <linkId value="q5"/>
           <text value="Do you agree to the services outlined in the plan?"/>
           <type value="boolean"/>
         </item>
-        <!-- [eLTSS Service Provider Options Given Indicator]  -->
         <item>
           <linkId value="q6"/>
           <text value="Were you offerred a choice of providers for each service?"/>
           <type value="boolean"/>
         </item>
-        <!-- [eLTSS Service Provider Selection Agreement Indicator]  -->
         <item>
           <linkId value="q7"/>
           <text value="Do you feel you made an informed choice in selecting the provider for each service?"/>
@@ -915,17 +817,15 @@
         </item>
       </Questionnaire>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Questionnaire"/>
-    </request>
   </entry>
+-->
   <entry>
     <resource>
       <QuestionnaireResponse>
         <id value="questionnaireresponse1"/>
+		<!--
         <questionnaire value="Questionnaire/questionnaire1"/>
+		-->
         <status value="completed"/>
         <!-- [eLTSS Person Setting Choice Indicator]  -->
         <item>
@@ -978,20 +878,16 @@
         </item>
       </QuestionnaireResponse>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="QuestionnaireResponse"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <Contract>
-        <id id="contract1"/>
+        <id value="contract1"/>
         <!-- [eLTSS Person Signature], [eLTSS Person Printed Name], [eLTSS Person Signature Date]  -->
         <signer>
           <type>
-            <system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
             <code value="PAT"/>
           </type>
           <party>
@@ -1014,7 +910,7 @@
         <!-- [eLTSS Guardian/Legal Representative Signature Date]  -->
         <signer>
           <type>
-            <system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
             <code value="GUARD"/>
           </type>
           <party>
@@ -1036,7 +932,7 @@
         <!-- [eLTSS Support Planner Signature], [eLTSS Support Planner Printed Name], [eLTSS Support Planner Signature Date]  -->
         <signer>
           <type>
-            <system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
             <code value="AUT"/>
           </type>
           <party>
@@ -1059,7 +955,7 @@
         <!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
         <signer>
           <type>
-            <system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
             <code value="HPROV"/>
           </type>
           <party>
@@ -1082,7 +978,7 @@
         <!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
         <signer>
           <type>
-            <system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
             <code value="HPROV"/>
           </type>
           <party>
@@ -1106,7 +1002,7 @@
         <!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
         <signer>
           <type>
-            <system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
             <code value="HPROV"/>
           </type>
           <party>
@@ -1127,52 +1023,40 @@
         </signer>
       </Contract>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Contract"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <Location>
-        <id id="location1"/>
+        <id value="location1"/>
         <!-- [eLTSS Service Delivery Address]  -->
         <address>
           <text value="2222 Peachtree Street, Atlanta GA, 30318"/>
         </address>
       </Location>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Location"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <Coverage>
-        <id id="coverage1"/>
+        <id value="coverage1"/>
         <!-- Links to the eLTSS Service Funding Source  -->
         <status value="active"/>
         <beneficiary>
-          <reference value="Patient/Patient001"/>
+          <reference value="Patient/Patient1"/>
         </beneficiary>
         <payor>
           <reference value="Organization/funding1"/>
         </payor>
       </Coverage>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Coverage"/>
-    </request>
+
   </entry>
   <entry>
     <resource>
       <Claim>
-        <id id="claim1"/>
+        <id value="claim1"/>
         <status value="active"/>
         <type>
           <coding>
@@ -1182,11 +1066,11 @@
         </type>
         <use value="claim"/>
         <patient>
-          <reference value="Patient/Patient001"/>
+          <reference value="Patient/Patient1"/>
         </patient>
         <created value="2019-01-01"/>
         <provider>
-          <reference value="Organization/f001"/>
+          <reference value="Organization/funding1"/>
         </provider>
         <priority>
           <coding>
@@ -1198,7 +1082,7 @@
           <sequence value="1"/>
           <focal value="true"/>
           <coverage>
-            <reference value="Coverage/9876B1"/>
+            <reference value="Coverage/coverage1"/>
           </coverage>
         </insurance>
         <item>
@@ -1220,10 +1104,5 @@
         </item>
       </Claim>
     </resource>
-    <!-- Action to create this resource in a FHIR server -->
-    <request>
-      <method value="POST"/>
-      <url value="Claim"/>
-    </request>
-  </entry>
+   </entry>
 </Bundle>
