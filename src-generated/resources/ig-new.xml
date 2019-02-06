@@ -22,7 +22,7 @@
   </extension>
   <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss"/>
   <version value="0.1"/>
-  <name value="eltss"/>
+  <name value="eLTSS"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
@@ -64,8 +64,13 @@
           <generation value="html"/>
         </page>
         <page>
-          <nameUrl value="general.html"/>
-          <title value="General eLTSS flow"/>
+          <nameUrl value="usecases.html"/>
+          <title value="HL7 Domain Analysis Use Cases"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="mapping.html"/>
+          <title value="General eLTSS mapping to FHIR"/>
           <generation value="html"/>
         </page>
       </page>
@@ -98,11 +103,6 @@
           <title value="ServiceRequest"/>
           <generation value="generated"/>
         </page>
-      </page>
-      <page>
-        <nameUrl value="usecases.html"/>
-        <title value="HL7 Domain Analysis Use Cases"/>
-        <generation value="html"/>
       </page>
     </page>
     <parameter>

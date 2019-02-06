@@ -27,7 +27,7 @@
   }],
   "url" : "http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss",
   "version" : "0.1",
-  "name" : "eltss",
+  "name" : "eLTSS",
   "status" : "draft",
   "experimental" : false,
   "publisher" : "HL7 International Community-Based Care and Privacy Work Group",
@@ -72,8 +72,13 @@
           "generation" : "html"
         },
         {
-          "nameUrl" : "general.html",
-          "title" : "General eLTSS flow",
+          "nameUrl" : "usecases.html",
+          "title" : "HL7 Domain Analysis Use Cases",
+          "generation" : "html"
+        },
+        {
+          "nameUrl" : "mapping.html",
+          "title" : "General eLTSS mapping to FHIR",
           "generation" : "html"
         }]
       },
@@ -106,11 +111,6 @@
           "title" : "ServiceRequest",
           "generation" : "generated"
         }]
-      },
-      {
-        "nameUrl" : "usecases.html",
-        "title" : "HL7 Domain Analysis Use Cases",
-        "generation" : "html"
       }]
     },
     "parameter" : [{
