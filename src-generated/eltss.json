@@ -98,11 +98,9 @@
   "canonicalBase": "http://hl7.org/fhir/uv/eLTSS",
   "dependencyList": [
     {
-      "name" : "core-r4",
+      "name" : "corer4",
       "version" : "current",
-      "location" : "http://hl7.org/fhir/us/core-r4",
-      "source" : "../../core-r42/website"
-    }
+      "location" : "http://hl7.org/fhir/us/core-r4"}
   ],
   "source": "eltss.xml",
   "spreadsheets": [

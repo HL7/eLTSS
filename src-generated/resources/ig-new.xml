@@ -3,22 +3,22 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="eltss"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\resources"/>
+    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src-generated\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\resources"/>
+    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\vocabulary"/>
+    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\vocabulary"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\examples"/>
+    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\images"/>
+    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\images"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\pages"/>
+    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src-generated\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss"/>
   <version value="0.1"/>
@@ -39,7 +39,7 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>
-  <dependsOn id="core-r4">
+  <dependsOn id="corer4">
     <uri value="http://hl7.org/fhir/us/core-r4"/>
     <packageId value="hl7.fhir.us.core.r4"/>
     <version value="current"/>
