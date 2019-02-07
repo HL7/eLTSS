@@ -49,17 +49,17 @@
     <!-- Extensions -->
     
     <!-- Logical Model -->
-<!-- TODO figure out why this logical model makes IG build fail 	 
+<!-- TODO figure out why this logical model makes IG build fail 	--> 
     <resource>
       <reference>
-        <reference value="StructureDefinition/eltss-logical-model"/>
+        <reference value="StructureDefinition/eLTSS-Person-model"/>
       </reference>
       <name value="LogicalModel"/>
       <description value="Defines the Logocal Model for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
--->
+
     <!-- Examples -->
 <!-- TODO figure out why this example makes the IG build fail with a NullPointerException 
     <resource>
@@ -125,6 +125,11 @@
 <page>
 <nameUrl value="extension-servicerequest-eltss.html"/>
 <ns4:title xmlns:ns4="http://hl7.org/fhir" value="ServiceRequest"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="eLTSS-Person-model.html"/>
+<ns5:title xmlns:ns5="http://hl7.org/fhir" value="LogicalModel"/>
 <generation value="generated"/>
 </page>
 </page>

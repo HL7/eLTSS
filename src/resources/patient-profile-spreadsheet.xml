@@ -1095,7 +1095,7 @@
     <Cell ss:StyleID="s96"/>
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>
-    <Cell ss:StyleID="s96"><Data ss:Type="String">Resource</Data></Cell>
+    <Cell ss:StyleID="s96"><Data ss:Type="String">{http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient}</Data></Cell>
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>

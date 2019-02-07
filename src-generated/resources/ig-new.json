@@ -3,27 +3,27 @@
   "id" : "eltss",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\lloyd\\Documents\\SVN\\eLTSS\\src-generated\\resources"
+    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src-generated\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\lloyd\\Documents\\SVN\\eLTSS\\src\\resources"
+    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\lloyd\\Documents\\SVN\\eLTSS\\src\\vocabulary"
+    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\vocabulary"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\lloyd\\Documents\\SVN\\eLTSS\\src\\examples"
+    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\lloyd\\Documents\\SVN\\eLTSS\\src\\images"
+    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\images"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\lloyd\\Documents\\SVN\\eLTSS\\src-generated\\pages"
+    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src-generated\\pages"
   }],
   "url" : "http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss",
   "version" : "0.1",
@@ -65,6 +65,15 @@
       "id" : "examples",
       "name" : "Example(s)",
       "description" : "Example(s) showing the use of the eLTSS profiles"
+    }],
+    "resource" : [{
+      "reference" : {
+        "reference" : "StructureDefinition/eLTSS-Person-model"
+      },
+      "name" : "LogicalModel",
+      "description" : "Defines the Logocal Model for eLTSS.",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -117,6 +126,11 @@
         {
           "nameUrl" : "extension-servicerequest-eltss.html",
           "title" : "ServiceRequest",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eLTSS-Person-model.html",
+          "title" : "LogicalModel",
           "generation" : "generated"
         }]
       }]

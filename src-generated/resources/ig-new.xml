@@ -3,22 +3,22 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="eltss"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src-generated\resources"/>
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\resources"/>
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\vocabulary"/>
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\vocabulary"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\examples"/>
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src\images"/>
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\images"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\lloyd\Documents\SVN\eLTSS\src-generated\pages"/>
+    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss"/>
   <version value="0.1"/>
@@ -57,6 +57,15 @@
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the eLTSS profiles"/>
     </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/eLTSS-Person-model"/>
+      </reference>
+      <name value="LogicalModel"/>
+      <description value="Defines the Logocal Model for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -108,6 +117,11 @@
         <page>
           <nameUrl value="extension-servicerequest-eltss.html"/>
           <title value="ServiceRequest"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="eLTSS-Person-model.html"/>
+          <title value="LogicalModel"/>
           <generation value="generated"/>
         </page>
       </page>

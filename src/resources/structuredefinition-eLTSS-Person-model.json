@@ -1,0 +1,444 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "eLTSS-Person-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>eLTSS Person Logical Model</b></p>\n\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSS-Person-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/eLTSS",
+      "value": "eLTSS.Person"
+    }
+  ],
+  "name": "eLTSSPersonModel",
+  "title": "eLTSS Person Logical Model",
+  "status": "draft",
+  "date": "2019-02-07",
+  "publisher": "The HL7 Community Based Care and Privacy Workgroup",
+  "description": "Person data included in the eLTSS Dataset.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "eLTSS-Person-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "eLTSS-Person-model",
+        "path": "eLTSS-Person-model",
+        "definition": "eLTSS Dataset Person data.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "eLTSS-Person-model.identifier",
+        "path": "eLTSS-Person-model.identifier",
+        "short": "An identifier for the person.",
+        "definition": "An identifier for the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.identifier",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.name",
+        "path": "eLTSS-Person-model.name",
+        "short": "The name of the person.",
+        "definition": "The name of the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.name",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.dateOfBirth",
+        "path": "eLTSS-Person-model.dateOfBirth",
+        "short": "The birth date of the person.",
+        "definition": "The birth date of the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.dateOfBirth",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.phoneNumber",
+        "path": "eLTSS-Person-model.phoneNumber",
+        "short": "The primary phone number of the person whom the plan is for.",
+        "definition": "The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.phoneNumber",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.address",
+        "path": "eLTSS-Person-model.address",
+        "short": "The address of the person.",
+        "definition": "The address of the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.address",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.emergencyContact",
+        "path": "eLTSS-Person-model.emergencyContact",
+        "short": "The individual or entity identified to contact in case of emergency.",
+        "definition": "The individual or entity identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      
+       {
+        "id": "eLTSS-Person-model.emergencyContact.name",
+        "path": "eLTSS-Person-model.emergencyContact.name",
+        "short": "The name of the individual or entity identified to contact in case of emergency.",
+        "definition": "The name of the individual or entity identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact.name",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "eLTSS-Person-model.emergencyContact.relationship",
+        "path": "eLTSS-Person-model.emergencyContact.relationship",
+        "short": "The relationship of the individual identified to contact in case of emergency.",
+        "definition": "The relationship (e.g. spouse, neighbor, guardian, daughter) of the individual identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact.relationship",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+       {
+        "id": "eLTSS-Person-model.emergencyContact.phoneNumber",
+        "path": "eLTSS-Person-model.emergencyContact.phoneNumber",
+        "short": "The primary phone number of the individual identified to contact in case of emergency.",
+        "definition": "The primary phone number (and extension when applicable) of the individual identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact.phoneNumber",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+  "element": [
+      {
+        "id": "eLTSS-Person-model",
+        "path": "eLTSS-Person-model",
+        "definition": "eLTSS Dataset Person data.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "eLTSS-Person-model.identifier",
+        "path": "eLTSS-Person-model.identifier",
+        "short": "An identifier for the person.",
+        "definition": "An identifier for the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.identifier",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.name",
+        "path": "eLTSS-Person-model.name",
+        "short": "The name of the person.",
+        "definition": "The name of the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.name",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.dateOfBirth",
+        "path": "eLTSS-Person-model.dateOfBirth",
+        "short": "The birth date of the person.",
+        "definition": "The birth date of the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.dateOfBirth",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.phoneNumber",
+        "path": "eLTSS-Person-model.phoneNumber",
+        "short": "The primary phone number of the person whom the plan is for.",
+        "definition": "The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.phoneNumber",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.address",
+        "path": "eLTSS-Person-model.address",
+        "short": "The address of the person.",
+        "definition": "The address of the person.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.address",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "eLTSS-Person-model.emergencyContact",
+        "path": "eLTSS-Person-model.emergencyContact",
+        "short": "The individual or entity identified to contact in case of emergency.",
+        "definition": "The individual or entity identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      
+       {
+        "id": "eLTSS-Person-model.emergencyContact.name",
+        "path": "eLTSS-Person-model.emergencyContact.name",
+        "short": "The name of the individual or entity identified to contact in case of emergency.",
+        "definition": "The name of the individual or entity identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact.name",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "eLTSS-Person-model.emergencyContact.relationship",
+        "path": "eLTSS-Person-model.emergencyContact.relationship",
+        "short": "The relationship of the individual identified to contact in case of emergency.",
+        "definition": "The relationship (e.g. spouse, neighbor, guardian, daughter) of the individual identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact.relationship",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+       {
+        "id": "eLTSS-Person-model.emergencyContact.phoneNumber",
+        "path": "eLTSS-Person-model.emergencyContact.phoneNumber",
+        "short": "The primary phone number of the individual identified to contact in case of emergency.",
+        "definition": "The primary phone number (and extension when applicable) of the individual identified to contact in case of emergency.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "eLTSS-Person-model.emergencyContact.phoneNumber",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

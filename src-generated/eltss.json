@@ -135,6 +135,8 @@
       "profile-xml": "extension-{{[id]}}.profile.xml.html",
       "profile-json": "extension-{{[id]}}.profile.json.html",
       "profile-ttl": "extension-{{[id]}}.profile.ttl.html"
+    },
+    "StructureDefinition/eLTSS-Person-model":{
     }
   }
 }

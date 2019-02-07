@@ -115,17 +115,17 @@
       <groupingId value="extensions"/>
     </resource>
     <!-- Logical Model -->
-<!-- TODO figure out why this logical model makes IG build fail 	 
+<!-- TODO figure out why this logical model makes IG build fail 	--> 
     <resource>
       <reference>
-        <reference value="StructureDefinition/eltss-logical-model"/>
+        <reference value="StructureDefinition/eLTSS-Person-model"/>
       </reference>
       <name value="LogicalModel"/>
       <description value="Defines the Logocal Model for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
--->
+
     <!-- Examples -->
 <!-- TODO figure out why this example makes the IG build fail with a NullPointerException 
     <resource>

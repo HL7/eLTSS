@@ -16,8 +16,9 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>12285</WindowHeight>
-  <WindowWidth>28800</WindowWidth>
+  <WindowIconic/>
+  <WindowHeight>8790</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
@@ -1068,7 +1069,7 @@
     <Cell ss:StyleID="s96"/>
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>
-    <Cell ss:StyleID="s96"><Data ss:Type="String">Resource</Data></Cell>
+    <Cell ss:StyleID="s96"><Data ss:Type="String">{http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-careplan}</Data></Cell>
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>
@@ -1290,8 +1291,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>13</ActiveRow>
-     <ActiveCol>7</ActiveCol>
+     <ActiveRow>0</ActiveRow>
+     <ActiveCol>10</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

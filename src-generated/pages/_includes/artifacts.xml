@@ -37,6 +37,13 @@
 </td>
 <td>Defines the overall Patient constraints for eLTSS.</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="eLTSS-Person-model.html">
+                        •  LogicalModel</a>
+</td>
+<td>Defines the Logocal Model for eLTSS.</td>
+</tr>
 </tbody>
 </table>
 </p>
