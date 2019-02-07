@@ -74,6 +74,15 @@
       "description" : "Defines the Logocal Model for eLTSS.",
       "exampleBoolean" : false,
       "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/practitioner-planner1"
+      },
+      "name" : "Example - eLTSS CarePlan planner 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "exampleCanonical" : "StructureDefinition/Practitioner",
+      "groupingId" : "examples"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -131,6 +140,11 @@
         {
           "nameUrl" : "eLTSS-Person-model.html",
           "title" : "LogicalModel",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "practitioner-planner1.html",
+          "title" : "Example - eLTSS CarePlan planner 1",
           "generation" : "generated"
         }]
       }]

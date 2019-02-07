@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Original : 5/22/2018
+    Updated :  01/23/2019
+    FHIR version : 4.0
+-->
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
+  <id value="practitioner-planner1"/>
+  <type value="collection"/>
+
+  <!--  Support Planner (CarePlan author) -->
+  <entry>
+  <fullUrl value="http://hl7.org/fhir/uv/eLTSS/Practitioner/planner1"/>
+    <resource>
+      <Practitioner>
+        <id value="planner1"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>Support Planner / Phone:</b> Mark Planner / (678) 555 1221</p>
+          </div>
+        </text>
+        <!-- identifier is required by US Core -->
+        <identifier>
+          <system value="http://www.acme.org/practitioners"/>
+          <value value="23"/>
+        </identifier>
+        <!-- [eLTSS Support Planner Name] -->
+        <name>
+          <text value="Mark Planner"/>
+          <family value="Planner"/>
+          <given value="Mark"/>
+        </name>
+        <!-- [eLTSS Support Planner Phone Number] -->
+        <telecom>
+          <system value="phone"/>
+          <value value="(678) 555 1221"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+
+  </entry>
+</Bundle>

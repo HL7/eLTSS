@@ -137,6 +137,8 @@
       "profile-ttl": "extension-{{[id]}}.profile.ttl.html"
     },
     "StructureDefinition/eLTSS-Person-model":{
+    },
+    "Bundle/practitioner-planner1":{
     }
   }
 }

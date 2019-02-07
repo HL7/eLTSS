@@ -115,7 +115,7 @@
       <groupingId value="extensions"/>
     </resource>
     <!-- Logical Model -->
-<!-- TODO figure out why this logical model makes IG build fail 	--> 
+
     <resource>
       <reference>
         <reference value="StructureDefinition/eLTSS-Person-model"/>
@@ -127,7 +127,17 @@
     </resource>
 
     <!-- Examples -->
-<!-- TODO figure out why this example makes the IG build fail with a NullPointerException 
+<!-- TODO figure out why this example makes the IG build fail with a NullPointerException -->
+    <resource>
+      <reference>
+        <reference value="Bundle/practitioner-planner1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan planner 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/Practitioner"/>
+      <groupingId value="examples"/>
+    </resource>
+<!-- full careplan1 
     <resource>
       <reference>
         <reference value="Bundle/careplan1"/>

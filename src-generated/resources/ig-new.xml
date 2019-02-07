@@ -66,6 +66,15 @@
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/practitioner-planner1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan planner 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/Practitioner"/>
+      <groupingId value="examples"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -122,6 +131,11 @@
         <page>
           <nameUrl value="eLTSS-Person-model.html"/>
           <title value="LogicalModel"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="practitioner-planner1.html"/>
+          <title value="Example - eLTSS CarePlan planner 1"/>
           <generation value="generated"/>
         </page>
       </page>
