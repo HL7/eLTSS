@@ -23,20 +23,27 @@
   <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss"/>
   <version value="0.1"/>
   <name value="eLTSS"/>
+  <title value="Electronic Long-Term Services and Supports (eLTSS)"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
   <description value="Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data elements"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.uv.eltss"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>
+  <dependsOn id="core-r4">
+    <uri value="http://hl7.org/fhir/us/core-r4"/>
+    <packageId value="hl7.fhir.us.core.r4"/>
+    <version value="current"/>
+  </dependsOn>
   <definition>
     <grouping id="general">
       <name value="General Profiles"/>

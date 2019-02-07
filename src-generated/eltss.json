@@ -93,9 +93,17 @@
       "format": "valueset-{{[id]}}.{{[fmt]}}.html"
     }
   },
-  "sct-edition" : "http://snomed.info/sct/900000000000207008",
+  "sct-edition" : "http://snomed.info/sct/731000124108",
   "no-inactive-codes" : "true",
   "canonicalBase": "http://hl7.org/fhir/uv/eLTSS",
+  "dependencyList": [
+    {
+      "name" : "core-r4",
+      "version" : "current",
+      "location" : "http://hl7.org/fhir/us/core-r4",
+      "source" : "../../core-r42/website"
+    }
+  ],
   "source": "eltss.xml",
   "spreadsheets": [
     "careplan-profile-spreadsheet.xml",
