@@ -22,7 +22,7 @@
   </extension>
   <url value="http://hl7.org/fhir/us/ImplementationGuide/eltss"/>
   <version value="0.1"/>
-  <name value="eLTSS"/>
+  <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS)"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -101,6 +101,24 @@
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/claim-claim1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan claim 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/claim-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/contract-contract1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan contract 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/contract-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -177,6 +195,16 @@
         <page>
           <nameUrl value="patient-patient1.html"/>
           <title value="Example - eLTSS CarePlan patient 1"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="claim-claim1.html"/>
+          <title value="Example - eLTSS CarePlan claim 1"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="contract-contract1.html"/>
+          <title value="Example - eLTSS CarePlan contract 1"/>
           <generation value="generated"/>
         </page>
       </page>

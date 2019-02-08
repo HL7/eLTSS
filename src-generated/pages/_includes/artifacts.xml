@@ -115,6 +115,20 @@
 </td>
 <td>Test instance showing data from the eLTSS spec</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="claim-claim1.html">
+                        •  Example - eLTSS CarePlan claim 1</a>
+</td>
+<td>Test instance showing data from the eLTSS spec</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="contract-contract1.html">
+                        •  Example - eLTSS CarePlan contract 1</a>
+</td>
+<td>Test instance showing data from the eLTSS spec</td>
+</tr>
 </tbody>
 </table>
 </p>

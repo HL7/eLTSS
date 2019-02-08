@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="eltss"/>
   <url value="http://hl7.org/fhir/us/ImplementationGuide/eltss"/>
-  <name value="eLTSS"/>
+  <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS)"/>  
   <status value="draft"/>
   <experimental value="false"/>
@@ -178,7 +178,7 @@
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
-<!--
+
     <resource>
       <reference>
         <reference value="Bundle/claim-claim1"/>
@@ -188,8 +188,6 @@
       <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
     </resource>
--->
-<!--	
     <resource>
       <reference>
         <reference value="Bundle/contract-contract1"/>
@@ -199,7 +197,6 @@
       <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
     </resource>
--->
 <!-- full careplan1 
     <resource>
       <reference>

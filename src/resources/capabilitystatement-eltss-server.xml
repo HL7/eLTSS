@@ -7,9 +7,9 @@
       <p>eLTSS IG Server.</p>
 </div>
 </text>
-<url value="http://hl7.org/fhir/uv/eLTSS/CapabilityStatement/eltss-server"/>
+<url value="http://hl7.org/fhir/us/CapabilityStatement/eltss-server"/>
 
-<name value="eLTSS_Server"/>
+<name value="ELTSS_Server"/>
 <title value="eLTSS Server"/>
 <status value="active"/>
 <date value="2019-02-08"/>
@@ -30,7 +30,7 @@
   <mode value="server"/>
   <resource>
     <type value="Patient"/>
-    <supportedProfile value="http://hl7.org/fhir/uv/eLTSS/StructureDefinition/careplan-eltss"/>
+    <supportedProfile value="http://hl7.org/fhir/us/StructureDefinition/careplan-eltss"/>
     <interaction>
       <code value="search-type"/>
     </interaction>

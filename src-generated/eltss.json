@@ -146,6 +146,10 @@
     "CapabilityStatement/eltss-server":{
     },
     "Bundle/patient-patient1":{
+    },
+    "Bundle/claim-claim1":{
+    },
+    "Bundle/contract-contract1":{
     }
   }
 }

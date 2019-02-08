@@ -7,9 +7,9 @@
       <p>eLTSS IG Client.</p>
 </div>
 </text>
-<url value="http://hl7.org/fhir/us/eLTSS/CapabilityStatement/eltss-client"/>
+<url value="http://hl7.org/fhir/us/CapabilityStatement/eltss-client"/>
 
-<name value="eLTSS_Client"/>
+<name value="ELTSS_Client"/>
 <title value="eLTSS Client"/>
 <status value="active"/>
 <date value="2019-02-08"/>
@@ -30,7 +30,7 @@
   <mode value="client"/>
   <resource>
     <type value="Patient"/>
-    <supportedProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/careplan-eltss"/>
+    <supportedProfile value="http://hl7.org/fhir/us/StructureDefinition/careplan-eltss"/>
     <interaction>
       <code value="search-type"/>
     </interaction>

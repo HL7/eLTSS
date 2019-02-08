@@ -27,6 +27,10 @@
         <!-- [eLTSS Person Identifier] & [eLTSS Person Identifier Type]  -->
         <identifier>
           <type>
+		  <coding>
+		     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+			 <code value="MR"/>
+		  </coding>
             <text value="MRN"/>
           </type>
           <value value="123456ABC"/>
@@ -58,14 +62,14 @@
           <relationship>
             <!-- code value indicates emergency contact -->
             <coding>
-              <system value="http://hl7.org/fhir/v2/0131"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
               <code value="C"/>
             </coding>
           </relationship>
           <relationship>
             <!-- code value indicates daughter -->
             <coding>
-              <system value="http://hl7.org/fhir/v3/RoleCode"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
               <code value="DAUC"/>
             </coding>
           </relationship>
