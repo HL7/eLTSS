@@ -103,15 +103,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/claim-claim1"/>
-      </reference>
-      <name value="Example - eLTSS CarePlan claim 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/claim-eltss"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Bundle/contract-contract1"/>
       </reference>
       <name value="Example - eLTSS CarePlan contract 1"/>
@@ -195,11 +186,6 @@
         <page>
           <nameUrl value="patient-patient1.html"/>
           <title value="Example - eLTSS CarePlan patient 1"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="claim-claim1.html"/>
-          <title value="Example - eLTSS CarePlan claim 1"/>
           <generation value="generated"/>
         </page>
         <page>

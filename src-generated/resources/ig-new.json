@@ -114,15 +114,6 @@
     },
     {
       "reference" : {
-        "reference" : "Bundle/claim-claim1"
-      },
-      "name" : "Example - eLTSS CarePlan claim 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/claim-eltss",
-      "groupingId" : "examples"
-    },
-    {
-      "reference" : {
         "reference" : "Bundle/contract-contract1"
       },
       "name" : "Example - eLTSS CarePlan contract 1",
@@ -206,11 +197,6 @@
         {
           "nameUrl" : "patient-patient1.html",
           "title" : "Example - eLTSS CarePlan patient 1",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "claim-claim1.html",
-          "title" : "Example - eLTSS CarePlan claim 1",
           "generation" : "generated"
         },
         {

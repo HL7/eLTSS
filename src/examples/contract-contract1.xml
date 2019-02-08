@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" >
   <id value="contract-contract1"/>
   <type value="collection"/>
 
@@ -69,6 +69,12 @@
     <resource>
       <Practitioner>
         <id value="provider1"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>Provider:</b> Lisa Performer </p>
+          </div>
+        </text>
         <!-- identifier is required by US Core -->
         <identifier>
           <system value="http://www.acme.org/practitioners"/>
@@ -94,6 +100,12 @@
       <Organization>
         <id value="provider2"/>
         <!-- identifier is required by US Core -->
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>Organization:</b> The Transporter</p>
+          </div>
+        </text>
         <identifier>
           <value value="24680"/>
         </identifier>
@@ -118,6 +130,12 @@
       <Practitioner>
         <id value="provider3"/>
         <!-- identifier is required by US Core -->
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>Practitioner:</b> Bill Driver</p>
+          </div>
+        </text>
         <identifier>
           <system value="http://www.acme.org/practitioners"/>
           <value value="11223344"/>
