@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="eltss"/>
-  <url value="http://hl7.org/fhir/uv/eLTSS/ImplementationGuide/eltss"/>
+  <url value="http://hl7.org/fhir/us/ImplementationGuide/eltss"/>
   <name value="eLTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS)"/>  
   <status value="draft"/>
@@ -38,6 +38,9 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="servicerequest-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="episodeofcare-profile-spreadsheet.xml"/>
     </extension>
 	<grouping id="logical">
 	   <name value="Logical Models"/>
@@ -120,6 +123,18 @@
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/episodeofcare-eltss"/>
+      </reference>
+      <name value="EpisodeOfCare"/>
+      <description value="Defines the overall EpisodeOfCare constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
     <!-- Extensions -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
@@ -154,17 +169,37 @@
 	</resource>
 	
     <!-- Examples -->
-<!-- TODO figure out why this example makes the IG build fail
     <resource>
       <reference>
-        <reference value="Bundle/practitioner-planner1"/>
+        <reference value="Bundle/patient-patient1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan planner 1"/>
+      <name value="Example - eLTSS CarePlan patient 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/Practitioner"/>
+      <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
-	-->
+<!--
+    <resource>
+      <reference>
+        <reference value="Bundle/claim-claim1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan claim 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/claim-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+-->
+<!--	
+    <resource>
+      <reference>
+        <reference value="Bundle/contract-contract1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan contract 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/contract-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+-->
 <!-- full careplan1 
     <resource>
       <reference>

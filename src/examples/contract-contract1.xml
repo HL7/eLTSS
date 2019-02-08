@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
+  <id value="contract-contract1"/>
+  <type value="collection"/>
+
+
+  <!--  Support Planner (CarePlan author) -->
+  <entry>
+    <resource>
+      <Practitioner>
+        <id value="planner1"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>Support Planner / Phone:</b> Mark Planner / (678) 555 1221</p>
+          </div>
+        </text>
+        <!-- identifier is required by US Core -->
+        <identifier>
+          <system value="http://www.acme.org/practitioners"/>
+          <value value="23"/>
+        </identifier>
+        <!-- [eLTSS Support Planner Name] -->
+        <name>
+          <text value="Mark Planner"/>
+          <family value="Planner"/>
+          <given value="Mark"/>
+        </name>
+        <!-- [eLTSS Support Planner Phone Number] -->
+        <telecom>
+          <system value="phone"/>
+          <value value="(678) 555 1221"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+
+  </entry>
+  <entry>
+    <resource>
+      <Practitioner>
+        <id value="caremgr1"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>Plan Monitor / Phone:</b> Sam Monitor / (770) 224 1599</p>
+          </div>
+        </text>
+        <!-- identifier is required by US Core -->
+        <identifier>
+          <system value="http://www.acme.org/practitioners"/>
+          <value value="24"/>
+        </identifier>
+        <!-- [eLTSS Plan Monitor Name] -->
+        <name>
+          <text value="Sam Monitor"/>
+          <family value="Monitor"/>
+          <given value="Sam"/>
+        </name>
+        <!-- [eLTSS Plan Monitor Phone Number] -->
+        <telecom>
+          <system value="phone"/>
+          <value value="(770) 224 1599"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+
+  </entry>
+  <entry>
+    <resource>
+      <Practitioner>
+        <id value="provider1"/>
+        <!-- identifier is required by US Core -->
+        <identifier>
+          <system value="http://www.acme.org/practitioners"/>
+          <value value="987654"/>
+        </identifier>
+        <!-- [eLTSS Service Provider Name] -->
+        <name>
+          <text value="Lisa Performer"/>
+          <family value="Performer"/>
+          <given value="Lisa"/>
+        </name>
+        <!-- [eLTSS Service Provider Phone Number] -->
+        <telecom>
+          <system value="phone"/>
+          <value value="(404) 555 1213"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+
+  </entry>
+  <entry>
+    <resource>
+      <Organization>
+        <id value="provider2"/>
+        <!-- identifier is required by US Core -->
+        <identifier>
+          <value value="24680"/>
+        </identifier>
+        <!-- [eLTSS Service Provider Name] -->
+        <name value="The Transporter, Inc."/>
+        <!-- [eLTSS Service Provider Phone Number] -->
+        <telecom>
+          <system value="phone"/>
+          <value value="(404) 555 1313"/>
+        </telecom>
+        <!-- address is required by US Core -->
+        <address>
+          <text value="111 Business Street, Atlanta GA, 30318"/>
+        </address>
+      </Organization>
+    </resource>
+
+  </entry>
+  <entry>
+    <!-- This practitioner is the person signing for the transportation provider organization -->
+    <resource>
+      <Practitioner>
+        <id value="provider3"/>
+        <!-- identifier is required by US Core -->
+        <identifier>
+          <system value="http://www.acme.org/practitioners"/>
+          <value value="11223344"/>
+        </identifier>
+        <!-- [eLTSS Service Provider Name] -->
+        <name>
+          <text value="Bill Driver"/>
+          <family value="Driver"/>
+          <given value="Bill"/>
+        </name>
+        <!-- [eLTSS Service Provider Phone Number] -->
+        <telecom>
+          <system value="phone"/>
+          <value value="(678) 111 2222"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+
+  <entry>
+    <resource>
+      <Contract>
+        <id value="contract1"/>
+		<meta>
+		<profile value="StructureDefinition/contract-eltss"/>
+		</meta>
+		<text>
+		<status value="additional"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+        <p>eLTSS Signature in Contract form [eLTSS Support Planner Signature], [eLTSS Support Planner Printed Name], [eLTSS Support Planner Signature Date]  </p>
+		</div>
+		</text>
+        <signer>
+          <type>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+            <code value="AUT"/>
+          </type>
+          <party>
+            <reference value="Practitioner/planner1"/>
+          </party>
+          <signature>
+            <type>
+<!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <code value="1.2.840.10065.1.12.1.1"/>
+            </type>
+            <when value="2018-04-02T03:00:00Z"/>
+            <who>
+              <reference value="Practitioner/planner1"/>
+            </who>
+			<sigFormat value="image/jpeg"/>
+            <data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+          </signature>
+        </signer>
+        <!-- Service Provider #1 -->
+        <!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
+        <signer>
+          <type>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+            <code value="HPROV"/>
+          </type>
+          <party>
+            <reference value="Practitioner/provider1"/>
+          </party>
+          <signature>
+            <type>
+<!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <code value="1.2.840.10065.1.12.1.7"/>
+            </type>
+            <when value="2018-04-02T03:00:00Z"/>
+            <who>
+              <reference value="Practitioner/provider1"/>
+            </who>
+			<sigFormat value="image/jpeg"/>
+            <data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+          </signature>
+        </signer>
+        <!-- Service Provider #2 -->
+        <!-- [eLTSS Service Provider Signature], [eLTSS Service Provider Printed Name], [eLTSS Service Provider Signature Date]  -->
+        <signer>
+          <type>
+            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+            <code value="HPROV"/>
+          </type>
+          <party>
+            <reference value="Organization/provider2"/>
+          </party>
+          <signature>
+            <type>
+<!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <code value="1.2.840.10065.1.12.1.7"/>
+            </type>
+            <when value="2018-04-02T03:00:00Z"/>
+            <!-- In this example, the service provider is the transportation company, and the signer is a representative of that company -->
+            <who>
+              <reference value="Practitioner/provider3"/>
+            </who>
+			<sigFormat value="image/jpeg"/>
+            <data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
+          </signature>
+        </signer>
+
+		</Contract>
+    </resource>
+
+  </entry>
+</Bundle>

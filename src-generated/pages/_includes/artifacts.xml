@@ -53,6 +53,13 @@
 </td>
 <td>Defines the overall Patient constraints for eLTSS.</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="episodeofcare-eltss.html">
+                        •  EpisodeOfCare</a>
+</td>
+<td>Defines the overall EpisodeOfCare constraints for eLTSS.</td>
+</tr>
 </tbody>
 </table>
 </p>
@@ -100,7 +107,22 @@
 <p>Example(s) showing the use of the eLTSS profiles</p>
 <p>
 <table>
-<tbody/>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="patient-patient1.html">
+                        •  Example - eLTSS CarePlan patient 1</a>
+</td>
+<td>Test instance showing data from the eLTSS spec</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="claim-claim1.html">
+                        •  Example - eLTSS CarePlan claim 1</a>
+</td>
+<td>Test instance showing data from the eLTSS spec</td>
+</tr>
+</tbody>
 </table>
 </p>
 </div>

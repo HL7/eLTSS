@@ -8,10 +8,11 @@
 </div>
 </text>
 <url value="http://hl7.org/fhir/uv/eLTSS/CapabilityStatement/eltss-server"/>
-<version value="1.0.1"/>
-<name value="eLTSS-Server"/>
+
+<name value="eLTSS_Server"/>
 <title value="eLTSS Server"/>
 <status value="active"/>
+<date value="2019-02-08"/>
 <publisher value="HL7 CBCP"/>
 <contact>
   <telecom>

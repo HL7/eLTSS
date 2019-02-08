@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
+  <id value="patient-patient1"/>
+  <type value="collection"/>
+
+  <!--     The person (Patient) who is the subject of the document. -->
+  <entry>
+    <resource>
+      <Patient>
+        <id value="patient1"/>
+		<meta>
+		<profile value="StructureDefinition/patient-eltss"/>
+		</meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>Person Name:</b> Sally Person</p>
+            <p><b>Person Identifier | Type:</b> 123456ABC | MRN</p>
+            <p><b>Person Phone:</b> (404) 555 1212</p>
+            <p><b>Person Date of Birth:</b> 1935-05-01</p>
+            <p><b>Person Address:</b> 2222 Peachtree Street, Atlanta GA, 30318</p>
+            <p><b>Emergency Contact Name:</b> Jane Daughter</p>
+            <p><b>Emergency Contact Relationship:</b> daughter</p>
+            <p><b>Emergency Contact Phone Number:</b> (770) 224 1544</p>
+          </div>
+        </text>
+        <!-- [eLTSS Person Identifier] & [eLTSS Person Identifier Type]  -->
+        <identifier>
+          <type>
+            <text value="MRN"/>
+          </type>
+          <value value="123456ABC"/>
+        </identifier>
+        <!--  [eLTSS Person Name]  -->
+        <name>
+          <text value="Sally Person"/>
+          <family value="Person"/>
+          <given value="Sally"/>
+        </name>
+        <!--  [eLTSS Person Phone Number]  -->
+        <telecom>
+          <system value="phone"/>
+          <value value="(404) 555 1212"/>
+        </telecom>
+        <!--  [eLTSS Person Date of Birth]  -->
+        <birthDate value="1935-05-01"/>
+        <!--  [eLTSS Person Address]  -->
+        <address>
+          <text value="2222 Peachtree Street, Atlanta GA, 30318"/>
+          <line value="2222 Peachtree Street"/>
+          <city value="Atlanta"/>
+          <district value="Fulton"/>
+          <state value="GA"/>
+          <postalCode value="30318"/>
+        </address>
+        <!--  [eLTSS Emergency Contact Name] & [eLTSS Emergency Contact Relationship] & [eLTSS Emergency Contact Phone Number] -->
+        <contact>
+          <relationship>
+            <!-- code value indicates emergency contact -->
+            <coding>
+              <system value="http://hl7.org/fhir/v2/0131"/>
+              <code value="C"/>
+            </coding>
+          </relationship>
+          <relationship>
+            <!-- code value indicates daughter -->
+            <coding>
+              <system value="http://hl7.org/fhir/v3/RoleCode"/>
+              <code value="DAUC"/>
+            </coding>
+          </relationship>
+          <name>
+            <text value="Jane Daughter"/>
+            <family value="Daughter"/>
+            <given value="Jane"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="(770) 224 1544"/>
+          </telecom>
+        </contact>
+      </Patient>
+    </resource>
+
+  </entry>
+</Bundle>
