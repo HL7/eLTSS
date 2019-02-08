@@ -50,11 +50,12 @@
       <name value="General Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
     </grouping>
-
+	<!--
     <grouping id="extensions">
       <name value="Extensions"/>
       <description value="Extensions defined as part of the eLTSS implementation guide"/>
     </grouping>
+	-->
     <grouping id="capability">
       <name value="Capability Statement(s)"/>
       <description value="Capability Statement(s) showing the use of the eLTSS profiles"/>
@@ -69,8 +70,8 @@
       <reference>
         <reference value="StructureDefinition/eLTSS-Person-model"/>
       </reference>
-      <name value="LogicalModel"/>
-      <description value="Defines the Logocal Model for eLTSS."/>
+      <name value="eLTSS Person"/>
+      <description value="Defines the Logical Model for eLTSS Person."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -82,7 +83,7 @@
       <reference>
         <reference value="StructureDefinition/careplan-eltss"/>
       </reference>
-      <name value="CarePlan Common Properties"/>
+      <name value="eLTSS CarePlan"/>
       <description value="Base profile that defines characteristics shared by all CarePlan resources in eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -94,7 +95,7 @@
       <reference>
         <reference value="StructureDefinition/claim-eltss"/>
       </reference>
-      <name value="Claim"/>
+      <name value="eLTSS Claim"/>
       <description value="Defines the overall Claim constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -106,7 +107,7 @@
       <reference>
         <reference value="StructureDefinition/contract-eltss"/>
       </reference>
-      <name value="Contract"/>
+      <name value="eLTSS Contract"/>
       <description value="Defines the overall Contract constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -118,7 +119,7 @@
       <reference>
         <reference value="StructureDefinition/patient-eltss"/>
       </reference>
-      <name value="Patient"/>
+      <name value="eLTSS Patient"/>
       <description value="Defines the overall Patient constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -130,12 +131,11 @@
       <reference>
         <reference value="StructureDefinition/episodeofcare-eltss"/>
       </reference>
-      <name value="EpisodeOfCare"/>
+      <name value="eLTSS EpisodeOfCare"/>
       <description value="Defines the overall EpisodeOfCare constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
-    <!-- Extensions -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
@@ -143,11 +143,12 @@
       <reference>
         <reference value="StructureDefinition/servicerequest-eltss"/>
       </reference>
-      <name value="ServiceRequest"/>
+      <name value="eLTSS ServiceRequest"/>
       <description value="Defines the overall ServiceRequest constraints for eLTSS."/>
       <exampleBoolean value="false"/>
-      <groupingId value="extensions"/>
+      <groupingId value="general"/>
     </resource>
+    <!-- Extensions -->
 	<!-- CapabilityStatement (actors) -->
 	<resource>
 	  <reference>

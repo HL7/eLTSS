@@ -62,11 +62,6 @@
       "description" : "General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"
     },
     {
-      "id" : "extensions",
-      "name" : "Extensions",
-      "description" : "Extensions defined as part of the eLTSS implementation guide"
-    },
-    {
       "id" : "capability",
       "name" : "Capability Statement(s)",
       "description" : "Capability Statement(s) showing the use of the eLTSS profiles"
@@ -80,8 +75,8 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSS-Person-model"
       },
-      "name" : "LogicalModel",
-      "description" : "Defines the Logocal Model for eLTSS.",
+      "name" : "eLTSS Person",
+      "description" : "Defines the Logical Model for eLTSS Person.",
       "exampleBoolean" : false,
       "groupingId" : "logical"
     },
@@ -142,37 +137,37 @@
         "generation" : "html",
         "page" : [{
           "nameUrl" : "eLTSS-Person-model.html",
-          "title" : "LogicalModel",
+          "title" : "eLTSS Person",
           "generation" : "generated"
         },
         {
           "nameUrl" : "careplan-eltss.html",
-          "title" : "CarePlan Common Properties",
+          "title" : "eLTSS CarePlan",
           "generation" : "generated"
         },
         {
           "nameUrl" : "claim-eltss.html",
-          "title" : "Claim",
+          "title" : "eLTSS Claim",
           "generation" : "generated"
         },
         {
           "nameUrl" : "contract-eltss.html",
-          "title" : "Contract",
+          "title" : "eLTSS Contract",
           "generation" : "generated"
         },
         {
           "nameUrl" : "patient-eltss.html",
-          "title" : "Patient",
+          "title" : "eLTSS Patient",
           "generation" : "generated"
         },
         {
           "nameUrl" : "episodeofcare-eltss.html",
-          "title" : "EpisodeOfCare",
+          "title" : "eLTSS EpisodeOfCare",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "extension-servicerequest-eltss.html",
-          "title" : "ServiceRequest",
+          "nameUrl" : "servicerequest-eltss.html",
+          "title" : "eLTSS ServiceRequest",
           "generation" : "generated"
         },
         {

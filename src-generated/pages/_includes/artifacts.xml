@@ -12,9 +12,9 @@
 <tr>
 <td style="column-width:30%">
 <a href="eLTSS-Person-model.html">
-                        •  LogicalModel</a>
+                        •  eLTSS Person</a>
 </td>
-<td>Defines the Logocal Model for eLTSS.</td>
+<td>Defines the Logical Model for eLTSS Person.</td>
 </tr>
 </tbody>
 </table>
@@ -28,58 +28,49 @@
 <tr>
 <td style="column-width:30%">
 <a href="careplan-eltss.html">
-                        •  CarePlan Common Properties</a>
+                        •  eLTSS CarePlan</a>
 </td>
 <td>Base profile that defines characteristics shared by all CarePlan resources in eLTSS.</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="claim-eltss.html">
-                        •  Claim</a>
+                        •  eLTSS Claim</a>
 </td>
 <td>Defines the overall Claim constraints for eLTSS.</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="contract-eltss.html">
-                        •  Contract</a>
+                        •  eLTSS Contract</a>
 </td>
 <td>Defines the overall Contract constraints for eLTSS.</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="patient-eltss.html">
-                        •  Patient</a>
+                        •  eLTSS Patient</a>
 </td>
 <td>Defines the overall Patient constraints for eLTSS.</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="episodeofcare-eltss.html">
-                        •  EpisodeOfCare</a>
+                        •  eLTSS EpisodeOfCare</a>
 </td>
 <td>Defines the overall EpisodeOfCare constraints for eLTSS.</td>
 </tr>
-</tbody>
-</table>
-</p>
-<a name="3"> </a>
-<h3>Extensions </h3>
-<p>Extensions defined as part of the eLTSS implementation guide</p>
-<p>
-<table>
-<tbody>
 <tr>
 <td style="column-width:30%">
-<a href="extension-servicerequest-eltss.html">
-                        •  ServiceRequest</a>
+<a href="servicerequest-eltss.html">
+                        •  eLTSS ServiceRequest</a>
 </td>
 <td>Defines the overall ServiceRequest constraints for eLTSS.</td>
 </tr>
 </tbody>
 </table>
 </p>
-<a name="4"> </a>
+<a name="3"> </a>
 <h3>Capability Statement(s) </h3>
 <p>Capability Statement(s) showing the use of the eLTSS profiles</p>
 <p>
@@ -102,7 +93,7 @@
 </tbody>
 </table>
 </p>
-<a name="5"> </a>
+<a name="4"> </a>
 <h3>Example(s) </h3>
 <p>Example(s) showing the use of the eLTSS profiles</p>
 <p>
