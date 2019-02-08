@@ -188,7 +188,7 @@
       <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
     </resource>
-	-->
+	
     <resource>
       <reference>
         <reference value="Bundle/contract-contract1"/>
@@ -198,7 +198,7 @@
       <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
     </resource>
-	
+	-->
 <!-- full careplan1 
     <resource>
       <reference>

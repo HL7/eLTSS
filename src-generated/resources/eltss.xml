@@ -109,7 +109,7 @@
       <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
     </resource>
-	-->
+	
     <resource>
       <reference>
         <reference value="Bundle/contract-contract1"/>
@@ -119,7 +119,7 @@
       <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
     </resource>
-	
+	-->
 <!-- full careplan1 
     <resource>
       <reference>
@@ -209,11 +209,6 @@
 <page>
 <nameUrl value="patient-patient1.html"/>
 <ns9:title xmlns:ns9="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
-<generation value="generated"/>
-</page>
-<page>
-<nameUrl value="contract-contract1.html"/>
-<ns10:title xmlns:ns10="http://hl7.org/fhir" value="Example - eLTSS CarePlan contract 1"/>
 <generation value="generated"/>
 </page>
 </page>
