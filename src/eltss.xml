@@ -69,7 +69,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSS-Person-model"/>
       </reference>
-      <name value="LogicalModel"/>
+      <name value="eLTSS LogicalModel"/>
       <description value="Defines the Logical Model for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -82,7 +82,7 @@
       <reference>
         <reference value="StructureDefinition/careplan-eltss"/>
       </reference>
-      <name value="CarePlan Common Properties"/>
+      <name value="eLTSS CarePlan"/>
       <description value="Base profile that defines characteristics shared by all CarePlan resources in eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -94,7 +94,7 @@
       <reference>
         <reference value="StructureDefinition/claim-eltss"/>
       </reference>
-      <name value="Claim"/>
+      <name value="eLTSS Claim"/>
       <description value="Defines the overall Claim constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -106,7 +106,7 @@
       <reference>
         <reference value="StructureDefinition/contract-eltss"/>
       </reference>
-      <name value="Contract"/>
+      <name value="eLTSS Contract"/>
       <description value="Defines the overall Contract constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -118,7 +118,7 @@
       <reference>
         <reference value="StructureDefinition/patient-eltss"/>
       </reference>
-      <name value="Patient"/>
+      <name value="eLTSS Patient"/>
       <description value="Defines the overall Patient constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -130,7 +130,7 @@
       <reference>
         <reference value="StructureDefinition/episodeofcare-eltss"/>
       </reference>
-      <name value="EpisodeOfCare"/>
+      <name value="eLTSS EpisodeOfCare"/>
       <description value="Defines the overall EpisodeOfCare constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -143,10 +143,10 @@
       <reference>
         <reference value="StructureDefinition/servicerequest-eltss"/>
       </reference>
-      <name value="ServiceRequest"/>
+      <name value="eLTSS ServiceRequest"/>
       <description value="Defines the overall ServiceRequest constraints for eLTSS."/>
       <exampleBoolean value="false"/>
-      <groupingId value="extensions"/>
+      <groupingId value="general"/>
     </resource>
 	<!-- CapabilityStatement (actors) -->
 	<resource>
