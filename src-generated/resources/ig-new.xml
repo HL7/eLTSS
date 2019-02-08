@@ -45,6 +45,10 @@
     <version value="current"/>
   </dependsOn>
   <definition>
+    <grouping id="logical">
+      <name value="Logical Models"/>
+      <description value="Logical Models for eLTSS"/>
+    </grouping>
     <grouping id="general">
       <name value="General Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
@@ -52,6 +56,10 @@
     <grouping id="extensions">
       <name value="Extensions"/>
       <description value="Extensions defined as part of the eLTSS implementation guide"/>
+    </grouping>
+    <grouping id="capability">
+      <name value="Capability Statement(s)"/>
+      <description value="Capability Statement(s) showing the use of the eLTSS profiles"/>
     </grouping>
     <grouping id="examples">
       <name value="Example(s)"/>
@@ -64,16 +72,25 @@
       <name value="LogicalModel"/>
       <description value="Defines the Logocal Model for eLTSS."/>
       <exampleBoolean value="false"/>
-      <groupingId value="general"/>
+      <groupingId value="logical"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/practitioner-planner1"/>
+        <reference value="CapabilityStatement/eltss-client"/>
       </reference>
-      <name value="Example - eLTSS CarePlan planner 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/Practitioner"/>
-      <groupingId value="examples"/>
+      <name value="eLTSS Client"/>
+      <description value="Defines the eLTSS Client capabilities"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="capability"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/eltss-server"/>
+      </reference>
+      <name value="eLTSS Server"/>
+      <description value="Defines the eLTSS Server capabilities"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="capability"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -104,6 +121,11 @@
         <title value="Artifact List"/>
         <generation value="html"/>
         <page>
+          <nameUrl value="eLTSS-Person-model.html"/>
+          <title value="LogicalModel"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="careplan-eltss.html"/>
           <title value="CarePlan Common Properties"/>
           <generation value="generated"/>
@@ -129,13 +151,13 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="eLTSS-Person-model.html"/>
-          <title value="LogicalModel"/>
+          <nameUrl value="eltss-client.html"/>
+          <title value="eLTSS Client"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="practitioner-planner1.html"/>
-          <title value="Example - eLTSS CarePlan planner 1"/>
+          <nameUrl value="eltss-server.html"/>
+          <title value="eLTSS Server"/>
           <generation value="generated"/>
         </page>
       </page>

@@ -39,6 +39,10 @@
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="servicerequest-profile-spreadsheet.xml"/>
     </extension>
+	<grouping id="logical">
+	   <name value="Logical Models"/>
+	   <description value="Logical Models for eLTSS"/>
+	</grouping>
     <grouping id="general">
       <name value="General Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
@@ -48,11 +52,26 @@
       <name value="Extensions"/>
       <description value="Extensions defined as part of the eLTSS implementation guide"/>
     </grouping>
+    <grouping id="capability">
+      <name value="Capability Statement(s)"/>
+      <description value="Capability Statement(s) showing the use of the eLTSS profiles"/>
+    </grouping>
     <grouping id="examples">
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the eLTSS profiles"/>
     </grouping>
 <!-- Here be the resources listed in the IG -->  
+    <!-- Logical Model -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/eLTSS-Person-model"/>
+      </reference>
+      <name value="LogicalModel"/>
+      <description value="Defines the Logocal Model for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="logical"/>
+    </resource>
+    <!-- Profiles -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
@@ -114,20 +133,28 @@
       <exampleBoolean value="false"/>
       <groupingId value="extensions"/>
     </resource>
-    <!-- Logical Model -->
-
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/eLTSS-Person-model"/>
+	<!-- CapabilityStatement (actors) -->
+	<resource>
+	  <reference>
+	     <reference value="CapabilityStatement/eltss-client"/>
       </reference>
-      <name value="LogicalModel"/>
-      <description value="Defines the Logocal Model for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-
+	  <name value="eLTSS Client"/>
+	  <description value="Defines the eLTSS Client capabilities"/>
+	  <exampleBoolean value="false"/>
+	  <groupingId value="capability"/>
+	</resource>
+	<resource>
+	  <reference>
+	     <reference value="CapabilityStatement/eltss-server"/>
+      </reference>
+	  <name value="eLTSS Server"/>
+	  <description value="Defines the eLTSS Server capabilities"/>
+	  <exampleBoolean value="false"/>
+	  <groupingId value="capability"/>
+	</resource>
+	
     <!-- Examples -->
-<!-- TODO figure out why this example makes the IG build fail with a NullPointerException -->
+<!-- TODO figure out why this example makes the IG build fail
     <resource>
       <reference>
         <reference value="Bundle/practitioner-planner1"/>
@@ -137,6 +164,7 @@
       <exampleCanonical value="StructureDefinition/Practitioner"/>
       <groupingId value="examples"/>
     </resource>
+	-->
 <!-- full careplan1 
     <resource>
       <reference>

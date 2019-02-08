@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
+  <id value="eltss-server"/>
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>eLTSS IG Server.</p>
+</div>
+</text>
+<url value="http://hl7.org/fhir/uv/eLTSS/CapabilityStatement/eltss-server"/>
+<version value="1.0.1"/>
+<name value="eLTSS-Server"/>
+<title value="eLTSS Server"/>
+<status value="active"/>
+<publisher value="HL7 CBCP"/>
+<contact>
+  <telecom>
+    <system value="other"/>
+    <value value="http://www.hl7.org/SpecialCommittees/usrealm/index.cfm"/>
+  </telecom>
+</contact>
+<description value="This profile defines the expected capabilities of the eLTSS Server."/>
+<kind value="requirements"/>
+<imports value="http://hl7.org/fhir/us/core-r4/CapabilityStatement/us-core-r4-server"/>
+<fhirVersion value="4.0.0"/>
+<format value="xml"/>
+<format value="json"/>
+<rest>
+  <mode value="server"/>
+  <resource>
+    <type value="Patient"/>
+    <supportedProfile value="http://hl7.org/fhir/uv/eLTSS/StructureDefinition/careplan-eltss"/>
+    <interaction>
+      <code value="search-type"/>
+    </interaction>
+    <interaction>
+      <code value="read"/>
+    </interaction>
+    <interaction>
+      <code value="history-instance"/>
+    </interaction>
+    <interaction>
+      <code value="vread"/>
+    </interaction>
+  </resource>
+ </rest>
+</CapabilityStatement>

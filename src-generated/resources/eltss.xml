@@ -28,6 +28,10 @@
     
     
     
+	<grouping id="logical">
+	   <name value="Logical Models"/>
+	   <description value="Logical Models for eLTSS"/>
+	</grouping>
     <grouping id="general">
       <name value="General Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
@@ -37,19 +41,16 @@
       <name value="Extensions"/>
       <description value="Extensions defined as part of the eLTSS implementation guide"/>
     </grouping>
+    <grouping id="capability">
+      <name value="Capability Statement(s)"/>
+      <description value="Capability Statement(s) showing the use of the eLTSS profiles"/>
+    </grouping>
     <grouping id="examples">
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the eLTSS profiles"/>
     </grouping>
 <!-- Here be the resources listed in the IG -->  
-    
-    
-    
-    
-    <!-- Extensions -->
-    
     <!-- Logical Model -->
-
     <resource>
       <reference>
         <reference value="StructureDefinition/eLTSS-Person-model"/>
@@ -57,11 +58,37 @@
       <name value="LogicalModel"/>
       <description value="Defines the Logocal Model for eLTSS."/>
       <exampleBoolean value="false"/>
-      <groupingId value="general"/>
+      <groupingId value="logical"/>
     </resource>
-
+    <!-- Profiles -->
+    
+    
+    
+    
+    <!-- Extensions -->
+    
+	<!-- CapabilityStatement (actors) -->
+	<resource>
+	  <reference>
+	     <reference value="CapabilityStatement/eltss-client"/>
+      </reference>
+	  <name value="eLTSS Client"/>
+	  <description value="Defines the eLTSS Client capabilities"/>
+	  <exampleBoolean value="false"/>
+	  <groupingId value="capability"/>
+	</resource>
+	<resource>
+	  <reference>
+	     <reference value="CapabilityStatement/eltss-server"/>
+      </reference>
+	  <name value="eLTSS Server"/>
+	  <description value="Defines the eLTSS Server capabilities"/>
+	  <exampleBoolean value="false"/>
+	  <groupingId value="capability"/>
+	</resource>
+	
     <!-- Examples -->
-<!-- TODO figure out why this example makes the IG build fail with a NullPointerException -->
+<!-- TODO figure out why this example makes the IG build fail
     <resource>
       <reference>
         <reference value="Bundle/practitioner-planner1"/>
@@ -71,6 +98,7 @@
       <exampleCanonical value="StructureDefinition/Practitioner"/>
       <groupingId value="examples"/>
     </resource>
+	-->
 <!-- full careplan1 
     <resource>
       <reference>
@@ -113,38 +141,43 @@
         <title value="Artifact List"/>
         <generation value="html"/>
       <page>
+<nameUrl value="eLTSS-Person-model.html"/>
+<ns0:title xmlns:ns0="http://hl7.org/fhir" value="LogicalModel"/>
+<generation value="generated"/>
+</page>
+<page>
 <nameUrl value="careplan-eltss.html"/>
-<ns0:title xmlns:ns0="http://hl7.org/fhir" value="CarePlan Common Properties"/>
+<ns1:title xmlns:ns1="http://hl7.org/fhir" value="CarePlan Common Properties"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="claim-eltss.html"/>
-<ns1:title xmlns:ns1="http://hl7.org/fhir" value="Claim"/>
+<ns2:title xmlns:ns2="http://hl7.org/fhir" value="Claim"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="contract-eltss.html"/>
-<ns2:title xmlns:ns2="http://hl7.org/fhir" value="Contract"/>
+<ns3:title xmlns:ns3="http://hl7.org/fhir" value="Contract"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="patient-eltss.html"/>
-<ns3:title xmlns:ns3="http://hl7.org/fhir" value="Patient"/>
+<ns4:title xmlns:ns4="http://hl7.org/fhir" value="Patient"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="extension-servicerequest-eltss.html"/>
-<ns4:title xmlns:ns4="http://hl7.org/fhir" value="ServiceRequest"/>
+<ns5:title xmlns:ns5="http://hl7.org/fhir" value="ServiceRequest"/>
 <generation value="generated"/>
 </page>
 <page>
-<nameUrl value="eLTSS-Person-model.html"/>
-<ns5:title xmlns:ns5="http://hl7.org/fhir" value="LogicalModel"/>
+<nameUrl value="eltss-client.html"/>
+<ns6:title xmlns:ns6="http://hl7.org/fhir" value="eLTSS Client"/>
 <generation value="generated"/>
 </page>
 <page>
-<nameUrl value="practitioner-planner1.html"/>
-<ns6:title xmlns:ns6="http://hl7.org/fhir" value="Example - eLTSS CarePlan planner 1"/>
+<nameUrl value="eltss-server.html"/>
+<ns7:title xmlns:ns7="http://hl7.org/fhir" value="eLTSS Server"/>
 <generation value="generated"/>
 </page>
 </page>

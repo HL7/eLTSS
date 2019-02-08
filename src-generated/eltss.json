@@ -111,6 +111,8 @@
     "servicerequest-profile-spreadsheet.xml"
   ],
   "resources": {
+    "StructureDefinition/eLTSS-Person-model":{
+    },
     "StructureDefinition/careplan-eltss":{
     },
     "StructureDefinition/claim-eltss":{
@@ -136,9 +138,9 @@
       "profile-json": "extension-{{[id]}}.profile.json.html",
       "profile-ttl": "extension-{{[id]}}.profile.ttl.html"
     },
-    "StructureDefinition/eLTSS-Person-model":{
+    "CapabilityStatement/eltss-client":{
     },
-    "Bundle/practitioner-planner1":{
+    "CapabilityStatement/eltss-server":{
     }
   }
 }

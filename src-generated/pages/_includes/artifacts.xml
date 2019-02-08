@@ -4,6 +4,22 @@
 </div>
 <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
 <a name="1"> </a>
+<h3>Logical Models </h3>
+<p>Logical Models for eLTSS</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="eLTSS-Person-model.html">
+                        •  LogicalModel</a>
+</td>
+<td>Defines the Logocal Model for eLTSS.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<a name="2"> </a>
 <h3>General Profiles </h3>
 <p>General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest</p>
 <p>
@@ -37,17 +53,10 @@
 </td>
 <td>Defines the overall Patient constraints for eLTSS.</td>
 </tr>
-<tr>
-<td style="column-width:30%">
-<a href="eLTSS-Person-model.html">
-                        •  LogicalModel</a>
-</td>
-<td>Defines the Logocal Model for eLTSS.</td>
-</tr>
 </tbody>
 </table>
 </p>
-<a name="2"> </a>
+<a name="3"> </a>
 <h3>Extensions </h3>
 <p>Extensions defined as part of the eLTSS implementation guide</p>
 <p>
@@ -63,20 +72,35 @@
 </tbody>
 </table>
 </p>
-<a name="3"> </a>
-<h3>Example(s) </h3>
-<p>Example(s) showing the use of the eLTSS profiles</p>
+<a name="4"> </a>
+<h3>Capability Statement(s) </h3>
+<p>Capability Statement(s) showing the use of the eLTSS profiles</p>
 <p>
 <table>
 <tbody>
 <tr>
 <td style="column-width:30%">
-<a href="practitioner-planner1.html">
-                        •  Example - eLTSS CarePlan planner 1</a>
+<a href="eltss-client.html">
+                        •  eLTSS Client</a>
 </td>
-<td>Test instance showing data from the eLTSS spec</td>
+<td>Defines the eLTSS Client capabilities</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="eltss-server.html">
+                        •  eLTSS Server</a>
+</td>
+<td>Defines the eLTSS Server capabilities</td>
 </tr>
 </tbody>
+</table>
+</p>
+<a name="5"> </a>
+<h3>Example(s) </h3>
+<p>Example(s) showing the use of the eLTSS profiles</p>
+<p>
+<table>
+<tbody/>
 </table>
 </p>
 </div>

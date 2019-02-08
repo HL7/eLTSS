@@ -52,6 +52,11 @@
   }],
   "definition" : {
     "grouping" : [{
+      "id" : "logical",
+      "name" : "Logical Models",
+      "description" : "Logical Models for eLTSS"
+    },
+    {
       "id" : "general",
       "name" : "General Profiles",
       "description" : "General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"
@@ -60,6 +65,11 @@
       "id" : "extensions",
       "name" : "Extensions",
       "description" : "Extensions defined as part of the eLTSS implementation guide"
+    },
+    {
+      "id" : "capability",
+      "name" : "Capability Statement(s)",
+      "description" : "Capability Statement(s) showing the use of the eLTSS profiles"
     },
     {
       "id" : "examples",
@@ -73,16 +83,25 @@
       "name" : "LogicalModel",
       "description" : "Defines the Logocal Model for eLTSS.",
       "exampleBoolean" : false,
-      "groupingId" : "general"
+      "groupingId" : "logical"
     },
     {
       "reference" : {
-        "reference" : "Bundle/practitioner-planner1"
+        "reference" : "CapabilityStatement/eltss-client"
       },
-      "name" : "Example - eLTSS CarePlan planner 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Practitioner",
-      "groupingId" : "examples"
+      "name" : "eLTSS Client",
+      "description" : "Defines the eLTSS Client capabilities",
+      "exampleBoolean" : false,
+      "groupingId" : "capability"
+    },
+    {
+      "reference" : {
+        "reference" : "CapabilityStatement/eltss-server"
+      },
+      "name" : "eLTSS Server",
+      "description" : "Defines the eLTSS Server capabilities",
+      "exampleBoolean" : false,
+      "groupingId" : "capability"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -113,6 +132,11 @@
         "title" : "Artifact List",
         "generation" : "html",
         "page" : [{
+          "nameUrl" : "eLTSS-Person-model.html",
+          "title" : "LogicalModel",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "careplan-eltss.html",
           "title" : "CarePlan Common Properties",
           "generation" : "generated"
@@ -138,13 +162,13 @@
           "generation" : "generated"
         },
         {
-          "nameUrl" : "eLTSS-Person-model.html",
-          "title" : "LogicalModel",
+          "nameUrl" : "eltss-client.html",
+          "title" : "eLTSS Client",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "practitioner-planner1.html",
-          "title" : "Example - eLTSS CarePlan planner 1",
+          "nameUrl" : "eltss-server.html",
+          "title" : "eLTSS Server",
           "generation" : "generated"
         }]
       }]
