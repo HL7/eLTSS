@@ -70,7 +70,7 @@
         <reference value="StructureDefinition/eLTSS-Person-model"/>
       </reference>
       <name value="LogicalModel"/>
-      <description value="Defines the Logocal Model for eLTSS."/>
+      <description value="Defines the Logical Model for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
