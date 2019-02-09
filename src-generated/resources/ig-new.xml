@@ -3,22 +3,22 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="eltss"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\resources"/>
+    <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\resources"/>
+    <valueString value="/home/loftwyr/FHIR/eLTSS/src/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\vocabulary"/>
+    <valueString value="/home/loftwyr/FHIR/eLTSS/src/vocabulary"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\examples"/>
+    <valueString value="/home/loftwyr/FHIR/eLTSS/src/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src\images"/>
+    <valueString value="/home/loftwyr/FHIR/eLTSS/src/images"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\john.moehrke\Git\eLTSS\src-generated\pages"/>
+    <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/ImplementationGuide/eltss"/>
   <version value="0.1"/>
@@ -88,15 +88,6 @@
       <exampleBoolean value="false"/>
       <groupingId value="capability"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/patient-patient1"/>
-      </reference>
-      <name value="Example - eLTSS CarePlan patient 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/patient-eltss"/>
-      <groupingId value="examples"/>
-    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -161,6 +152,16 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="practitioner-eltss.html"/>
+          <title value="eLTSS Practitioner"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="location-eltss.html"/>
+          <title value="eLTSS Location"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="eltss-client.html"/>
           <title value="eLTSS Client"/>
           <generation value="generated"/>
@@ -168,11 +169,6 @@
         <page>
           <nameUrl value="eltss-server.html"/>
           <title value="eLTSS Server"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="patient-patient1.html"/>
-          <title value="Example - eLTSS CarePlan patient 1"/>
           <generation value="generated"/>
         </page>
       </page>

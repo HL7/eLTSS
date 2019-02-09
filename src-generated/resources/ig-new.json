@@ -3,27 +3,27 @@
   "id" : "eltss",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src-generated\\resources"
+    "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\resources"
+    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\vocabulary"
+    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/vocabulary"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\examples"
+    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src\\images"
+    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/images"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\john.moehrke\\Git\\eLTSS\\src-generated\\pages"
+    "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/pages"
   }],
   "url" : "http://hl7.org/fhir/us/ImplementationGuide/eltss",
   "version" : "0.1",
@@ -97,15 +97,6 @@
       "description" : "Defines the eLTSS Server capabilities",
       "exampleBoolean" : false,
       "groupingId" : "capability"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/patient-patient1"
-      },
-      "name" : "Example - eLTSS CarePlan patient 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/patient-eltss",
-      "groupingId" : "examples"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -171,6 +162,16 @@
           "generation" : "generated"
         },
         {
+          "nameUrl" : "practitioner-eltss.html",
+          "title" : "eLTSS Practitioner",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "location-eltss.html",
+          "title" : "eLTSS Location",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "eltss-client.html",
           "title" : "eLTSS Client",
           "generation" : "generated"
@@ -178,11 +179,6 @@
         {
           "nameUrl" : "eltss-server.html",
           "title" : "eLTSS Server",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "patient-patient1.html",
-          "title" : "Example - eLTSS CarePlan patient 1",
           "generation" : "generated"
         }]
       }]

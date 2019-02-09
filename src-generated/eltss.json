@@ -95,7 +95,7 @@
   },
   "sct-edition" : "http://snomed.info/sct/731000124108",
   "no-inactive-codes" : "true",
-  "canonicalBase": "http://hl7.org/fhir/us/eLTSS",
+  "canonicalBase": "http://hl7.org/fhir/us",
   "dependencyList": [
     {
       "name" : "corer4",
@@ -109,7 +109,9 @@
     "contract-profile-spreadsheet.xml",
     "patient-profile-spreadsheet.xml",
     "servicerequest-profile-spreadsheet.xml",
-    "episodeofcare-profile-spreadsheet.xml"
+    "episodeofcare-profile-spreadsheet.xml",
+    "location-profile-spreadsheet.xml",
+    "practitioner-profile-spreadsheet.xml"
   ],
   "resources": {
     "StructureDefinition/eLTSS-Person-model":{
@@ -126,11 +128,13 @@
     },
     "StructureDefinition/servicerequest-eltss":{
     },
+    "StructureDefinition/practitioner-eltss":{
+    },
+    "StructureDefinition/location-eltss":{
+    },
     "CapabilityStatement/eltss-client":{
     },
     "CapabilityStatement/eltss-server":{
-    },
-    "Bundle/patient-patient1":{
     }
   }
 }

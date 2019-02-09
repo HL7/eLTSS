@@ -198,7 +198,7 @@
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
-  <!--
+    <!--
     <resource>
       <reference>
         <reference value="Bundle/patient-patient1"/>
@@ -208,7 +208,7 @@
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
-    <!--
+    
     <resource>
       <reference>
         <reference value="Bundle/claim-claim1"/>

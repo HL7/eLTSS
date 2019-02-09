@@ -2,7 +2,7 @@
   <id value="eltss"/>
   <url value="http://hl7.org/fhir/us/ImplementationGuide/eltss"/>
   <name value="ELTSS"/>
-  <title value="Electronic Long-Term Services and Supports (eLTSS)"/>  
+  <title value="Electronic Long-Term Services and Supports (eLTSS)"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
@@ -11,8 +11,8 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
-	  <display value="United States of America"/>
-	  </coding>
+      <display value="United States of America"/>
+    </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.uv.eltss"/>
   <fhirVersion value="4.0.0"/>
@@ -20,7 +20,7 @@
     <uri value="http://hl7.org/fhir/us/core-r4"/>
     <packageId value="hl7.fhir.us.core.r4"/>
     <version value="current"/>
-   </dependsOn>
+  </dependsOn>
   <definition>
     
     
@@ -28,15 +28,17 @@
     
     
     
-	<grouping id="logical">
-	   <name value="Logical Models"/>
-	   <description value="Logical Models for eLTSS"/>
-	</grouping>
+    
+    
+    <grouping id="logical">
+      <name value="Logical Models"/>
+      <description value="Logical Models for eLTSS"/>
+    </grouping>
     <grouping id="general">
       <name value="General Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
     </grouping>
-	<!--
+    <!--
     <grouping id="extensions">
       <name value="Extensions"/>
       <description value="Extensions defined as part of the eLTSS implementation guide"/>
@@ -50,7 +52,7 @@
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the eLTSS profiles"/>
     </grouping>
-<!-- Here be the resources listed in the IG -->  
+    <!-- Here be the resources listed in the IG -->
     <!-- Logical Model -->
     <resource>
       <reference>
@@ -68,28 +70,30 @@
     
     
     
+    
+    
     <!-- Extensions -->
-	<!-- CapabilityStatement (actors) -->
-	<resource>
-	  <reference>
-	     <reference value="CapabilityStatement/eltss-client"/>
+    <!-- CapabilityStatement (actors) -->
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/eltss-client"/>
       </reference>
-	  <name value="eLTSS Client"/>
-	  <description value="Defines the eLTSS Client capabilities"/>
-	  <exampleBoolean value="false"/>
-	  <groupingId value="capability"/>
-	</resource>
-	<resource>
-	  <reference>
-	     <reference value="CapabilityStatement/eltss-server"/>
+      <name value="eLTSS Client"/>
+      <description value="Defines the eLTSS Client capabilities"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="capability"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/eltss-server"/>
       </reference>
-	  <name value="eLTSS Server"/>
-	  <description value="Defines the eLTSS Server capabilities"/>
-	  <exampleBoolean value="false"/>
-	  <groupingId value="capability"/>
-	</resource>
-	
+      <name value="eLTSS Server"/>
+      <description value="Defines the eLTSS Server capabilities"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="capability"/>
+    </resource>
     <!-- Examples -->
+    <!--
     <resource>
       <reference>
         <reference value="Bundle/patient-patient1"/>
@@ -99,7 +103,7 @@
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
-<!--
+    
     <resource>
       <reference>
         <reference value="Bundle/claim-claim1"/>
@@ -120,7 +124,7 @@
       <groupingId value="examples"/>
     </resource>
 	-->
-<!-- full careplan1 
+    <!-- full careplan1 
     <resource>
       <reference>
         <reference value="Bundle/careplan1"/>
@@ -131,8 +135,7 @@
       <groupingId value="examples"/>
     </resource>
 -->
-
-<!-- document structure starts here -->
+    <!-- document structure starts here -->
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -146,11 +149,11 @@
           <title value="eLTSS Background"/>
           <generation value="html"/>
         </page>
-      <page>
-        <nameUrl value="usecases.html"/>
-        <title value="HL7 Domain Analysis Use Cases"/>
-        <generation value="html"/>
-      </page>
+        <page>
+          <nameUrl value="usecases.html"/>
+          <title value="HL7 Domain Analysis Use Cases"/>
+          <generation value="html"/>
+        </page>
         <page>
           <nameUrl value="mapping.html"/>
           <title value="General eLTSS mapping to FHIR"/>
@@ -197,18 +200,23 @@
 <generation value="generated"/>
 </page>
 <page>
+<nameUrl value="practitioner-eltss.html"/>
+<ns7:title xmlns:ns7="http://hl7.org/fhir" value="eLTSS Practitioner"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="location-eltss.html"/>
+<ns8:title xmlns:ns8="http://hl7.org/fhir" value="eLTSS Location"/>
+<generation value="generated"/>
+</page>
+<page>
 <nameUrl value="eltss-client.html"/>
-<ns7:title xmlns:ns7="http://hl7.org/fhir" value="eLTSS Client"/>
+<ns9:title xmlns:ns9="http://hl7.org/fhir" value="eLTSS Client"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="eltss-server.html"/>
-<ns8:title xmlns:ns8="http://hl7.org/fhir" value="eLTSS Server"/>
-<generation value="generated"/>
-</page>
-<page>
-<nameUrl value="patient-patient1.html"/>
-<ns9:title xmlns:ns9="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
+<ns10:title xmlns:ns10="http://hl7.org/fhir" value="eLTSS Server"/>
 <generation value="generated"/>
 </page>
 </page>
