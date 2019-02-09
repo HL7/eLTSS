@@ -97,6 +97,15 @@
       "description" : "Defines the eLTSS Server capabilities",
       "exampleBoolean" : false,
       "groupingId" : "capability"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/patient-patient1"
+      },
+      "name" : "Example - eLTSS CarePlan patient 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "exampleCanonical" : "StructureDefinition/patient-eltss",
+      "groupingId" : "examples"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -179,6 +188,11 @@
         {
           "nameUrl" : "eltss-server.html",
           "title" : "eLTSS Server",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "patient-patient1.html",
+          "title" : "Example - eLTSS CarePlan patient 1",
           "generation" : "generated"
         }]
       }]

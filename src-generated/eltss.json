@@ -135,6 +135,8 @@
     "CapabilityStatement/eltss-client":{
     },
     "CapabilityStatement/eltss-server":{
+    },
+    "Bundle/patient-patient1":{
     }
   }
 }

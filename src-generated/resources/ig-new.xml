@@ -88,6 +88,15 @@
       <exampleBoolean value="false"/>
       <groupingId value="capability"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/patient-patient1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan patient 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/patient-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -169,6 +178,11 @@
         <page>
           <nameUrl value="eltss-server.html"/>
           <title value="eLTSS Server"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="patient-patient1.html"/>
+          <title value="Example - eLTSS CarePlan patient 1"/>
           <generation value="generated"/>
         </page>
       </page>

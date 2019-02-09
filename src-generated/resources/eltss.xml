@@ -93,7 +93,7 @@
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
-    <!--
+    
     <resource>
       <reference>
         <reference value="Bundle/patient-patient1"/>
@@ -103,7 +103,7 @@
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
-    
+    <!--
     <resource>
       <reference>
         <reference value="Bundle/claim-claim1"/>
@@ -217,6 +217,11 @@
 <page>
 <nameUrl value="eltss-server.html"/>
 <ns10:title xmlns:ns10="http://hl7.org/fhir" value="eLTSS Server"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="patient-patient1.html"/>
+<ns11:title xmlns:ns11="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
 <generation value="generated"/>
 </page>
 </page>
