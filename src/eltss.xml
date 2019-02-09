@@ -198,6 +198,7 @@
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
+  <!--
     <resource>
       <reference>
         <reference value="Bundle/patient-patient1"/>
