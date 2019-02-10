@@ -114,11 +114,11 @@
     "practitioner-profile-spreadsheet.xml"
   ],
   "resources": {
-    "StructureDefinition/eLTSSPersonmodel":{
+    "StructureDefinition/eLTSSPersonModel":{
     },
-    "StructureDefinition/eLTSSServicemodel":{
+    "StructureDefinition/eLTSSServiceModel":{
     },
-    "StructureDefinition/eLTSSServicePlanmodel":{
+    "StructureDefinition/eLTSSServicePlanModel":{
     },
     "StructureDefinition/careplan-eltss":{
     },

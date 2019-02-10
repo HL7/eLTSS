@@ -63,7 +63,7 @@
     </grouping>
     <resource>
       <reference>
-        <reference value="StructureDefinition/eLTSSPersonmodel"/>
+        <reference value="StructureDefinition/eLTSSPersonModel"/>
       </reference>
       <name value="eLTSS Person"/>
       <description value="Defines the Logical Model for eLTSS Person."/>
@@ -72,7 +72,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/eLTSSServicemodel"/>
+        <reference value="StructureDefinition/eLTSSServiceModel"/>
       </reference>
       <name value="eLTSS Service"/>
       <description value="Defines the Logical Model for eLTSS Service."/>
@@ -81,7 +81,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/eLTSSServicePlanmodel"/>
+        <reference value="StructureDefinition/eLTSSServicePlanModel"/>
       </reference>
       <name value="eLTSS Service Plan"/>
       <description value="Defines the Logical Model for eLTSS Service Plan."/>
@@ -144,17 +144,17 @@
         <title value="Artifact List"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="eLTSSPersonmodel.html"/>
+          <nameUrl value="eLTSSPersonModel.html"/>
           <title value="eLTSS Person"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="eLTSSServicemodel.html"/>
+          <nameUrl value="eLTSSServiceModel.html"/>
           <title value="eLTSS Service"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="eLTSSServicePlanmodel.html"/>
+          <nameUrl value="eLTSSServicePlanModel.html"/>
           <title value="eLTSS Service Plan"/>
           <generation value="generated"/>
         </page>

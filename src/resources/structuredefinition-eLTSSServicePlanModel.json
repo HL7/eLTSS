@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>eLTSS Service Plan Logical Model</b></p>\n\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServicePlanModel",
+  "url": "http://hl7.org/fhir/us/StructureDefinition/eLTSSServicePlanModel",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/eLTSS",
@@ -55,7 +55,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSPersonModel"
+            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSPersonModel"
             
           }
         ],
@@ -372,7 +372,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"           
+            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSServiceModel"           
           }
         ],
         "mustSupport": false,
@@ -896,7 +896,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSPersonModel"
+            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSPersonModel"
             
           }
         ],
@@ -1213,7 +1213,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"           
+            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSServiceModel"           
           }
         ],
         "mustSupport": false,

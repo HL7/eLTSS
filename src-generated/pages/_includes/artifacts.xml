@@ -11,21 +11,21 @@
 <tbody>
 <tr>
 <td style="column-width:30%">
-<a href="eLTSSPersonmodel.html">
+<a href="eLTSSPersonModel.html">
                         •  eLTSS Person</a>
 </td>
 <td>Defines the Logical Model for eLTSS Person.</td>
 </tr>
 <tr>
 <td style="column-width:30%">
-<a href="eLTSSServicemodel.html">
+<a href="eLTSSServiceModel.html">
                         •  eLTSS Service</a>
 </td>
 <td>Defines the Logical Model for eLTSS Service.</td>
 </tr>
 <tr>
 <td style="column-width:30%">
-<a href="eLTSSServicePlanmodel.html">
+<a href="eLTSSServicePlanModel.html">
                         •  eLTSS Service Plan</a>
 </td>
 <td>Defines the Logical Model for eLTSS Service Plan.</td>
