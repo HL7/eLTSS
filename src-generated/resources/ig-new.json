@@ -84,7 +84,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSServicemodel"
       },
-      "name" : "eLTSS Person",
+      "name" : "eLTSS Service",
       "description" : "Defines the Logical Model for eLTSS Service.",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -93,7 +93,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSServicePlanmodel"
       },
-      "name" : "eLTSS Person",
+      "name" : "eLTSS Service Plan",
       "description" : "Defines the Logical Model for eLTSS Service Plan.",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -160,12 +160,12 @@
         },
         {
           "nameUrl" : "eLTSSServicemodel.html",
-          "title" : "eLTSS Person",
+          "title" : "eLTSS Service",
           "generation" : "generated"
         },
         {
           "nameUrl" : "eLTSSServicePlanmodel.html",
-          "title" : "eLTSS Person",
+          "title" : "eLTSS Service Plan",
           "generation" : "generated"
         },
         {

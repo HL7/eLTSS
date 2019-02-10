@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "eLTSSPersonModel",
+  "id": "eLTSSServicePlanModel",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>eLTSS Service Plan Logical Model</b></p>\n\n</div>"

@@ -84,7 +84,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServicemodel"/>
       </reference>
-      <name value="eLTSS Person"/>
+      <name value="eLTSS Service"/>
       <description value="Defines the Logical Model for eLTSS Service."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -93,7 +93,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServicePlanmodel"/>
       </reference>
-      <name value="eLTSS Person"/>
+      <name value="eLTSS Service Plan"/>
       <description value="Defines the Logical Model for eLTSS Service Plan."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>

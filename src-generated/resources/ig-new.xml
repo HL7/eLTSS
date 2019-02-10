@@ -74,7 +74,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServicemodel"/>
       </reference>
-      <name value="eLTSS Person"/>
+      <name value="eLTSS Service"/>
       <description value="Defines the Logical Model for eLTSS Service."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -83,7 +83,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServicePlanmodel"/>
       </reference>
-      <name value="eLTSS Person"/>
+      <name value="eLTSS Service Plan"/>
       <description value="Defines the Logical Model for eLTSS Service Plan."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -150,12 +150,12 @@
         </page>
         <page>
           <nameUrl value="eLTSSServicemodel.html"/>
-          <title value="eLTSS Person"/>
+          <title value="eLTSS Service"/>
           <generation value="generated"/>
         </page>
         <page>
           <nameUrl value="eLTSSServicePlanmodel.html"/>
-          <title value="eLTSS Person"/>
+          <title value="eLTSS Service Plan"/>
           <generation value="generated"/>
         </page>
         <page>

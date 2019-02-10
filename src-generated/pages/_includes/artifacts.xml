@@ -19,14 +19,14 @@
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSServicemodel.html">
-                        •  eLTSS Person</a>
+                        •  eLTSS Service</a>
 </td>
 <td>Defines the Logical Model for eLTSS Service.</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSServicePlanmodel.html">
-                        •  eLTSS Person</a>
+                        •  eLTSS Service Plan</a>
 </td>
 <td>Defines the Logical Model for eLTSS Service Plan.</td>
 </tr>
