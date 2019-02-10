@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
-  <id value="patient-claim1"/>
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="claim-claim1"/>
   <type value="collection"/>
-
+  <!--     The claim forthe subject of the document. -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/claim"/>
     <resource>
       <Claim>
         <id value="claim1"/>
-		<meta>
-		<profile value="StructureDefinition/claim-eltss"/>
-		</meta>
+        <meta>
+          <profile value="StructureDefinition/claim-eltss"/>
+        </meta>
         <status value="active"/>
         <type>
           <coding>
@@ -21,7 +22,6 @@
         <patient>
           <reference value="Patient/Patient2"/>
         </patient>
-
         <created value="2019-01-01"/>
         <provider>
           <reference value="Organization/funding1"/>
@@ -58,8 +58,9 @@
         </item>
       </Claim>
     </resource>
-   </entry>
-    <entry>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/eLTSS/funding"/>
     <resource>
       <Organization>
         <id value="funding1"/>
@@ -81,9 +82,9 @@
         </address>
       </Organization>
     </resource>
-  
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/coverage1"/>
     <resource>
       <Coverage>
         <id value="coverage1"/>
@@ -97,16 +98,16 @@
         </payor>
       </Coverage>
     </resource>
-
   </entry>
- <!--     The person (Patient) who is the subject of the document. -->
+  <!--     The person (Patient) who is the subject of the document. -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/patient1"/>
     <resource>
       <Patient>
-        <id value="patient2"/>
-		<meta>
-		<profile value="StructureDefinition/patient-eltss"/>
-		</meta>
+        <id value="Patient2"/>
+        <meta>
+          <profile value="StructureDefinition/patient-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -123,7 +124,10 @@
         <!-- [eLTSS Person Identifier] & [eLTSS Person Identifier Type]  -->
         <identifier>
           <type>
-            <text value="MRN"/>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
           </type>
           <value value="123456ABC"/>
         </identifier>
@@ -154,14 +158,14 @@
           <relationship>
             <!-- code value indicates emergency contact -->
             <coding>
-              <system value="http://hl7.org/fhir/v2/0131"/>
+              <system value="http://terminology.hl7.org/fhir/v2/0131"/>
               <code value="C"/>
             </coding>
           </relationship>
           <relationship>
             <!-- code value indicates daughter -->
             <coding>
-              <system value="http://hl7.org/fhir/v3/RoleCode"/>
+              <system value="http://terminology.hl7.org/fhir/v3/RoleCode"/>
               <code value="DAUC"/>
             </coding>
           </relationship>
@@ -177,7 +181,5 @@
         </contact>
       </Patient>
     </resource>
-
   </entry>
-
 </Bundle>

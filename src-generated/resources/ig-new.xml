@@ -21,7 +21,7 @@
     <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/ImplementationGuide/eltss"/>
-  <version value="0.1"/>
+  <version value="0.2"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS)"/>
   <status value="draft"/>
@@ -113,6 +113,42 @@
       <name value="Example - eLTSS CarePlan patient 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/practitioner-planner1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan Planner 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/practitioner-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/claim-claim1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan claim 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/claim-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/contract-contract1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan contract 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/contract-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/careplan"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/careplan-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <page>
@@ -211,6 +247,26 @@
         <page>
           <nameUrl value="patient-patient1.html"/>
           <title value="Example - eLTSS CarePlan patient 1"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="practitioner-planner1.html"/>
+          <title value="Example - eLTSS CarePlan Planner 1"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="claim-claim1.html"/>
+          <title value="Example - eLTSS CarePlan claim 1"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="contract-contract1.html"/>
+          <title value="Example - eLTSS CarePlan contract 1"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="careplan.html"/>
+          <title value="Example - eLTSS CarePlan"/>
           <generation value="generated"/>
         </page>
       </page>

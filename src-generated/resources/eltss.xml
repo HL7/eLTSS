@@ -120,7 +120,15 @@
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
-    <!--
+    <resource>
+      <reference>
+        <reference value="Bundle/practitioner-planner1"/>
+      </reference>
+      <name value="Example - eLTSS CarePlan Planner 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/practitioner-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Bundle/claim-claim1"/>
@@ -130,7 +138,6 @@
       <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
     </resource>
-	
     <resource>
       <reference>
         <reference value="Bundle/contract-contract1"/>
@@ -140,18 +147,15 @@
       <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
     </resource>
-	-->
-    <!-- full careplan1 
     <resource>
       <reference>
-        <reference value="Bundle/careplan1"/>
+        <reference value="Bundle/careplan"/>
       </reference>
       <name value="Example - eLTSS CarePlan"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/careplan1"/>
+      <exampleCanonical value="StructureDefinition/careplan-eltss"/>
       <groupingId value="examples"/>
     </resource>
--->
     <!-- document structure starts here -->
     <page>
       <nameUrl value="toc.html"/>
@@ -249,6 +253,26 @@
 <page>
 <nameUrl value="patient-patient1.html"/>
 <ns13:title xmlns:ns13="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="practitioner-planner1.html"/>
+<ns14:title xmlns:ns14="http://hl7.org/fhir" value="Example - eLTSS CarePlan Planner 1"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="claim-claim1.html"/>
+<ns15:title xmlns:ns15="http://hl7.org/fhir" value="Example - eLTSS CarePlan claim 1"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="contract-contract1.html"/>
+<ns16:title xmlns:ns16="http://hl7.org/fhir" value="Example - eLTSS CarePlan contract 1"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="careplan.html"/>
+<ns17:title xmlns:ns17="http://hl7.org/fhir" value="Example - eLTSS CarePlan"/>
 <generation value="generated"/>
 </page>
 </page>

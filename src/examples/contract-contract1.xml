@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" >
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <id value="contract-contract1"/>
   <type value="collection"/>
-
-
   <!--  Support Planner (CarePlan author) -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/planner"/>
     <resource>
       <Practitioner>
         <id value="planner1"/>
@@ -33,9 +32,9 @@
         </telecom>
       </Practitioner>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/caremgr"/>
     <resource>
       <Practitioner>
         <id value="caremgr1"/>
@@ -63,9 +62,9 @@
         </telecom>
       </Practitioner>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/provider1"/>
     <resource>
       <Practitioner>
         <id value="provider1"/>
@@ -93,9 +92,9 @@
         </telecom>
       </Practitioner>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/provider2"/>
     <resource>
       <Organization>
         <id value="provider2"/>
@@ -122,9 +121,9 @@
         </address>
       </Organization>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/provider3"/>
     <!-- This practitioner is the person signing for the transportation provider organization -->
     <resource>
       <Practitioner>
@@ -154,20 +153,20 @@
       </Practitioner>
     </resource>
   </entry>
-
   <entry>
+    <fullUrl value="http://example.org/eLTSS/contract"/>
     <resource>
       <Contract>
         <id value="contract1"/>
-		<meta>
-		<profile value="StructureDefinition/contract-eltss"/>
-		</meta>
-		<text>
-		<status value="additional"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-        <p>eLTSS Signature in Contract form [eLTSS Support Planner Signature], [eLTSS Support Planner Printed Name], [eLTSS Support Planner Signature Date]  </p>
-		</div>
-		</text>
+        <meta>
+          <profile value="StructureDefinition/contract-eltss"/>
+        </meta>
+        <text>
+          <status value="additional"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>eLTSS Signature in Contract form [eLTSS Support Planner Signature], [eLTSS Support Planner Printed Name], [eLTSS Support Planner Signature Date]  </p>
+          </div>
+        </text>
         <signer>
           <type>
             <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
@@ -178,14 +177,14 @@
           </party>
           <signature>
             <type>
-<!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
               <code value="1.2.840.10065.1.12.1.1"/>
             </type>
             <when value="2018-04-02T03:00:00Z"/>
             <who>
               <reference value="Practitioner/planner1"/>
             </who>
-			<sigFormat value="image/jpeg"/>
+            <sigFormat value="image/jpeg"/>
             <data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
           </signature>
         </signer>
@@ -201,14 +200,14 @@
           </party>
           <signature>
             <type>
-<!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
               <code value="1.2.840.10065.1.12.1.7"/>
             </type>
             <when value="2018-04-02T03:00:00Z"/>
             <who>
               <reference value="Practitioner/provider1"/>
             </who>
-			<sigFormat value="image/jpeg"/>
+            <sigFormat value="image/jpeg"/>
             <data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
           </signature>
         </signer>
@@ -224,7 +223,7 @@
           </party>
           <signature>
             <type>
-<!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
               <code value="1.2.840.10065.1.12.1.7"/>
             </type>
             <when value="2018-04-02T03:00:00Z"/>
@@ -232,13 +231,11 @@
             <who>
               <reference value="Practitioner/provider3"/>
             </who>
-			<sigFormat value="image/jpeg"/>
+            <sigFormat value="image/jpeg"/>
             <data value="R0lGODlhIAAgALMAADNmmWNjnGOcnJycnJzOnM7OnP///////////////////////////////////////yH5BAEAAAUALAAAAAAgACAAAARosMhJq704680l6OD0fSFHFmd5pai6vi7FerGYzWAK7HKs8zYVazcUVojH0gyZzFmYvQ4OGtXgUMDn5kqtwlZZLeaKJXOtYbG31lrXdKb0lyySi+l1PE1v5CtpbE0eRISFhod+gYoXEQAAOw=="/>
           </signature>
         </signer>
-
-		</Contract>
+      </Contract>
     </resource>
-
   </entry>
 </Bundle>

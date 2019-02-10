@@ -26,7 +26,7 @@
     "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/pages"
   }],
   "url" : "http://hl7.org/fhir/us/ImplementationGuide/eltss",
-  "version" : "0.1",
+  "version" : "0.2",
   "name" : "ELTSS",
   "title" : "Electronic Long-Term Services and Supports (eLTSS)",
   "status" : "draft",
@@ -123,6 +123,42 @@
       "name" : "Example - eLTSS CarePlan patient 1",
       "description" : "Test instance showing data from the eLTSS spec",
       "exampleCanonical" : "StructureDefinition/patient-eltss",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/practitioner-planner1"
+      },
+      "name" : "Example - eLTSS CarePlan Planner 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "exampleCanonical" : "StructureDefinition/practitioner-eltss",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/claim-claim1"
+      },
+      "name" : "Example - eLTSS CarePlan claim 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "exampleCanonical" : "StructureDefinition/claim-eltss",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/contract-contract1"
+      },
+      "name" : "Example - eLTSS CarePlan contract 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "exampleCanonical" : "StructureDefinition/contract-eltss",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/careplan"
+      },
+      "name" : "Example - eLTSS CarePlan",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "exampleCanonical" : "StructureDefinition/careplan-eltss",
       "groupingId" : "examples"
     }],
     "page" : {
@@ -221,6 +257,26 @@
         {
           "nameUrl" : "patient-patient1.html",
           "title" : "Example - eLTSS CarePlan patient 1",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "practitioner-planner1.html",
+          "title" : "Example - eLTSS CarePlan Planner 1",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "claim-claim1.html",
+          "title" : "Example - eLTSS CarePlan claim 1",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "contract-contract1.html",
+          "title" : "Example - eLTSS CarePlan contract 1",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "careplan.html",
+          "title" : "Example - eLTSS CarePlan",
           "generation" : "generated"
         }]
       }]

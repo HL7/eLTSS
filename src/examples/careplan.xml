@@ -4,11 +4,12 @@
     Updated :  01/23/2019
     FHIR version : 4.0
 -->
-<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
-  <id value="careplan1"/>
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="careplan"/>
   <type value="collection"/>
   <!--  eLTSS Service Plan / FHIR Care Plan  -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/careplan1"/>
     <resource>
       <CarePlan>
         <id value="careplan1"/>
@@ -104,10 +105,10 @@
         </activity>
       </CarePlan>
     </resource>
-
   </entry>
   <!--  Support Planner (CarePlan author) -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/planner1"/>
     <resource>
       <Practitioner>
         <id value="planner1"/>
@@ -135,9 +136,9 @@
         </telecom>
       </Practitioner>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/caremgr1"/>
     <resource>
       <Practitioner>
         <id value="caremgr1"/>
@@ -165,10 +166,10 @@
         </telecom>
       </Practitioner>
     </resource>
-
   </entry>
   <!--     The person (Patient) who is the subject of the document. -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/patient1"/>
     <resource>
       <Patient>
         <id value="patient1"/>
@@ -188,7 +189,10 @@
         <!-- [eLTSS Person Identifier] & [eLTSS Person Identifier Type]  -->
         <identifier>
           <type>
-            <text value="MRN"/>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
           </type>
           <value value="123456ABC"/>
         </identifier>
@@ -219,14 +223,14 @@
           <relationship>
             <!-- code value indicates emergency contact -->
             <coding>
-              <system value="http://hl7.org/fhir/v2/0131"/>
+              <system value="http://terminology.hl7.org/fhir/v2/0131"/>
               <code value="C"/>
             </coding>
           </relationship>
           <relationship>
             <!-- code value indicates daughter -->
             <coding>
-              <system value="http://hl7.org/fhir/v3/RoleCode"/>
+              <system value="http://terminology.hl7.org/fhir/v3/RoleCode"/>
               <code value="DAUC"/>
             </coding>
           </relationship>
@@ -242,9 +246,9 @@
         </contact>
       </Patient>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/episode1"/>
     <resource>
       <!--  links the care plan to the plan monitor/case manager  -->
       <!--  [eLTSS Plan Monitor Name] & [eLTSS Plan Monitor Phone Number]  -->
@@ -259,9 +263,9 @@
         </careManager>
       </EpisodeOfCare>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/careplan2"/>
     <resource>
       <!--  [eLTSS Emergency Backup Plan]  -->
       <CarePlan>
@@ -278,9 +282,9 @@
         </subject>
       </CarePlan>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/goal1"/>
     <resource>
       <!--  [eLTSS Goal]  -->
       <Goal>
@@ -301,9 +305,9 @@
         </subject>
       </Goal>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/goal2"/>
     <resource>
       <!--  [eLTSS Goal]  -->
       <Goal>
@@ -326,6 +330,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/need1"/>
     <resource>
       <!--  [eLTSS Assessed Need]  -->
       <Condition>
@@ -339,8 +344,16 @@
         <!-- US Core requires the use of the Condition Category Codes valueset, which does not have a value -->
         <!-- corresponding to "assessed need". The code list is extensible, but for the purposes of this sample -->
         <!-- just using the text data element. -->
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
         <category>
-          <text value="assessed-need"/>
+             <text value="assessed-need"/>
+ 
+
         </category>
         <code>
           <text value="lack of transportation"/>
@@ -350,9 +363,9 @@
         </subject>
       </Condition>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/need2"/>
     <resource>
       <!--  [eLTSS Assessed Need]  -->
       <Condition>
@@ -363,8 +376,14 @@
             <p><b>Assessed Need:</b> difficulty in bathing</p>
           </div>
         </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
         <category>
-          <text value="assessed-need"/>
+            <text value="assessed-need"/>
         </category>
         <code>
           <text value="difficulty in bathing"/>
@@ -376,6 +395,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/need3"/>
     <resource>
       <!--  [eLTSS Assessed Need]  -->
       <Condition>
@@ -386,8 +406,14 @@
             <p><b>Assessed Need:</b> difficulty in dressing</p>
           </div>
         </text>
+       <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
         <category>
-          <text value="assessed-need"/>
+            <text value="assessed-need"/>
         </category>
         <code>
           <text value="difficulty in dressing"/>
@@ -397,9 +423,9 @@
         </subject>
       </Condition>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/provider1"/>
     <resource>
       <Practitioner>
         <id value="provider1"/>
@@ -421,9 +447,9 @@
         </telecom>
       </Practitioner>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/provider2"/>
     <resource>
       <Organization>
         <id value="provider2"/>
@@ -444,9 +470,9 @@
         </address>
       </Organization>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/provider3"/>
     <!-- This practitioner is the person signing for the transportation provider organization -->
     <resource>
       <Practitioner>
@@ -469,9 +495,9 @@
         </telecom>
       </Practitioner>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/funding1"/>
     <resource>
       <Organization>
         <id value="funding1"/>
@@ -493,10 +519,10 @@
         </address>
       </Organization>
     </resource>
-  
   </entry>
   <!-- daughter, who is emergency contact and performing a non-paid service -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/relative1"/>
     <resource>
       <RelatedPerson>
         <id value="daughter1"/>
@@ -507,7 +533,7 @@
           <!-- [eLTSS Non-Paid Service Provider Relationship]  -->
           <!-- code value indicates daughter -->
           <coding>
-            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
             <code value="DAUC"/>
           </coding>
         </relationship>
@@ -518,10 +544,10 @@
         </name>
       </RelatedPerson>
     </resource>
-
   </entry>
   <!-- person's legal guardian -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/guardian1"/>
     <resource>
       <RelatedPerson>
         <id value="guardian1"/>
@@ -535,9 +561,9 @@
         </name>
       </RelatedPerson>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/service1"/>
     <resource>
       <!-- Service #1 -->
       <ServiceRequest>
@@ -592,9 +618,9 @@
         </locationReference>
       </ServiceRequest>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/service2"/>
     <resource>
       <!-- Service #2 -->
       <ServiceRequest>
@@ -653,9 +679,9 @@
         </note>
       </ServiceRequest>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/service3"/>
     <resource>
       <!-- Service #3 -->
       <ServiceRequest>
@@ -702,9 +728,9 @@
         </performer>
       </ServiceRequest>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/strength1"/>
     <resource>
       <!--  [eLTSS Strength]  -->
       <Observation>
@@ -722,9 +748,9 @@
         <valueString value="Able to manage her bills. Has strong family support."/>
       </Observation>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/pref1"/>
     <resource>
       <!--  [eLTSS Preference]  -->
       <Observation>
@@ -746,9 +772,9 @@
         <valueString value="Accessing the ICWP Waiver for her current service needs, and would like to remain on ICWP and continue with her current services."/>
       </Observation>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/risk1"/>
     <resource>
       <RiskAssessment>
         <id value="risk1"/>
@@ -762,7 +788,7 @@
           <outcome>
             <coding>
               <!-- code indicates at risk for falls -->
-<!--              <system value="2.16.840.1.113883.6.96"/>   -->
+              <!--              <system value="2.16.840.1.113883.6.96"/>   -->
               <system value="http://snomed.info/sct"/>
               <code value="129839007"/>
             </coding>
@@ -772,7 +798,6 @@
         <mitigation value="risk management plan text goes here"/>
       </RiskAssessment>
     </resource>
-
   </entry>
   <!--
   <entry>
@@ -820,10 +845,11 @@
   </entry>
 -->
   <entry>
+    <fullUrl value="http://example.org/eLTSS/qr1"/>
     <resource>
       <QuestionnaireResponse>
         <id value="questionnaireresponse1"/>
-		<!--
+        <!--
         <questionnaire value="Questionnaire/questionnaire1"/>
 		-->
         <status value="completed"/>
@@ -878,9 +904,9 @@
         </item>
       </QuestionnaireResponse>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/contract1"/>
     <resource>
       <Contract>
         <id value="contract1"/>
@@ -1023,9 +1049,9 @@
         </signer>
       </Contract>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/location1"/>
     <resource>
       <Location>
         <id value="location1"/>
@@ -1035,25 +1061,25 @@
         </address>
       </Location>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/coverage1"/>
     <resource>
       <Coverage>
         <id value="coverage1"/>
         <!-- Links to the eLTSS Service Funding Source  -->
         <status value="active"/>
         <beneficiary>
-          <reference value="Patient/Patient1"/>
+          <reference value="Patient/patient1"/>
         </beneficiary>
         <payor>
           <reference value="Organization/funding1"/>
         </payor>
       </Coverage>
     </resource>
-
   </entry>
   <entry>
+    <fullUrl value="http://example.org/eLTSS/claim2"/>
     <resource>
       <Claim>
         <id value="claim1"/>
@@ -1066,7 +1092,7 @@
         </type>
         <use value="claim"/>
         <patient>
-          <reference value="Patient/Patient1"/>
+          <reference value="Patient/patient1"/>
         </patient>
         <created value="2019-01-01"/>
         <provider>
@@ -1090,7 +1116,7 @@
           <productOrService>
             <coding>
               <system value="http://terminology.hl7.org/CodeSystem/ex-USCLS"/>
-              <code value="1001"/>
+              <code value="1101"/>
             </coding>
           </productOrService>
           <!-- eLTSS Service Rate per Unit]  -->
@@ -1104,5 +1130,5 @@
         </item>
       </Claim>
     </resource>
-   </entry>
+  </entry>
 </Bundle>
