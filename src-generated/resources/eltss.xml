@@ -56,10 +56,28 @@
     <!-- Logical Model -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/eLTSS-Person-model"/>
+        <reference value="StructureDefinition/eLTSSPersonmodel"/>
       </reference>
       <name value="eLTSS Person"/>
       <description value="Defines the Logical Model for eLTSS Person."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="logical"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/eLTSSServicemodel"/>
+      </reference>
+      <name value="eLTSS Person"/>
+      <description value="Defines the Logical Model for eLTSS Service."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="logical"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/eLTSSServicePlanmodel"/>
+      </reference>
+      <name value="eLTSS Person"/>
+      <description value="Defines the Logical Model for eLTSS Service Plan."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -93,7 +111,6 @@
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
-    
     <resource>
       <reference>
         <reference value="Bundle/patient-patient1"/>
@@ -165,63 +182,73 @@
         <title value="Artifact List"/>
         <generation value="html"/>
       <page>
-<nameUrl value="eLTSS-Person-model.html"/>
+<nameUrl value="eLTSSPersonmodel.html"/>
 <ns0:title xmlns:ns0="http://hl7.org/fhir" value="eLTSS Person"/>
 <generation value="generated"/>
 </page>
 <page>
+<nameUrl value="eLTSSServicemodel.html"/>
+<ns1:title xmlns:ns1="http://hl7.org/fhir" value="eLTSS Person"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="eLTSSServicePlanmodel.html"/>
+<ns2:title xmlns:ns2="http://hl7.org/fhir" value="eLTSS Person"/>
+<generation value="generated"/>
+</page>
+<page>
 <nameUrl value="careplan-eltss.html"/>
-<ns1:title xmlns:ns1="http://hl7.org/fhir" value="eLTSS CarePlan"/>
+<ns3:title xmlns:ns3="http://hl7.org/fhir" value="eLTSS CarePlan"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="claim-eltss.html"/>
-<ns2:title xmlns:ns2="http://hl7.org/fhir" value="eLTSS Claim"/>
+<ns4:title xmlns:ns4="http://hl7.org/fhir" value="eLTSS Claim"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="contract-eltss.html"/>
-<ns3:title xmlns:ns3="http://hl7.org/fhir" value="eLTSS Contract"/>
+<ns5:title xmlns:ns5="http://hl7.org/fhir" value="eLTSS Contract"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="patient-eltss.html"/>
-<ns4:title xmlns:ns4="http://hl7.org/fhir" value="eLTSS Patient"/>
+<ns6:title xmlns:ns6="http://hl7.org/fhir" value="eLTSS Patient"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="episodeofcare-eltss.html"/>
-<ns5:title xmlns:ns5="http://hl7.org/fhir" value="eLTSS EpisodeOfCare"/>
+<ns7:title xmlns:ns7="http://hl7.org/fhir" value="eLTSS EpisodeOfCare"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="servicerequest-eltss.html"/>
-<ns6:title xmlns:ns6="http://hl7.org/fhir" value="eLTSS ServiceRequest"/>
+<ns8:title xmlns:ns8="http://hl7.org/fhir" value="eLTSS ServiceRequest"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="practitioner-eltss.html"/>
-<ns7:title xmlns:ns7="http://hl7.org/fhir" value="eLTSS Practitioner"/>
+<ns9:title xmlns:ns9="http://hl7.org/fhir" value="eLTSS Practitioner"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="location-eltss.html"/>
-<ns8:title xmlns:ns8="http://hl7.org/fhir" value="eLTSS Location"/>
+<ns10:title xmlns:ns10="http://hl7.org/fhir" value="eLTSS Location"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="eltss-client.html"/>
-<ns9:title xmlns:ns9="http://hl7.org/fhir" value="eLTSS Client"/>
+<ns11:title xmlns:ns11="http://hl7.org/fhir" value="eLTSS Client"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="eltss-server.html"/>
-<ns10:title xmlns:ns10="http://hl7.org/fhir" value="eLTSS Server"/>
+<ns12:title xmlns:ns12="http://hl7.org/fhir" value="eLTSS Server"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="patient-patient1.html"/>
-<ns11:title xmlns:ns11="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
+<ns13:title xmlns:ns13="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
 <generation value="generated"/>
 </page>
 </page>

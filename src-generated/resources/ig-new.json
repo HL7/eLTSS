@@ -73,10 +73,28 @@
     }],
     "resource" : [{
       "reference" : {
-        "reference" : "StructureDefinition/eLTSS-Person-model"
+        "reference" : "StructureDefinition/eLTSSPersonmodel"
       },
       "name" : "eLTSS Person",
       "description" : "Defines the Logical Model for eLTSS Person.",
+      "exampleBoolean" : false,
+      "groupingId" : "logical"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/eLTSSServicemodel"
+      },
+      "name" : "eLTSS Person",
+      "description" : "Defines the Logical Model for eLTSS Service.",
+      "exampleBoolean" : false,
+      "groupingId" : "logical"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/eLTSSServicePlanmodel"
+      },
+      "name" : "eLTSS Person",
+      "description" : "Defines the Logical Model for eLTSS Service Plan.",
       "exampleBoolean" : false,
       "groupingId" : "logical"
     },
@@ -136,7 +154,17 @@
         "title" : "Artifact List",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "eLTSS-Person-model.html",
+          "nameUrl" : "eLTSSPersonmodel.html",
+          "title" : "eLTSS Person",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eLTSSServicemodel.html",
+          "title" : "eLTSS Person",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eLTSSServicePlanmodel.html",
           "title" : "eLTSS Person",
           "generation" : "generated"
         },

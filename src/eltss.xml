@@ -73,10 +73,28 @@
     <!-- Logical Model -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/eLTSS-Person-model"/>
+        <reference value="StructureDefinition/eLTSSPersonmodel"/>
       </reference>
       <name value="eLTSS Person"/>
       <description value="Defines the Logical Model for eLTSS Person."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="logical"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/eLTSSServicemodel"/>
+      </reference>
+      <name value="eLTSS Person"/>
+      <description value="Defines the Logical Model for eLTSS Service."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="logical"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/eLTSSServicePlanmodel"/>
+      </reference>
+      <name value="eLTSS Person"/>
+      <description value="Defines the Logical Model for eLTSS Service Plan."/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -198,7 +216,6 @@
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
-    
     <resource>
       <reference>
         <reference value="Bundle/patient-patient1"/>
