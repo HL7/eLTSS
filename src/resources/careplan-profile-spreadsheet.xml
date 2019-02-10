@@ -16,11 +16,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>8790</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>12285</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -931,7 +931,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1247,17 +1246,17 @@
     <Cell ss:StyleID="s108"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">CarePlan.supportingInfo.Observation</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">!CarePlan.supportingInfo.Observation</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Preference</Data></Cell>
     <Cell ss:StyleID="s108"><Data ss:Type="String">Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">CarePlan.supportingInfo.Observation.valueString</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">!CarePlan.supportingInfo.Observation.valueString</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Strength</Data></Cell>
     <Cell><Data ss:Type="String">A favorable attribute of oneself, his/her support network, environment and/or elements of his/her life.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">CarePlan.supportingInfo.Questionnaire</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">!CarePlan.supportingInfo.Questionnaire</Data></Cell>
     <Cell ss:Index="16"><Data ss:Type="String">To be used for: Person Setting Choice Indicator&#10;Person Setting Choice Options&#10;Service Options Given Indicator&#10;Service Selection Indicator&#10;Service Plan Agreement Indicator&#10;Service Provider Options Given Indicator&#10;Service Provider Selection Agreement Indicator</Data></Cell>
    </Row>
   </Table>
@@ -1268,13 +1267,14 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Unsynced/>
+   <Selected/>
    <LeftColumnVisible>3</LeftColumnVisible>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>11</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1283,7 +1283,6 @@
     </Pane>
     <Pane>
      <Number>1</Number>
-     <ActiveCol>4</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
@@ -1291,7 +1290,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>15</ActiveCol>
+     <ActiveRow>18</ActiveRow>
+     <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

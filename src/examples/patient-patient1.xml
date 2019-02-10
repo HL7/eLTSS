@@ -2,15 +2,14 @@
 <Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
   <id value="patient-patient1"/>
   <type value="collection"/>
-
   <!--     The person (Patient) who is the subject of the document. -->
   <entry>
     <resource>
       <Patient>
         <id value="patient1"/>
-		<meta>
-		<profile value="StructureDefinition/patient-eltss"/>
-		</meta>
+        <meta>
+          <profile value="StructureDefinition/patient-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -27,10 +26,10 @@
         <!-- [eLTSS Person Identifier] & [eLTSS Person Identifier Type]  -->
         <identifier>
           <type>
-		  <coding>
-		     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-			 <code value="MR"/>
-		  </coding>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
             <text value="MRN"/>
           </type>
           <value value="123456ABC"/>
@@ -85,6 +84,5 @@
         </contact>
       </Patient>
     </resource>
-
   </entry>
 </Bundle>
