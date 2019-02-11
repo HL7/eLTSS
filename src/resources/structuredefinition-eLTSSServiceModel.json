@@ -45,12 +45,12 @@
         "path": "eLTSSServiceModel.name",
         "short": "Identifies the paid and/or non-paid service provided to a person.",
         "definition": "Identifies the paid and/or non-paid service provided to a person. Include the code and display name plus any modifiers when a coding system (e.g., Healthcare Common Procedure Coding System (HCPCS), Home Health Revenue Codes) is used.",
-        "min": 1,
-        "max": "*",
+        "min": 0,
+        "max": "1",
         "base": {
           "path": "eLTSSServiceModel.name",
-          "min": 1,
-          "max": "*"
+          "min": 0,
+          "max": "1"
         },
         "type": [
           {
@@ -402,11 +402,11 @@
         "short": "Identifies the paid and/or non-paid service provided to a person.",
         "definition": "Identifies the paid and/or non-paid service provided to a person. Include the code and display name plus any modifiers when a coding system (e.g., Healthcare Common Procedure Coding System (HCPCS), Home Health Revenue Codes) is used.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "eLTSSServiceModel.name",
           "min": 0,
-          "max": "*"
+          "max": "1"
         },
         "type": [
           {
