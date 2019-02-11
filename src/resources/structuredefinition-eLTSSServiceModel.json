@@ -117,7 +117,7 @@
         },
         "type": [
           {
-            "code": "string"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
