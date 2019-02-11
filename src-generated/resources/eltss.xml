@@ -32,7 +32,7 @@
     
     <grouping id="logical">
       <name value="Logical Models"/>
-      <description value="Logical Models for eLTSS"/>
+      <description value="Logical models document the requirements of the LTSS domain without alignment to FHIR. The only thing that makes the logical models 'FHIR Logical Models' is the use of the StructureDefinition resource as a formal representation. The purpose of the logical model is to gather requirements from domain experts that can subsequently feed into the design process for profiles and implementation guides. A logical model ‘bridges the gap’ by documenting the requirements in a computable fashion without placing any constraints on the model structure."/>
     </grouping>
     <grouping id="general">
       <name value="General Profiles"/>

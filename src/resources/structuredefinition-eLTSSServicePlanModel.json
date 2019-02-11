@@ -12,7 +12,7 @@
       "value": "eLTSS.ServicePlan"
     }
   ],
-  "name": "eLTSSServicePlanModel",
+  "name": "ELTSSServicePlanModel",
   "title": "eLTSS Service Plan Logical Model",
   "status": "draft",
   "date": "2019-02-07",
@@ -46,7 +46,7 @@
         "short": "The person for whom the plan is for.",
         "definition": "The person for whom the plan is for.",
         "min": 1,
-        "max": "*",
+        "max": 1,
         "base": {
           "path": "eLTSSServicePlanModel.beneficiary",
           "min": 1,
@@ -55,7 +55,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSPersonModel"
+            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSPersonModel"
             
           }
         ],
@@ -372,7 +372,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSServiceModel"           
+            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"           
           }
         ],
         "mustSupport": false,
@@ -887,7 +887,7 @@
         "short": "The person for whom the plan is for.",
         "definition": "The person for whom the plan is for.",
         "min": 1,
-        "max": "*",
+        "max": 1,
         "base": {
           "path": "eLTSSServicePlanModel.beneficiary",
           "min": 1,
@@ -896,7 +896,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSPersonModel"
+            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSPersonModel"
             
           }
         ],
@@ -1213,7 +1213,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/StructureDefinition/eLTSSServiceModel"           
+            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"           
           }
         ],
         "mustSupport": false,
