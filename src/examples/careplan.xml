@@ -580,7 +580,7 @@
         <!-- [eLTSS Service Name]  -->
         <code>
           <coding>
-            <system value="2.16.840.1.113883.6.14"/>
+            <system value="urn:oid:2.16.840.1.113883.6.14"/>
             <code value="T1019"/>
           </coding>
           <text value="Personal care services, per 15 minutes"/>
@@ -643,7 +643,7 @@
         <!-- [eLTSS Service Name]  -->
         <code>
           <coding>
-            <system value="2.16.840.1.113883.6.14"/>
+            <system value="urn:oid:2.16.840.1.113883.6.14"/>
             <code value="T2003"/>
           </coding>
           <text value="Non-emergency transportation; encounter/trip"/>
@@ -765,7 +765,7 @@
         <code>
           <!-- code and system indicates "discussion about preferences" -->
           <coding>
-            <system value="2.16.840.1.113883.3.88.12.80.28"/>
+            <system value="urn:oid:2.16.840.1.113883.3.88.12.80.28"/>
             <code value="223486007"/>
           </coding>
         </code>
@@ -788,7 +788,7 @@
           <outcome>
             <coding>
               <!-- code indicates at risk for falls -->
-              <!--              <system value="2.16.840.1.113883.6.96"/>   -->
+              <!--              <system value="urn:oid:2.16.840.1.113883.6.96"/>   -->
               <system value="http://snomed.info/sct"/>
               <code value="129839007"/>
             </coding>

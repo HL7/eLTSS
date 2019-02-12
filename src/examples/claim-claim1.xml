@@ -2,7 +2,7 @@
 <Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <id value="claim-claim1"/>
   <type value="collection"/>
-  <!--     The claim forthe subject of the document. -->
+  <!--     The claim for the subject of the document. -->
   <entry>
     <fullUrl value="http://example.org/eLTSS/claim"/>
     <resource>
