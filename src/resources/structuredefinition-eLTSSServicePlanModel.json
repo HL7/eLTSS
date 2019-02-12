@@ -46,17 +46,16 @@
         "short": "The person for whom the plan is for.",
         "definition": "The person for whom the plan is for.",
         "min": 1,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.beneficiary",
           "min": 1,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSPersonModel"
-            
           }
         ],
         "mustSupport": false,
@@ -69,15 +68,15 @@
         "short": "The date upon which the plan goes into effect. Start date is required, end date is optional.",
         "definition": "The date upon which the plan goes into effect. Start date is required, end date is optional.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.effectiveDate",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "Period"            
+            "code": "Period"
           }
         ],
         "mustSupport": true,
@@ -90,15 +89,15 @@
         "short": "The person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "definition": "The person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlanner",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "BackboneElement"            
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -111,15 +110,15 @@
         "short": "The name of the person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "definition": "The name of the person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlanner.name",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -140,7 +139,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -153,15 +152,15 @@
         "short": "The person responsible for monitoring the plan.",
         "definition": "The person responsible for monitoring the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.planMonitor",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "BackboneElement"            
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -174,15 +173,15 @@
         "short": "The name of the person responsible for monitoring the plan.",
         "definition": "The name of the person responsible for monitoring the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.planMonitor.name",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -203,7 +202,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -224,7 +223,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -245,7 +244,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": true,
@@ -266,7 +265,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -287,7 +286,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -308,7 +307,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": true,
@@ -329,18 +328,18 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
       },
-       {
+      {
         "id": "eLTSSServicePlanModel.riskManagementPlan",
         "path": "eLTSSServicePlanModel.riskManagementPlan",
         "short": "Description of planned activities to minimize identified risks that endanger the person’s health and safety.",
-        "definition": "Description of planned activities to minimize identified risks that endanger the person’s health and safety. This can be included	as free text or	attachment.",
+        "definition": "Description of planned activities to minimize identified risks that endanger the person’s health and safety. This can be included\tas free text or\tattachment.",
         "min": 0,
         "max": "*",
         "base": {
@@ -350,14 +349,14 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
       },
-       {
+      {
         "id": "eLTSSServicePlanModel.service",
         "path": "eLTSSServicePlanModel.service",
         "short": "A service provided under this plan.",
@@ -372,7 +371,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"           
+            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"
           }
         ],
         "mustSupport": false,
@@ -385,11 +384,11 @@
         "short": "States whether or not the person was given a choice of services outlined in the plan.",
         "definition": "States whether or not the person was given a choice of services outlined in the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceOptionsGivenIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -406,11 +405,11 @@
         "short": "States whether or not the person participated in the selection of the services outlined in the plan.",
         "definition": "States whether or not the person participated in the selection of the services outlined in the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceSelectionIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -427,11 +426,11 @@
         "short": "States whether or not the person agrees to the services outlined in the plan.",
         "definition": "States whether or not the person agrees to the services outlined in the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.agreementIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -448,11 +447,11 @@
         "short": "States whether or not the person was offered a choice of providers for each service.",
         "definition": "States whether or not the person was offered a choice of providers for each service.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderOptionsGivenIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -469,11 +468,11 @@
         "short": "States whether or not the person feels he/she made an informed choice in selecting the provider for each service.",
         "definition": "States whether or not the person feels he/she made an informed choice in selecting the provider for each service.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSelectionAgreementIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -490,11 +489,11 @@
         "short": "Indicator that reflects the setting in which the person resides is chosen by the individual.",
         "definition": "Indicator that reflects the setting in which the person resides is chosen by the individual.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSettingChoiceIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -511,11 +510,11 @@
         "short": "The alternative home and community-based settings that were considered by the individual.",
         "definition": "The alternative home and community-based settings that were considered by the individual.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSettingChoiceOptions",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -532,11 +531,11 @@
         "short": "The of the person's signature as proof of identify and intent for the plan.",
         "definition": "The of the person's signature as proof of identify and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -553,11 +552,11 @@
         "short": "The depiction of the person's signature as proof of identify and intent for the plan.",
         "definition": "The depiction of the person's signature as proof of identify and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -574,11 +573,11 @@
         "short": "The printed or typed name of the person.",
         "definition": "The printed or typed name of the person.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -595,11 +594,11 @@
         "short": "The date the person signed the plan.",
         "definition": "The date the person signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -637,11 +636,11 @@
         "short": "The depiction of the guardian or legally authorized representative’s signature as proof of identity and intent for the plan.",
         "definition": "The depiction of the guardian or legally authorized representative’s signature as proof of identity and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.representativeSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -658,11 +657,11 @@
         "short": "The printed or typed name of the guardian or legally authorized representative.",
         "definition": "The printed or typed name of the guardian or legally authorized representative.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.representativeSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -679,11 +678,11 @@
         "short": "The date the guardian or legally authorized representative signed the plan.",
         "definition": "The date the guardian or legally authorized representative signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.representativeSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -700,11 +699,11 @@
         "short": "The support planner’s signature as proof of identity and intent for the plan.",
         "definition": "The support planner’s signature as proof of identity and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -721,11 +720,11 @@
         "short": "The depiction of the support planner’s signature as proof of identity and intent for the plan.",
         "definition": "The depiction of the support planner’s signature as proof of identity and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -742,11 +741,11 @@
         "short": "The printed or typed name of the support planner.",
         "definition": "The printed or typed name of the support planner.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -763,11 +762,11 @@
         "short": "The date the support planner signed the plan.",
         "definition": "The date the support planner signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -805,11 +804,11 @@
         "short": "The depiction of the service provider’s signature as proof they agree to the services they will provide.",
         "definition": "The depiction of the service provider’s signature as proof they agree to the services they will provide.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -826,11 +825,11 @@
         "short": "The printed or typed name of the service provider.",
         "definition": "The printed or typed name of the service provider.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -847,11 +846,11 @@
         "short": "The date the service provider signed the plan.",
         "definition": "The date the service provider signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -865,7 +864,7 @@
     ]
   },
   "differential": {
-   "element": [
+    "element": [
       {
         "id": "eLTSSServicePlanModel",
         "path": "eLTSSServicePlanModel",
@@ -887,17 +886,16 @@
         "short": "The person for whom the plan is for.",
         "definition": "The person for whom the plan is for.",
         "min": 1,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.beneficiary",
           "min": 1,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSPersonModel"
-            
           }
         ],
         "mustSupport": false,
@@ -910,15 +908,15 @@
         "short": "The date upon which the plan goes into effect. Start date is required, end date is optional.",
         "definition": "The date upon which the plan goes into effect. Start date is required, end date is optional.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.effectiveDate",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "Period"            
+            "code": "Period"
           }
         ],
         "mustSupport": true,
@@ -931,15 +929,15 @@
         "short": "The person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "definition": "The person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlanner",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "BackboneElement"            
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -952,15 +950,15 @@
         "short": "The name of the person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "definition": "The name of the person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlanner.name",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -981,7 +979,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -994,15 +992,15 @@
         "short": "The person responsible for monitoring the plan.",
         "definition": "The person responsible for monitoring the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.planMonitor",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "BackboneElement"            
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -1015,15 +1013,15 @@
         "short": "The name of the person responsible for monitoring the plan.",
         "definition": "The name of the person responsible for monitoring the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.planMonitor.name",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1044,7 +1042,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1065,7 +1063,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1086,7 +1084,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": true,
@@ -1107,7 +1105,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1128,7 +1126,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1149,7 +1147,7 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": true,
@@ -1170,18 +1168,18 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
       },
-       {
+      {
         "id": "eLTSSServicePlanModel.riskManagementPlan",
         "path": "eLTSSServicePlanModel.riskManagementPlan",
         "short": "Description of planned activities to minimize identified risks that endanger the person’s health and safety.",
-        "definition": "Description of planned activities to minimize identified risks that endanger the person’s health and safety. This can be included	as free text or	attachment.",
+        "definition": "Description of planned activities to minimize identified risks that endanger the person’s health and safety. This can be included\tas free text or\tattachment.",
         "min": 0,
         "max": "*",
         "base": {
@@ -1191,14 +1189,14 @@
         },
         "type": [
           {
-            "code": "string"            
+            "code": "string"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
       },
-       {
+      {
         "id": "eLTSSServicePlanModel.service",
         "path": "eLTSSServicePlanModel.service",
         "short": "A service provided under this plan.",
@@ -1213,7 +1211,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"           
+            "targetProfile": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel"
           }
         ],
         "mustSupport": false,
@@ -1226,11 +1224,11 @@
         "short": "States whether or not the person was given a choice of services outlined in the plan.",
         "definition": "States whether or not the person was given a choice of services outlined in the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceOptionsGivenIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1247,11 +1245,11 @@
         "short": "States whether or not the person participated in the selection of the services outlined in the plan.",
         "definition": "States whether or not the person participated in the selection of the services outlined in the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceSelectionIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1268,11 +1266,11 @@
         "short": "States whether or not the person agrees to the services outlined in the plan.",
         "definition": "States whether or not the person agrees to the services outlined in the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.agreementIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1289,11 +1287,11 @@
         "short": "States whether or not the person was offered a choice of providers for each service.",
         "definition": "States whether or not the person was offered a choice of providers for each service.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderOptionsGivenIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1310,11 +1308,11 @@
         "short": "States whether or not the person feels he/she made an informed choice in selecting the provider for each service.",
         "definition": "States whether or not the person feels he/she made an informed choice in selecting the provider for each service.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSelectionAgreementIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1331,11 +1329,11 @@
         "short": "Indicator that reflects the setting in which the person resides is chosen by the individual.",
         "definition": "Indicator that reflects the setting in which the person resides is chosen by the individual.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSettingChoiceIndicator",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1352,11 +1350,11 @@
         "short": "The alternative home and community-based settings that were considered by the individual.",
         "definition": "The alternative home and community-based settings that were considered by the individual.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSettingChoiceOptions",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1373,11 +1371,11 @@
         "short": "The of the person's signature as proof of identify and intent for the plan.",
         "definition": "The of the person's signature as proof of identify and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1394,11 +1392,11 @@
         "short": "The depiction of the person's signature as proof of identify and intent for the plan.",
         "definition": "The depiction of the person's signature as proof of identify and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1415,11 +1413,11 @@
         "short": "The printed or typed name of the person.",
         "definition": "The printed or typed name of the person.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1436,11 +1434,11 @@
         "short": "The date the person signed the plan.",
         "definition": "The date the person signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.personSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1478,11 +1476,11 @@
         "short": "The depiction of the guardian or legally authorized representative’s signature as proof of identity and intent for the plan.",
         "definition": "The depiction of the guardian or legally authorized representative’s signature as proof of identity and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.representativeSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1499,11 +1497,11 @@
         "short": "The printed or typed name of the guardian or legally authorized representative.",
         "definition": "The printed or typed name of the guardian or legally authorized representative.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.representativeSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1520,11 +1518,11 @@
         "short": "The date the guardian or legally authorized representative signed the plan.",
         "definition": "The date the guardian or legally authorized representative signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.representativeSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1541,11 +1539,11 @@
         "short": "The support planner’s signature as proof of identity and intent for the plan.",
         "definition": "The support planner’s signature as proof of identity and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1562,11 +1560,11 @@
         "short": "The depiction of the support planner’s signature as proof of identity and intent for the plan.",
         "definition": "The depiction of the support planner’s signature as proof of identity and intent for the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1583,11 +1581,11 @@
         "short": "The printed or typed name of the support planner.",
         "definition": "The printed or typed name of the support planner.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1604,11 +1602,11 @@
         "short": "The date the support planner signed the plan.",
         "definition": "The date the support planner signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.supportPlannerSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1646,11 +1644,11 @@
         "short": "The depiction of the service provider’s signature as proof they agree to the services they will provide.",
         "definition": "The depiction of the service provider’s signature as proof they agree to the services they will provide.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSignature.value",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1667,11 +1665,11 @@
         "short": "The printed or typed name of the service provider.",
         "definition": "The printed or typed name of the service provider.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSignature.printedName",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
@@ -1688,11 +1686,11 @@
         "short": "The date the service provider signed the plan.",
         "definition": "The date the service provider signed the plan.",
         "min": 0,
-        "max": 1,
+        "max": "1",
         "base": {
           "path": "eLTSSServicePlanModel.serviceProviderSignature.date",
           "min": 0,
-          "max": 1
+          "max": "1"
         },
         "type": [
           {
