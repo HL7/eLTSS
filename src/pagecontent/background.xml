@@ -29,7 +29,7 @@ The adoption and use of Health IT and quality measurement for community-based lo
 <li>lack of established best practices for complying with legal security and privacy requirements when electronically exchanging data between covered clinical entities and non-clinical entities providing community-based services. </li>
 </ul>
 <p>
-The eLTSS FHIR IG will help drive the discussion to begin to remove these limitations by providing an official compilation of all the FHIR-related artifacts and documentation needed to enable exchange of eLTSS Dataset via FHIR (e.g. eLTSS Dataset FHIR mappings, eLTSS data exchange scenarios, examples). The IG will be matured to a Standard for Trial Use (STU) and will serve to support continued testing activities and evaluation by implementers.
+The eLTSS FHIR IG will help drive the discussion to begin to remove these limitations by providing an official compilation of FHIR-related artifacts and documentation that enable exchange of the eLTSS Dataset via FHIR (e.g. eLTSS Dataset FHIR mappings, eLTSS data exchange scenarios, examples). The IG will be matured to a Standard for Trial Use (STU) and will serve to support continued testing activities and evaluation by implementers.
 </p>
 
 

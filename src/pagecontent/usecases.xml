@@ -1,18 +1,18 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
 
 <p>
-LTSS is currently document-oriented exchange paradigm (e.g., consumers exchange the entire service plan as a document), however during outreach stakeholders expressed an interest in the ability to exchange portions of service plan data, query specific elements, receive notifications, etc. The aim of eLTSS is to enable those exchanges and features for LTSS data.
+LTSS is currently a document-oriented exchange paradigm (i.e., consumers exchange the entire service plan as a document), however during outreach stakeholders expressed an interest in the ability to exchange portions of service plan data, query specific elements, receive notifications, etc. The aim of eLTSS is to enable those exchanges and features for LTSS data.
 </p><p>
-During the eLTSS Initiative, two user stories were developed and documented into the use case document:
+During the eLTSS Initiative, two user stories were developed and documented into the <a href="https://oncprojectracking.healthit.gov/wiki/download/attachments/16123461/eLTSS_Use_Case_final_published_20151105.docx">use case document</a>:
 </p>
 <nl>
 <li>LTSS Eligibility Determination, eLTSS Plan Creation and Approval </li>
 <li>Sharing a Person-Centered eLTSS Plan.</li>
 </nl>
 <p>
-The first user story is to use FHIR Resources to generate an eLTSS plan in an LTSS case management system. The set of FHIR Resources needed to accommodate the eLTSS Dataset elements include: Bundle, CarePlan, Claim, Condition, Contract, Coverage, DocumentReference, Encounter, EpisodeOfCare, Goal, Location, Observation, Organization, Patient, Practitioner, Questionnaire, QuestionnaireResponse, Related Person, RiskAssesment, ServiceRequest
+The first user story would use FHIR Resources to generate an eLTSS plan in an LTSS case management system. The set of FHIR Resources needed to represent the eLTSS Dataset elements include: Bundle, CarePlan, Claim, Condition, Contract, Coverage, DocumentReference, Encounter, EpisodeOfCare, Goal, Location, Observation, Organization, Patient, Practitioner, Questionnaire, QuestionnaireResponse, Related Person, RiskAssesment, ServiceRequest
 </p><p>
-Once an eLTSS plan is created using FHIR, we have identified 4 sample use cases to highlight the possible exchanges that an eLTSS Plan may be involved (user story 2 above). The figure below illustrates the use cases. Read on for textual explanations of each use case.
+Once an eLTSS plan is created using FHIR, there are 4 sample use cases that highlight the possible exchanges that an eLTSS Plan may be involved in (user story 2 above). The figure below illustrates these use cases.
 </p>
 <img src="eLTSS_Scenarios.png"/>
 <a name="u1"></a>

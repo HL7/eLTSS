@@ -6,9 +6,9 @@
     </p>
   </blockquote>
 <p>
-The eLTSS Implementation Guide (IG) is based on FHIR Version R4 and defines the minimum conformance requirements for exchanging LTSS data between beneficiaries (patients), providers and care team members using non-clinical and clinical systems (e.g. EHR, PHR, HIE, case management systems, LTSS provider systems). 
+The electronic Long Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and defines the conformance requirements for exchanging LTSS(also referred to as Home and Community-Based Services (HCBS))data between beneficiaries (patients), providers and care team members using non-clinical and clinical systems (e.g. EHR, PHR, HIE, case management systems, LTSS provider systems). 
 </p><p>
-The eLTSS data referenced in this implementation guide refers to the eLTSS Dataset that was developed by the eLTSS Initiative, a joint project between the Office of the National Coordinator for Health Information Technology (ONC) and the Centers for Medicare and Medicaid Services (CMS). The eLTSS Dataset was input for the Informative Document titled “HL7 Cross-Paradigm Information Sharing for Electronic Long-Term Services and Supports (eLTSS), Release 1” balloted during the September 2018 cycle. This IG is further advancing the eLTSS dataset to FHIR mapping found in the Informative Document into FHIR-specific implementer guidance.
+The eLTSS data referenced in this implementation guide refers to the eLTSS Dataset that was developed by the eLTSS Initiative, a joint project between the Office of the National Coordinator for Health Information Technology (ONC) and the Centers for Medicare and Medicaid Services (CMS). The eLTSS Dataset was input for the Informative Document titled <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=495">“HL7 Cross-Paradigm Information Sharing for Electronic Long-Term Services and Supports (eLTSS), Release 1”</a> balloted during the September 2018 cycle. This IG further advances the eLTSS Dataset to FHIR mapping found in the Informative Document to provide FHIR-specific implementer guidance.
 </p>
 <a name="scope"> </a>
 <h3>Scope</h3>
@@ -17,12 +17,12 @@ The eLTSS data referenced in this implementation guide refers to the eLTSS Datas
 <p><b>TODO - Confirm this is comprehensive. point at those where we use just R4, those that we use US-Core on R4, and where we have further constraints.</b></p>
 <ul>
 <li>CarePlan</li> 
-<li>CareTeam</li> 
 <li>Claim</li>
 <li>Condition</li>
 <li>Contract</li>
 <li>Coverage</li>
 <li>DocumentReference</li>
+<li>Encounter</li>
 <li>EpisodeOfCare</li>
 <li>Goal </li>
 <li>Location </li>
@@ -56,11 +56,12 @@ This role is often referred to as case manager, care coordinator, etc.</li>
 This also includes an organization including, but not limited to a hospital including short-term acute care hospital and specialty hospital (e.g., long-term care hospital, rehabilitation facility, and psychiatric hospital, etc.), ambulatory surgery center, provider practice, and nursing home.</li>
 </ul>
 
-<p>This implementation guide will refer to US Core for actors. The eLTSS actors would play the US Core requestor role when an eLTSS plan is exchanged using FHIR. The US Core Responder actor is played by an infrastructure system not directly mentioned.:</p>
+<p>US Core defines two actors: </p>
 <ul>
-<li><b>US Core Requestor:</b> An application that initiates a data access request to retrieve patient and service data. This can be thought of as the client in a client-server interaction.</li>
-<li><b>US Core Responder:</b> A product that responds to the data access request providing patient and service data. This can be thought of as the server in a client-server interaction.</li>
+<li><b><a href="http://hl7.org/fhir/us/core/2019Jan/#us-core-actors">US Core Requestor</a>:</b> An application that initiates a data access request to retrieve patient and service data. This can be thought of as the client in a client-server interaction.</li>
+<li><b><a href="http://hl7.org/fhir/us/core/2019Jan/#us-core-actors">US Core Responder</a>:</b> A product that responds to the data access request providing patient and service data. This can be thought of as the server in a client-server interaction.</li>
 </ul>
+<p>The eLTSS actors correspond to the US Core requestor actor when an eLTSS plan is exchanged using FHIR.</p>
 <a name="Content"></a>
 <h3>Content and organization</h3>
 <p><b>TODO - fill in with link to each page</b></p>
@@ -71,13 +72,86 @@ This also includes an organization including, but not limited to a hospital incl
 </ul>
 <a name="Credits"></a>
 <h3>Credits</h3>
-<p><b>TODO - fill in with Authors and Contributors table</b></p>
-<p><a href="mailto:becky.angeles@carradora.com">Becky Angeles</a></p>
-<p><a href="mailto:Irina.Connelly@gtri.gatech.edu">Irina Connelly</a></p>
-<p><a href="mailto:Jack.Wallace@gtri.gatech.edu">Jack Wallace </a></p>
-<p><a href="mailto:gw@securityrs.com">Greg White </a></p>
-<p><a href="mailto:ayp@securityrs.com">Amber Patel</a></p>
-<p><a href="mailto:johnmoehrke@gmail.com">John Moehrke </a></p>
-<p><a href="mailto:david@pyke.ca">David Pyke</a></p>
-<p>Teddy the Wonder Albatross</p>0
+<p><b>TODO - fill in John Moerhke's Organization</b></p>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Role</th>
+			<th>Organization</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Amber Patel</td>
+			<td>Author</td>
+			<td>SRS</td>
+		</tr>
+		<tr>
+			<td>Anastasia Perchem</td>
+			<td>Contributor</td>
+			<td>Office of the National Coordinator for Health Information Technology</td>
+		</tr>
+		<tr>
+			<td>Becky Angeles</td>
+			<td>Author</td>
+			<td>Carradora Health, Inc.</td>
+		</tr>
+		<tr>
+			<td>Bonnie Young</td>
+			<td>Contributor</td>
+			<td>Georgia Department of Community Health</td>
+		</tr>
+		<tr>
+			<td>David Pyke</td>
+			<td>Author</td>
+			<td>Ready Computing</td>
+		</tr>
+		<tr>
+			<td>Elizabeth Palena-Hall</td>
+			<td>Contributor</td>
+			<td>Office of the National Coordinator for Health Information Technology</td>
+		</tr>
+		<tr>
+			<td>Greg White</td>
+			<td>Author</td>
+			<td>SRS</td>
+		</tr>
+		<tr>
+			<td>Irina Connelly</td>
+			<td>Author</td>
+			<td>Georgia Tech Research Institute</td>
+		</tr>
+		<tr>
+			<td>Jack Wallace</td>
+			<td>Author</td>
+			<td>Georgia Tech Research Institute</td>
+		</tr>
+		<tr>
+			<td>Jamie Parker</td>
+			<td>Author</td>
+			<td>Carradora Health, Inc.</td>
+		</tr>
+		<tr>
+			<td>John Moerhke</td>
+			<td>Author</td>
+			<td>????</td>
+		</tr>
+		<tr>
+			<td>Johnathan Coleman</td>
+			<td>Author</td>
+			<td>SRS</td>
+		</tr>
+		<tr>
+			<td>Kerry Lida</td>
+			<td>Contributor</td>
+			<td>Centers for Medicare &amp; Medicaid Services</td>
+		</tr>
+		<tr>
+			<td>Mark Meadows</td>
+			<td>Contributor</td>
+			<td>Georgia Department of Community Health</td>
+		</tr>
+	</tbody>
+</table>
 </div>
