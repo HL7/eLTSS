@@ -245,6 +245,31 @@
           "generation" : "generated"
         },
         {
+          "nameUrl" : "goal-eltss.html",
+          "title" : "eLTSS goal",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "condition-eltss.html",
+          "title" : "eLTSS Condition",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "observation-eltss.html",
+          "title" : "eLTSS Observation",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "riskassessment-eltss.html",
+          "title" : "eLTSS RiskAssessment",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "questionnaire-eltss.html",
+          "title" : "eLTSS Questionnaire",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "eltss-client.html",
           "title" : "eLTSS Client",
           "generation" : "generated"

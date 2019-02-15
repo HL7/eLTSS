@@ -95,6 +95,41 @@
 </td>
 <td>Defines the overall Location constraints for eLTSS.</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="goal-eltss.html">
+                        •  eLTSS goal</a>
+</td>
+<td>Defines the overall goal constraints for eLTSS.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="condition-eltss.html">
+                        •  eLTSS Condition</a>
+</td>
+<td>Defines the overall Condition constraints for eLTSS.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="observation-eltss.html">
+                        •  eLTSS Observation</a>
+</td>
+<td>Defines the overall Observation constraints for eLTSS.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="riskassessment-eltss.html">
+                        •  eLTSS RiskAssessment</a>
+</td>
+<td>Defines the overall RiskAssessment constraints for eLTSS.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="questionnaire-eltss.html">
+                        •  eLTSS Questionnaire</a>
+</td>
+<td>Defines the overall Questionnaire constraints for eLTSS.</td>
+</tr>
 </tbody>
 </table>
 </p>

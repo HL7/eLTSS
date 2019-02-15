@@ -235,6 +235,31 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="goal-eltss.html"/>
+          <title value="eLTSS goal"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="condition-eltss.html"/>
+          <title value="eLTSS Condition"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="observation-eltss.html"/>
+          <title value="eLTSS Observation"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="riskassessment-eltss.html"/>
+          <title value="eLTSS RiskAssessment"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="questionnaire-eltss.html"/>
+          <title value="eLTSS Questionnaire"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="eltss-client.html"/>
           <title value="eLTSS Client"/>
           <generation value="generated"/>

@@ -30,6 +30,12 @@
     
     
     
+    
+    
+    
+    
+    
+
     <grouping id="logical">
       <name value="Logical Models"/>
       <description value="Logical models document the requirements of the LTSS domain without alignment to FHIR. The only thing that makes the logical models 'FHIR Logical Models' is the use of the StructureDefinition resource as a formal representation. The purpose of the logical model is to gather requirements from domain experts that can subsequently feed into the design process for profiles and implementation guides. A logical model ‘bridges the gap’ by documenting the requirements in a computable fashion without placing any constraints on the model structure."/>
@@ -82,6 +88,11 @@
       <groupingId value="logical"/>
     </resource>
     <!-- Profiles -->
+    
+    
+    
+    
+    
     
     
     
@@ -241,38 +252,63 @@
 <generation value="generated"/>
 </page>
 <page>
+<nameUrl value="goal-eltss.html"/>
+<ns11:title xmlns:ns11="http://hl7.org/fhir" value="eLTSS goal"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="condition-eltss.html"/>
+<ns12:title xmlns:ns12="http://hl7.org/fhir" value="eLTSS Condition"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="observation-eltss.html"/>
+<ns13:title xmlns:ns13="http://hl7.org/fhir" value="eLTSS Observation"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="riskassessment-eltss.html"/>
+<ns14:title xmlns:ns14="http://hl7.org/fhir" value="eLTSS RiskAssessment"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="questionnaire-eltss.html"/>
+<ns15:title xmlns:ns15="http://hl7.org/fhir" value="eLTSS Questionnaire"/>
+<generation value="generated"/>
+</page>
+<page>
 <nameUrl value="eltss-client.html"/>
-<ns11:title xmlns:ns11="http://hl7.org/fhir" value="eLTSS Client"/>
+<ns16:title xmlns:ns16="http://hl7.org/fhir" value="eLTSS Client"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="eltss-server.html"/>
-<ns12:title xmlns:ns12="http://hl7.org/fhir" value="eLTSS Server"/>
+<ns17:title xmlns:ns17="http://hl7.org/fhir" value="eLTSS Server"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="patient-patient1.html"/>
-<ns13:title xmlns:ns13="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
+<ns18:title xmlns:ns18="http://hl7.org/fhir" value="Example - eLTSS CarePlan patient 1"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="practitioner-planner1.html"/>
-<ns14:title xmlns:ns14="http://hl7.org/fhir" value="Example - eLTSS CarePlan Planner 1"/>
+<ns19:title xmlns:ns19="http://hl7.org/fhir" value="Example - eLTSS CarePlan Planner 1"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="claim-claim1.html"/>
-<ns15:title xmlns:ns15="http://hl7.org/fhir" value="Example - eLTSS CarePlan claim 1"/>
+<ns20:title xmlns:ns20="http://hl7.org/fhir" value="Example - eLTSS CarePlan claim 1"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="contract-contract1.html"/>
-<ns16:title xmlns:ns16="http://hl7.org/fhir" value="Example - eLTSS CarePlan contract 1"/>
+<ns21:title xmlns:ns21="http://hl7.org/fhir" value="Example - eLTSS CarePlan contract 1"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="careplan.html"/>
-<ns17:title xmlns:ns17="http://hl7.org/fhir" value="Example - eLTSS CarePlan"/>
+<ns22:title xmlns:ns22="http://hl7.org/fhir" value="Example - eLTSS CarePlan"/>
 <generation value="generated"/>
 </page>
 </page>

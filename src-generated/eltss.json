@@ -111,7 +111,12 @@
     "servicerequest-profile-spreadsheet.xml",
     "episodeofcare-profile-spreadsheet.xml",
     "location-profile-spreadsheet.xml",
-    "practitioner-profile-spreadsheet.xml"
+    "practitioner-profile-spreadsheet.xml",
+    "goal-profile-spreadsheet.xml",
+    "condition-profile-spreadsheet.xml",
+    "observation-profile-spreadsheet.xml",
+    "questionnaire-profile-spreadsheet.xml",
+    "riskassessment-profile-spreadsheet.xml"
   ],
   "resources": {
     "StructureDefinition/eLTSSPersonModel":{
@@ -135,6 +140,16 @@
     "StructureDefinition/practitioner-eltss":{
     },
     "StructureDefinition/location-eltss":{
+    },
+    "StructureDefinition/goal-eltss":{
+    },
+    "StructureDefinition/condition-eltss":{
+    },
+    "StructureDefinition/observation-eltss":{
+    },
+    "StructureDefinition/riskassessment-eltss":{
+    },
+    "StructureDefinition/questionnaire-eltss":{
     },
     "CapabilityStatement/eltss-client":{
     },

@@ -16,11 +16,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>8790</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>12285</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -980,7 +980,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1148,8 +1147,8 @@
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">Total Cost of Service</Data></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">eLTSS Total Cost of Service</Data></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">The total cost of a service for the plan</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s108"/>
@@ -1163,7 +1162,7 @@
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s111"/>
     <Cell ss:StyleID="s111"/>
-    <Cell ss:StyleID="s112"><Data ss:Type="String">Claim.item.unitPrice</Data></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">Claim.item.unitPrice</Data></Cell>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
@@ -1174,8 +1173,8 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s113"><Data ss:Type="String">Service Rate per Unit</Data></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">eLTSS Service Rate per Unit name</Data></Cell>
+    <Cell ss:StyleID="s113"><Data ss:Type="String">The rate of one unit for a service</Data></Cell>
     <Cell ss:StyleID="s114"/>
     <Cell ss:StyleID="s115"/>
     <Cell ss:StyleID="s114"/>
@@ -1323,13 +1322,18 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
    <Zoom>115</Zoom>
-   <LeftColumnVisible>3</LeftColumnVisible>
+   <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>4</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>10</ActiveRow>
+     <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

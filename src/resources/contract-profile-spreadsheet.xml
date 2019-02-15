@@ -16,11 +16,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>8790</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>12285</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -1020,7 +1020,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1050,7 +1049,7 @@
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="contract-eltss">
-  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="9" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="8" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="122.25"/>
@@ -1190,8 +1189,8 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">Signatories to the plan including the Person, Guardian/Legal Representative, Support Planner and/or Service Provider</Data></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature</Data></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s108"/>
@@ -1216,8 +1215,7 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="16" ss:StyleID="s107"/>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"><Data ss:Type="String"> Would probably use &quot;CONSENTER&quot; which represents &quot;consent signature&quot; in this use case.</Data></Cell>
     <Cell ss:StyleID="s108"/>
@@ -1242,62 +1240,10 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Person Printed Name</Data></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Reference to resource for Patient , Guardian/Legal Representative . Support Planner or Service Provider as appropriate</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"><Data ss:Type="String">Must match signature.who</Data></Cell>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s111"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s104"/>
-    <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Contract.signer.signature</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s109"/>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s110"/>
-    <Cell ss:StyleID="s111"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s104"/>
-    <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Contract.signer.signature.who</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s108"/>
-    <Cell><Data ss:Type="String">Must match signer.party</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
@@ -1335,7 +1281,7 @@
     <Cell ss:StyleID="s104"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Contract.signer.signature.when</Data></Cell>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
@@ -1346,10 +1292,36 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature Date</Data></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Person Signature Date, Guardian/Legal Representative Signature Date, Support Planner Signature Date, Service Provider Signature Date</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s108"/>
+    <Cell ss:StyleID="s110"/>
+    <Cell ss:StyleID="s110"/>
+    <Cell ss:StyleID="s110"/>
+    <Cell ss:StyleID="s110"/>
+    <Cell ss:StyleID="s111"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s104"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Contract.signer.signature.who</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Person Printed Name</Data></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature</Data></Cell>
+    <Cell ss:StyleID="s108"/>
+    <Cell><Data ss:Type="String">Must match signer.party</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
@@ -1365,12 +1337,13 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Unsynced/>
+   <Selected/>
    <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>4</ActiveRow>
-     <ActiveCol>15</ActiveCol>
+     <ActiveRow>16</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

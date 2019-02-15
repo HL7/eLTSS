@@ -47,6 +47,22 @@
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="practitioner-profile-spreadsheet.xml"/>
     </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="goal-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="condition-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="observation-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="questionnaire-profile-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="riskassessment-profile-spreadsheet.xml"/>
+    </extension>
+
     <grouping id="logical">
       <name value="Logical Models"/>
       <description value="Logical models document the requirements of the LTSS domain without alignment to FHIR. The only thing that makes the logical models 'FHIR Logical Models' is the use of the StructureDefinition resource as a formal representation. The purpose of the logical model is to gather requirements from domain experts that can subsequently feed into the design process for profiles and implementation guides. A logical model ‘bridges the gap’ by documenting the requirements in a computable fashion without placing any constraints on the model structure." />
@@ -192,6 +208,66 @@
       </reference>
       <name value="eLTSS Location"/>
       <description value="Defines the overall Location constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/goal-eltss"/>
+      </reference>
+      <name value="eLTSS goal"/>
+      <description value="Defines the overall goal constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-eltss"/>
+      </reference>
+      <name value="eLTSS Condition"/>
+      <description value="Defines the overall Condition constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-eltss"/>
+      </reference>
+      <name value="eLTSS Observation"/>
+      <description value="Defines the overall Observation constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/riskassessment-eltss"/>
+      </reference>
+      <name value="eLTSS RiskAssessment"/>
+      <description value="Defines the overall RiskAssessment constraints for eLTSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/questionnaire-eltss"/>
+      </reference>
+      <name value="eLTSS Questionnaire"/>
+      <description value="Defines the overall Questionnaire constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
