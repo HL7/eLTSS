@@ -16,8 +16,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>3165</WindowHeight>
-  <WindowWidth>9600</WindowWidth>
+  <WindowHeight>12285</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
@@ -411,14 +411,6 @@
    <Borders/>
    <Interior/>
   </Style>
-  <Style ss:ID="s107">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
-    ss:WrapText="1"/>
-   <Borders/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"
-    ss:Bold="1"/>
-   <Interior/>
-  </Style>
   <Style ss:ID="s108">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
    <Borders/>
@@ -441,25 +433,6 @@
    <Borders>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
-   <Interior/>
-  </Style>
-  <Style ss:ID="s111">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
-    ss:WrapText="1"/>
-   <Borders/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0066CC"
-    ss:Bold="1"/>
-   <Interior/>
-  </Style>
-  <Style ss:ID="s112">
-   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
-   <Borders/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
-   <Interior/>
-  </Style>
-  <Style ss:ID="s113">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
-    ss:WrapText="1"/>
    <Interior/>
   </Style>
   <Style ss:ID="s114">
@@ -826,6 +799,11 @@
    </Borders>
    <Interior/>
   </Style>
+  <Style ss:ID="s159">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -1119,10 +1097,8 @@
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s106"/>
     <Cell><Data ss:Type="String">Person Identifier </Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">A string of character(s) used to identify the person whom the plan is for.&#10;&#10;This may be the Medicaid ID number where applicable.</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s108"/>
+    <Cell><Data ss:Type="String">A string of character(s) used to identify the person whom the plan is for.&#10;&#10;This may be the Medicaid ID number where applicable.</Data></Cell>
+    <Cell ss:Index="19" ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s109"/>
@@ -1145,10 +1121,8 @@
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s106"/>
     <Cell><Data ss:Type="String">Person Identifier Type</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">The type of unique identifier used to identify the person whom the plan is for.&#10;Values include: Medicaid Number, State ID, Medical Record Number, Other (free text)</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s108"/>
+    <Cell><Data ss:Type="String">The type of unique identifier used to identify the person whom the plan is for.&#10;Values include: Medicaid Number, State ID, Medical Record Number, Other (free text)</Data></Cell>
+    <Cell ss:Index="19" ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s109"/>
@@ -1158,21 +1132,16 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="4"><Data ss:Type="String">Patient.name</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Person Name</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">The name of the person whom the plan is for.</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s111"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#0066CC">1) </Font><I><Font
-         html:Color="#0066CC">given</Font></I><Font html:Color="#0066CC"> is used for both first name &amp; MI, so need more than one.&#10;2) </Font><I><Font
-         html:Color="#0066CC">family</Font></I><Font html:Color="#0066CC"> is a string with the person's surname&#10;3) </Font><I><Font
-         html:Color="#0066CC">text</Font></I><Font html:Color="#0066CC"> is a string that contains the full name of the person.</Font></B></ss:Data></Cell>
+    <Cell><Data ss:Type="String">The name of the person whom the plan is for.</Data></Cell>
+    <Cell ss:Index="18" ss:StyleID="s159"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">1) <I>given</I><Font> is used for both first name &amp; MI, so need more than one.&#10;2) </Font><I>family</I><Font> is a string with the person's surname&#10;3) </Font><I>text</I><Font> is a string that contains the full name of the person.</Font></ss:Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="4"><Data ss:Type="String">Patient.telecom</Data></Cell>
     <Cell ss:Index="9"><Data ss:Type="String">Y</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Person Phone Number</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable.</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">For the eLTSS phone number, system should be provided as &quot;phone&quot;.</Data></Cell>
+    <Cell><Data ss:Type="String">The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable.</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">For the eLTSS phone number, system should be provided as &quot;phone&quot;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s103"/>
@@ -1190,9 +1159,8 @@
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s106"/>
     <Cell><Data ss:Type="String">Person Date of Birth</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">The birth date of the person whom the plan is for.</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">birthDate is in the form &quot;1951-06-04&quot;.</Data></Cell>
+    <Cell><Data ss:Type="String">The birth date of the person whom the plan is for.</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">birthDate is in the form &quot;1951-06-04&quot;.</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s109"/>
@@ -1204,9 +1172,8 @@
     <Cell ss:Index="4"><Data ss:Type="String">Patient.address</Data></Cell>
     <Cell ss:Index="9"><Data ss:Type="String">Y</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Person Address</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">The address of the person whom the plan is for.</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">1) text is the full (not broken out) address.&#10;2) line includes street name, number and suffix (e.g. 123 Main St.).&#10;3) Information such as apt #, floor &amp; room #, etc. also go into line, generally as a separate data element. &#10;4) district covers county.</Data></Cell>
+    <Cell><Data ss:Type="String">The address of the person whom the plan is for.</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">1) text is the full (not broken out) address.&#10;2) line includes street name, number and suffix (e.g. 123 Main St.).&#10;3) Information such as apt #, floor &amp; room #, etc. also go into line, generally as a separate data element. &#10;4) district covers county.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s103"/>
@@ -1223,10 +1190,9 @@
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s106"/>
-    <Cell ss:StyleID="s112"><Data ss:Type="String"> Emergency Contact</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String"> Emergency Contact Name +  Phone Number +  Relationship</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">1) Emergency contact is indicated using a relationship value &quot;C&quot;.&#10;2) If contact is provided, relationship needs to be provided to indicate this is an emergency contact.&#10;3) given is used for both first name &amp; MI, so need more than one.&#10;4) family is a string with the person's surname&#10;5) text is a string with the full name of the person.</Data></Cell>
+    <Cell><Data ss:Type="String">Emergency Contact</Data></Cell>
+    <Cell><Data ss:Type="String"> Emergency Contact Name +  Phone Number +  Relationship</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">1) Emergency contact is indicated using a relationship value &quot;C&quot;.&#10;2) If contact is provided, relationship needs to be provided to indicate this is an emergency contact.&#10;3) given is used for both first name &amp; MI, so need more than one.&#10;4) family is a string with the person's surname&#10;5) text is a string with the full name of the person.</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s109"/>
@@ -1237,9 +1203,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="4" ss:StyleID="s105"><Data ss:Type="String">Patient.contact.name</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Emergency Contact Name</Data></Cell>
-    <Cell ss:StyleID="s113"><Data ss:Type="String">The name of the individual or entity identified to contact in case of emergency.</Data></Cell>
-    <Cell ss:StyleID="s113"/>
-    <Cell ss:StyleID="s113"/>
+    <Cell><Data ss:Type="String">The name of the individual or entity identified to contact in case of emergency.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="4" ss:StyleID="s105"><Data ss:Type="String">Patient.contact.relationship</Data></Cell>
@@ -1265,13 +1229,12 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
-   <LeftColumnVisible>3</LeftColumnVisible>
+   <LeftColumnVisible>10</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>3</ActiveCol>
-     <RangeSelection>R3C4:R12C4</RangeSelection>
+     <ActiveRow>21</ActiveRow>
+     <ActiveCol>15</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

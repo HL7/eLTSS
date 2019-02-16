@@ -1137,9 +1137,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="4"><Data ss:Type="String">Observation.code.coding.code</Data></Cell>
-    <Cell ss:Index="16" ss:StyleID="s107"><Data ss:Type="String">Can be set to &quot;223486007&quot;, which represents &quot;Discussion about preferences&quot;</Data></Cell>
+    <Cell ss:Index="16" ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Can be set to &quot;223486007&quot;, which represents &quot;Discussion about preferences&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s103"/>
@@ -1156,9 +1156,9 @@
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s106"/>
-    <Cell ss:Index="16" ss:StyleID="s107"><Data ss:Type="String">Could be &quot;urn:oid:2.16.840.1.113883.3.88.12.80.28&quot;.</Data></Cell>
+    <Cell ss:Index="16" ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Could be &quot;urn:oid:2.16.840.1.113883.3.88.12.80.28&quot;.</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s109"/>
@@ -1169,9 +1169,8 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="4"><Data ss:Type="String">Observation.code.text</Data></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Preference</Data></Cell>
+    <Cell ss:Index="17" ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Can be used to indicate this Observation is a Preference.</Data></Cell>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s103"/>
@@ -1228,12 +1227,12 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
-   <LeftColumnVisible>3</LeftColumnVisible>
+   <LeftColumnVisible>12</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>5</ActiveRow>
-     <ActiveCol>15</ActiveCol>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>18</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

@@ -180,6 +180,21 @@
         <title value="Artifact List"/>
         <generation value="html"/>
         <page>
+          <nameUrl value="profiles.html"/>
+          <title value="eLTSS FHIR Profiles"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="examples.html"/>
+          <title value="eLTSS examples"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="models.html"/>
+          <title value="eLTSS FHIR models"/>
+          <generation value="html"/>
+        </page>
+        <page>
           <nameUrl value="eLTSSPersonModel.html"/>
           <title value="eLTSS Person"/>
           <generation value="generated"/>
@@ -236,7 +251,7 @@
         </page>
         <page>
           <nameUrl value="goal-eltss.html"/>
-          <title value="eLTSS goal"/>
+          <title value="eLTSS Goal"/>
           <generation value="generated"/>
         </page>
         <page>

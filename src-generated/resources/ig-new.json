@@ -190,6 +190,21 @@
         "title" : "Artifact List",
         "generation" : "html",
         "page" : [{
+          "nameUrl" : "profiles.html",
+          "title" : "eLTSS FHIR Profiles",
+          "generation" : "html"
+        },
+        {
+          "nameUrl" : "examples.html",
+          "title" : "eLTSS examples",
+          "generation" : "html"
+        },
+        {
+          "nameUrl" : "models.html",
+          "title" : "eLTSS FHIR models",
+          "generation" : "html"
+        },
+        {
           "nameUrl" : "eLTSSPersonModel.html",
           "title" : "eLTSS Person",
           "generation" : "generated"
@@ -246,7 +261,7 @@
         },
         {
           "nameUrl" : "goal-eltss.html",
-          "title" : "eLTSS goal",
+          "title" : "eLTSS Goal",
           "generation" : "generated"
         },
         {

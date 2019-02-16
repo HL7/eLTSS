@@ -218,8 +218,8 @@
       <reference>
         <reference value="StructureDefinition/goal-eltss"/>
       </reference>
-      <name value="eLTSS goal"/>
-      <description value="Defines the overall goal constraints for eLTSS."/>
+      <name value="eLTSS Goal"/>
+      <description value="Defines the overall Goal constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -366,7 +366,22 @@
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
+          <page>
+          <nameUrl value="profiles.html"/>
+          <title value="eLTSS FHIR Profiles"/>
+          <generation value="html"/>
+          </page> 
+          <page>
+          <nameUrl value="examples.html"/>
+          <title value="eLTSS examples"/>
+          <generation value="html"/>
+          </page>
+          <page>
+          <nameUrl value="models.html"/>
+          <title value="eLTSS FHIR models"/>
+          <generation value="html"/>
+          </page>
+        </page>
       </page>
-    </page>
   </definition>
 </ImplementationGuide>

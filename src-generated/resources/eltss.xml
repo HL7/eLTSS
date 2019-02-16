@@ -196,7 +196,22 @@
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
-      <page>
+          <page>
+          <nameUrl value="profiles.html"/>
+          <title value="eLTSS FHIR Profiles"/>
+          <generation value="html"/>
+          </page> 
+          <page>
+          <nameUrl value="examples.html"/>
+          <title value="eLTSS examples"/>
+          <generation value="html"/>
+          </page>
+          <page>
+          <nameUrl value="models.html"/>
+          <title value="eLTSS FHIR models"/>
+          <generation value="html"/>
+          </page>
+        <page>
 <nameUrl value="eLTSSPersonModel.html"/>
 <ns0:title xmlns:ns0="http://hl7.org/fhir" value="eLTSS Person"/>
 <generation value="generated"/>
@@ -253,7 +268,7 @@
 </page>
 <page>
 <nameUrl value="goal-eltss.html"/>
-<ns11:title xmlns:ns11="http://hl7.org/fhir" value="eLTSS goal"/>
+<ns11:title xmlns:ns11="http://hl7.org/fhir" value="eLTSS Goal"/>
 <generation value="generated"/>
 </page>
 <page>
@@ -312,6 +327,6 @@
 <generation value="generated"/>
 </page>
 </page>
-    </page>
+      </page>
   </definition>
 </ImplementationGuide>

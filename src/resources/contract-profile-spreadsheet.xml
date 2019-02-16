@@ -1049,7 +1049,7 @@
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="contract-eltss">
-  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="8" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="14" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="122.25"/>
@@ -1164,9 +1164,10 @@
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>
     <Cell ss:StyleID="s97"/>
-    <Cell ss:StyleID="s96"/>
-    <Cell ss:Index="17" ss:StyleID="s98"/>
-    <Cell ss:StyleID="s99"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s98"/>
     <Cell ss:StyleID="s100"/>
     <Cell ss:StyleID="s101"/>
@@ -1191,8 +1192,8 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature</Data></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature</Data></Cell>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. The primary one for the patient/beneficiary is &quot;PAT&quot; (patient), although implementers may use others as well. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized.</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
@@ -1215,9 +1216,10 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:Index="16" ss:StyleID="s107"/>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s109"><Data ss:Type="String"> Would probably use &quot;CONSENTER&quot; which represents &quot;consent signature&quot; in this use case.</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String"> Would probably use &quot;CONSENTER&quot; which represents &quot;consent signature&quot; in this use case.</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
@@ -1242,8 +1244,8 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Person Printed Name</Data></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Reference to resource for Patient , Guardian/Legal Representative . Support Planner or Service Provider as appropriate</Data></Cell>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Must match signature.who</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Must match signature.who</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
@@ -1267,9 +1269,9 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s109"><Data ss:Type="String"> Would probably use &quot;1.2.840.10065.1.12.1.7&quot; which represents &quot;consent signature&quot; in this use case.</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String"> Would probably use &quot;1.2.840.10065.1.12.1.7&quot; which represents &quot;consent signature&quot; in this use case.</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
@@ -1293,9 +1295,9 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature Date</Data></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Person Signature Date, Guardian/Legal Representative Signature Date, Support Planner Signature Date, Service Provider Signature Date</Data></Cell>
-    <Cell ss:StyleID="s108"/>
-    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature Date, Guardian/Legal Representative Signature Date, Support Planner Signature Date, Service Provider Signature Date</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
@@ -1320,14 +1322,50 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Person Printed Name</Data></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature</Data></Cell>
-    <Cell ss:StyleID="s108"/>
-    <Cell><Data ss:Type="String">Must match signer.party</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">Must match signer.party</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s110"/>
     <Cell ss:StyleID="s111"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="15" ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="15" ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="15" ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="15" ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="15" ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="15" ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -1342,8 +1380,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>16</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>14</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
