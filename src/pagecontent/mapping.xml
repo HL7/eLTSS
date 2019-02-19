@@ -1,6 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  <p>
-<b>TODO: enter mapping table</b>
-  </p>
-
+<p>Attached are the two primary mapping tables for the eLTSS that give an overview of the mappings between FHIR and the eLTSS dataset.</p>
+<table>
+<tr>
+<td><a href="eLTSS_to_FHIR_R4_element.html"> eLTSS Dataset to FHIR Release 4</a> </td>
+<td>Complete mapping of the eLTSS dataset to FHIR Release 4 Resources</td>
+</tr>
+<tr>
+<td><a href="eLTSS_FHIR_USCore_Mapping.html">eLTSS Dataset to FHIR USCore Implementation Guide</a></td>
+<td>Mapping of the eTLSS Dataset to the FHIR USCore Implementation Guide profiles</td>
+</tr>
+</table>
 </div>

@@ -190,6 +190,16 @@
           <nameUrl value="mapping.html"/>
           <title value="General eLTSS mapping to FHIR"/>
           <generation value="html"/>
+          <page>
+          <nameUrl value="eLTSS_to_FHIR_R4_element.html"/>
+          <title value="eLTSS Dataset to FHIR Release 4"/>
+          <generation value="html"/>
+          </page> 
+          <page>
+          <nameUrl value="eLTSS_FHIR_USCore_Mapping.html"/>
+          <title value="eLTSS Dataset to FHIR USCore Implementation Guide"/>
+          <generation value="html"/>
+          </page> 
         </page>
       </page>
       <page>

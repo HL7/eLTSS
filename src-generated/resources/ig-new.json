@@ -182,7 +182,17 @@
         {
           "nameUrl" : "mapping.html",
           "title" : "General eLTSS mapping to FHIR",
-          "generation" : "html"
+          "generation" : "html",
+          "page" : [{
+            "nameUrl" : "eLTSS_to_FHIR_R4_element.html",
+            "title" : "eLTSS Dataset to FHIR Release 4",
+            "generation" : "html"
+          },
+          {
+            "nameUrl" : "eLTSS_FHIR_USCore_Mapping.html",
+            "title" : "eLTSS Dataset to FHIR USCore Implementation Guide",
+            "generation" : "html"
+          }]
         }]
       },
       {

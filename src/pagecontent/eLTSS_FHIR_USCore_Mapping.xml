@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+
+<table border="1">
+<tr>
+<th>eLTSS Dataset Element</th>
+<th>FHIR Resource</th>
+<th>US Core Profile</th>
+</tr>
+<tr>
+<td>Person Name</td>
+<td>Patient</td>
+<td>US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Person Identifier</td>
+<td>Patient</td>
+<td>US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Person Identifier Type</td>
+<td>Patient</td>
+<td>US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Person Date of Birth</td>
+<td>Patient</td>
+<td>US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Person Phone Number</td>
+<td>Patient</td>
+<td/>
+</tr>
+<tr>
+<td>Person Address</td>
+<td>Patient</td>
+<td/>
+</tr>
+<tr>
+<td>Emergency Contact Name</td>
+<td>Patient</td>
+<td/>
+</tr>
+<tr>
+<td>Emergency Contact Relationship</td>
+<td>Patient</td>
+<td/>
+</tr>
+<tr>
+<td>Emergency Contact Phone Number</td>
+<td>Patient</td>
+<td/>
+</tr>
+<tr>
+<td>Emergency Backup Plan</td>
+<td>CarePlan OR DocumentReference</td>
+<td>US Core CarePlan Profile OR US Core DocumentReference Profile</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>Goal</td>
+<td>US Core Goal Profile</td>
+</tr>
+<tr>
+<td>Step or Action</td>
+<td>CarePlan OR Service Request</td>
+<td>US Core CarePlan Profile</td>
+</tr>
+<tr>
+<td>Strength</td>
+<td>Observation</td>
+<td/>
+</tr>
+<tr>
+<td>Assessed Need</td>
+<td>Condition</td>
+<td>US Core Condition Profile</td>
+</tr>
+<tr>
+<td>Person Setting Choice Indicator</td>
+<td>Questionnaire AND QuestionnaireResponse</td>
+<td/>
+</tr>
+<tr>
+<td>Person Setting Choice Options</td>
+<td>Questionnaire AND QuestionnaireResponse</td>
+<td/>
+</tr>
+<tr>
+<td>Plan Monitor Name</td>
+<td>Practitioner</td>
+<td>US Core Practitioner Profile</td>
+</tr>
+<tr>
+<td>Plan Monitor Phone Number</td>
+<td>Practitioner</td>
+<td>US Core Practitioner Profile</td>
+</tr>
+<tr>
+<td>Preference</td>
+<td>Observation</td>
+<td/>
+</tr>
+<tr>
+<td>Service Options Given Indicator</td>
+<td>Questionnaire AND QuestionnaireResponse</td>
+<td/>
+</tr>
+<tr>
+<td>Service Selection Indicator</td>
+<td>Questionnaire AND QuestionnaireResponse</td>
+<td/>
+</tr>
+<tr>
+<td>Service Plan Agreement Indicator</td>
+<td>Questionnaire AND QuestionnaireResponse</td>
+<td/>
+</tr>
+<tr>
+<td>Service Provider Options Given Indicator</td>
+<td>Questionnaire AND QuestionnaireResponse</td>
+<td/>
+</tr>
+<tr>
+<td>Service Provider Selection Agreement Indicator</td>
+<td>Questionnaire AND QuestionnaireResponse</td>
+<td/>
+</tr>
+<tr>
+<td>Plan Effective Date</td>
+<td>CarePlan</td>
+<td>US Core CarePlan Profile</td>
+</tr>
+<tr>
+<td>Person Signature</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Person Printed Name</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Person Signature Date</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Guardian / Legal Representative Signature</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Guardian / Legal Representative Printed Name</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Guardian / Legal Representative Signature Date</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Support Planner Signature</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Support Planner Printed Name</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Support Planner Signature Date</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Service Provider Signature</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Service Provider Printed Name</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Service Provider Signature Date</td>
+<td>Contract</td>
+<td/>
+</tr>
+<tr>
+<td>Identified Risk</td>
+<td>RiskAssessment</td>
+<td/>
+</tr>
+<tr>
+<td>Risk Management Plan</td>
+<td>RiskAssessment OR DocumentReference</td>
+<td>US Core DocumentReference Profile</td>
+</tr>
+<tr>
+<td>Service Name</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Self-Directed Service Indicator</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Service Start Date</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Service End Date</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Service Delivery Address</td>
+<td>Location</td>
+<td>US Core Location Profile</td>
+</tr>
+<tr>
+<td>Service Comment</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Service Funding Source</td>
+<td>Coverage</td>
+<td/>
+</tr>
+<tr>
+<td>Service Unit Quantity</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Unit of Service Type</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Service Unit Quantity Interval</td>
+<td>ServiceRequest</td>
+<td/>
+</tr>
+<tr>
+<td>Service Rate per Unit</td>
+<td>Claim</td>
+<td/>
+</tr>
+<tr>
+<td>Total Cost of Service</td>
+<td>Claim</td>
+<td/>
+</tr>
+<tr>
+<td>Support Planner Name</td>
+<td>Practitioner | CareTeam | Organization | Patient | RelatedPerson</td>
+<td>US Core Practitioner Profile, US Core CareTeam Profile, US Core Organization Profile, US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Support Planner Phone Number</td>
+<td>Practitioner | CareTeam | Organization | Patient | RelatedPerson</td>
+<td>US Core Practitioner Profile, US Core CareTeam Profile, US Core Organization Profile, US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Service Provider Name</td>
+<td>Practitioner | CareTeam | Organization | Patient | RelatedPerson</td>
+<td>US Core Practitioner Profile, US Core CareTeam Profile, US Core Organization Profile, US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Service Provider Phone Number</td>
+<td>Practitioner | CareTeam | Organization | Patient | RelatedPerson</td>
+<td>US Core Practitioner Profile, US Core CareTeam Profile, US Core Organization Profile, US Core Patient Profile</td>
+</tr>
+<tr>
+<td>Non-Paid Service Provider Relationship</td>
+<td>RelatedPerson</td>
+<td/>
+</tr>
+</table>
+</div>
