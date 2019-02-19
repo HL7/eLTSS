@@ -6,7 +6,7 @@
     </p>
   </blockquote>
 <p>
-The electronic Long Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and defines the conformance requirements for exchanging LTSS(also referred to as Home and Community-Based Services (HCBS))data between beneficiaries (patients), providers and care team members using non-clinical and clinical systems (e.g. EHR, PHR, HIE, case management systems, LTSS provider systems). 
+The electronic Long Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and defines the conformance requirements for exchanging LTSS (also referred to as Home and Community-Based Services (HCBS)) data between beneficiaries (patients), providers and care team members using non-clinical and clinical systems (e.g. EHR, PHR, HIE, case management systems, LTSS provider systems). 
 </p><p>
 The eLTSS data referenced in this implementation guide refers to the eLTSS Dataset that was developed by the eLTSS Initiative, a joint project between the Office of the National Coordinator for Health Information Technology (ONC) and the Centers for Medicare and Medicaid Services (CMS). The eLTSS Dataset was input for the Informative Document titled <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=495">“HL7 Cross-Paradigm Information Sharing for Electronic Long-Term Services and Supports (eLTSS), Release 1”</a> balloted during the September 2018 cycle. This IG further advances the eLTSS Dataset to FHIR mapping found in the Informative Document to provide FHIR-specific implementer guidance.
 </p>
@@ -31,8 +31,7 @@ The eLTSS data referenced in this implementation guide refers to the eLTSS Datas
 <li>Patient </li>
 <li>Practitioner </li>
 <li>PractitionerRole</li>
-<li>Questionnaire </li>
-<li>QuestionnaireResponse </li>
+<li>Questionnaire/QuestionnaireResponse </li>
 <li>Related Person </li>
 <li>RiskAssesment </li>
 <li>ServiceRequest</li>
@@ -40,7 +39,7 @@ The eLTSS data referenced in this implementation guide refers to the eLTSS Datas
 <p>
 The concept of an eLTSS service plan most closely aligns with the FHIR CarePlan resource, which is semantically a good fit. The diagram below shows the FHIR resources utilized in the mapping as well as the FHIR data elements used to link these resources. Parentheses indicates the eLTSS Dataset data element (e.g. Assessed Need, Preference) or group of elements (e.g. Beneficiary Demographics, Person Indicators). Lines indicate linkages between FHIR resources and are labeled with the FHIR data element that provides the reference.</p>
 <img src="CarePlan_FHIR_mapping_centered_narrow.png" width="1200" height="600"/>
-
+<br />
 <a name="us-core"></a>
 <h3>US Core Dependency</h3>
 <p>Please note that implementations using this eLTSS FHIR IG must comply with US Core when applicable. US Core defines the minimum conformance requirements for accessing patient data as defined by the Argonaut pilot implementations and the ONC 2015 Edition Common Clinical Data Set (CCDS). These profiles are intended to be the foundation for US Realm FHIR implementation guides. Therefore, <a href="http://www.hl7.org/fhir/us/core/#us-core-profiles">US Core Profiles</a>, <a href="http://www.hl7.org/fhir/us/core/terminology.html">US Core Terminology</a>,  <a href="http://www.hl7.org/fhir/us/core/capstmnts.html">US Core Capability Statements / Conformance Requirements</a>, and <a href="http://www.hl7.org/fhir/us/core/security.html">Security Considerations</a> not specifically noted in this guide must be included when applicable.</p>

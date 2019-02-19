@@ -2,12 +2,12 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
 <table border="1">
 <tr>
-<td >eLTSS Grouping</td>
-<td>eLTSS Data Element Name</td>
-<td>Data Element Definition (includes examples, expected list of values and usage note where applicable)</td>
-<td >FHIR R4 Resource Element(s)</td>
-<td>FHIR R4 Resource Element Cardinality (with US Core Constraints)</td>
-<td >Additional Mapping Details</td>
+<th>eLTSS Grouping</th>
+<th>eLTSS Data Element Name</th>
+<th>Data Element Definition (includes examples, expected list of values and usage note where applicable)</th>
+<th>FHIR R4 Resource Element(s)</th>
+<th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
+<th>Additional Mapping Details</th>
 </tr>
 <tr>
 <td >Beneficiary Demographics</td>
