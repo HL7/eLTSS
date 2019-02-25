@@ -196,25 +196,25 @@
         }]
       },
       {
+        "nameUrl" : "profiles.html",
+        "title" : "eLTSS FHIR Profiles",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "examples.html",
+        "title" : "eLTSS Examples",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "models.html",
+        "title" : "eLTSS FHIR Models",
+        "generation" : "html"
+      },
+      {
         "nameUrl" : "artifacts.html",
         "title" : "Artifact List",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "profiles.html",
-          "title" : "eLTSS FHIR Profiles",
-          "generation" : "html"
-        },
-        {
-          "nameUrl" : "examples.html",
-          "title" : "eLTSS examples",
-          "generation" : "html"
-        },
-        {
-          "nameUrl" : "models.html",
-          "title" : "eLTSS FHIR models",
-          "generation" : "html"
-        },
-        {
           "nameUrl" : "eLTSSPersonModel.html",
           "title" : "eLTSS Person",
           "generation" : "generated"
@@ -329,6 +329,11 @@
           "title" : "Example - eLTSS CarePlan",
           "generation" : "generated"
         }]
+      },
+      {
+        "nameUrl" : "downloads.html",
+        "title" : "Implementation Guide Downloads",
+        "generation" : "html"
       }]
     },
     "parameter" : [{

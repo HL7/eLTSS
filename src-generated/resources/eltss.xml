@@ -35,7 +35,6 @@
     
     
     
-
     <grouping id="logical">
       <name value="Logical Models"/>
       <description value="Logical models document the requirements of the LTSS domain without alignment to FHIR. The only thing that makes the logical models 'FHIR Logical Models' is the use of the StructureDefinition resource as a formal representation. The purpose of the logical model is to gather requirements from domain experts that can subsequently feed into the design process for profiles and implementation guides. A logical model ‘bridges the gap’ by documenting the requirements in a computable fashion without placing any constraints on the model structure."/>
@@ -49,7 +48,7 @@
       <name value="Extensions"/>
       <description value="Extensions defined as part of the eLTSS implementation guide"/>
     </grouping>
-	-->
+	  -->
     <grouping id="capability">
       <name value="Capability Statement(s)"/>
       <description value="Capability Statement(s) showing the use of the eLTSS profiles"/>
@@ -191,37 +190,37 @@
           <title value="General eLTSS mapping to FHIR"/>
           <generation value="html"/>
           <page>
-          <nameUrl value="eLTSS_to_FHIR_R4_element.html"/>
-          <title value="eLTSS Dataset to FHIR Release 4"/>
-          <generation value="html"/>
-          </page> 
+            <nameUrl value="eLTSS_to_FHIR_R4_element.html"/>
+            <title value="eLTSS Dataset to FHIR Release 4"/>
+            <generation value="html"/>
+          </page>
           <page>
-          <nameUrl value="eLTSS_FHIR_USCore_Mapping.html"/>
-          <title value="eLTSS Dataset to FHIR USCore Implementation Guide"/>
-          <generation value="html"/>
-          </page> 
+            <nameUrl value="eLTSS_FHIR_USCore_Mapping.html"/>
+            <title value="eLTSS Dataset to FHIR USCore Implementation Guide"/>
+            <generation value="html"/>
+          </page>
         </page>
       </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="eLTSS FHIR Profiles"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="eLTSS Examples"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="models.html"/>
+        <title value="eLTSS FHIR Models"/>
+        <generation value="html"/>
+      </page> 
       <page>
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
-          <page>
-          <nameUrl value="profiles.html"/>
-          <title value="eLTSS FHIR Profiles"/>
-          <generation value="html"/>
-          </page> 
-          <page>
-          <nameUrl value="examples.html"/>
-          <title value="eLTSS examples"/>
-          <generation value="html"/>
-          </page>
-          <page>
-          <nameUrl value="models.html"/>
-          <title value="eLTSS FHIR models"/>
-          <generation value="html"/>
-          </page>
-        <page>
+      <page>
 <nameUrl value="eLTSSPersonModel.html"/>
 <ns0:title xmlns:ns0="http://hl7.org/fhir" value="eLTSS Person"/>
 <generation value="generated"/>
@@ -337,6 +336,12 @@
 <generation value="generated"/>
 </page>
 </page>
+
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Implementation Guide Downloads"/>
+        <generation value="html"/>
       </page>
+    </page>
   </definition>
 </ImplementationGuide>

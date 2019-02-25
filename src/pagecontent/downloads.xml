@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <p><strong>Package File</strong></p>
+  <p>The following package file contains an NPM Package used by many of the FHIR tools.  It includes all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this version of the Implementation Guides.:</p>
+  <a href="package.tgz">Package</a>
+  <br /> <br />
+  <p><strong>Examples</strong></p>
+  <p>All the examples that are used in this Implementation Guide available for download:</p>
+  <a href="examples.xml.zip">[XML] Examples</a><br />
+  <a href="examples.json.zip">[JSON] Examples</a>
+  <br /> <br />
+  <p><strong>Downloadable Copy of Entire Specification</strong></p>
+  <p>A downloadable version is available so this Implementation Guide can be hosted locally:</p>
+  <a href="full-ig.zip">Downloadable Copy</a><br /> <br /> <br />
+</div>

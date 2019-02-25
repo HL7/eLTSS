@@ -6,7 +6,7 @@
   <li>
     <a href="toc.html">Table of Contents</a>
   </li>
-  <li>
+    <li>
     <a href="models.html">Logical Models</a>
   </li>
   <li>
@@ -22,6 +22,11 @@
     <a href="artifacts.html">Artifact Index</a>
   </li>
   <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <!--
+  <li>
     <a href="{{site.data.fhir.path}}index.html">FHIR Spec</a>
   </li>
+  -->
 </ul>

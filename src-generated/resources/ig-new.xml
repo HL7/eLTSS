@@ -186,24 +186,24 @@
         </page>
       </page>
       <page>
+        <nameUrl value="profiles.html"/>
+        <title value="eLTSS FHIR Profiles"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="eLTSS Examples"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="models.html"/>
+        <title value="eLTSS FHIR Models"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
-        <page>
-          <nameUrl value="profiles.html"/>
-          <title value="eLTSS FHIR Profiles"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <nameUrl value="examples.html"/>
-          <title value="eLTSS examples"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <nameUrl value="models.html"/>
-          <title value="eLTSS FHIR models"/>
-          <generation value="html"/>
-        </page>
         <page>
           <nameUrl value="eLTSSPersonModel.html"/>
           <title value="eLTSS Person"/>
@@ -319,6 +319,11 @@
           <title value="Example - eLTSS CarePlan"/>
           <generation value="generated"/>
         </page>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Implementation Guide Downloads"/>
+        <generation value="html"/>
       </page>
     </page>
     <parameter>

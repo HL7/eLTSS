@@ -9,8 +9,9 @@
 The electronic Long Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and defines the conformance requirements for exchanging LTSS (also referred to as Home and Community-Based Services (HCBS)) data between beneficiaries (patients), providers and care team members using non-clinical and clinical systems (e.g. EHR, PHR, HIE, case management systems, LTSS provider systems). 
 </p>
   <p>
-The eLTSS data referenced in this implementation guide refers to the eLTSS Dataset that was developed by the eLTSS Initiative, a joint project between the Office of the National Coordinator for Health Information Technology (ONC) and the Centers for Medicare and Medicaid Services (CMS). The eLTSS Dataset was input for the Informative Document titled <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=495">“HL7 Cross-Paradigm Information Sharing for Electronic Long-Term Services and Supports (eLTSS), Release 1”</a> balloted during the September 2018 cycle. This IG further advances the eLTSS Dataset to FHIR mapping found in the Informative Document to provide FHIR-specific implementer guidance.
+The eLTSS data referenced in this implementation guide refers to the eLTSS Dataset that was developed by the eLTSS Initiative, a joint project between the Office of the National Coordinator for Health Information Technology (ONC) and the Centers for Medicare and Medicaid Services (CMS). The eLTSS Dataset was input for the Informative Document titled <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=495">“HL7 Cross-Paradigm Information Sharing for Electronic Long-Term Services and Supports (eLTSS), Release 1”</a> balloted during the September 2018 cycle. This IG further advances the eLTSS Dataset to FHIR mapping found in the Informative Document to provide FHIR-specific implementer guidance.  For more information, please see the <a href="background.html">Project Background</a> and the <a href="usecases.html">Domain Analysis Use Cases</a> included in this Guide.
 </p>
+
   <a name="scope"> </a>
   <h3>Scope</h3>
   <p>The scope of this implementation guide is to describe how HCBS data requirements, documented in the 56 data elements included in the eLTSS Dataset, can be represented for exchange and sharing using FHIR.</p>
@@ -32,7 +33,6 @@ The eLTSS data referenced in this implementation guide refers to the eLTSS Datas
     <li>Practitioner </li>
     <li>PractitionerRole</li>
     <li>Questionnaire/QuestionnaireResponse </li>
-    <li>Related Person </li>
     <li>RiskAssesment </li>
     <li>ServiceRequest</li>
   </ul>
