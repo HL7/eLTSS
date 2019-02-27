@@ -55,13 +55,7 @@
         </td>
         <td>Defines the overall Location constraints for eLTSS</td>
       </tr>
-      <tr>
-        <td>
-          <a href="practitioner-eltss.html">eLTSS Practitioner</a>
-        </td>
-        <td>Defines the overall Practitioner constraints for eLTSS</td>
-      </tr>
-      <tr>
+       <tr>
         <td>
           <a href="goal-eltss.html">eLTSS Goal</a>
         </td>
