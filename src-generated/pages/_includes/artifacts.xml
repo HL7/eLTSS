@@ -12,21 +12,21 @@
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSPersonModel.html">
-                        •  eLTSS Person</a>
+                        •  eLTSS Person Logical Model </a>
 </td>
 <td>Defines the Logical Model for eLTSS Person</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSServiceModel.html">
-                        •  eLTSS Service</a>
+                        •  eLTSS Service Logical Model </a>
 </td>
 <td>Defines the Logical Model for eLTSS Service</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSServicePlanModel.html">
-                        •  eLTSS Service Plan</a>
+                        •  eLTSS Service Plan Logical Model </a>
 </td>
 <td>Defines the Logical Model for eLTSS Service Plan</td>
 </tr>
@@ -34,7 +34,7 @@
 </table>
 </p>
 <a name="2"> </a>
-<h3>General Profiles </h3>
+<h3>eLTSS Profiles </h3>
 <p>General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest</p>
 <p>
 <table>
@@ -44,7 +44,7 @@
 <a href="careplan-eltss.html">
                         •  eLTSS CarePlan Profile</a>
 </td>
-<td>Base profile that defines characteristics shared by all CarePlan resources in eLTSS</td>
+<td>Base profile that defines the CarePlan constraints for eLTSS</td>
 </tr>
 <tr>
 <td style="column-width:30%">
@@ -157,36 +157,36 @@
 <tbody>
 <tr>
 <td style="column-width:30%">
-<a href="patient-patient1.html">
-                        •  Example - eLTSS CarePlan Patient 1</a>
-</td>
-<td>Test instance showing data from the eLTSS spec</td>
-</tr>
-<tr>
-<td style="column-width:30%">
-<a href="practitioner-planner1.html">
-                        •  Example - eLTSS CarePlan Planner 1</a>
+<a href="careplan.html">
+                        •  eLTSS CarePlan Example</a>
 </td>
 <td>Test instance showing data from the eLTSS spec</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="claim-claim1.html">
-                        •  Example - eLTSS CarePlan Claim 1</a>
+                        •  eLTSS CarePlan Claim Example 1</a>
 </td>
 <td>Test instance showing data from the eLTSS spec</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="contract-contract1.html">
-                        •  Example - eLTSS CarePlan Contract 1</a>
+                        •  eLTSS CarePlan Contract Example 1</a>
 </td>
 <td>Test instance showing data from the eLTSS spec</td>
 </tr>
 <tr>
 <td style="column-width:30%">
-<a href="careplan.html">
-                        •  Example - eLTSS CarePlan</a>
+<a href="patient-patient1.html">
+                        •  eLTSS CarePlan Patient Example 1</a>
+</td>
+<td>Test instance showing data from the eLTSS spec</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="practitioner-planner1.html">
+                        •  eLTSS CarePlan Planner Example 1</a>
 </td>
 <td>Test instance showing data from the eLTSS spec</td>
 </tr>

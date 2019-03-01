@@ -153,15 +153,15 @@
     },
     "CapabilityStatement/eltss-server":{
     },
-    "Bundle/patient-patient1":{
-    },
-    "Bundle/practitioner-planner1":{
+    "Bundle/careplan":{
     },
     "Bundle/claim-claim1":{
     },
     "Bundle/contract-contract1":{
     },
-    "Bundle/careplan":{
+    "Bundle/patient-patient1":{
+    },
+    "Bundle/practitioner-planner1":{
     }
   }
 }

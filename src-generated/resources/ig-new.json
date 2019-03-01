@@ -58,7 +58,7 @@
     },
     {
       "id" : "general",
-      "name" : "General Profiles",
+      "name" : "eLTSS Profiles",
       "description" : "General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"
     },
     {
@@ -75,7 +75,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSPersonModel"
       },
-      "name" : "eLTSS Person",
+      "name" : "eLTSS Person Logical Model ",
       "description" : "Defines the Logical Model for eLTSS Person",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -84,7 +84,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSServiceModel"
       },
-      "name" : "eLTSS Service",
+      "name" : "eLTSS Service Logical Model ",
       "description" : "Defines the Logical Model for eLTSS Service",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -93,7 +93,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSServicePlanModel"
       },
-      "name" : "eLTSS Service Plan",
+      "name" : "eLTSS Service Plan Logical Model ",
       "description" : "Defines the Logical Model for eLTSS Service Plan",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -118,27 +118,18 @@
     },
     {
       "reference" : {
-        "reference" : "Bundle/patient-patient1"
+        "reference" : "Bundle/careplan"
       },
-      "name" : "Example - eLTSS CarePlan Patient 1",
+      "name" : "eLTSS CarePlan Example",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/patient-eltss",
-      "groupingId" : "examples"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/practitioner-planner1"
-      },
-      "name" : "Example - eLTSS CarePlan Planner 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/practitioner-eltss",
+      "exampleCanonical" : "StructureDefinition/careplan-eltss",
       "groupingId" : "examples"
     },
     {
       "reference" : {
         "reference" : "Bundle/claim-claim1"
       },
-      "name" : "Example - eLTSS CarePlan Claim 1",
+      "name" : "eLTSS CarePlan Claim Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
       "exampleCanonical" : "StructureDefinition/claim-eltss",
       "groupingId" : "examples"
@@ -147,18 +138,27 @@
       "reference" : {
         "reference" : "Bundle/contract-contract1"
       },
-      "name" : "Example - eLTSS CarePlan Contract 1",
+      "name" : "eLTSS CarePlan Contract Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
       "exampleCanonical" : "StructureDefinition/contract-eltss",
       "groupingId" : "examples"
     },
     {
       "reference" : {
-        "reference" : "Bundle/careplan"
+        "reference" : "Bundle/patient-patient1"
       },
-      "name" : "Example - eLTSS CarePlan",
+      "name" : "eLTSS CarePlan Patient Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/careplan-eltss",
+      "exampleCanonical" : "StructureDefinition/patient-eltss",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/practitioner-planner1"
+      },
+      "name" : "eLTSS CarePlan Planner Example 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "exampleCanonical" : "StructureDefinition/practitioner-eltss",
       "groupingId" : "examples"
     }],
     "page" : {
@@ -181,7 +181,7 @@
         },
         {
           "nameUrl" : "mapping.html",
-          "title" : "General eLTSS mapping to FHIR",
+          "title" : "eLTSS Mapping to FHIR",
           "generation" : "html",
           "page" : [{
             "nameUrl" : "eLTSS_to_FHIR_R4_element.html",
@@ -207,7 +207,7 @@
       },
       {
         "nameUrl" : "models.html",
-        "title" : "eLTSS FHIR Logical Models",
+        "title" : "eLTSS Logical Models",
         "generation" : "html"
       },
       {

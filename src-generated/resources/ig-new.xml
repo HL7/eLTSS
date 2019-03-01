@@ -50,7 +50,7 @@
       <description value="Logical models document the requirements of the LTSS domain without alignment to FHIR. The only thing that makes the logical models &#39;FHIR Logical Models&#39; is the use of the StructureDefinition resource as a formal representation. The purpose of the logical model is to gather requirements from domain experts that can subsequently feed into the design process for profiles and implementation guides. A logical model &#x2018;bridges the gap&#x2019; by documenting the requirements in a computable fashion without placing any constraints on the model structure."/>
     </grouping>
     <grouping id="general">
-      <name value="General Profiles"/>
+      <name value="eLTSS Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
     </grouping>
     <grouping id="capability">
@@ -65,7 +65,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSPersonModel"/>
       </reference>
-      <name value="eLTSS Person"/>
+      <name value="eLTSS Person Logical Model "/>
       <description value="Defines the Logical Model for eLTSS Person"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -74,7 +74,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServiceModel"/>
       </reference>
-      <name value="eLTSS Service"/>
+      <name value="eLTSS Service Logical Model "/>
       <description value="Defines the Logical Model for eLTSS Service"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -83,7 +83,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServicePlanModel"/>
       </reference>
-      <name value="eLTSS Service Plan"/>
+      <name value="eLTSS Service Plan Logical Model "/>
       <description value="Defines the Logical Model for eLTSS Service Plan"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -108,27 +108,18 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/patient-patient1"/>
+        <reference value="Bundle/careplan"/>
       </reference>
-      <name value="Example - eLTSS CarePlan Patient 1"/>
+      <name value="eLTSS CarePlan Example"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/patient-eltss"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/practitioner-planner1"/>
-      </reference>
-      <name value="Example - eLTSS CarePlan Planner 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/practitioner-eltss"/>
+      <exampleCanonical value="StructureDefinition/careplan-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <resource>
       <reference>
         <reference value="Bundle/claim-claim1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan Claim 1"/>
+      <name value="eLTSS CarePlan Claim Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
@@ -137,18 +128,27 @@
       <reference>
         <reference value="Bundle/contract-contract1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan Contract 1"/>
+      <name value="eLTSS CarePlan Contract Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/careplan"/>
+        <reference value="Bundle/patient-patient1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan"/>
+      <name value="eLTSS CarePlan Patient Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/careplan-eltss"/>
+      <exampleCanonical value="StructureDefinition/patient-eltss"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/practitioner-planner1"/>
+      </reference>
+      <name value="eLTSS CarePlan Planner Example 1"/>
+      <description value="Test instance showing data from the eLTSS spec"/>
+      <exampleCanonical value="StructureDefinition/practitioner-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <page>
@@ -171,7 +171,7 @@
         </page>
         <page>
           <nameUrl value="mapping.html"/>
-          <title value="General eLTSS mapping to FHIR"/>
+          <title value="eLTSS Mapping to FHIR"/>
           <generation value="html"/>
           <page>
             <nameUrl value="eLTSS_to_FHIR_R4_element.html"/>
@@ -197,7 +197,7 @@
       </page>
       <page>
         <nameUrl value="models.html"/>
-        <title value="eLTSS FHIR Logical Models"/>
+        <title value="eLTSS Logical Models"/>
         <generation value="html"/>
       </page>
       <page>
