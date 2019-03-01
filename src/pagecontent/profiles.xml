@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  <p>These are the Resource Profiles as designed by the eLTSS project</p>
+  <p>These are the Resource Profiles as designed by the eLTSS project.</p>
   <p>
     <table>
       <tr>
@@ -9,82 +9,82 @@
       </tr>
       <tr>
         <td>
-          <a href="careplan-eltss.html">eLTSS CarePlan</a>
+          <a href="careplan-eltss.html">eLTSS CarePlan Profile</a>
         </td>
-        <td>Base profile that defines characteristics shared by all CarePlan resources in eLTSS</td>
+        <td>Base profile that defines the CarePlan constraints for eLTSS</td>
       </tr>
       <tr>
         <td>
-          <a href="claim-eltss.html">eLTSS Claim</a>
+          <a href="claim-eltss.html">eLTSS Claim Profile</a>
         </td>
-        <td>Defines the overall Claim constraints for eLTSS</td>
+        <td>Defines the Claim constraints for eLTSS</td>
       </tr>
       <tr>
         <td>
-          <a href="contract-eltss.html">eLTSS Contract</a>
+          <a href="condition-eltss.html">eLTSS Condition Profile</a>
         </td>
-        <td>Defines the overall Contract constraints for eLTSS</td>
+        <td>Defines the Condition constraints for eLTSS</td>
+      </tr>
+	  <tr>
+        <td>
+          <a href="contract-eltss.html">eLTSS Contract Profile</a>
+        </td>
+        <td>Defines the Contract constraints for eLTSS</td>
       </tr>
       <tr>
         <td>
-          <a href="patient-eltss.html">eLTSS Patient</a>
+          <a href="episodeofcare-eltss.html">eLTSS EpisodeOfCare Profile</a>
         </td>
-        <td>Defines the overall Patient/Person constraints for eLTSS</td>
+        <td>Defines the EpisodeOfCare constraints for eLTSS</td>
+      </tr>
+	  <tr>
+        <td>
+          <a href="goal-eltss.html">eLTSS Goal Profile</a>
+        </td>
+        <td>Defines the Goal constraints for eLTSS</td>
+      </tr>
+	  <tr>
+        <td>
+          <a href="location-eltss.html">eLTSS Location Profile</a>
+        </td>
+        <td>Defines the Location constraints for eLTSS</td>
+      </tr>
+	  <tr>
+        <td>
+          <a href="observation-eltss.html">eLTSS Observation Profile</a>
+        </td>
+        <td>Defines the Observation constraints for eLTSS</td>
+      </tr>
+	  <tr>
+        <td>
+          <a href="patient-eltss.html">eLTSS Patient Profile</a>
+        </td>
+        <td>Defines the Patient/Person constraints for eLTSS</td>
       </tr>
       <tr>
         <td>
-          <a href="episodeofcare-eltss.html">eLTSS EpisodeOfCare</a>
+          <a href="practitioner-eltss.html">eLTSS Practitioner Profile</a>
         </td>
-        <td>Defines the overall EpisodeOfCare constraints for eLTSS</td>
+        <td>Defines the Practitioner constraints for eLTSS</td>
       </tr>
       <tr>
         <td>
-          <a href="servicerequest-eltss.html">eLTSS ServiceRequest</a>
+          <a href="questionnaire-eltss.html">eLTSS Questionnaire Profile</a>
         </td>
-        <td>Defines the overall ServiceRequest constraints for eLTSS</td>
+        <td>Defines the Questionnaire constraints for eLTSS</td>
       </tr>
-      <tr>
+	  <tr>
         <td>
-          <a href="practitioner-eltss.html">eLTSS Practitioner</a>
+          <a href="riskassessment-eltss.html">eLTSS RiskAssessment Profile</a>
         </td>
-        <td>Defines the overall Practitioner constraints for eLTSS</td>
+        <td>Defines the RiskAssessment constraints for eLTSS</td>
       </tr>
-      <tr>
+	  <tr>
         <td>
-          <a href="location-eltss.html">eLTSS Location</a>
+          <a href="servicerequest-eltss.html">eLTSS ServiceRequest Profile</a>
         </td>
-        <td>Defines the overall Location constraints for eLTSS</td>
-      </tr>
-       <tr>
-        <td>
-          <a href="goal-eltss.html">eLTSS Goal</a>
-        </td>
-        <td>Defines the overall Goal constraints for eLTSS</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="condition-eltss.html">eLTSS Condition</a>
-        </td>
-        <td>Defines the overall Condition constraints for eLTSS</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="observation-eltss.html">eLTSS Observation</a>
-        </td>
-        <td>Defines the overall Observation constraints for eLTSS</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="riskassessment-eltss.html">eLTSS RiskAssessment</a>
-        </td>
-        <td>Defines the overall RiskAssessment constraints for eLTSS</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="questionnaire-eltss.html">eLTSS Questionnaire</a>
-        </td>
-        <td>Defines the overall Questionnaire constraints for eLTSS</td>
-      </tr>
+        <td>Defines the ServiceRequest constraints for eLTSS</td>
+      </tr>  
     </table>
   </p>
 </div>

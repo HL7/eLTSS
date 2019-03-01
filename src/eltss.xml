@@ -121,7 +121,7 @@
       <reference>
         <reference value="StructureDefinition/careplan-eltss"/>
       </reference>
-      <name value="eLTSS CarePlan"/>
+      <name value="eLTSS CarePlan Profile"/>
       <description value="Base profile that defines characteristics shared by all CarePlan resources in eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
@@ -133,8 +133,8 @@
       <reference>
         <reference value="StructureDefinition/claim-eltss"/>
       </reference>
-      <name value="eLTSS Claim"/>
-      <description value="Defines the overall Claim constraints for eLTSS."/>
+      <name value="eLTSS Claim Profile"/>
+      <description value="Defines the Claim constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -145,8 +145,8 @@
       <reference>
         <reference value="StructureDefinition/contract-eltss"/>
       </reference>
-      <name value="eLTSS Contract"/>
-      <description value="Defines the overall Contract constraints for eLTSS."/>
+      <name value="eLTSS Contract Profile"/>
+      <description value="Defines the Contract constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -157,8 +157,8 @@
       <reference>
         <reference value="StructureDefinition/patient-eltss"/>
       </reference>
-      <name value="eLTSS Patient"/>
-      <description value="Defines the overall Patient constraints for eLTSS."/>
+      <name value="eLTSS Patient Profile"/>
+      <description value="Defines the Patient constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -169,8 +169,8 @@
       <reference>
         <reference value="StructureDefinition/episodeofcare-eltss"/>
       </reference>
-      <name value="eLTSS EpisodeOfCare"/>
-      <description value="Defines the overall EpisodeOfCare constraints for eLTSS."/>
+      <name value="eLTSS EpisodeOfCare Profile"/>
+      <description value="Defines the EpisodeOfCare constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -181,8 +181,8 @@
       <reference>
         <reference value="StructureDefinition/servicerequest-eltss"/>
       </reference>
-      <name value="eLTSS ServiceRequest"/>
-      <description value="Defines the overall ServiceRequest constraints for eLTSS."/>
+      <name value="eLTSS ServiceRequest Profile"/>
+      <description value="Defines the ServiceRequest constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -193,8 +193,8 @@
       <reference>
         <reference value="StructureDefinition/practitioner-eltss"/>
       </reference>
-      <name value="eLTSS Practitioner"/>
-      <description value="Defines the overall Practitioner constraints for eLTSS."/>
+      <name value="eLTSS Practitioner Profile"/>
+      <description value="Defines the Practitioner constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -205,8 +205,8 @@
       <reference>
         <reference value="StructureDefinition/location-eltss"/>
       </reference>
-      <name value="eLTSS Location"/>
-      <description value="Defines the overall Location constraints for eLTSS."/>
+      <name value="eLTSS Location Profile"/>
+      <description value="Defines the Location constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -217,8 +217,8 @@
       <reference>
         <reference value="StructureDefinition/goal-eltss"/>
       </reference>
-      <name value="eLTSS Goal"/>
-      <description value="Defines the overall Goal constraints for eLTSS."/>
+      <name value="eLTSS Goal Profile"/>
+      <description value="Defines the Goal constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -229,8 +229,8 @@
       <reference>
         <reference value="StructureDefinition/condition-eltss"/>
       </reference>
-      <name value="eLTSS Condition"/>
-      <description value="Defines the overall Condition constraints for eLTSS."/>
+      <name value="eLTSS Condition Profile"/>
+      <description value="Defines the Condition constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -241,8 +241,8 @@
       <reference>
         <reference value="StructureDefinition/observation-eltss"/>
       </reference>
-      <name value="eLTSS Observation"/>
-      <description value="Defines the overall Observation constraints for eLTSS."/>
+      <name value="eLTSS Observation Profile"/>
+      <description value="Defines the Observation constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -253,8 +253,8 @@
       <reference>
         <reference value="StructureDefinition/riskassessment-eltss"/>
       </reference>
-      <name value="eLTSS RiskAssessment"/>
-      <description value="Defines the overall RiskAssessment constraints for eLTSS."/>
+      <name value="eLTSS RiskAssessment Profile"/>
+      <description value="Defines the RiskAssessment constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -265,8 +265,8 @@
       <reference>
         <reference value="StructureDefinition/questionnaire-eltss"/>
       </reference>
-      <name value="eLTSS Questionnaire"/>
-      <description value="Defines the overall Questionnaire constraints for eLTSS."/>
+      <name value="eLTSS Questionnaire Profile"/>
+      <description value="Defines the Questionnaire constraints for eLTSS."/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -385,13 +385,18 @@
         <nameUrl value="models.html"/>
         <title value="eLTSS FHIR Models"/>
         <generation value="html"/>
-      </page> 
+      </page>
       <page>
+        <nameUrl value="capabilities.html"/>
+        <title value="Capability Statements"/>
+        <generation value="html"/>
+      </page>
+      <!--     <page>
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
       </page>
-
+-->
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Implementation Guide Downloads"/>

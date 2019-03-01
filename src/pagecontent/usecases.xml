@@ -1,4 +1,4 @@
-﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
 
 <p>
 LTSS is currently a document-oriented exchange paradigm (i.e., consumers exchange the entire service plan as a document), however during outreach stakeholders expressed an interest in the ability to exchange portions of service plan data, query specific elements, receive notifications, etc. The aim of eLTSS is to enable those exchanges and features for LTSS data.
@@ -10,7 +10,7 @@ During the eLTSS Initiative, two user stories were developed and documented into
 <li>Sharing a Person-Centered eLTSS Plan.</li>
 </nl>
 <p>
-The first user story would use FHIR Resources to generate an eLTSS plan in an LTSS case management system. The set of FHIR Resources needed to represent the eLTSS Dataset elements include: Bundle, CarePlan, Claim, Condition, Contract, Coverage, DocumentReference, Encounter, EpisodeOfCare, Goal, Location, Observation, Organization, Patient, Practitioner, Questionnaire, QuestionnaireResponse, Related Person, RiskAssesment, ServiceRequest
+The first user story would use FHIR Resources to generate an eLTSS plan in an LTSS case management system. The set of FHIR Resources to represent the eLTSS Dataset elements could include: Bundle, CarePlan, Claim, Condition, Contract, Coverage, DocumentReference, Encounter, EpisodeOfCare, Goal, Location, Observation, Organization, Patient, Practitioner, Questionnaire, QuestionnaireResponse, Related Person, RiskAssesment, ServiceRequest
 </p><p>
 Once an eLTSS plan is created using FHIR, there are 4 sample use cases that highlight the possible exchanges that an eLTSS Plan may be involved in (user story 2 above). The figure below illustrates these use cases.
 </p>
