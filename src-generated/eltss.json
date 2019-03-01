@@ -129,27 +129,25 @@
     },
     "StructureDefinition/claim-eltss":{
     },
-    "StructureDefinition/contract-eltss":{
+    "StructureDefinition/condition-eltss":{
     },
-    "StructureDefinition/patient-eltss":{
+    "StructureDefinition/contract-eltss":{
     },
     "StructureDefinition/episodeofcare-eltss":{
     },
-    "StructureDefinition/servicerequest-eltss":{
-    },
-    "StructureDefinition/practitioner-eltss":{
-    },
     "StructureDefinition/location-eltss":{
-    },
-    "StructureDefinition/goal-eltss":{
-    },
-    "StructureDefinition/condition-eltss":{
     },
     "StructureDefinition/observation-eltss":{
     },
-    "StructureDefinition/riskassessment-eltss":{
+    "StructureDefinition/patient-eltss":{
+    },
+    "StructureDefinition/practitioner-eltss":{
     },
     "StructureDefinition/questionnaire-eltss":{
+    },
+    "StructureDefinition/riskassessment-eltss":{
+    },
+    "StructureDefinition/servicerequest-eltss":{
     },
     "CapabilityStatement/eltss-client":{
     },

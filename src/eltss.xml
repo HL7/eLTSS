@@ -91,7 +91,7 @@
         <reference value="StructureDefinition/eLTSSPersonModel"/>
       </reference>
       <name value="eLTSS Person"/>
-      <description value="Defines the Logical Model for eLTSS Person."/>
+      <description value="Defines the Logical Model for eLTSS Person"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -100,7 +100,7 @@
         <reference value="StructureDefinition/eLTSSServiceModel"/>
       </reference>
       <name value="eLTSS Service"/>
-      <description value="Defines the Logical Model for eLTSS Service."/>
+      <description value="Defines the Logical Model for eLTSS Service"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -109,7 +109,7 @@
         <reference value="StructureDefinition/eLTSSServicePlanModel"/>
       </reference>
       <name value="eLTSS Service Plan"/>
-      <description value="Defines the Logical Model for eLTSS Service Plan."/>
+      <description value="Defines the Logical Model for eLTSS Service Plan"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -122,7 +122,7 @@
         <reference value="StructureDefinition/careplan-eltss"/>
       </reference>
       <name value="eLTSS CarePlan Profile"/>
-      <description value="Base profile that defines characteristics shared by all CarePlan resources in eLTSS."/>
+      <description value="Base profile that defines characteristics shared by all CarePlan resources in eLTSS"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -134,91 +134,7 @@
         <reference value="StructureDefinition/claim-eltss"/>
       </reference>
       <name value="eLTSS Claim Profile"/>
-      <description value="Defines the Claim constraints for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/contract-eltss"/>
-      </reference>
-      <name value="eLTSS Contract Profile"/>
-      <description value="Defines the Contract constraints for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/patient-eltss"/>
-      </reference>
-      <name value="eLTSS Patient Profile"/>
-      <description value="Defines the Patient constraints for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/episodeofcare-eltss"/>
-      </reference>
-      <name value="eLTSS EpisodeOfCare Profile"/>
-      <description value="Defines the EpisodeOfCare constraints for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/servicerequest-eltss"/>
-      </reference>
-      <name value="eLTSS ServiceRequest Profile"/>
-      <description value="Defines the ServiceRequest constraints for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/practitioner-eltss"/>
-      </reference>
-      <name value="eLTSS Practitioner Profile"/>
-      <description value="Defines the Practitioner constraints for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/location-eltss"/>
-      </reference>
-      <name value="eLTSS Location Profile"/>
-      <description value="Defines the Location constraints for eLTSS."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="general"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/goal-eltss"/>
-      </reference>
-      <name value="eLTSS Goal Profile"/>
-      <description value="Defines the Goal constraints for eLTSS."/>
+      <description value="Defines the Claim constraints for eLTSS"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -230,7 +146,43 @@
         <reference value="StructureDefinition/condition-eltss"/>
       </reference>
       <name value="eLTSS Condition Profile"/>
-      <description value="Defines the Condition constraints for eLTSS."/>
+      <description value="Defines the Condition constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contract-eltss"/>
+      </reference>
+      <name value="eLTSS Contract Profile"/>
+      <description value="Defines the Contract constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/episodeofcare-eltss"/>
+      </reference>
+      <name value="eLTSS EpisodeOfCare Profile"/>
+      <description value="Defines the EpisodeOfCare constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-eltss"/>
+      </reference>
+      <name value="eLTSS Location Profile"/>
+      <description value="Defines the Location constraints for eLTSS"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -242,7 +194,7 @@
         <reference value="StructureDefinition/observation-eltss"/>
       </reference>
       <name value="eLTSS Observation Profile"/>
-      <description value="Defines the Observation constraints for eLTSS."/>
+      <description value="Defines the Observation constraints for eLTSS"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -251,10 +203,22 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/riskassessment-eltss"/>
+        <reference value="StructureDefinition/patient-eltss"/>
       </reference>
-      <name value="eLTSS RiskAssessment Profile"/>
-      <description value="Defines the RiskAssessment constraints for eLTSS."/>
+      <name value="eLTSS Patient Profile"/>
+      <description value="Defines the Patient constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-eltss"/>
+      </reference>
+      <name value="eLTSS Practitioner Profile"/>
+      <description value="Defines the Practitioner constraints for eLTSS"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -266,11 +230,34 @@
         <reference value="StructureDefinition/questionnaire-eltss"/>
       </reference>
       <name value="eLTSS Questionnaire Profile"/>
-      <description value="Defines the Questionnaire constraints for eLTSS."/>
+      <description value="Defines the Questionnaire constraints for eLTSS"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
-    <!-- Extensions -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/riskassessment-eltss"/>
+      </reference>
+      <name value="eLTSS RiskAssessment Profile"/>
+      <description value="Defines the RiskAssessment constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/servicerequest-eltss"/>
+      </reference>
+      <name value="eLTSS ServiceRequest Profile"/>
+      <description value="Defines the ServiceRequest constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
     <!-- CapabilityStatement (actors) -->
     <resource>
       <reference>
@@ -295,7 +282,7 @@
       <reference>
         <reference value="Bundle/patient-patient1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan patient 1"/>
+      <name value="Example - eLTSS CarePlan Patient 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
@@ -313,7 +300,7 @@
       <reference>
         <reference value="Bundle/claim-claim1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan claim 1"/>
+      <name value="Example - eLTSS CarePlan Claim 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
@@ -322,7 +309,7 @@
       <reference>
         <reference value="Bundle/contract-contract1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan contract 1"/>
+      <name value="Example - eLTSS CarePlan Contract 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
@@ -352,7 +339,7 @@
         </page>
         <page>
           <nameUrl value="usecases.html"/>
-          <title value="HL7 Domain Analysis Use Cases"/>
+          <title value="eLTSS Use Cases"/>
           <generation value="html"/>
         </page>
         <page>
@@ -383,7 +370,7 @@
       </page>
       <page>
         <nameUrl value="models.html"/>
-        <title value="eLTSS FHIR Models"/>
+        <title value="eLTSS FHIR Logical Models"/>
         <generation value="html"/>
       </page>
       <page>

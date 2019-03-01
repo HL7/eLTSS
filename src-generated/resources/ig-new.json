@@ -76,7 +76,7 @@
         "reference" : "StructureDefinition/eLTSSPersonModel"
       },
       "name" : "eLTSS Person",
-      "description" : "Defines the Logical Model for eLTSS Person.",
+      "description" : "Defines the Logical Model for eLTSS Person",
       "exampleBoolean" : false,
       "groupingId" : "logical"
     },
@@ -85,7 +85,7 @@
         "reference" : "StructureDefinition/eLTSSServiceModel"
       },
       "name" : "eLTSS Service",
-      "description" : "Defines the Logical Model for eLTSS Service.",
+      "description" : "Defines the Logical Model for eLTSS Service",
       "exampleBoolean" : false,
       "groupingId" : "logical"
     },
@@ -94,7 +94,7 @@
         "reference" : "StructureDefinition/eLTSSServicePlanModel"
       },
       "name" : "eLTSS Service Plan",
-      "description" : "Defines the Logical Model for eLTSS Service Plan.",
+      "description" : "Defines the Logical Model for eLTSS Service Plan",
       "exampleBoolean" : false,
       "groupingId" : "logical"
     },
@@ -120,7 +120,7 @@
       "reference" : {
         "reference" : "Bundle/patient-patient1"
       },
-      "name" : "Example - eLTSS CarePlan patient 1",
+      "name" : "Example - eLTSS CarePlan Patient 1",
       "description" : "Test instance showing data from the eLTSS spec",
       "exampleCanonical" : "StructureDefinition/patient-eltss",
       "groupingId" : "examples"
@@ -138,7 +138,7 @@
       "reference" : {
         "reference" : "Bundle/claim-claim1"
       },
-      "name" : "Example - eLTSS CarePlan claim 1",
+      "name" : "Example - eLTSS CarePlan Claim 1",
       "description" : "Test instance showing data from the eLTSS spec",
       "exampleCanonical" : "StructureDefinition/claim-eltss",
       "groupingId" : "examples"
@@ -147,7 +147,7 @@
       "reference" : {
         "reference" : "Bundle/contract-contract1"
       },
-      "name" : "Example - eLTSS CarePlan contract 1",
+      "name" : "Example - eLTSS CarePlan Contract 1",
       "description" : "Test instance showing data from the eLTSS spec",
       "exampleCanonical" : "StructureDefinition/contract-eltss",
       "groupingId" : "examples"
@@ -176,7 +176,7 @@
         },
         {
           "nameUrl" : "usecases.html",
-          "title" : "HL7 Domain Analysis Use Cases",
+          "title" : "eLTSS Use Cases",
           "generation" : "html"
         },
         {
@@ -207,7 +207,7 @@
       },
       {
         "nameUrl" : "models.html",
-        "title" : "eLTSS FHIR Models",
+        "title" : "eLTSS FHIR Logical Models",
         "generation" : "html"
       },
       {

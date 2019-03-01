@@ -64,7 +64,7 @@
         <reference value="StructureDefinition/eLTSSPersonModel"/>
       </reference>
       <name value="eLTSS Person"/>
-      <description value="Defines the Logical Model for eLTSS Person."/>
+      <description value="Defines the Logical Model for eLTSS Person"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -73,7 +73,7 @@
         <reference value="StructureDefinition/eLTSSServiceModel"/>
       </reference>
       <name value="eLTSS Service"/>
-      <description value="Defines the Logical Model for eLTSS Service."/>
+      <description value="Defines the Logical Model for eLTSS Service"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -82,7 +82,7 @@
         <reference value="StructureDefinition/eLTSSServicePlanModel"/>
       </reference>
       <name value="eLTSS Service Plan"/>
-      <description value="Defines the Logical Model for eLTSS Service Plan."/>
+      <description value="Defines the Logical Model for eLTSS Service Plan"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
     </resource>
@@ -99,8 +99,6 @@
     
     
     
-    
-    <!-- Extensions -->
     <!-- CapabilityStatement (actors) -->
     <resource>
       <reference>
@@ -125,7 +123,7 @@
       <reference>
         <reference value="Bundle/patient-patient1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan patient 1"/>
+      <name value="Example - eLTSS CarePlan Patient 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
@@ -143,7 +141,7 @@
       <reference>
         <reference value="Bundle/claim-claim1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan claim 1"/>
+      <name value="Example - eLTSS CarePlan Claim 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
@@ -152,7 +150,7 @@
       <reference>
         <reference value="Bundle/contract-contract1"/>
       </reference>
-      <name value="Example - eLTSS CarePlan contract 1"/>
+      <name value="Example - eLTSS CarePlan Contract 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
@@ -182,7 +180,7 @@
         </page>
         <page>
           <nameUrl value="usecases.html"/>
-          <title value="HL7 Domain Analysis Use Cases"/>
+          <title value="eLTSS Use Cases"/>
           <generation value="html"/>
         </page>
         <page>
@@ -213,7 +211,7 @@
       </page>
       <page>
         <nameUrl value="models.html"/>
-        <title value="eLTSS FHIR Models"/>
+        <title value="eLTSS FHIR Logical Models"/>
         <generation value="html"/>
       </page>
       <page>
