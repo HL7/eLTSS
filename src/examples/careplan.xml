@@ -351,9 +351,7 @@
           </coding>
         </clinicalStatus>
         <category>
-             <text value="assessed-need"/>
- 
-
+          <text value="assessed-need"/>
         </category>
         <code>
           <text value="lack of transportation"/>
@@ -383,7 +381,7 @@
           </coding>
         </clinicalStatus>
         <category>
-            <text value="assessed-need"/>
+          <text value="assessed-need"/>
         </category>
         <code>
           <text value="difficulty in bathing"/>
@@ -406,14 +404,14 @@
             <p><b>Assessed Need:</b> difficulty in dressing</p>
           </div>
         </text>
-       <clinicalStatus>
+        <clinicalStatus>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="active"/>
           </coding>
         </clinicalStatus>
         <category>
-            <text value="assessed-need"/>
+          <text value="assessed-need"/>
         </category>
         <code>
           <text value="difficulty in dressing"/>
@@ -799,8 +797,8 @@
       </RiskAssessment>
     </resource>
   </entry>
-  <!--
   <entry>
+    <fullUrl value="http://example.org/eLTSS/questionnaire1"/>
     <resource>
       <Questionnaire>
         <id value="questionnaire1"/>
@@ -843,7 +841,6 @@
       </Questionnaire>
     </resource>
   </entry>
--->
   <entry>
     <fullUrl value="http://example.org/eLTSS/qr1"/>
     <resource>
