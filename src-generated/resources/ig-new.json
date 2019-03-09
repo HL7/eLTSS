@@ -62,6 +62,11 @@
       "description" : "General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"
     },
     {
+      "id" : "extensions",
+      "name" : "Extensions",
+      "description" : "Extensions defined as part of the eLTSS implementation guide"
+    },
+    {
       "id" : "capability",
       "name" : "Capability Statement(s)",
       "description" : "Capability Statement(s) showing the use of the eLTSS profiles"
@@ -75,7 +80,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSPersonModel"
       },
-      "name" : "eLTSS Person Logical Model ",
+      "name" : "eLTSS Person Logical Model",
       "description" : "Defines the Logical Model for eLTSS Person",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -84,7 +89,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSServiceModel"
       },
-      "name" : "eLTSS Service Logical Model ",
+      "name" : "eLTSS Service Logical Model",
       "description" : "Defines the Logical Model for eLTSS Service",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -93,7 +98,7 @@
       "reference" : {
         "reference" : "StructureDefinition/eLTSSServicePlanModel"
       },
-      "name" : "eLTSS Service Plan Logical Model ",
+      "name" : "eLTSS Service Plan Logical Model",
       "description" : "Defines the Logical Model for eLTSS Service Plan",
       "exampleBoolean" : false,
       "groupingId" : "logical"
@@ -198,22 +203,142 @@
       {
         "nameUrl" : "profiles.html",
         "title" : "eLTSS Profiles",
-        "generation" : "html"
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "careplan-eltss.html",
+          "title" : "eLTSS Care Plan Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "careplan-eltss.html",
+          "title" : "eLTSS Care Plan Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "claim-eltss.html",
+          "title" : "eLTSS Claim Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "condition-eltss.html",
+          "title" : "eLTSS Condition Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "contract-eltss.html",
+          "title" : "eLTSS Contract Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "episodeofcare-eltss.html",
+          "title" : "eLTSS EpisodeOfCare Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "goal-eltss.html",
+          "title" : "eLTSS Goal Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "location-eltss.html",
+          "title" : "eLTSS Location Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "observation-eltss.html",
+          "title" : "eLTSS Observation Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "patient-eltss.html",
+          "title" : "eLTSS Patient Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "practitioner-eltss.html",
+          "title" : "eLTSS Practitioner Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "questionnaire-eltss.html",
+          "title" : "eLTSS Questionnaire Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "riskassessment-eltss.html",
+          "title" : "eLTSS RiskAssessment Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "servicerequest-eltss.html",
+          "title" : "eLTSS ServiceRequest Profile",
+          "generation" : "generated"
+        }]
       },
       {
         "nameUrl" : "examples.html",
         "title" : "eLTSS Examples",
-        "generation" : "html"
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "careplan.html",
+          "title" : "eLTSS Care Plan Example",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "claim-claim1.html",
+          "title" : "eLTSS Claim Example",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "contract-contract1.html",
+          "title" : "eLTSS Contract Example",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "patient-patient1.html",
+          "title" : "eLTSS Patient Example",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "practitioner-planner1.html",
+          "title" : "eLTSS Planner Example",
+          "generation" : "generated"
+        }]
       },
       {
         "nameUrl" : "models.html",
         "title" : "eLTSS Logical Models",
-        "generation" : "html"
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "eLTSSPersonModel.html",
+          "title" : "eLTSS Person Logical Model",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eLTSSServiceModel.html",
+          "title" : "eLTSS Service Logical Model",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eLTSSServicePlanModel.html",
+          "title" : "eLTSS Service Plan Logical Model",
+          "generation" : "generated"
+        }]
       },
       {
         "nameUrl" : "capabilities.html",
         "title" : "Capability Statements",
-        "generation" : "html"
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "eltss-client.html",
+          "title" : "eLTSS Client",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eltss-server.html",
+          "title" : "eLTSS Server",
+          "generation" : "generated"
+        }]
       },
       {
         "nameUrl" : "downloads.html",

@@ -43,12 +43,10 @@
       <name value="eLTSS Profiles"/>
       <description value="General constraints on FHIR resources to be adhered to as part of the eLTSS implementation guide that apply regardless of what area(s) of Long Term Care are of interest"/>
     </grouping>
-    <!--
     <grouping id="extensions">
       <name value="Extensions"/>
       <description value="Extensions defined as part of the eLTSS implementation guide"/>
     </grouping>
-	  -->
     <grouping id="capability">
       <name value="Capability Statement(s)"/>
       <description value="Capability Statement(s) showing the use of the eLTSS profiles"/>
@@ -63,7 +61,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSPersonModel"/>
       </reference>
-      <name value="eLTSS Person Logical Model "/>
+      <name value="eLTSS Person Logical Model"/>
       <description value="Defines the Logical Model for eLTSS Person"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -72,7 +70,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServiceModel"/>
       </reference>
-      <name value="eLTSS Service Logical Model "/>
+      <name value="eLTSS Service Logical Model"/>
       <description value="Defines the Logical Model for eLTSS Service"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -81,7 +79,7 @@
       <reference>
         <reference value="StructureDefinition/eLTSSServicePlanModel"/>
       </reference>
-      <name value="eLTSS Service Plan Logical Model "/>
+      <name value="eLTSS Service Plan Logical Model"/>
       <description value="Defines the Logical Model for eLTSS Service Plan"/>
       <exampleBoolean value="false"/>
       <groupingId value="logical"/>
@@ -203,21 +201,141 @@
         <nameUrl value="profiles.html"/>
         <title value="eLTSS Profiles"/>
         <generation value="html"/>
+        <page>
+          <nameUrl value="careplan-eltss.html"/>
+          <title value="eLTSS Care Plan Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="careplan-eltss.html"/>
+          <title value="eLTSS Care Plan Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="claim-eltss.html"/>
+          <title value="eLTSS Claim Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="condition-eltss.html"/>
+          <title value="eLTSS Condition Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="contract-eltss.html"/>
+          <title value="eLTSS Contract Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="episodeofcare-eltss.html"/>
+          <title value="eLTSS EpisodeOfCare Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="goal-eltss.html"/>
+          <title value="eLTSS Goal Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="location-eltss.html"/>
+          <title value="eLTSS Location Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="observation-eltss.html"/>
+          <title value="eLTSS Observation Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="patient-eltss.html"/>
+          <title value="eLTSS Patient Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="practitioner-eltss.html"/>
+          <title value="eLTSS Practitioner Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="questionnaire-eltss.html"/>
+          <title value="eLTSS Questionnaire Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="riskassessment-eltss.html"/>
+          <title value="eLTSS RiskAssessment Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="servicerequest-eltss.html"/>
+          <title value="eLTSS ServiceRequest Profile"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="examples.html"/>
         <title value="eLTSS Examples"/>
         <generation value="html"/>
+        <page>
+          <nameUrl value="careplan.html"/>
+          <title value="eLTSS Care Plan Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="claim-claim1.html"/>
+          <title value="eLTSS Claim Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="contract-contract1.html"/>
+          <title value="eLTSS Contract Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="patient-patient1.html"/>
+          <title value="eLTSS Patient Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="practitioner-planner1.html"/>
+          <title value="eLTSS Planner Example"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="models.html"/>
         <title value="eLTSS Logical Models"/>
         <generation value="html"/>
+        <page>
+          <nameUrl value="eLTSSPersonModel.html"/>
+          <title value="eLTSS Person Logical Model"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="eLTSSServiceModel.html"/>
+          <title value="eLTSS Service Logical Model"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="eLTSSServicePlanModel.html"/>
+          <title value="eLTSS Service Plan Logical Model"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="capabilities.html"/>
         <title value="Capability Statements"/>
         <generation value="html"/>
+        <page>
+          <nameUrl value="eltss-client.html"/>
+          <title value="eLTSS Client"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="eltss-server.html"/>
+          <title value="eLTSS Server"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <!--     <page>
         <nameUrl value="artifacts.html"/>

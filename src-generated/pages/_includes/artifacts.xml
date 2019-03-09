@@ -12,21 +12,21 @@
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSPersonModel.html">
-                        •  eLTSS Person Logical Model </a>
+                        •  eLTSS Person Logical Model</a>
 </td>
 <td>Defines the Logical Model for eLTSS Person</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSServiceModel.html">
-                        •  eLTSS Service Logical Model </a>
+                        •  eLTSS Service Logical Model</a>
 </td>
 <td>Defines the Logical Model for eLTSS Service</td>
 </tr>
 <tr>
 <td style="column-width:30%">
 <a href="eLTSSServicePlanModel.html">
-                        •  eLTSS Service Plan Logical Model </a>
+                        •  eLTSS Service Plan Logical Model</a>
 </td>
 <td>Defines the Logical Model for eLTSS Service Plan</td>
 </tr>
@@ -127,6 +127,14 @@
 </table>
 </p>
 <a name="3"> </a>
+<h3>Extensions </h3>
+<p>Extensions defined as part of the eLTSS implementation guide</p>
+<p>
+<table>
+<tbody/>
+</table>
+</p>
+<a name="4"> </a>
 <h3>Capability Statement(s) </h3>
 <p>Capability Statement(s) showing the use of the eLTSS profiles</p>
 <p>
@@ -149,7 +157,7 @@
 </tbody>
 </table>
 </p>
-<a name="4"> </a>
+<a name="5"> </a>
 <h3>Example(s) </h3>
 <p>Example(s) showing the use of the eLTSS profiles</p>
 <p>

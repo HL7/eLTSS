@@ -5,8 +5,8 @@
       This implementation guide is not fully complete.  Portions of the implementation guide are provided for "framework purposes only" - giving a sense of what additional topics are intended to be covered and where that content will fit.  The work group has prioritized standardizing those portions of the specification with general applicability.  The work group will continue to flesh out additional sections for future ballot publications.
     </p>
   </blockquote>
-  <h3>Introduction</h3>
-  <p>
+  <h3>Introduction</h3><a name="introduction"> </a>
+<p>
 The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
 </p>
   <p>
