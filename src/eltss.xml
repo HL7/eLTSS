@@ -496,12 +496,28 @@
           <generation value="generated"/>
         </page>
       </page>
-      <!--     <page>
+      <!--
+      <page>
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
       </page>
--->
+      -->
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="eLTSS Resource Extensions"/>
+        <generation value="html"/>
+         <page>
+          <nameUrl value="eltss-dueTo.html"/>
+          <title value="eLTSS dueTo extension on Condition"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="eltss-directedBy.html"/>
+          <title value="eLTSS eltss directedBy extension for Service Request"/>
+          <generation value="generated"/>
+        </page>
+     </page>
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Implementation Guide Downloads"/>
