@@ -341,6 +341,21 @@
         }]
       },
       {
+        "nameUrl" : "extensions.html",
+        "title" : "eLTSS Resource Extensions",
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "eltss-dueTo.html",
+          "title" : "eLTSS dueTo extension on Condition",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eltss-directedBy.html",
+          "title" : "eLTSS eltss directedBy extension for Service Request",
+          "generation" : "generated"
+        }]
+      },
+      {
         "nameUrl" : "downloads.html",
         "title" : "Implementation Guide Downloads",
         "generation" : "html"
