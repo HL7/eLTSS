@@ -159,7 +159,7 @@
       <Contract>
         <id value="contract1"/>
         <meta>
-          <profile value="StructureDefinition/contract-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/contract-eltss"/>
         </meta>
         <text>
           <status value="additional"/>

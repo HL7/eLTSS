@@ -846,9 +846,6 @@
     <resource>
       <QuestionnaireResponse>
         <id value="questionnaireresponse1"/>
-        
-        <questionnaire value="Questionnaire/questionnaire1"/>
-		
         <status value="completed"/>
         <!-- [eLTSS Person Setting Choice Indicator]  -->
         <item>

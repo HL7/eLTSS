@@ -32,7 +32,7 @@
   "status" : "draft",
   "experimental" : false,
   "publisher" : "HL7 International Community-Based Care and Privacy Work Group",
-  "description" : "Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data elements",
+  "description" : "Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data  elements",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

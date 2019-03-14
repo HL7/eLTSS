@@ -6,4 +6,5 @@ The link 'eLTSSServiceModel.sch' for "Schematron" cannot be resolved
 The link 'eLTSSPersonModel.sch' for "Schematron" cannot be resolved
 No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/condition-category (http://hl7.org/fhir/ValueSet/condition-category
 Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+No questionnaire is identified, so no validation can be performed against the base questionnaire
 
