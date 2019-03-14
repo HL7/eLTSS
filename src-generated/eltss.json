@@ -98,9 +98,9 @@
   "canonicalBase": "http://hl7.org/fhir/us",
   "dependencyList": [
     {
-      "name" : "corer4",
+      "name" : "core",
       "version" : "current",
-      "location" : "http://hl7.org/fhir/us/core-r4"}
+      "location" : "http://hl7.org/fhir/us/core"}
   ],
   "source": "eltss.xml",
   "spreadsheets": [

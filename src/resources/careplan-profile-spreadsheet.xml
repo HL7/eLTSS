@@ -20,7 +20,7 @@
   <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -749,7 +749,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -886,7 +885,7 @@
     <Cell ss:StyleID="s94"/>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s92"/>
-    <Cell ss:StyleID="s94"><Data ss:Type="String">{http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-careplan}</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">{http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan}</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s92"/>
@@ -1032,13 +1031,14 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Unsynced/>
+   <Selected/>
    <LeftColumnVisible>3</LeftColumnVisible>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>8</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1047,7 +1047,6 @@
     </Pane>
     <Pane>
      <Number>1</Number>
-     <ActiveCol>4</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
@@ -1055,8 +1054,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>16</ActiveRow>
-     <ActiveCol>11</ActiveCol>
+     <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

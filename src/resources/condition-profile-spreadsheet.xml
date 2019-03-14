@@ -20,7 +20,7 @@
   <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>3</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -876,7 +876,7 @@
     <Cell ss:StyleID="s93"/>
     <Cell ss:StyleID="s91"/>
     <Cell ss:StyleID="s91"/>
-    <Cell ss:StyleID="s93"><Data ss:Type="String">{http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-condition}</Data></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">{http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition}</Data></Cell>
     <Cell ss:StyleID="s91"/>
     <Cell ss:StyleID="s91"/>
     <Cell ss:StyleID="s91"/>
@@ -916,11 +916,12 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>3</ActiveRow>
-     <ActiveCol>17</ActiveCol>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -1560,7 +1561,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
