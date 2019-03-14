@@ -48,8 +48,8 @@ This also includes an organization including, but not limited to a hospital incl
   </ul>
   <p>US Core defines two actors: </p>
   <ul>
-    <li><b><a href="http://hl7.org/fhir/us/core/2019Jan/#us-core-actors">US Core Requestor</a>:</b> An application that initiates a data access request to retrieve patient and service data. This can be thought of as the client in a client-server interaction.</li>
-    <li><b><a href="http://hl7.org/fhir/us/core/2019Jan/#us-core-actors">US Core Responder</a>:</b> A product that responds to the data access request providing patient and service data. This can be thought of as the server in a client-server interaction.</li>
+    <li><b>US Core Requestor:</b> An application that initiates a data access request to retrieve patient and service data. This can be thought of as the client in a client-server interaction.</li>
+    <li><b>US Core Responder:</b> A product that responds to the data access request providing patient and service data. This can be thought of as the server in a client-server interaction.</li>
   </ul>
   <p>The eLTSS actors correspond to the US Core requestor actor when an eLTSS plan is exchanged using FHIR.</p>
   <a name="Credits"/>
