@@ -2,9 +2,10 @@
 guidename=eltss
 copyrightyear=2017+
 license=CC0-1.0
-version=0.2
-ballotstatus=Continuous Build
+version=0.1.0
+ballotstatus=STU1 Ballot 1
 fhirspec=http://build.fhir.org/
 #excludexml=Yes
 #excludejson=Yes
 #excludettl=Yes
+canonicalBase=http://hl7.org/fhir/us/eLTSS

@@ -21,7 +21,7 @@
     <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/ImplementationGuide/eltss"/>
-  <version value="0.2"/>
+  <version value="0.1.0"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS)"/>
   <status value="draft"/>
@@ -35,7 +35,7 @@
       <display value="United States of America"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.uv.eltss"/>
+  <packageId value="hl7.fhir.us.eltss"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>
@@ -116,7 +116,6 @@
       </reference>
       <name value="eLTSS CarePlan Example"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/careplan-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -125,7 +124,6 @@
       </reference>
       <name value="eLTSS CarePlan Claim Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/claim-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -134,7 +132,6 @@
       </reference>
       <name value="eLTSS CarePlan Contract Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/contract-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -143,7 +140,6 @@
       </reference>
       <name value="eLTSS CarePlan Patient Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/patient-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -152,7 +148,6 @@
       </reference>
       <name value="eLTSS CarePlan Planner Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/practitioner-eltss"/>
       <groupingId value="examples"/>
     </resource>
     <page>

@@ -15,7 +15,7 @@
       <display value="United States of America"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.uv.eltss"/>
+  <packageId value="hl7.fhir.us.eltss"/>
   <fhirVersion value="4.0.0"/>
   <dependsOn>
     <uri value="http://hl7.org/fhir/us/core"/>
@@ -282,7 +282,7 @@
       </reference>
       <name value="eLTSS CarePlan Example"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/careplan-eltss"/>
+      <!-- <exampleCanonical value="StructureDefinition/careplan-eltss"/> -->
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -291,7 +291,7 @@
       </reference>
       <name value="eLTSS CarePlan Claim Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/claim-eltss"/>
+      <!-- <exampleCanonical value="StructureDefinition/claim-claim1"/> -->
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -300,7 +300,7 @@
       </reference>
       <name value="eLTSS CarePlan Contract Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/contract-eltss"/>
+      <!-- <exampleCanonical value="StructureDefinition/contract-eltss"/> -->
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -309,7 +309,7 @@
       </reference>
       <name value="eLTSS CarePlan Patient Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/patient-eltss"/>
+      <!-- <exampleCanonical value="StructureDefinition/patient-eltss"/> -->
       <groupingId value="examples"/>
     </resource>
     <resource>
@@ -318,7 +318,7 @@
       </reference>
       <name value="eLTSS CarePlan Planner Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="StructureDefinition/practitioner-eltss"/>
+      <!-- <exampleCanonical value="StructureDefinition/practitioner-eltss"/> -->
       <groupingId value="examples"/>
     </resource>
     <!-- document structure starts here -->

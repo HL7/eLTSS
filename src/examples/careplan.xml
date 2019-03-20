@@ -13,6 +13,9 @@
     <resource>
       <CarePlan>
         <id value="careplan1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/careplan-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -26,6 +29,12 @@
         </text>
         <status value="active"/>
         <intent value="plan"/>
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+            <code value="assess-plan"/>
+          </coding>
+        </category>
         <subject>
           <reference value="Patient/patient1"/>
         </subject>

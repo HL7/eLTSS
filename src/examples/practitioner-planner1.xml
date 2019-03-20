@@ -10,10 +10,15 @@
 
   <!--  Support Planner (CarePlan author) -->
   <entry>
-  <fullUrl value="http://hl7.org/fhir/uv/eLTSS/Practitioner/planner1"/>
+  <fullUrl value="http://example.org/Practitioner/planner1"/>
     <resource>
       <Practitioner>
         <id value="planner1"/>
+        
+        <meta>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/practitioner-eltss"/>
+        </meta>
+        
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">

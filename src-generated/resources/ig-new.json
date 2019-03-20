@@ -26,7 +26,7 @@
     "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/pages"
   }],
   "url" : "http://hl7.org/fhir/us/ImplementationGuide/eltss",
-  "version" : "0.2",
+  "version" : "0.1.0",
   "name" : "ELTSS",
   "title" : "Electronic Long-Term Services and Supports (eLTSS)",
   "status" : "draft",
@@ -40,7 +40,7 @@
       "display" : "United States of America"
     }]
   }],
-  "packageId" : "hl7.fhir.uv.eltss",
+  "packageId" : "hl7.fhir.us.eltss",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
   "4.0.0"],
@@ -127,7 +127,6 @@
       },
       "name" : "eLTSS CarePlan Example",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/careplan-eltss",
       "groupingId" : "examples"
     },
     {
@@ -136,7 +135,6 @@
       },
       "name" : "eLTSS CarePlan Claim Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/claim-eltss",
       "groupingId" : "examples"
     },
     {
@@ -145,7 +143,6 @@
       },
       "name" : "eLTSS CarePlan Contract Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/contract-eltss",
       "groupingId" : "examples"
     },
     {
@@ -154,7 +151,6 @@
       },
       "name" : "eLTSS CarePlan Patient Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/patient-eltss",
       "groupingId" : "examples"
     },
     {
@@ -163,7 +159,6 @@
       },
       "name" : "eLTSS CarePlan Planner Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/practitioner-eltss",
       "groupingId" : "examples"
     }],
     "page" : {
