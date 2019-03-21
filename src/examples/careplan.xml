@@ -14,7 +14,7 @@
       <CarePlan>
         <id value="careplan1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/careplan-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/careplan-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -122,7 +122,7 @@
       <Practitioner>
         <id value="planner1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/practitioner-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -155,7 +155,7 @@
       <Practitioner>
         <id value="caremgr1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/practitioner-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -189,7 +189,7 @@
       <Patient>
         <id value="patient1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/patient-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/patient-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -212,6 +212,7 @@
               <code value="MR"/>
             </coding>
           </type>
+          <system value="http://www.example.org/Codesystem"/>
           <value value="123456ABC"/>
         </identifier>
         <!--  [eLTSS Person Name]  -->
@@ -225,6 +226,7 @@
           <system value="phone"/>
           <value value="(404) 555 1212"/>
         </telecom>
+        <gender value="female"/>
         <!--  [eLTSS Person Date of Birth]  -->
         <birthDate value="1935-05-01"/>
         <!--  [eLTSS Person Address]  -->
@@ -273,7 +275,7 @@
       <EpisodeOfCare>
         <id value="episode1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/episodeofcare-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/episodeofcare-eltss"/>
         </meta>
         <status value="active"/>
         <patient>
@@ -292,7 +294,7 @@
       <CarePlan>
         <id value="careplan2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/careplan-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/careplan-eltss"/>
         </meta>
         <!-- reference to the "main" care plan -->
         <partOf>
@@ -300,6 +302,12 @@
         </partOf>
         <status value="active"/>
         <intent value="plan"/>
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+            <code value="assess-plan"/>
+          </coding>
+        </category>
         <description value="Snow Emergencies: A shelf stable blizzard meal is delivered to Meals On Wheels clients in early winter. It is to be eaten in the unlikely event of cancellation. Blizzard meals are donated by the Sheboygan Service Club."/>
         <subject>
           <reference value="Patient/patient1"/>
@@ -314,7 +322,7 @@
       <Goal>
         <id value="goal1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/goal-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/goal-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -340,7 +348,7 @@
       <Goal>
         <id value="goal2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/goal-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/goal-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -366,7 +374,7 @@
       <Condition>
         <id value="need1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/condition-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -383,6 +391,12 @@
             <code value="active"/>
           </coding>
         </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
         <category>
           <text value="assessed-need"/>
         </category>
@@ -402,7 +416,7 @@
       <Condition>
         <id value="need2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/condition-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -416,6 +430,12 @@
             <code value="active"/>
           </coding>
         </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
         <category>
           <text value="assessed-need"/>
         </category>
@@ -435,7 +455,7 @@
       <Condition>
         <id value="need3"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/condition-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -449,6 +469,12 @@
             <code value="active"/>
           </coding>
         </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
         <category>
           <text value="assessed-need"/>
         </category>
@@ -467,7 +493,7 @@
       <Practitioner>
         <id value="provider1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/practitioner-eltss"/>
         </meta>
         <!-- identifier is required by US Core -->
         <identifier>
@@ -493,15 +519,15 @@
     <resource>
       <Organization>
         <id value="provider2"/>
-        <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
-        </meta>
+
         <!-- identifier is required by US Core -->
         <identifier>
+          <system value="http://www.acme.org/practitioners"/>
           <value value="24680"/>
         </identifier>
         <!-- [eLTSS Service Provider Name] -->
         <name value="The Transporter, Inc."/>
+          
         <!-- [eLTSS Service Provider Phone Number] -->
         <telecom>
           <system value="phone"/>
@@ -521,7 +547,7 @@
       <Practitioner>
         <id value="provider3"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/practitioner-eltss"/>
         </meta>
         <!-- identifier is required by US Core -->
         <identifier>
@@ -615,7 +641,7 @@
       <ServiceRequest>
         <id value="service1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/servicerequest-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -675,7 +701,7 @@
       <ServiceRequest>
         <id value="service2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/servicerequest-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -739,7 +765,7 @@
       <ServiceRequest>
         <id value="service3"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/servicerequest-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -791,7 +817,7 @@
       <Observation>
         <id value="strength1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/observation-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/observation-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -814,7 +840,7 @@
       <Observation>
         <id value="pref1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/observation-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/observation-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -840,7 +866,7 @@
       <RiskAssessment>
         <id value="risk1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/reskassessment-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/riskassessment-eltss"/>
         </meta>
         <status value="final"/>
         <!-- subject is required by FHIR (starting with 3.4.0) -->
@@ -869,7 +895,7 @@
       <Questionnaire>
         <id value="questionnaire1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/questionnaire-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/questionnaire-eltss"/>
         </meta>
         <status value="active"/>
         <item>
@@ -974,7 +1000,7 @@
       <Contract>
         <id value="contract1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/contract-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/contract-eltss"/>
         </meta>
         <!-- [eLTSS Person Signature], [eLTSS Person Printed Name], [eLTSS Person Signature Date]  -->
         <signer>
@@ -1122,8 +1148,9 @@
       <Location>
         <id value="location1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/location-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/location-eltss"/>
         </meta>
+        <name value="In Home"/>
         <!-- [eLTSS Service Delivery Address]  -->
         <address>
           <text value="2222 Peachtree Street, Atlanta GA, 30318"/>
@@ -1153,7 +1180,7 @@
       <Claim>
         <id value="claim1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/claim-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/claim-eltss"/>
         </meta>
         <status value="active"/>
         <type>

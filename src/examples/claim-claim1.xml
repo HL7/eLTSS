@@ -9,7 +9,7 @@
       <Claim>
         <id value="claim1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/claim-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/claim-eltss"/>
         </meta>
         <status value="active"/>
         <type>
@@ -106,7 +106,7 @@
       <Patient>
         <id value="Patient2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/patient-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/patient-eltss"/>
         </meta>
         <text>
           <status value="generated"/>

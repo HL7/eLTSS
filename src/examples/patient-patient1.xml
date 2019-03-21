@@ -8,7 +8,7 @@
       <Patient>
         <id value="patient1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/patient-eltss"/>
+          <profile value="http://hl7.org/fhir/us/StructureDefinition/patient-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
