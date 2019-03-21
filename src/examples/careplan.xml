@@ -14,7 +14,7 @@
       <CarePlan>
         <id value="careplan1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/StructureDefinition/careplan-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/careplan-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -121,6 +121,9 @@
     <resource>
       <Practitioner>
         <id value="planner1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -151,6 +154,9 @@
     <resource>
       <Practitioner>
         <id value="caremgr1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -182,6 +188,9 @@
     <resource>
       <Patient>
         <id value="patient1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/patient-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -263,6 +272,9 @@
       <!--  [eLTSS Plan Monitor Name] & [eLTSS Plan Monitor Phone Number]  -->
       <EpisodeOfCare>
         <id value="episode1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/episodeofcare-eltss"/>
+        </meta>
         <status value="active"/>
         <patient>
           <reference value="Patient/patient1"/>
@@ -279,6 +291,9 @@
       <!--  [eLTSS Emergency Backup Plan]  -->
       <CarePlan>
         <id value="careplan2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/careplan-eltss"/>
+        </meta>
         <!-- reference to the "main" care plan -->
         <partOf>
           <reference value="CarePlan/careplan1"/>
@@ -298,6 +313,9 @@
       <!--  [eLTSS Goal]  -->
       <Goal>
         <id value="goal1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/goal-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -321,6 +339,9 @@
       <!--  [eLTSS Goal]  -->
       <Goal>
         <id value="goal2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/goal-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -344,6 +365,9 @@
       <!--  [eLTSS Assessed Need]  -->
       <Condition>
         <id value="need1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -377,6 +401,9 @@
       <!--  [eLTSS Assessed Need]  -->
       <Condition>
         <id value="need2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -407,6 +434,9 @@
       <!--  [eLTSS Assessed Need]  -->
       <Condition>
         <id value="need3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -436,6 +466,9 @@
     <resource>
       <Practitioner>
         <id value="provider1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <!-- identifier is required by US Core -->
         <identifier>
           <system value="http://www.acme.org/practitioners"/>
@@ -460,6 +493,9 @@
     <resource>
       <Organization>
         <id value="provider2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <!-- identifier is required by US Core -->
         <identifier>
           <value value="24680"/>
@@ -484,6 +520,9 @@
     <resource>
       <Practitioner>
         <id value="provider3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <!-- identifier is required by US Core -->
         <identifier>
           <system value="http://www.acme.org/practitioners"/>
@@ -575,6 +614,9 @@
       <!-- Service #1 -->
       <ServiceRequest>
         <id value="service1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -632,6 +674,9 @@
       <!-- Service #2 -->
       <ServiceRequest>
         <id value="service2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -693,6 +738,9 @@
       <!-- Service #3 -->
       <ServiceRequest>
         <id value="service3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -742,6 +790,9 @@
       <!--  [eLTSS Strength]  -->
       <Observation>
         <id value="strength1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/observation-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -762,6 +813,9 @@
       <!--  [eLTSS Preference]  -->
       <Observation>
         <id value="pref1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/observation-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -785,6 +839,9 @@
     <resource>
       <RiskAssessment>
         <id value="risk1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/reskassessment-eltss"/>
+        </meta>
         <status value="final"/>
         <!-- subject is required by FHIR (starting with 3.4.0) -->
         <subject>
@@ -811,6 +868,9 @@
     <resource>
       <Questionnaire>
         <id value="questionnaire1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/questionnaire-eltss"/>
+        </meta>
         <status value="active"/>
         <item>
           <linkId value="q1"/>
@@ -913,6 +973,9 @@
     <resource>
       <Contract>
         <id value="contract1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/contract-eltss"/>
+        </meta>
         <!-- [eLTSS Person Signature], [eLTSS Person Printed Name], [eLTSS Person Signature Date]  -->
         <signer>
           <type>
@@ -1058,6 +1121,9 @@
     <resource>
       <Location>
         <id value="location1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/location-eltss"/>
+        </meta>
         <!-- [eLTSS Service Delivery Address]  -->
         <address>
           <text value="2222 Peachtree Street, Atlanta GA, 30318"/>
@@ -1086,6 +1152,9 @@
     <resource>
       <Claim>
         <id value="claim1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/claim-eltss"/>
+        </meta>
         <status value="active"/>
         <type>
           <coding>

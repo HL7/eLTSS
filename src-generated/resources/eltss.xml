@@ -337,14 +337,7 @@
           <generation value="generated"/>
         </page>
       </page>
-      <!--
-      <page>
-        <nameUrl value="artifacts.html"/>
-        <title value="Artifact List"/>
-        <generation value="html"/>
-      </page>
-      -->
-      <page>
+       <page>
         <nameUrl value="extensions.html"/>
         <title value="eLTSS Resource Extensions"/>
         <generation value="html"/>

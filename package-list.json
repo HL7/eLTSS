@@ -1,0 +1,20 @@
+{
+ "package-id" : "eLTSS",
+ "title" : "electronic Long-Term Services and Supports (eLTSS) Implementation Guide", 
+ "canonical" : "http://hl7.org/fhir/us/eLTSS", 
+ "list" : [
+{
+   "version" : "current",
+   "desc" : "Continuous Integration Build (latest in version control)",
+   "path" : "http://build.fhir.org/ig/HL7/eLTSS",
+   "status" : "ci-build",
+   "current" : true
+ },
+{
+   "version" : "0.1.0",   
+   "date" : "2019-03-20",
+   "desc" : "Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services & Supports (eLTSS) Dataset data elements ",   
+   "path" : "http://hl7.org/fhir/us/eLTSS",
+   "status" : "ballot",   
+   "sequence" : "STU 1",   
+}]

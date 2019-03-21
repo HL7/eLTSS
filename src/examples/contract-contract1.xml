@@ -8,6 +8,9 @@
     <resource>
       <Practitioner>
         <id value="planner1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -38,6 +41,9 @@
     <resource>
       <Practitioner>
         <id value="caremgr1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -68,6 +74,9 @@
     <resource>
       <Practitioner>
         <id value="provider1"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -128,6 +137,9 @@
     <resource>
       <Practitioner>
         <id value="provider3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+        </meta>
         <!-- identifier is required by US Core -->
         <text>
           <status value="generated"/>
@@ -159,7 +171,7 @@
       <Contract>
         <id value="contract1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/StructureDefinition/contract-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/contract-eltss"/>
         </meta>
         <text>
           <status value="additional"/>
