@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="eltss-client"/>
   <text>
@@ -7,7 +7,7 @@
       <p>eLTSS IG Client.</p>
 </div>
 </text>
-<url value="http://hl7.org/fhir/us/CapabilityStatement/eltss-client"/>
+<url value="http://hl7.org/fhir/us/eLTSS/CapabilityStatement/eltss-client"/>
 
 <name value="ELTSS_Client"/>
 <title value="eLTSS Client"/>

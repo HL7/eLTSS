@@ -95,7 +95,7 @@
   },
   "sct-edition" : "http://snomed.info/sct/731000124108",
   "no-inactive-codes" : "true",
-  "canonicalBase": "http://hl7.org/fhir/us",
+  "canonicalBase": "http://hl7.org/fhir/us/eLTSS",
   "dependencyList": [
     {
       "name" : "core",

@@ -671,7 +671,7 @@
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="Metadata">
-  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="16" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="18" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s67" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s67" ss:Width="98.25"/>
@@ -726,8 +726,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="59.0625">
     <Cell ss:StyleID="s72"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s78" ss:HRef="http://hl7.org/fhir/us/StructureDefinition/eltss-"><Data
-      ss:Type="String">http://hl7.org/fhir/us/StructureDefinition/eltss-</Data></Cell>
+    <Cell ss:StyleID="s78" ss:HRef="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-"><Data
+      ss:Type="String">http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s79"><Data ss:Type="String">introduction</Data></Cell>
@@ -738,6 +738,9 @@
     <Cell ss:StyleID="s82"/>
    </Row>
    <Row ss:AutoFitHeight="0"/>
+   <Row ss:Index="18" ss:AutoFitHeight="0">
+    <Cell ss:Index="6" ss:StyleID="s78"/>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>

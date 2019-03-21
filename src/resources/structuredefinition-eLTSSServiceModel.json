@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>eLTSS Service Logical Model</b></p>\n\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/StructureDefinition/eLTSSServiceModel",
+  "url": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/eLTSS",

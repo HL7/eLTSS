@@ -724,8 +724,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="59.0625">
     <Cell ss:StyleID="s72"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s78" ss:HRef="http://hl7.org/fhir/us/StructureDefinition/eltss-"><Data
-      ss:Type="String">http://hl7.org/fhir/us/StructureDefinition/eltss-</Data></Cell>
+    <Cell ss:StyleID="s78" ss:HRef="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-"><Data
+      ss:Type="String">http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s79"><Data ss:Type="String">introduction</Data></Cell>
@@ -769,8 +769,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
-     <RangeSelection>R12C2:R13C2</RangeSelection>
+     <ActiveRow>12</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
