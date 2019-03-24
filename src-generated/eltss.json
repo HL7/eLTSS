@@ -14,7 +14,7 @@
     "temp": "../temp/pages",
     "output": "../output",
     "txCache": "txcache",
-    "history" : "history.html",
+    "history" : "http://hl7.org/fhir/us/eLTSS/history.cfml",
     "qa": "../temp/qa",
     "specification": "http://build.fhir.org/"
   },
@@ -100,7 +100,9 @@
     {
       "name" : "core",
       "version" : "current",
-      "location" : "http://hl7.org/fhir/us/core"}
+      "location" : "http://hl7.org/fhir/us/core",
+      "source" : "../../core2/website"
+    }
   ],
   "source": "eltss.xml",
   "spreadsheets": [
