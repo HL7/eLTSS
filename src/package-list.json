@@ -1,0 +1,22 @@
+{
+ "package-id" : "hl7.fhir.us.eLTSS",
+ "title" : "electronic Long-Term Services and Supports Implementation Guide",
+ "introduction" : "electronic Long-Term Services and Supports Implementation Guide was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans. ",
+ "canonical" : "http://hl7.org/fhir/us/eLTSS",
+ "list" : [{
+   "version" : "current",
+   "date": "n/a",
+   "desc" : "Continuous Integration Build (latest in version control)",
+   "path" : "http://build.fhir.org/ig/HL7/eLTSS",
+   "status" : "ci-build",
+   "current" : true
+ },
+{
+   "version" : "0.1.0",
+   "date" : "xxx",
+   "desc": "STU #1 1st Ballot",
+   "path" : "http://hl7.org/fhir/us/eLTSS/2019May",
+   "status" : "ballot",
+   "sequence" : "STU1"
+}]
+}
