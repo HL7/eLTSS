@@ -47,7 +47,7 @@
   "dependsOn" : [{
     "id" : "core",
     "uri" : "http://hl7.org/fhir/us/core",
-    "packageId" : "hl7.fhir.us.core",
+    "packageId" : "hl7.fhir.us.core.r4",
     "version" : "current"
   }],
   "definition" : {
@@ -102,6 +102,15 @@
       "description" : "Defines the Logical Model for eLTSS Service Plan",
       "exampleBoolean" : false,
       "groupingId" : "logical"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/CarePlan-eltss"
+      },
+      "name" : "eLTSS CarePlan Profile",
+      "description" : "Base profile that defines the CarePlan constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
     },
     {
       "reference" : {
@@ -365,16 +374,12 @@
       "value" : "template-page.html"
     },
     {
-      "code" : "generate-json",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "xml"
     },
     {
-      "code" : "generate-xml",
-      "value" : "true"
-    },
-    {
-      "code" : "generate-turtle",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "JSON"
     }]
   }
 }

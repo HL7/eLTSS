@@ -528,8 +528,8 @@
       {
         "id": "eLTSSServicePlanModel.personSignature",
         "path": "eLTSSServicePlanModel.personSignature",
-        "short": "The of the person's signature as proof of identify and intent for the plan.",
-        "definition": "The of the person's signature as proof of identify and intent for the plan.",
+        "short": "The person's signature as proof of identify and intent for the plan.",
+        "definition": "The person's signature as proof of identify and intent for the plan.",
         "min": 0,
         "max": "1",
         "base": {

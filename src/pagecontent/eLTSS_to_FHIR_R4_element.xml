@@ -62,7 +62,7 @@ Patient &#8594; identifier &#8594; type</td>
 .........type 0..1</td>
 <td >1) Will use CarePlan &#8594; subject to reference the Patient for the care plan being developed. FHIR requires that CarePlan includes a subject.<br />
 2) If we have the identifier, we need to be know the type.<br />
-3) type is a CodeableConcept with an extensible value set with values defined here: https://www.hl7.org/fhir/valueset-identifier-type.html. Medical Record Number is available in the documented code list. LOINC includes Medicaid number and Social Security Number. State ID is covered by the "SB" (Social Beneficiary) code value documented in the FHIR codeset at http://hl7.org/fhir/identifier-type. "Other" can be handled with the text element that is part of the Codeable Concept.</td>
+3) type is a CodeableConcept with an extensible value set with values defined here: https://www.hl7.org/fhir/valueset-identifier-type.html. <br />  Medical Record Number is available in the documented code list. LOINC includes Medicaid Number and Social Security Number. State ID is covered by the "SB" (Social Beneficiary) code value documented in the FHIR codeset at http://hl7.org/fhir/identifier-type. "Other" can be handled with the text element that is part of the Codeable Concept.</td>
 </tr>
 <tr>
 <td >Beneficiary Demographics</td>
@@ -1475,7 +1475,7 @@ US Core</td>
 <td >CareTeam<br />
 ...participant 1..*<br />
 ......role 1</td>
-<td >1) US Core requires each participant in the CareTeam have a role defined in the "CareTeam Provider Role Value Set" which includes values from NUCC Health Care Provider Taxonomy Code Set for providers and SNOMED-CT for - non clinical and organization roles.<br />
+<td >1) US Core requires each participant in the CareTeam have a role defined in the "CareTeam Provider Role Value Set" which includes values from NUCC Health Care Provider Taxonomy Code Set for providers and SNOMED-CT for non-clinical and organization roles.<br />
 2) Note that the Plan Monitor eLTSS Dataset data element utilizes a participant role as well, and this is documented in the eLTSS element mapping.</td>
 </tr>
 <tr>
@@ -1940,12 +1940,13 @@ For FHIR data elements that are references to other FHIR resources, the type of 
 <th colspan="4">Quantity, Unit and Interval Examples</th>
 </tr>
 <tr>
-<th>Example</th>
+<th>  </th>
 <th colspan="3">eLTSS Dataset Elements</th>
 <th colspan="2">FHIR quantityQuantity Elements</th>
 <th colspan="4">FHIR quantityRatio Elements</th>
 </tr>
 <tr>
+<th>Example</th>
 <td>Svc Unit Qty</td>
 <td>Unit of Svc Type</td>
 <td>Svc Unit Qty Interval</td>

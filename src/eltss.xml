@@ -23,9 +23,9 @@
     <version value="current"/>
   </dependsOn>
   <definition>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="careplan-profile-spreadsheet.xml"/>
-    </extension>
+<!--    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="StructureDefinition-CarePlan-eltss.xml"/>
+    </extension> -->
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="claim-profile-spreadsheet.xml"/>
     </extension>
@@ -113,11 +113,8 @@
     </resource>
     <!-- Profiles -->
     <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
       <reference>
-        <reference value="StructureDefinition/careplan-eltss"/>
+        <reference value="StructureDefinition/CarePlan-eltss"/>
       </reference>
       <name value="eLTSS CarePlan Profile"/>
       <description value="Base profile that defines the CarePlan constraints for eLTSS"/>
@@ -496,11 +493,11 @@
           <generation value="generated"/>
         </page>
       </page>
-       <page>
+      <page>
         <nameUrl value="extensions.html"/>
         <title value="eLTSS Resource Extensions"/>
         <generation value="html"/>
-         <page>
+        <page>
           <nameUrl value="eltss-dueTo.html"/>
           <title value="eLTSS dueTo extension on Condition"/>
           <generation value="generated"/>
@@ -510,7 +507,7 @@
           <title value="eLTSS eltss directedBy extension for Service Request"/>
           <generation value="generated"/>
         </page>
-     </page>
+      </page>
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Implementation Guide Downloads"/>

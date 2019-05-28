@@ -100,13 +100,10 @@
     {
       "name" : "core",
       "version" : "current",
-      "location" : "http://hl7.org/fhir/us/core",
-      "source" : "../../core2/website"
-    }
+      "package" : "hl7.fhir.us.core.r4"}
   ],
   "source": "eltss.xml",
   "spreadsheets": [
-    "careplan-profile-spreadsheet.xml",
     "claim-profile-spreadsheet.xml",
     "contract-profile-spreadsheet.xml",
     "patient-profile-spreadsheet.xml",
@@ -127,7 +124,7 @@
     },
     "StructureDefinition/eLTSSServicePlanModel":{
     },
-    "StructureDefinition/careplan-eltss":{
+    "StructureDefinition/CarePlan-eltss":{
     },
     "StructureDefinition/claim-eltss":{
     },
