@@ -14,7 +14,7 @@
       <CarePlan>
         <id value="careplan1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/careplan-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -38,10 +38,6 @@
         <subject>
           <reference value="Patient/patient1"/>
         </subject>
-        <!-- 
-        <context> Context was removed from CarePlan for R4 
-          <reference value="EpisodeOfCare/episode1"/>
-        </context> -->
         <!--  [eLTSS Plan Effective Date]  -->
         <period>
           <start value="2018-05-01"/>
@@ -122,7 +118,7 @@
       <Practitioner>
         <id value="planner1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -155,7 +151,7 @@
       <Practitioner>
         <id value="caremgr1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -189,7 +185,7 @@
       <Patient>
         <id value="patient1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/patient-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -294,7 +290,7 @@
       <CarePlan>
         <id value="careplan2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/careplan-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"/>
         </meta>
         <!-- reference to the "main" care plan -->
         <partOf>
@@ -322,7 +318,7 @@
       <Goal>
         <id value="goal1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/goal-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Goal-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -348,7 +344,7 @@
       <Goal>
         <id value="goal2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/goal-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Goal-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -493,7 +489,7 @@
       <Practitioner>
         <id value="provider1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
         </meta>
         <!-- identifier is required by US Core -->
         <identifier>
@@ -519,7 +515,6 @@
     <resource>
       <Organization>
         <id value="provider2"/>
-
         <!-- identifier is required by US Core -->
         <identifier>
           <system value="http://www.acme.org/practitioners"/>
@@ -527,7 +522,6 @@
         </identifier>
         <!-- [eLTSS Service Provider Name] -->
         <name value="The Transporter, Inc."/>
-          
         <!-- [eLTSS Service Provider Phone Number] -->
         <telecom>
           <system value="phone"/>
@@ -547,7 +541,7 @@
       <Practitioner>
         <id value="provider3"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
         </meta>
         <!-- identifier is required by US Core -->
         <identifier>

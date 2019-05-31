@@ -104,20 +104,42 @@
   ],
   "source": "eltss.xml",
   "spreadsheets": [
-    "claim-profile-spreadsheet.xml",
-    "contract-profile-spreadsheet.xml",
-    "patient-profile-spreadsheet.xml",
-    "servicerequest-profile-spreadsheet.xml",
-    "episodeofcare-profile-spreadsheet.xml",
-    "location-profile-spreadsheet.xml",
-    "practitioner-profile-spreadsheet.xml",
-    "goal-profile-spreadsheet.xml",
-    "condition-profile-spreadsheet.xml",
-    "observation-profile-spreadsheet.xml",
-    "questionnaire-profile-spreadsheet.xml",
-    "riskassessment-profile-spreadsheet.xml"
   ],
   "resources": {
+    "StructureDefinition/eltss-dueTo":{
+      "template-base": "../framework/templates/template-ext.html",
+      "template-defns": "../framework/templates/template-ext-definitions.html",
+      "template-mappings": "../framework/templates/template-ext-mappings.html",
+      "template-examples": "",
+      "template-profile-xml": "../framework/templates/template-ext-xml.html",
+      "template-profile-json": "../framework/templates/template-ext-json.html",
+      "template-profile-ttl": "../framework/templates/template-ext-ttl.html",
+      "template-format": "",
+      "base": "extension-{{[id]}}.html",
+      "defns": "extension-{{[id]}}-definitions.html",
+      "mappings": "extension-{{[id]}}-mappings.html",
+      "examples": "extension-{{[id]}}-examples.html",
+      "profile-xml": "extension-{{[id]}}.profile.xml.html",
+      "profile-json": "extension-{{[id]}}.profile.json.html",
+      "profile-ttl": "extension-{{[id]}}.profile.ttl.html"
+    },
+    "StructureDefinition/eltss-directedBy":{
+      "template-base": "../framework/templates/template-ext.html",
+      "template-defns": "../framework/templates/template-ext-definitions.html",
+      "template-mappings": "../framework/templates/template-ext-mappings.html",
+      "template-examples": "",
+      "template-profile-xml": "../framework/templates/template-ext-xml.html",
+      "template-profile-json": "../framework/templates/template-ext-json.html",
+      "template-profile-ttl": "../framework/templates/template-ext-ttl.html",
+      "template-format": "",
+      "base": "extension-{{[id]}}.html",
+      "defns": "extension-{{[id]}}-definitions.html",
+      "mappings": "extension-{{[id]}}-mappings.html",
+      "examples": "extension-{{[id]}}-examples.html",
+      "profile-xml": "extension-{{[id]}}.profile.xml.html",
+      "profile-json": "extension-{{[id]}}.profile.json.html",
+      "profile-ttl": "extension-{{[id]}}.profile.ttl.html"
+    },
     "StructureDefinition/eLTSSPersonModel":{
     },
     "StructureDefinition/eLTSSServiceModel":{
@@ -126,41 +148,33 @@
     },
     "StructureDefinition/CarePlan-eltss":{
     },
-    "StructureDefinition/claim-eltss":{
+    "StructureDefinition/Claim-eltss":{
     },
-    "StructureDefinition/condition-eltss":{
+    "StructureDefinition/Condition-eltss":{
     },
-    "StructureDefinition/contract-eltss":{
+    "StructureDefinition/Contract-eltss":{
     },
-    "StructureDefinition/episodeofcare-eltss":{
+    "StructureDefinition/EpisodeOfCare-eltss":{
     },
-    "StructureDefinition/location-eltss":{
+    "StructureDefinition/Goal-eltss":{
     },
-    "StructureDefinition/observation-eltss":{
+    "StructureDefinition/Location-eltss":{
     },
-    "StructureDefinition/patient-eltss":{
+    "StructureDefinition/Observation-eltss":{
     },
-    "StructureDefinition/practitioner-eltss":{
+    "StructureDefinition/Patient-eltss":{
     },
-    "StructureDefinition/questionnaire-eltss":{
+    "StructureDefinition/Practitioner-eltss":{
     },
-    "StructureDefinition/riskassessment-eltss":{
+    "StructureDefinition/Questionnaire-eltss":{
     },
-    "StructureDefinition/servicerequest-eltss":{
+    "StructureDefinition/RiskAssessment-eltss":{
+    },
+    "StructureDefinition/ServiceRequest-eltss":{
     },
     "CapabilityStatement/eltss-client":{
     },
     "CapabilityStatement/eltss-server":{
-    },
-    "Bundle/careplan":{
-    },
-    "Bundle/claim-claim1":{
-    },
-    "Bundle/contract-contract1":{
-    },
-    "Bundle/patient-patient1":{
-    },
-    "Bundle/practitioner-planner1":{
     }
   }
 }

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/Desktop/eLTSS/src-generated/schemas/fhir-single.xsd">
+  <id value="Condition-eltss"/>
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
+  <version value="0.1.0"/>
+  <name value="Condition_eltss"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-02-17T00:00:00-05:00"/>
+  <publisher value="HL7 CBCP"/>
+  <description value="Condition for eLTSS"/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Condition"/>
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Condition">
+      <path value="Condition"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category"/>
+      <short value="Assessed Need Category"/>
+      <comment value="Could use the value &quot;problem-list-item&quot; to indicate the underlying condition, and extend the value set to add the value &quot;assessed-need&quot;."/>
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code"/>
+      <short value="Assessed Need Code"/>
+      <definition value="The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service."/>
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
+      </type>
+    </element>
+    <element id="Condition.recorder">
+      <path value="Condition.recorder"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+      </type>
+    </element>
+    <element id="Condition.asserter">
+      <path value="Condition.asserter"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+      </type>
+    </element>
+      <element id="Condition.stage.assessment">
+      <path value="Condition.stage.assessment"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+      </type>
+    </element>
+</differential>
+</StructureDefinition>

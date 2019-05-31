@@ -48,77 +48,84 @@
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="claim-eltss.html">
+                        <a href="Claim-eltss.html">
                         •  eLTSS Claim Profile</a>
                     </td>
                     <td>Defines the Claim constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="condition-eltss.html">
+                        <a href="Condition-eltss.html">
                         •  eLTSS Condition Profile</a>
                     </td>
                     <td>Defines the Condition constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="contract-eltss.html">
+                        <a href="Contract-eltss.html">
                         •  eLTSS Contract Profile</a>
                     </td>
                     <td>Defines the Contract constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="episodeofcare-eltss.html">
+                        <a href="EpisodeOfCare-eltss.html">
                         •  eLTSS EpisodeOfCare Profile</a>
                     </td>
                     <td>Defines the EpisodeOfCare constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="location-eltss.html">
+                        <a href="Goal-eltss.html">
+                        •  eLTSS Goal Profile</a>
+                    </td>
+                    <td>Defines the Goal constraints for eLTSS</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="Location-eltss.html">
                         •  eLTSS Location Profile</a>
                     </td>
                     <td>Defines the Location constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="observation-eltss.html">
+                        <a href="Observation-eltss.html">
                         •  eLTSS Observation Profile</a>
                     </td>
                     <td>Defines the Observation constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="patient-eltss.html">
+                        <a href="Patient-eltss.html">
                         •  eLTSS Patient Profile</a>
                     </td>
                     <td>Defines the Patient constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="practitioner-eltss.html">
+                        <a href="Practitioner-eltss.html">
                         •  eLTSS Practitioner Profile</a>
                     </td>
                     <td>Defines the Practitioner constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="questionnaire-eltss.html">
+                        <a href="Questionnaire-eltss.html">
                         •  eLTSS Questionnaire Profile</a>
                     </td>
                     <td>Defines the Questionnaire constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="riskassessment-eltss.html">
+                        <a href="RiskAssessment-eltss.html">
                         •  eLTSS RiskAssessment Profile</a>
                     </td>
                     <td>Defines the RiskAssessment constraints for eLTSS</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="servicerequest-eltss.html">
+                        <a href="ServiceRequest-eltss.html">
                         •  eLTSS ServiceRequest Profile</a>
                     </td>
                     <td>Defines the ServiceRequest constraints for eLTSS</td>
@@ -131,7 +138,22 @@
     <p>Extensions defined as part of the eLTSS implementation guide</p>
     <p>
         <table>
-            <tbody/>
+            <tbody>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="extension-eltss-dueTo.html">
+                        •  </a>
+                    </td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="extension-eltss-directedBy.html">
+                        •  </a>
+                    </td>
+                    <td/>
+                </tr>
+            </tbody>
         </table>
     </p>
     <a name="4"> </a>
@@ -162,43 +184,7 @@
     <p>Example(s) showing the use of the eLTSS profiles</p>
     <p>
         <table>
-            <tbody>
-                <tr>
-                    <td style="column-width:30%">
-                        <a href="careplan.html">
-                        •  eLTSS CarePlan Example</a>
-                    </td>
-                    <td>Test instance showing data from the eLTSS spec</td>
-                </tr>
-                <tr>
-                    <td style="column-width:30%">
-                        <a href="claim-claim1.html">
-                        •  eLTSS CarePlan Claim Example 1</a>
-                    </td>
-                    <td>Test instance showing data from the eLTSS spec</td>
-                </tr>
-                <tr>
-                    <td style="column-width:30%">
-                        <a href="contract-contract1.html">
-                        •  eLTSS CarePlan Contract Example 1</a>
-                    </td>
-                    <td>Test instance showing data from the eLTSS spec</td>
-                </tr>
-                <tr>
-                    <td style="column-width:30%">
-                        <a href="patient-patient1.html">
-                        •  eLTSS CarePlan Patient Example 1</a>
-                    </td>
-                    <td>Test instance showing data from the eLTSS spec</td>
-                </tr>
-                <tr>
-                    <td style="column-width:30%">
-                        <a href="practitioner-planner1.html">
-                        •  eLTSS CarePlan Planner Example 1</a>
-                    </td>
-                    <td>Test instance showing data from the eLTSS spec</td>
-                </tr>
-            </tbody>
+            <tbody/>
         </table>
     </p>
 </div>

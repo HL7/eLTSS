@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Observation-eltss"/>
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
+  <version value="0.1.0"/>
+  <name value="Observation_eltss"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-02-17T00:00:00-05:00"/>
+  <publisher value="HL7 CBCP"/>
+  <description value="Observation resource mapping for eLTSS"/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Observation"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Observation">
+      <path value="Observation"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <short value="Discussion of Preference"/>
+      <definition value="Code representing the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning."/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system"/>
+      <comment value="Could be &quot;urn:oid:2.16.840.1.113883.3.88.12.80.28&quot;."/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code"/>
+      <comment value="Can be set to &quot;223486007&quot;, which represents &quot;Discussion about preferences&quot;."/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Observation.code.text">
+      <path value="Observation.code.text"/>
+      <short value="Preference or Strength"/>
+      <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning. OR A favorable attribute of oneself, his/her support network, environment and/or elements of his/her life."/>
+      <comment value="Can be used to indicate this Observation is a Preference."/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Observation.valueString">
+      <path value="Observation.valueString"/>
+      <short value="Preference or Strength"/>
+      <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning."/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -78,6 +78,18 @@
     }],
     "resource" : [{
       "reference" : {
+        "reference" : "StructureDefinition/eltss-dueTo"
+      },
+      "groupingId" : "extensions"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/eltss-directedBy"
+      },
+      "groupingId" : "extensions"
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/eLTSSPersonModel"
       },
       "name" : "eLTSS Person Logical Model",
@@ -114,6 +126,114 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/Claim-eltss"
+      },
+      "name" : "eLTSS Claim Profile",
+      "description" : "Defines the Claim constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Condition-eltss"
+      },
+      "name" : "eLTSS Condition Profile",
+      "description" : "Defines the Condition constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Contract-eltss"
+      },
+      "name" : "eLTSS Contract Profile",
+      "description" : "Defines the Contract constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/EpisodeOfCare-eltss"
+      },
+      "name" : "eLTSS EpisodeOfCare Profile",
+      "description" : "Defines the EpisodeOfCare constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Goal-eltss"
+      },
+      "name" : "eLTSS Goal Profile",
+      "description" : "Defines the Goal constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Location-eltss"
+      },
+      "name" : "eLTSS Location Profile",
+      "description" : "Defines the Location constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Observation-eltss"
+      },
+      "name" : "eLTSS Observation Profile",
+      "description" : "Defines the Observation constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Patient-eltss"
+      },
+      "name" : "eLTSS Patient Profile",
+      "description" : "Defines the Patient constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Practitioner-eltss"
+      },
+      "name" : "eLTSS Practitioner Profile",
+      "description" : "Defines the Practitioner constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/Questionnaire-eltss"
+      },
+      "name" : "eLTSS Questionnaire Profile",
+      "description" : "Defines the Questionnaire constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/RiskAssessment-eltss"
+      },
+      "name" : "eLTSS RiskAssessment Profile",
+      "description" : "Defines the RiskAssessment constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ServiceRequest-eltss"
+      },
+      "name" : "eLTSS ServiceRequest Profile",
+      "description" : "Defines the ServiceRequest constraints for eLTSS",
+      "exampleBoolean" : false,
+      "groupingId" : "general"
+    },
+    {
+      "reference" : {
         "reference" : "CapabilityStatement/eltss-client"
       },
       "name" : "eLTSS Client",
@@ -129,46 +249,6 @@
       "description" : "Defines the eLTSS Server capabilities",
       "exampleBoolean" : false,
       "groupingId" : "capability"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/careplan"
-      },
-      "name" : "eLTSS CarePlan Example",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "groupingId" : "examples"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/claim-claim1"
-      },
-      "name" : "eLTSS CarePlan Claim Example 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "groupingId" : "examples"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/contract-contract1"
-      },
-      "name" : "eLTSS CarePlan Contract Example 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "groupingId" : "examples"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/patient-patient1"
-      },
-      "name" : "eLTSS CarePlan Patient Example 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "groupingId" : "examples"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/practitioner-planner1"
-      },
-      "name" : "eLTSS CarePlan Planner Example 1",
-      "description" : "Test instance showing data from the eLTSS spec",
-      "groupingId" : "examples"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -209,72 +289,67 @@
         "title" : "eLTSS Profiles",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "careplan-eltss.html",
+          "nameUrl" : "CarePlan-eltss.html",
           "title" : "eLTSS Care Plan Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "careplan-eltss.html",
-          "title" : "eLTSS Care Plan Profile",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "claim-eltss.html",
+          "nameUrl" : "Claim-eltss.html",
           "title" : "eLTSS Claim Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "condition-eltss.html",
+          "nameUrl" : "Condition-eltss.html",
           "title" : "eLTSS Condition Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "contract-eltss.html",
+          "nameUrl" : "Contract-eltss.html",
           "title" : "eLTSS Contract Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "episodeofcare-eltss.html",
+          "nameUrl" : "EpisodeOfCare-eltss.html",
           "title" : "eLTSS EpisodeOfCare Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "goal-eltss.html",
+          "nameUrl" : "Goal-eltss.html",
           "title" : "eLTSS Goal Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "location-eltss.html",
+          "nameUrl" : "Location-eltss.html",
           "title" : "eLTSS Location Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "observation-eltss.html",
+          "nameUrl" : "Observation-eltss.html",
           "title" : "eLTSS Observation Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "patient-eltss.html",
+          "nameUrl" : "Patient-eltss.html",
           "title" : "eLTSS Patient Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "practitioner-eltss.html",
+          "nameUrl" : "Practitioner-eltss.html",
           "title" : "eLTSS Practitioner Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "questionnaire-eltss.html",
+          "nameUrl" : "Questionnaire-eltss.html",
           "title" : "eLTSS Questionnaire Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "riskassessment-eltss.html",
+          "nameUrl" : "RiskAssessment-eltss.html",
           "title" : "eLTSS RiskAssessment Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "servicerequest-eltss.html",
+          "nameUrl" : "ServiceRequest-eltss.html",
           "title" : "eLTSS ServiceRequest Profile",
           "generation" : "generated"
         }]
