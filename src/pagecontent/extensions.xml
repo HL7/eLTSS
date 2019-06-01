@@ -5,15 +5,21 @@
     <table>
       <tr>
         <td style="column-width:30%">
-          <a href="eltss-directedBy.html">Service Request directedBy</a>
+          <a href="extension-eltss-directedBy.html">Service Request directedBy</a>
         </td>
         <td>Indicates whether the individual chose to self-direct a ServiceRequest.</td>
       </tr>
       <tr>
         <td style="column-width:30%">
-          <a href="eltss-dueTo.html">Condition dueTo</a>
+          <a href="extension-eltss-dueTo.html">Condition dueTo</a>
         </td>
         <td>Further conditions, problems, diagnoses, procedures or events or the substance that caused/triggered a Condition</td>
+      </tr>
+            <tr>
+        <td style="column-width:30%">
+          <a href="extension-eltss-RiskPlan.html">RiskAssessment Mitigation Plan</a>
+        </td>
+        <td>An full plan for mitigation of a determined risk.</td>
       </tr>
      </table>
   </p>

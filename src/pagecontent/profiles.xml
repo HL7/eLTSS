@@ -51,7 +51,7 @@
       </tr>
 	  <tr>
         <td>
-          <a href="observation-eltss.html">eLTSS Observation Profile</a>
+          <a href="Observation-eltss.html">eLTSS Observation Profile</a>
         </td>
         <td>Defines the Observation constraints for eLTSS</td>
       </tr>
@@ -69,19 +69,19 @@
       </tr>
       <tr>
         <td>
-          <a href="questionnaire-eltss.html">eLTSS Questionnaire Profile</a>
+          <a href="Questionnaire-eltss.html">eLTSS Questionnaire Profile</a>
         </td>
         <td>Defines the Questionnaire constraints for eLTSS</td>
       </tr>
 	  <tr>
         <td>
-          <a href="riskassessment-eltss.html">eLTSS RiskAssessment Profile</a>
+          <a href="RiskAssessment-eltss.html">eLTSS RiskAssessment Profile</a>
         </td>
         <td>Defines the RiskAssessment constraints for eLTSS</td>
       </tr>
 	  <tr>
         <td>
-          <a href="servicerequest-eltss.html">eLTSS ServiceRequest Profile</a>
+          <a href="ServiceRequest-eltss.html">eLTSS ServiceRequest Profile</a>
         </td>
         <td>Defines the ServiceRequest constraints for eLTSS</td>
       </tr>  

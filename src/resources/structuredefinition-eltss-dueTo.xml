@@ -3,8 +3,8 @@
   <id value="eltss-dueTo"/>
   <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-dueTo"/>
   <version value="0.1.0"/>
-  <name value="dueTo"/>
-  <title value="dueTo"/>
+  <name value="ELTSS_dueTo"/>
+  <title value="ELTSS-dueTo"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-02-17T00:00:00+00:00"/>

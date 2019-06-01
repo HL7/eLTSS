@@ -271,7 +271,7 @@
       <EpisodeOfCare>
         <id value="episode1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/episodeofcare-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/EpisodeOfCare-eltss"/>
         </meta>
         <status value="active"/>
         <patient>
@@ -370,7 +370,7 @@
       <Condition>
         <id value="need1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -412,7 +412,7 @@
       <Condition>
         <id value="need2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -451,7 +451,7 @@
       <Condition>
         <id value="need3"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/condition-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -635,7 +635,7 @@
       <ServiceRequest>
         <id value="service1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -695,7 +695,7 @@
       <ServiceRequest>
         <id value="service2"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -705,7 +705,7 @@
           </div>
         </text>
         <!-- [eLTSS Self-directed Service Indicator] -->
-        <extension url="http://hl7.org/fhir/StructureDefinition/procedure-directedBy">
+        <extension url="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy">
           <valueCodeableConcept>
             <text value="self"/>
           </valueCodeableConcept>
@@ -759,7 +759,7 @@
       <ServiceRequest>
         <id value="service3"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/servicerequest-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -811,7 +811,7 @@
       <Observation>
         <id value="strength1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/observation-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -821,6 +821,7 @@
         </text>
         <status value="final"/>
         <code>
+          
           <text value="Strength"/>
         </code>
         <valueString value="Able to manage her bills. Has strong family support."/>
@@ -834,7 +835,7 @@
       <Observation>
         <id value="pref1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/observation-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -844,10 +845,9 @@
         </text>
         <status value="final"/>
         <code>
-          <!-- code and system indicates "discussion about preferences" -->
           <coding>
-            <system value="urn:oid:2.16.840.1.113883.3.88.12.80.28"/>
-            <code value="223486007"/>
+            <system value="http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code"/>
+            <code value="strength"/>
           </coding>
         </code>
         <valueString value="Accessing the ICWP Waiver for her current service needs, and would like to remain on ICWP and continue with her current services."/>
@@ -860,7 +860,7 @@
       <RiskAssessment>
         <id value="risk1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/riskassessment-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/RiskAssessment-eltss"/>
         </meta>
         <status value="final"/>
         <!-- subject is required by FHIR (starting with 3.4.0) -->
@@ -889,7 +889,7 @@
       <Questionnaire>
         <id value="questionnaire1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/questionnaire-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss"/>
         </meta>
         <status value="active"/>
         <item>
@@ -994,7 +994,7 @@
       <Contract>
         <id value="contract1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/contract-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss"/>
         </meta>
         <!-- [eLTSS Person Signature], [eLTSS Person Printed Name], [eLTSS Person Signature Date]  -->
         <signer>
@@ -1142,7 +1142,7 @@
       <Location>
         <id value="location1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/location-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss"/>
         </meta>
         <name value="In Home"/>
         <!-- [eLTSS Service Delivery Address]  -->
@@ -1174,7 +1174,7 @@
       <Claim>
         <id value="claim1"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/claim-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Claim-eltss"/>
         </meta>
         <status value="active"/>
         <type>

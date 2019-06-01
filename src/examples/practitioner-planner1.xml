@@ -16,7 +16,7 @@
         <id value="planner1"/>
         
         <meta>
-          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/practitioner-eltss"/>
+          <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
         </meta>
         
         <text>

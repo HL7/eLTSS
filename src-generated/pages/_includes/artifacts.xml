@@ -148,6 +148,13 @@
                 </tr>
                 <tr>
                     <td style="column-width:30%">
+                        <a href="extension-eltss-RiskPlan.html">
+                        •  </a>
+                    </td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
                         <a href="extension-eltss-directedBy.html">
                         •  </a>
                     </td>
@@ -184,7 +191,43 @@
     <p>Example(s) showing the use of the eLTSS profiles</p>
     <p>
         <table>
-            <tbody/>
+            <tbody>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="careplan.html">
+                        •  eLTSS CarePlan Example</a>
+                    </td>
+                    <td>Test instance showing data from the eLTSS spec</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="claim-claim1.html">
+                        •  eLTSS CarePlan Claim Example 1</a>
+                    </td>
+                    <td>Test instance showing data from the eLTSS spec</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="contract-contract1.html">
+                        •  eLTSS CarePlan Contract Example 1</a>
+                    </td>
+                    <td>Test instance showing data from the eLTSS spec</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="patient-patient1.html">
+                        •  eLTSS CarePlan Patient Example 1</a>
+                    </td>
+                    <td>Test instance showing data from the eLTSS spec</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="practitioner-planner1.html">
+                        •  eLTSS CarePlan Planner Example 1</a>
+                    </td>
+                    <td>Test instance showing data from the eLTSS spec</td>
+                </tr>
+            </tbody>
         </table>
     </p>
 </div>

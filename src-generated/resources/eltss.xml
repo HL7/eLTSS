@@ -106,6 +106,18 @@
                   
             <reference>
                         
+                <reference value="StructureDefinition/eltss-RiskPlan"/>
+                      
+            </reference>
+                  
+            <groupingId value="extensions"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
                 <reference value="StructureDefinition/eltss-directedBy"/>
                       
             </reference>
@@ -444,49 +456,111 @@
                 
         </resource>
             
-        <!-- Examples
-    <resource>
-      <reference>
-        <reference value="Bundle/careplan"/>
-      </reference>
-      <name value="eLTSS CarePlan Example"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/claim-claim1"/>
-      </reference>
-      <name value="eLTSS CarePlan Claim Example 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/contract-contract1"/>
-      </reference>
-      <name value="eLTSS CarePlan Contract Example 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/patient-patient1"/>
-      </reference>
-      <name value="eLTSS CarePlan Patient Example 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/practitioner-planner1"/>
-      </reference>
-      <name value="eLTSS CarePlan Planner Example 1"/>
-      <description value="Test instance showing data from the eLTSS spec"/>
-      <groupingId value="examples"/>
-      
-    </resource>
-    -->
+        <!-- Examples -->
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="Bundle/careplan"/>
+                      
+            </reference>
+                  
+            <name value="eLTSS CarePlan Example"/>
+                  
+            <description value="Test instance showing data from the eLTSS spec"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="Bundle/claim-claim1"/>
+                      
+            </reference>
+                  
+            <name value="eLTSS CarePlan Claim Example 1"/>
+                  
+            <description value="Test instance showing data from the eLTSS spec"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="Bundle/contract-contract1"/>
+                      
+            </reference>
+                  
+            <name value="eLTSS CarePlan Contract Example 1"/>
+                  
+            <description value="Test instance showing data from the eLTSS spec"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="Bundle/patient-patient1"/>
+                      
+            </reference>
+                  
+            <name value="eLTSS CarePlan Patient Example 1"/>
+                  
+            <description value="Test instance showing data from the eLTSS spec"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="Bundle/practitioner-planner1"/>
+                      
+            </reference>
+                  
+            <name value="eLTSS CarePlan Planner Example 1"/>
+                  
+            <description value="Test instance showing data from the eLTSS spec"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <!-- Value Sets -->
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="ValueSet/eltss-observation-code"/>
+                      
+            </reference>
+                  
+            <name value="Observation Code Value Set"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="CodeSystem/eltss-observation-code"/>
+                      
+            </reference>
+                
+        </resource>
             
         <!-- document structure starts here -->
             
@@ -838,7 +912,7 @@
                         
                 <page>
                               
-                    <nameUrl value="eltss-dueTo.html"/>
+                    <nameUrl value="extension-eltss-dueTo.html"/>
                               
                     <title value="eLTSS dueTo extension on Condition"/>
                               
@@ -848,9 +922,19 @@
                         
                 <page>
                               
-                    <nameUrl value="eltss-directedBy.html"/>
+                    <nameUrl value="extension-eltss-directedBy.html"/>
                               
                     <title value="eLTSS eltss directedBy extension for Service Request"/>
+                              
+                    <generation value="generated"/>
+                            
+                </page>
+                        
+                <page>
+                              
+                    <nameUrl value="extension-eltss-RiskPlan.html"/>
+                              
+                    <title value="eLTSS eltss RiskManagement Plan extension for RiskManagement"/>
                               
                     <generation value="generated"/>
                             

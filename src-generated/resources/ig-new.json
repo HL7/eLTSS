@@ -84,6 +84,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/eltss-RiskPlan"
+      },
+      "groupingId" : "extensions"
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/eltss-directedBy"
       },
       "groupingId" : "extensions"
@@ -249,6 +255,57 @@
       "description" : "Defines the eLTSS Server capabilities",
       "exampleBoolean" : false,
       "groupingId" : "capability"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/careplan"
+      },
+      "name" : "eLTSS CarePlan Example",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/claim-claim1"
+      },
+      "name" : "eLTSS CarePlan Claim Example 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/contract-contract1"
+      },
+      "name" : "eLTSS CarePlan Contract Example 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/patient-patient1"
+      },
+      "name" : "eLTSS CarePlan Patient Example 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/practitioner-planner1"
+      },
+      "name" : "eLTSS CarePlan Planner Example 1",
+      "description" : "Test instance showing data from the eLTSS spec",
+      "groupingId" : "examples"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/eltss-observation-code"
+      },
+      "name" : "Observation Code Value Set"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/eltss-observation-code"
+      }
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -424,13 +481,18 @@
         "title" : "eLTSS Resource Extensions",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "eltss-dueTo.html",
+          "nameUrl" : "extension-eltss-dueTo.html",
           "title" : "eLTSS dueTo extension on Condition",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "eltss-directedBy.html",
+          "nameUrl" : "extension-eltss-directedBy.html",
           "title" : "eLTSS eltss directedBy extension for Service Request",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "extension-eltss-RiskPlan.html",
+          "title" : "eLTSS eltss RiskManagement Plan extension for RiskManagement",
           "generation" : "generated"
         }]
       },

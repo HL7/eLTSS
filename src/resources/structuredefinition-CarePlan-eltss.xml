@@ -26,18 +26,6 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
-    <element id="CarePlan.contained">
-      <path value="CarePlan.contained"/>
-      <short value="Risk Management Plan"/>
-      <definition value="Description of planned activities to minimize identified risks that endanger the person’s health and safety."/>
-      <comment value="The preferred LOINC value &quot;71482-4&quot; indicates a &quot;Risk Assessment Document&quot;."/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
-      </type>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
-    </element>
     <element id="CarePlan.instantiatesCanonical">
       <path value="CarePlan.instantiatesCanonical"/>
       <type>

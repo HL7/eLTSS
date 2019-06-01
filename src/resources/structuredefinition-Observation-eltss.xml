@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/Desktop/eLTSS/src-generated/schemas/fhir-single.xsd">
   <id value="Observation-eltss"/>
   <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
   <version value="0.1.0"/>
@@ -30,21 +30,12 @@
     </element>
     <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system"/>
-      <comment value="Could be &quot;urn:oid:2.16.840.1.113883.3.88.12.80.28&quot;."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <comment value="Code system for Strength or Preference"/>
+      <fixedUri value="http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code"/>
     </element>
     <element id="Observation.code.coding.code">
       <path value="Observation.code.coding.code"/>
-      <comment value="Can be set to &quot;223486007&quot;, which represents &quot;Discussion about preferences&quot;."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="Observation.code.text">
-      <path value="Observation.code.text"/>
-      <short value="Preference or Strength"/>
-      <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning. OR A favorable attribute of oneself, his/her support network, environment and/or elements of his/her life."/>
-      <comment value="Can be used to indicate this Observation is a Preference."/>
+      <comment value="Strength or Preference from eltss-observation-code"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>

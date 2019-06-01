@@ -53,6 +53,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/eltss-RiskPlan"/>
+      </reference>
+      <groupingId value="extensions"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/eltss-directedBy"/>
       </reference>
       <groupingId value="extensions"/>
@@ -222,7 +228,7 @@
       <exampleBoolean value="false"/>
       <groupingId value="capability"/>
     </resource>
-    <!-- Examples
+    <!-- Examples -->
     <resource>
       <reference>
         <reference value="Bundle/careplan"/>
@@ -262,9 +268,19 @@
       <name value="eLTSS CarePlan Planner Example 1"/>
       <description value="Test instance showing data from the eLTSS spec"/>
       <groupingId value="examples"/>
-      
     </resource>
-    -->
+    <!-- Value Sets -->
+    <resource>
+      <reference>
+        <reference value="ValueSet/eltss-observation-code"/>
+      </reference>
+      <name value="Observation Code Value Set"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/eltss-observation-code"/>
+      </reference>
+    </resource>
     <!-- document structure starts here -->
     <page>
       <nameUrl value="toc.html"/>
@@ -440,13 +456,18 @@
         <title value="eLTSS Resource Extensions"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="eltss-dueTo.html"/>
+          <nameUrl value="extension-eltss-dueTo.html"/>
           <title value="eLTSS dueTo extension on Condition"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="eltss-directedBy.html"/>
+          <nameUrl value="extension-eltss-directedBy.html"/>
           <title value="eLTSS eltss directedBy extension for Service Request"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="extension-eltss-RiskPlan.html"/>
+          <title value="eLTSS eltss RiskManagement Plan extension for RiskManagement"/>
           <generation value="generated"/>
         </page>
       </page>

@@ -3,7 +3,7 @@
   <id value="eltss-directedBy"/>
   <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy"/>
   <version value="0.1.0"/>
-  <name value="Self-Directed Service Indicator"/>
+  <name value="Eltss_directedBy"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-02-17T00:00:00-05:00"/>
