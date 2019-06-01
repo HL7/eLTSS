@@ -4,7 +4,8 @@
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>eLTSS IG Client.</p>
+      <p>eLTSS IG Client.      </p>
+      <p>This is a profile on the US Core Implementation Guide and adheres to the requirements </p>
     </div>
   </text>
   <url value="http://hl7.org/fhir/us/eLTSS/CapabilityStatement/eltss-client"/>
@@ -28,7 +29,7 @@
   <rest>
     <mode value="client"/>
     <resource>
-      <type value="Patient"/>
+      <type value="CarePlan"/>
       <supportedProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"/>
       <interaction>
         <code value="search-type"/>

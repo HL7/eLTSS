@@ -28,31 +28,23 @@
   <differential>
     <element id="Patient">
       <path value="Patient"/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier"/>
       <short value="Person Identifier"/>
       <definition value="A string of character(s) used to identify the person whom the plan is for.&#10;&#10;This may be the Medicaid ID number where applicable."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.identifier.type">
       <path value="Patient.identifier.type"/>
       <short value="Person Identifier Type"/>
       <definition value="The type of unique identifier used to identify the person whom the plan is for.&#10;Values include: Medicaid Number, State ID, Medical Record Number, Other (free text)."/>
       <comment value="Can be one of Medicaid Number, State ID, Medical Record Number, Other (free text)."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
       <short value="Person Name"/>
       <definition value="The name of the person whom the plan is for."/>
       <comment value="1) given is used for both first name &amp; MI, so need more than one.&#10;2) family is a string with the person's surname&#10;3) text is a string that contains the full name of the person."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom"/>
@@ -60,15 +52,12 @@
       <definition value="The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable."/>
       <comment value="For the eLTSS phone number, system should be provided as &quot;phone&quot;."/>
       <mustSupport value="true"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate"/>
       <short value="Person Date of Birth"/>
       <definition value="The birth date of the person whom the plan is for."/>
       <comment value="birthDate is in the form &quot;1951-06-04&quot;."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.address">
       <path value="Patient.address"/>
@@ -76,7 +65,6 @@
       <definition value="The address of the person whom the plan is for."/>
       <comment value="1) text is the full (not broken out) address.&#10;2) line includes street name, number and suffix (e.g. 123 Main St.).&#10;3) Information such as apt #, floor &amp; room #, etc. also go into line, generally as a separate data element. &#10;4) district covers county."/>
       <mustSupport value="true"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.contact">
       <path value="Patient.contact"/>
@@ -84,29 +72,22 @@
       <definition value="Emergency Contact Name +  Phone Number +  Relationship."/>
       <comment value="1) Emergency contact is indicated using a relationship value &quot;C&quot;.&#10;2) If contact is provided, relationship needs to be provided to indicate this is an emergency contact.&#10;3) given is used for both first name &amp; MI, so need more than one.&#10;4) family is a string with the person's surname&#10;5) text is a string with the full name of the person."/>
       <mustSupport value="true"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.contact.relationship">
       <path value="Patient.contact.relationship"/>
       <short value="Emergency Contact Relationship"/>
       <definition value="The relationship (e.g., spouse, neighbor, guardian, daughter) of the individual identified to contact in case of emergency."/>
       <comment value="Recommended Value Set is PatientContactRelationship http://hl7.org/fhir/ValueSet/patient-contactrelationship."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.contact.name">
       <path value="Patient.contact.name"/>
       <short value="Emergency Contact Name"/>
       <definition value="The name of the individual or entity identified to contact in case of emergency."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
     <element id="Patient.contact.telecom">
       <path value="Patient.contact.telecom"/>
       <short value="Emergency Contact Phone"/>
       <definition value="The primary phone number (and extension when applicable) of the individual or entity identified to contact in case of emergency."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -8,7 +8,7 @@
   <id value="careplan"/>
   <type value="collection"/>
   <!--  eLTSS Service Plan / FHIR Care Plan  -->
-  <entry>
+  <entry><!-- 1 -->
     <fullUrl value="http://example.org/eLTSS/careplan1"/>
     <resource>
       <CarePlan>
@@ -112,7 +112,7 @@
     </resource>
   </entry>
   <!--  Support Planner (CarePlan author) -->
-  <entry>
+  <entry> <!-- 2 -->
     <fullUrl value="http://example.org/eLTSS/planner1"/>
     <resource>
       <Practitioner>
@@ -145,7 +145,7 @@
       </Practitioner>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 3 -->
     <fullUrl value="http://example.org/eLTSS/caremgr1"/>
     <resource>
       <Practitioner>
@@ -179,7 +179,7 @@
     </resource>
   </entry>
   <!--     The person (Patient) who is the subject of the document. -->
-  <entry>
+  <entry> <!-- 4 -->
     <fullUrl value="http://example.org/eLTSS/patient1"/>
     <resource>
       <Patient>
@@ -263,7 +263,7 @@
       </Patient>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 5 -->
     <fullUrl value="http://example.org/eLTSS/episode1"/>
     <resource>
       <!--  links the care plan to the plan monitor/case manager  -->
@@ -283,7 +283,7 @@
       </EpisodeOfCare>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 6 -->
     <fullUrl value="http://example.org/eLTSS/careplan2"/>
     <resource>
       <!--  [eLTSS Emergency Backup Plan]  -->
@@ -311,7 +311,7 @@
       </CarePlan>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 7 -->
     <fullUrl value="http://example.org/eLTSS/goal1"/>
     <resource>
       <!--  [eLTSS Goal]  -->
@@ -337,7 +337,7 @@
       </Goal>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 8 -->
     <fullUrl value="http://example.org/eLTSS/goal2"/>
     <resource>
       <!--  [eLTSS Goal]  -->
@@ -363,7 +363,7 @@
       </Goal>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 9 -->
     <fullUrl value="http://example.org/eLTSS/need1"/>
     <resource>
       <!--  [eLTSS Assessed Need]  -->
@@ -405,7 +405,7 @@
       </Condition>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 10 -->
     <fullUrl value="http://example.org/eLTSS/need2"/>
     <resource>
       <!--  [eLTSS Assessed Need]  -->
@@ -444,7 +444,7 @@
       </Condition>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 11 -->
     <fullUrl value="http://example.org/eLTSS/need3"/>
     <resource>
       <!--  [eLTSS Assessed Need]  -->
@@ -483,7 +483,7 @@
       </Condition>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 12 -->
     <fullUrl value="http://example.org/eLTSS/provider1"/>
     <resource>
       <Practitioner>
@@ -510,7 +510,7 @@
       </Practitioner>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 13 -->
     <fullUrl value="http://example.org/eLTSS/provider2"/>
     <resource>
       <Organization>
@@ -534,7 +534,7 @@
       </Organization>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 14 -->
     <fullUrl value="http://example.org/eLTSS/provider3"/>
     <!-- This practitioner is the person signing for the transportation provider organization -->
     <resource>
@@ -562,7 +562,7 @@
       </Practitioner>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 15 -->
     <fullUrl value="http://example.org/eLTSS/funding1"/>
     <resource>
       <Organization>
@@ -587,7 +587,7 @@
     </resource>
   </entry>
   <!-- daughter, who is emergency contact and performing a non-paid service -->
-  <entry>
+  <entry> <!-- 16 -->
     <fullUrl value="http://example.org/eLTSS/relative1"/>
     <resource>
       <RelatedPerson>
@@ -612,7 +612,7 @@
     </resource>
   </entry>
   <!-- person's legal guardian -->
-  <entry>
+  <entry> <!-- 17 -->
     <fullUrl value="http://example.org/eLTSS/guardian1"/>
     <resource>
       <RelatedPerson>
@@ -628,7 +628,7 @@
       </RelatedPerson>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 18 -->
     <fullUrl value="http://example.org/eLTSS/service1"/>
     <resource>
       <!-- Service #1 -->
@@ -688,7 +688,7 @@
       </ServiceRequest>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 19 -->
     <fullUrl value="http://example.org/eLTSS/service2"/>
     <resource>
       <!-- Service #2 -->
@@ -752,7 +752,7 @@
       </ServiceRequest>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 20 -->
     <fullUrl value="http://example.org/eLTSS/service3"/>
     <resource>
       <!-- Service #3 -->
@@ -804,7 +804,7 @@
       </ServiceRequest>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 21 -->
     <fullUrl value="http://example.org/eLTSS/strength1"/>
     <resource>
       <!--  [eLTSS Strength]  -->
@@ -828,7 +828,7 @@
       </Observation>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 22 -->
     <fullUrl value="http://example.org/eLTSS/pref1"/>
     <resource>
       <!--  [eLTSS Preference]  -->
@@ -854,7 +854,7 @@
       </Observation>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 23 -->
     <fullUrl value="http://example.org/eLTSS/risk1"/>
     <resource>
       <RiskAssessment>
@@ -883,7 +883,7 @@
       </RiskAssessment>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 24 -->
     <fullUrl value="http://example.org/eLTSS/questionnaire1"/>
     <resource>
       <Questionnaire>
@@ -891,6 +891,7 @@
         <meta>
           <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss"/>
         </meta>
+        <name value="Questionnaire1" />
         <status value="active"/>
         <item>
           <linkId value="q1"/>
@@ -930,11 +931,12 @@
       </Questionnaire>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 25 -->
     <fullUrl value="http://example.org/eLTSS/qr1"/>
     <resource>
       <QuestionnaireResponse>
         <id value="questionnaireresponse1"/>
+        <questionnaire value="http://example.org/eLTSS/questionnaire1" />
         <status value="completed"/>
         <!-- [eLTSS Person Setting Choice Indicator]  -->
         <item>
@@ -988,7 +990,7 @@
       </QuestionnaireResponse>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 26 -->
     <fullUrl value="http://example.org/eLTSS/contract1"/>
     <resource>
       <Contract>
@@ -1136,7 +1138,7 @@
       </Contract>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 27 -->
     <fullUrl value="http://example.org/eLTSS/location1"/>
     <resource>
       <Location>
@@ -1152,7 +1154,7 @@
       </Location>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 28 -->
     <fullUrl value="http://example.org/eLTSS/coverage1"/>
     <resource>
       <Coverage>
@@ -1168,7 +1170,7 @@
       </Coverage>
     </resource>
   </entry>
-  <entry>
+  <entry> <!-- 29 -->
     <fullUrl value="http://example.org/eLTSS/claim2"/>
     <resource>
       <Claim>

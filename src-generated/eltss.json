@@ -204,8 +204,6 @@
     "Bundle/practitioner-planner1":{
     },
     "ValueSet/eltss-observation-code":{
-    },
-    "CodeSystem/eltss-observation-code":{
     }
   }
 }

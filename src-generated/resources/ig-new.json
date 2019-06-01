@@ -301,11 +301,6 @@
         "reference" : "ValueSet/eltss-observation-code"
       },
       "name" : "Observation Code Value Set"
-    },
-    {
-      "reference" : {
-        "reference" : "CodeSystem/eltss-observation-code"
-      }
     }],
     "page" : {
       "nameUrl" : "toc.html",

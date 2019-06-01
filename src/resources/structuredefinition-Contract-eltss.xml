@@ -157,7 +157,7 @@
       <short value="Person Signature"/>
       <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature."/>
       <comment value="FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. The primary one for the patient/beneficiary is &quot;PAT&quot; (patient), although implementers may use others as well. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized."/>
-      <mustSupport value="false"/>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
     <element id="Contract.signer.type">

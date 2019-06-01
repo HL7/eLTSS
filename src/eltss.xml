@@ -276,11 +276,7 @@
       </reference>
       <name value="Observation Code Value Set"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/eltss-observation-code"/>
-      </reference>
-    </resource>
+
     <!-- document structure starts here -->
     <page>
       <nameUrl value="toc.html"/>
