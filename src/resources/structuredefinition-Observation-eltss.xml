@@ -1,50 +1,51 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/Desktop/eLTSS/src-generated/schemas/fhir-single.xsd">
-  <id value="Observation-eltss"/>
-  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
-  <version value="0.1.0"/>
-  <name value="Observation_eltss"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2019-02-17T00:00:00-05:00"/>
-  <publisher value="HL7 CBCP"/>
-  <description value="Observation resource mapping for eLTSS"/>
-  <fhirVersion value="4.0.0"/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Observation"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-  <derivation value="constraint"/>
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Observation-eltss" />
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss" />
+  <version value="0.1.0" />
+  <name value="Observation_eltss" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-02-17T00:00:00-05:00" />
+  <publisher value="HL7 CBCP" />
+  <description value="Observation resource mapping for eLTSS" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
   <differential>
     <element id="Observation">
-      <path value="Observation"/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Observation" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Observation.code">
-      <path value="Observation.code"/>
-      <short value="Discussion of Preference"/>
-      <definition value="Code representing the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Observation.code" />
+      <short value="Discussion of Preference" />
+      <definition value="Code representing the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Observation.code.coding.system">
-      <path value="Observation.code.coding.system"/>
-      <comment value="Code system for Strength or Preference"/>
-      <fixedUri value="http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code"/>
+      <path value="Observation.code.coding.system" />
+      <comment value="Code system for Strength or Preference" />
+      <fixedUri value="http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code" />
     </element>
     <element id="Observation.code.coding.code">
-      <path value="Observation.code.coding.code"/>
-      <comment value="Strength or Preference from eltss-observation-code"/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Observation.code.coding.code" />
+      <comment value="Strength or Preference from eltss-observation-code" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
-    <element id="Observation.valueString">
-      <path value="Observation.valueString"/>
-      <short value="Preference or Strength"/>
-      <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+    <element id="Observation.value[x]:eltss">
+      <path value="Observation.value[x]" />
+      <sliceName value="eltss" />
+      <short value="Preference or Strength" />
+      <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
   </differential>
 </StructureDefinition>

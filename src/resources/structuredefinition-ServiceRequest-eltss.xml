@@ -1,146 +1,148 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/eLTSS/src-generated/schemas/fhir-single.xsd">
-  <id value="ServiceRequest-eltss"/>
-  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss"/>
-  <version value="0.1.0"/>
-  <name value="ServiceRequest_eltss"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2019-02-17T00:00:00-05:00"/>
-  <publisher value="HL7 CBCP"/>
-  <description value="ServiceRequest resource mapping for eLTSS"/>
-  <fhirVersion value="4.0.0"/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="ServiceRequest"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
-  <derivation value="constraint"/>
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ServiceRequest-eltss" />
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss" />
+  <version value="0.1.0" />
+  <name value="ServiceRequest_eltss" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-02-17T00:00:00-05:00" />
+  <publisher value="HL7 CBCP" />
+  <description value="ServiceRequest resource mapping for eLTSS" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ServiceRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+  <derivation value="constraint" />
   <differential>
     <element id="ServiceRequest">
-      <path value="ServiceRequest"/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="ServiceRequest" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="ServiceRequest.basedOn">
-      <path value="ServiceRequest.basedOn"/>
+      <path value="ServiceRequest.basedOn" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
       </type>
     </element>
     <element id="ServiceRequest.replaces">
-      <path value="ServiceRequest.replaces"/>
+      <path value="ServiceRequest.replaces" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss" />
       </type>
     </element>
     <element id="ServiceRequest.code">
-      <path value="ServiceRequest.code"/>
-      <short value="Service Name"/>
-      <definition value="Identifies the paid and/or non-paid service provided to a person. Include the code and display name plus any modifiers when a coding system (e.g., Healthcare Common Procedure Coding System (HCPCS), Home Health Revenue Codes) is used."/>
-      <comment value="Use HCPCS (https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo/) code + modifiers or free text."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="ServiceRequest.code" />
+      <short value="Service Name" />
+      <definition value="Identifies the paid and/or non-paid service provided to a person. Include the code and display name plus any modifiers when a coding system (e.g., Healthcare Common Procedure Coding System (HCPCS), Home Health Revenue Codes) is used." />
+      <comment value="Use HCPCS (https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo/) code + modifiers or free text." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
-    <element id="ServiceRequest.quantityQuantity">
-      <path value="ServiceRequest.quantityQuantity"/>
-      <short value="Service Unit Quantity + Unit Type + Time Interval"/>
-      <definition value="The numerical amount/unit or Interval of the service unit being provided."/>
-      <comment value="The numerical amount of the service unit being provided for a frequency.  This element is slated to be used in conjunction with Service Quantity Interval and Unit of Service Type elements to form a full description of how often a service is provided. &#10;OR &#10;A named quantity in terms of which services are measured or specified, used as a standard measurement of like services.&#10;OR &#10;A period of time corresponding to the quantity of service(s) indicated. Values include: per day, per week, per month, per year, one time only, other (free text)."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+    <element id="ServiceRequest.quantity[x]:eltss">
+      <path value="ServiceRequest.quantity[x]" />
+      <sliceName value="eltss" />
+      <short value="Service Unit Quantity + Unit Type + Time Interval" />
+      <definition value="The numerical amount/unit or Interval of the service unit being provided." />
+      <comment value="The numerical amount of the service unit being provided for a frequency.  This element is slated to be used in conjunction with Service Quantity Interval and Unit of Service Type elements to form a full description of how often a service is provided. &#xA;OR &#xA;A named quantity in terms of which services are measured or specified, used as a standard measurement of like services.&#xA;OR &#xA;A period of time corresponding to the quantity of service(s) indicated. Values include: per day, per week, per month, per year, one time only, other (free text)." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="ServiceRequest.subject">
-      <path value="ServiceRequest.subject"/>
+      <path value="ServiceRequest.subject" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss" />
       </type>
     </element>
     <element id="ServiceRequest.encounter">
-      <path value="ServiceRequest.encounter"/>
+      <path value="ServiceRequest.encounter" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" />
       </type>
     </element>
-    <element id="ServiceRequest.occurrenceTiming">
-      <path value="ServiceRequest.occurrenceTiming"/>
-      <short value="Service Start + End Date"/>
-      <definition value="The start and end date of the service being provided."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+    <element id="ServiceRequest.occurrence[x]:eltss">
+      <path value="ServiceRequest.occurrence[x]" />
+      <sliceName value="eltss" />
+      <short value="Service Start + End Date" />
+      <definition value="The start and end date of the service being provided." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="ServiceRequest.requester">
-      <path value="ServiceRequest.requester"/>
+      <path value="ServiceRequest.requester" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
       </type>
     </element>
     <element id="ServiceRequest.performer">
-      <path value="ServiceRequest.performer"/>
-      <short value="Service Provider Name + Phone + Relationship"/>
-      <definition value="The entity or individual providing the service. For paid services use the organization/agency name, for non-paid services use the first and last name of the individual providing the service."/>
+      <path value="ServiceRequest.performer" />
+      <short value="Service Provider Name + Phone + Relationship" />
+      <definition value="The entity or individual providing the service. For paid services use the organization/agency name, for non-paid services use the first and last name of the individual providing the service." />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
       </type>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="ServiceRequest.locationReference">
-      <path value="ServiceRequest.locationReference"/>
-      <short value="Service Location"/>
-      <definition value="The address where service delivery will take place if service will not be provided at the person's address."/>
+      <path value="ServiceRequest.locationReference" />
+      <short value="Service Location" />
+      <definition value="The address where service delivery will take place if service will not be provided at the person's address." />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss" />
       </type>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="ServiceRequest.reasonReference">
-      <path value="ServiceRequest.reasonReference"/>
+      <path value="ServiceRequest.reasonReference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
       </type>
     </element>
     <element id="ServiceRequest.insurance">
-      <path value="ServiceRequest.insurance"/>
-      <short value="Service Funding Source"/>
-      <definition value="The source of payment for the service."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="ServiceRequest.insurance" />
+      <short value="Service Funding Source" />
+      <definition value="The source of payment for the service." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="ServiceRequest.note">
-      <path value="ServiceRequest.note"/>
-      <short value="Service Comment"/>
-      <definition value="Additional information related to the service being provided. This field could capture additional information of the frequency of the service, how the person wants the service delivered and only used when the comment provides additional detail of the service not already handled by another element."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="ServiceRequest.note" />
+      <short value="Service Comment" />
+      <definition value="Additional information related to the service being provided. This field could capture additional information of the frequency of the service, how the person wants the service delivered and only used when the comment provides additional detail of the service not already handled by another element." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
   </differential>
 </StructureDefinition>
