@@ -62,7 +62,7 @@ Patient &#8594; identifier &#8594; type</td>
 .........type 0..1</td>
 <td >1) Will use CarePlan &#8594; subject to reference the Patient for the care plan being developed. FHIR requires that CarePlan includes a subject.<br />
 2) If we have the identifier, we need to be know the type.<br />
-3) type is a CodeableConcept with an extensible value set with values defined here: https://www.hl7.org/fhir/valueset-identifier-type.html. <br />  Medical Record Number is available in the documented code list. LOINC includes Medicaid Number and Social Security Number. State ID is covered by the "SB" (Social Beneficiary) code value documented in the FHIR codeset at http://hl7.org/fhir/identifier-type. "Other" can be handled with the text element that is part of the Codeable Concept.</td>
+3) type is a CodeableConcept with an extensible value set with values defined here: https://www.hl7.org/fhir/valueset-identifier-type.html. <br />  Medical Record Number is available in the documented code list. LOINC includes Medicaid Number (45400-9) and Social Security Number (45396-9). State ID is covered by the "SB" (Social Beneficiary) code value documented in the FHIR codeset at http://hl7.org/fhir/identifier-type. "Other" can be handled with the text element that is part of the Codeable Concept.</td>
 </tr>
 <tr>
 <td >Beneficiary Demographics</td>
@@ -1683,6 +1683,13 @@ FHIR</td>
 ...class 1<br />
 ......code 0..1</td>
 <td >1) class is required by FHIR, and is defined to use the extensible V3 Value SetActEncounterCode value set. Possible values are: ambulatory, emergency, field, home health, inpatient encounter, inpatient acute,  inpatient non-acute, observation encounter, pre-admission, short stay, and virtual. </td>
+</tr>
+<tr>
+<td>Encounter type <br /> FHIR</td>
+<td>Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).</td>
+<td>Encounter -> type</td>
+<td>type is required by US Core and codes SHALL be taken from US Core Encounter Type; other codes may be used where these codes are not suitable </td>
+<td>Encounter<br />...type 1</td>
 </tr>
 <tr>
 <td >EpisodeOfCare Status<br />

@@ -25,7 +25,6 @@
       <path value="Observation.code" />
       <short value="Discussion of Preference" />
       <definition value="Code representing the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
-      <mustSupport value="false" />
       <isModifier value="false" />
     </element>
     <element id="Observation.code.coding.system">
@@ -36,7 +35,6 @@
     <element id="Observation.code.coding.code">
       <path value="Observation.code.coding.code" />
       <comment value="Strength or Preference from eltss-observation-code" />
-      <mustSupport value="false" />
       <isModifier value="false" />
     </element>
     <element id="Observation.value[x]:eltss">
@@ -44,7 +42,6 @@
       <sliceName value="eltss" />
       <short value="Preference or Strength" />
       <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
-      <mustSupport value="false" />
       <isModifier value="false" />
     </element>
   </differential>
