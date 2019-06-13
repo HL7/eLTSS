@@ -35,13 +35,19 @@
     <element id="Observation.code.coding.code">
       <path value="Observation.code.coding.code" />
       <comment value="Strength or Preference from eltss-observation-code" />
+      <mustSupport value="true" />
       <isModifier value="false" />
+    </element>
+    <element id="Observation.code.text">
+      <path value="Observation.code.text" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:eltss">
       <path value="Observation.value[x]" />
       <sliceName value="eltss" />
       <short value="Preference or Strength" />
       <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
+      <mustSupport value="true" />
       <isModifier value="false" />
     </element>
   </differential>
