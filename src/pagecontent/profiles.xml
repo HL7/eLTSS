@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <p>These are the Resource Profiles as designed by the eLTSS project.</p>
-  <p>The eLTSS Implemetation Guide follows the Must Support requirements as defined in the US Core Guide</p>
+  <p>The eLTSS Implementation Guide follows the Must Support requirements as defined in US Core. </p>
   <p>"The eLTSS IG contains eLTSS Profiles to show the mapping of the eLTSS Dataset to FHIR elements. Many Profiles will only contain this mapping in the "Description &amp; Constraints" column of the Differential Table. eLTSS Profiles that are derived from US Core Profiles will only contain additional constraints in the Differential Table that support eLTSS requirements. The US Core constraints will be present in the Snapshot Table."</p>
   <p>
     <table>
@@ -13,37 +13,37 @@
         <td>
           <a href="CarePlan-eltss.html">eLTSS CarePlan Profile</a>
         </td>
-        <td>Base profile that defines the CarePlan constraints for eLTSS</td>
+        <td>Base profile that defines the CarePlan constraints for eLTSS.</td>
       </tr>
       <tr>
         <td>
           <a href="Claim-eltss.html">eLTSS Claim Profile</a>
         </td>
-        <td>Defines the Claim constraints for eLTSS</td>
+        <td>Defines the Claim constraints for eLTSS.</td>
       </tr>
       <tr>
         <td>
           <a href="Condition-eltss.html">eLTSS Condition Profile</a>
         </td>
-        <td>Defines the Condition constraints for eLTSS</td>
+        <td>Defines the Condition constraints for eLTSS.</td>
       </tr>
 	  <tr>
         <td>
           <a href="Contract-eltss.html">eLTSS Contract Profile</a>
         </td>
-        <td>Defines the Contract constraints for eLTSS</td>
+        <td>Defines the Contract constraints for eLTSS.</td>
       </tr>
       <tr>
         <td>
           <a href="EpisodeOfCare-eltss.html">eLTSS EpisodeOfCare Profile</a>
         </td>
-        <td>Defines the EpisodeOfCare constraints for eLTSS</td>
+        <td>Defines the EpisodeOfCare constraints for eLTSS.</td>
       </tr>
 	  <tr>
         <td>
           <a href="Goal-eltss.html">eLTSS Goal Profile</a>
         </td>
-        <td>Defines the Goal constraints for eLTSS</td>
+        <td>Defines the Goal constraints for eLTSS.</td>
       </tr>
 	  <tr>
         <td>

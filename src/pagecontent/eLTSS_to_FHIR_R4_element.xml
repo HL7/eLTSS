@@ -1688,8 +1688,9 @@ FHIR</td>
 <td>Encounter type <br /> FHIR</td>
 <td>Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).</td>
 <td>Encounter -> type</td>
-<td>type is required by US Core and codes SHALL be taken from US Core Encounter Type; other codes may be used where these codes are not suitable </td>
 <td>Encounter<br />...type 1</td>
+<td>type is required by US Core and codes SHALL be taken from US Core Encounter Type; other codes may be used where these codes are not suitable </td>
+
 </tr>
 <tr>
 <td >EpisodeOfCare Status<br />
@@ -1736,7 +1737,7 @@ US Core</td>
 <td >Location &#8594; name</td>
 <td >Location<br />
 ...name 1</td>
-<td >1) US Core requires a name for the Organization.</td>
+<td >1) US Core requires a name for the Location.</td>
 </tr>
 <tr>
 <td >Observation Status<br />

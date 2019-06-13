@@ -23,8 +23,8 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
-      <short value="Discussion of Preference" />
-      <definition value="Code representing the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
+      <short value="Strength or Preference" />
+      <definition value="Code representing either a favorable attribute of oneself, his/her support network, environment and/or elements of his/her life or the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
       <isModifier value="false" />
     </element>
     <element id="Observation.code.coding.system">
