@@ -1,79 +1,97 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/eLTSS/src-generated/schemas/fhir-single.xsd">
-  <id value="RiskAssessment-eltss"/>
-  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/RiskAssessment-eltss"/>
-  <version value="0.1.0"/>
-  <name value="RiskAssessment_eltss"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2019-02-17T00:00:00-05:00"/>
-  <publisher value="HL7 CBCP"/>
-  <description value="RiskAssessment resource mapping for eLTSS"/>
-  <fhirVersion value="4.0.0"/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="RiskAssessment"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RiskAssessment"/>
-  <derivation value="constraint"/>
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="RiskAssessment-eltss" />
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/RiskAssessment-eltss" />
+  <version value="0.1.0" />
+  <name value="RiskAssessment_eltss" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-02-17T00:00:00-05:00" />
+  <publisher value="HL7 CBCP" />
+  <description value="RiskAssessment resource mapping for eLTSS" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RiskAssessment" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RiskAssessment" />
+  <derivation value="constraint" />
   <differential>
     <element id="RiskAssessment">
-      <path value="RiskAssessment"/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="RiskAssessment" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="RiskAssessment.extension">
+      <path value="RiskAssessment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="RiskAssessment.extension:riskPlan">
+      <path value="RiskAssessment.extension" />
+      <sliceName value="riskPlan" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-RiskPlan" />
+      </type>
     </element>
     <element id="RiskAssessment.subject">
-      <path value="RiskAssessment.subject"/>
+      <path value="RiskAssessment.subject" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
       </type>
     </element>
     <element id="RiskAssessment.encounter">
-      <path value="RiskAssessment.encounter"/>
+      <path value="RiskAssessment.encounter" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" />
       </type>
     </element>
     <element id="RiskAssessment.condition">
-      <path value="RiskAssessment.condition"/>
+      <path value="RiskAssessment.condition" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss" />
       </type>
     </element>
     <element id="RiskAssessment.performer">
-      <path value="RiskAssessment.performer"/>
+      <path value="RiskAssessment.performer" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
       </type>
     </element>
     <element id="RiskAssessment.reasonReference">
-      <path value="RiskAssessment.reasonReference"/>
+      <path value="RiskAssessment.reasonReference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
       </type>
     </element>
     <element id="RiskAssessment.prediction">
-      <path value="RiskAssessment.prediction"/>
-      <short value="Identified Risk"/>
-      <definition value="An aspect of a person’s life, behavior, environmental exposure, personal characteristic, or barrier that increases the likelihood of  disease, condition,  injury to self or others, or interaction with the criminal justice system."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="RiskAssessment.prediction" />
+      <short value="Identified Risk" />
+      <definition value="An aspect of a person’s life, behavior, environmental exposure, personal characteristic, or barrier that increases the likelihood of  disease, condition,  injury to self or others, or interaction with the criminal justice system." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="RiskAssessment.mitigation">
-      <path value="RiskAssessment.mitigation"/>
-      <short value="Risk Management Plan"/>
-      <definition value="Description of planned activities to minimize identified risks that endanger the person's health and safety. This can be included as free text or attachment."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="RiskAssessment.mitigation" />
+      <short value="Risk Management Plan" />
+      <definition value="Description of planned activities to minimize identified risks that endanger the person's health and safety. This can be included as free text or attachment." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
   </differential>
 </StructureDefinition>

@@ -100,7 +100,7 @@
     {
       "name" : "core",
       "version" : "current",
-      "package" : "hl7.fhir.us.core.r4"}
+      "package" : "hl7.fhir.us.core"}
   ],
   "source": "eltss.xml",
   "spreadsheets": [

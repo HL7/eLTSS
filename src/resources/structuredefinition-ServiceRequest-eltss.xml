@@ -21,6 +21,29 @@
       <mustSupport value="false" />
       <isModifier value="false" />
     </element>
+    <element id="ServiceRequest.extension">
+      <path value="ServiceRequest.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ServiceRequest.extension:directedBy">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="directedBy" />
+      <sliceIsConstraining value="false" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy" />
+      </type>
+    </element>
+    <element id="ServiceRequest.extension:directedBy.value[x]:valueCodeableConcept">
+      <path value="ServiceRequest.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+    </element>
     <element id="ServiceRequest.basedOn">
       <path value="ServiceRequest.basedOn" />
       <type>
