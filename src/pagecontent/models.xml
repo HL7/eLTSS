@@ -7,19 +7,19 @@
         <td style="column-width:30%">
           <a href="eLTSSPersonModel.html">eLTSS Person Logical Model</a>
         </td>
-        <td>Defines the Logical Model for eLTSS Person</td>
+        <td>Defines the Logical Model for eLTSS Person.</td>
       </tr>
       <tr>
         <td style="column-width:30%">
           <a href="eLTSSServiceModel.html">eLTSS Service Logical Model</a>
         </td>
-        <td>Defines the Logical Model for eLTSS Service</td>
+        <td>Defines the Logical Model for eLTSS Service.</td>
       </tr>
       <tr>
         <td style="column-width:30%">
           <a href="eLTSSServicePlanModel.html">eLTSS Service Plan Logical Model</a>
         </td>
-        <td>Defines the Logical Model for eLTSS Service Plan</td>
+        <td>Defines the Logical Model for eLTSS Service Plan.</td>
       </tr>
     </table>
   </p>

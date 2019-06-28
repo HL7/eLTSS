@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  <p>Here are Examples showing the use of the eLTSS Profiles.</p>
+  <p>Here are example XML files showing the use of the eLTSS Profiles.</p>
   <p>
     <table>
       <tbody>
@@ -9,35 +9,35 @@
             <a href="careplan.html">
                       eLTSS CarePlan Example</a>
           </td>
-          <td>Test instance showing data from the eLTSS spec</td>
+          <td>Test instance showing eLTSS plan data.</td>
         </tr>
 		<tr>
           <td style="column-width:30%">
             <a href="claim-claim1.html">
-                      eLTSS CarePlan Claim 1 Example</a>
+                      eLTSS CarePlan Claim Example</a>
           </td>
-          <td>Test instance showing data from the eLTSS spec</td>
+          <td>Test instance showing eLTSS claim data.</td>
         </tr>
         <tr>
           <td style="column-width:30%">
             <a href="contract-contract1.html">
-                      eLTSS CarePlan Contract 1 Example</a>
+                      eLTSS CarePlan Contract Example</a>
           </td>
-          <td>Test instance showing data from the eLTSS spec</td>
+          <td>Test instance showing eLTSS contract / signature data.</td>
         </tr>
 		<tr>
           <td style="column-width:30%">
             <a href="patient-patient1.html">
-                      eLTSS CarePlan Patient 1 Example</a>
+                      eLTSS CarePlan Patient Example</a>
           </td>
-          <td>Test instance showing data from the eLTSS spec</td>
+          <td>Test instance showing eLTSS patient data.</td>
         </tr>
         <tr>
           <td style="column-width:30%">
             <a href="practitioner-planner1.html">
-                      eLTSS CarePlan Planner 1 Example</a>
+                      eLTSS CarePlan Planner Example</a>
           </td>
-          <td>Test instance showing data from the eLTSS spec</td>
+          <td>Test instance showing eLTSS support planner data.</td>
         </tr>       
       </tbody>
     </table>

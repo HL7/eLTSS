@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
 <p>Attached are two tables that give an overview of the mappings between the eLTSS Dataset and FHIR.</p>
 <table>
 <tr>
 <td><a href="eLTSS_to_FHIR_R4_element.html"> eLTSS Dataset to FHIR Release 4</a> </td>
-<td>Mapping of the eLTSS Dataset to FHIR Release 4 Resources</td>
+<td>Mapping of the eLTSS Dataset to FHIR Release 4 Resources.</td>
 </tr>
 <tr>
 <td><a href="eLTSS_FHIR_USCore_Mapping.html">eLTSS Dataset to FHIR USCore Implementation Guide</a></td>
-<td>Mapping of the eLTSS Dataset to the FHIR USCore Implementation Guide Profiles</td>
+<td>Mapping of the eLTSS Dataset to the FHIR USCore Implementation Guide Profiles.</td>
 </tr>
 </table>
+<!-- Commented out until pre-publication
+<p>For an MS Excel version of the mappings, please refer to the <a href="https://gforge.hl7.org/gf/project/cbcc/docman/eLTSS%20-%20%20ONC%20Electronic%20Long-Term%20Services%20and%20Supports/">eLTSS GForge Site</a> </p>
+-->
 </div>

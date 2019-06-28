@@ -26,6 +26,10 @@
   <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
   <derivation value="constraint" />
   <differential>
+    <element id="Patient">
+      <path value="Patient" />
+      <definition value="The eLTSS Patient Profile is based upon the US Core Patient Resource and designed to meet the applicable patient demographic data elements from the 2015 Edition Common Clinical Data Set.." />
+    </element>
     <element id="Patient.extension:race.extension:ombCategory.value[x]:valueCoding">
       <path value="Patient.extension.extension.valueCoding" />
       <sliceName value="valueCoding" />
@@ -92,7 +96,7 @@
     <element id="Patient.contact">
       <path value="Patient.contact" />
       <short value="Emergency Contact" />
-      <definition value="Emergency Contact Name +  Phone Number +  Relationship." />
+      <definition value="Emergency Contact Name + Phone Number + Relationship." />
       <comment value="1) Emergency contact is indicated using a relationship value &quot;C&quot;.&#xA;2) If contact is provided, relationship needs to be provided to indicate this is an emergency contact.&#xA;3) given is used for both first name &amp; MI, so need more than one.&#xA;4) family is a string with the person's surname&#xA;5) text is a string with the full name of the person." />
       <mustSupport value="true" />
     </element>

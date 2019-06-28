@@ -21,6 +21,10 @@
   <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal" />
   <derivation value="constraint" />
   <differential>
+    <element id="Goal">
+      <path value="Goal" />
+      <definition value="The eLTSS Goal Profile is based upon the US Core FHIR Goal Resource and created to meet the 2015 Edition Common Clinical Data Set 'Goals' requirements." />
+    </element>
     <element id="Goal.description">
       <path value="Goal.description" />
       <short value="Goal" />
@@ -33,7 +37,7 @@
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
       </type>
     </element>
-    <element id="Goal.target.dueDate:eltss">
+    <element id="Goal.target.due[x]:eltss">
       <path value="Goal.target.due[x]" />
       <sliceName value="eltss" />
     </element>

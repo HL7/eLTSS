@@ -1,123 +1,130 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/Desktop/eLTSS/src-generated/schemas/fhir-single.xsd">
-  <id value="Claim-eltss"/>
-  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Claim-eltss"/>
-  <version value="0.1.0"/>
-  <name value="Claim_eltss"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2019-02-17T00:00:00-05:00"/>
-  <publisher value="HL7 CBCP"/>
-  <description value="Claim Resource profile for eLTSS"/>
-  <fhirVersion value="4.0.0"/>
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Claim-eltss" />
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Claim-eltss" />
+  <version value="0.1.0" />
+  <name value="Claim_eltss" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-02-17T00:00:00-05:00" />
+  <publisher value="HL7 CBCP" />
+  <description value="Claim Resource profile for eLTSS" />
+  <fhirVersion value="4.0.0" />
   <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
   </mapping>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Claim"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim"/>
-  <derivation value="constraint"/>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Claim" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim" />
+  <derivation value="constraint" />
   <differential>
     <element id="Claim">
-      <path value="Claim"/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Claim" />
+      <comment value="The eLTSS Claim resource profile fulfills three information request requirements: Claim - a request for adjudication for reimbursement for products and/or services provided; Preauthorization - a request to authorize the future provision of products and/or services including an anticipated adjudication; and, Predetermination - a request for a non-bind adjudication of possible future products and/or services." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Claim.patient">
-      <path value="Claim.patient"/>
+      <path value="Claim.patient" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
       </type>
     </element>
     <element id="Claim.enterer">
-      <path value="Claim.enterer"/>
+      <path value="Claim.enterer" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
       </type>
     </element>
     <element id="Claim.provider">
-      <path value="Claim.provider"/>
+      <path value="Claim.provider" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Claim.related.claim">
-      <path value="Claim.related.claim"/>
+      <path value="Claim.related.claim" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Claim-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Claim-eltss" />
       </type>
     </element>
     <element id="Claim.payee.party">
-      <path value="Claim.payee.party"/>
+      <path value="Claim.payee.party" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
     </element>
     <element id="Claim.referral">
-      <path value="Claim.referral"/>
+      <path value="Claim.referral" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/ServiceRequest-eltss" />
       </type>
     </element>
     <element id="Claim.facility">
-      <path value="Claim.facility"/>
+      <path value="Claim.facility" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss" />
       </type>
     </element>
     <element id="Claim.careTeam.provider">
-      <path value="Claim.careTeam.provider"/>
+      <path value="Claim.careTeam.provider" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
-    <element id="Claim.diagnosis.diagnosisReference">
-      <path value="Claim.diagnosis.diagnosisReference"/>
+    <element id="Claim.diagnosis.diagnosis[x]:diagnosisReference">
+      <path value="Claim.diagnosis.diagnosisReference" />
+      <sliceName value="diagnosisReference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss" />
       </type>
     </element>
-    <element id="Claim.accident.locationReference">
-      <path value="Claim.accident.locationReference"/>
+    <element id="Claim.accident.location[x]:locationReference">
+      <path value="Claim.accident.locationReference" />
+      <sliceName value="locationReference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss" />
       </type>
+    </element>
+    <element id="Claim.item">
+      <path value="Claim.item" />
+      <definition value="A claim line. Either a simple  product or service or a 'group' of details which can each be a simple items or groups of sub-details provided." />
     </element>
     <element id="Claim.item.unitPrice">
-      <path value="Claim.item.unitPrice"/>
-      <short value="Service Rate per Unit name"/>
-      <definition value="The rate of one unit for a service."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Claim.item.unitPrice" />
+      <short value="Service Rate per Unit name" />
+      <definition value="The rate of one unit for a service." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Claim.item.net">
-      <path value="Claim.item.net"/>
-      <short value="Total Cost of Service"/>
-      <definition value="The total cost of a service for the plan."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Claim.item.net" />
+      <short value="Total Cost of Service" />
+      <definition value="The total cost of a service for the plan." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
   </differential>
 </StructureDefinition>

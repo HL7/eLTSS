@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  <p>These extend the base resources allowing for specific requirements to be documented</p>
+  <p>These extend the base resources allowing for specific requirements to be documented.</p>
   <p>
     <table>
       <tr>
@@ -13,13 +13,13 @@
         <td style="column-width:30%">
           <a href="extension-eltss-dueTo.html">Condition dueTo</a>
         </td>
-        <td>Further conditions, problems, diagnoses, procedures or events or the substance that caused/triggered a Condition</td>
+        <td>Further conditions, problems, diagnoses, procedures or events or the substance that caused/triggered a Condition.</td>
       </tr>
             <tr>
         <td style="column-width:30%">
           <a href="extension-eltss-RiskPlan.html">RiskAssessment Mitigation Plan</a>
         </td>
-        <td>A full plan for mitigation of a determined risk.</td>
+        <td>A full plan for mitigation of an identified risk.</td>
       </tr>
      </table>
   </p>

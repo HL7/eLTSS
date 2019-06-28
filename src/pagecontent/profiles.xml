@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <p>These are the Resource Profiles as designed by the eLTSS project.</p>
   <p>The eLTSS Implementation Guide follows the Must Support requirements as defined in US Core. </p>
@@ -49,43 +49,43 @@
         <td>
           <a href="Location-eltss.html">eLTSS Location Profile</a>
         </td>
-        <td>Defines the Location constraints for eLTSS</td>
+        <td>Defines the Location constraints for eLTSS.</td>
       </tr>
 	  <tr>
         <td>
           <a href="Observation-eltss.html">eLTSS Observation Profile</a>
         </td>
-        <td>Defines the Observation constraints for eLTSS</td>
+        <td>Defines the Observation constraints for eLTSS.</td>
       </tr>
 	  <tr>
         <td>
           <a href="Patient-eltss.html">eLTSS Patient Profile</a>
         </td>
-        <td>Defines the Patient/Person constraints for eLTSS</td>
+        <td>Defines the Patient/Person constraints for eLTSS.</td>
       </tr>
       <tr>
         <td>
           <a href="Practitioner-eltss.html">eLTSS Practitioner Profile</a>
         </td>
-        <td>Defines the Practitioner constraints for eLTSS</td>
+        <td>Defines the Practitioner constraints for eLTSS.</td>
       </tr>
       <tr>
         <td>
           <a href="Questionnaire-eltss.html">eLTSS Questionnaire Profile</a>
         </td>
-        <td>Defines the Questionnaire constraints for eLTSS</td>
+        <td>Defines the Questionnaire constraints for eLTSS.</td>
       </tr>
 	  <tr>
         <td>
           <a href="RiskAssessment-eltss.html">eLTSS RiskAssessment Profile</a>
         </td>
-        <td>Defines the RiskAssessment constraints for eLTSS</td>
+        <td>Defines the RiskAssessment constraints for eLTSS.</td>
       </tr>
 	  <tr>
         <td>
           <a href="ServiceRequest-eltss.html">eLTSS ServiceRequest Profile</a>
         </td>
-        <td>Defines the ServiceRequest constraints for eLTSS</td>
+        <td>Defines the ServiceRequest constraints for eLTSS.</td>
       </tr>  
     </table>
   </p>

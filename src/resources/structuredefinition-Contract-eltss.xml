@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/Desktop/eLTSS/src-generated/schemas/fhir-single.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Contract-eltss"/>
   <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss"/>
   <version value="0.1.0"/>
@@ -18,6 +18,7 @@
   <differential>
     <element id="Contract">
       <path value="Contract"/>
+      <definition value="A legally enforceable, formally recorded unilateral or bilateral directive (i.e., a policy or agreement)."/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
@@ -60,6 +61,18 @@
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
       </type>
+    </element>
+    <element id="Contract.term">
+      <path value="Contract.term"/>
+      <definition value="One or more Contract Provisions which may be related and conveyed as a group and may contain nested groups."/>
+    </element>
+    <element id="Contract.term.offer">
+      <path value="Contract.term.offer"/>
+      <definition value="The matter of concern in the context of this agreement provision."/>
+    </element>
+    <element id="Contract.term.offer.party">
+      <path value="Contract.term.offer.party"/>
+      <definition value="Recipient of the Offer"/>
     </element>
     <element id="Contract.term.offer.party.reference">
       <path value="Contract.term.offer.party.reference"/>
@@ -140,7 +153,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
     </element>
-    <element id="Contract.term.reasonReference">
+    <element id="Contract.term.reference">
       <path value="Contract.term.reasonReference"/>
       <type>
         <code value="Reference"/>
@@ -180,6 +193,10 @@
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
       </type>
     </element>
+    <element id="Contract.signer.signature">
+      <path value="Contract.signer.signature"/>
+      <definition value="Legally binding Contract DSIG signature contents encoded in Base64."/>
+    </element>
     <element id="Contract.signer.signature.type">
       <path value="Contract.signer.signature.type"/>
       <comment value="Would probably use &quot;1.2.840.10065.1.12.1.7&quot; which represents &quot;consent signature&quot; in this use case."/>
@@ -198,11 +215,20 @@
       <short value="Person Printed Name"/>
       <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature."/>
       <comment value="Must match signer.party."/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
+      </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
-    <element id="Contract.rule.contentReference">
+    <element id="Contract.rule.content[x]:contentReference">
       <path value="Contract.rule.contentReference"/>
+      <sliceName value="contentReference"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
@@ -211,8 +237,9 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
       </type>
     </element>
-    <element id="Contract.legallyBindingReference">
+    <element id="Contract.legallyBinding[x]:legallyBindingReference">
       <path value="Contract.legallyBindingReference"/>
+      <sliceName value="legallyBindingReference"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>

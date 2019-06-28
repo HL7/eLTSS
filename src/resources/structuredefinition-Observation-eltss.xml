@@ -18,6 +18,7 @@
   <differential>
     <element id="Observation">
       <path value="Observation" />
+      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources may be used to provide context for observations such as laboratory reports, etc." />
       <mustSupport value="false" />
       <isModifier value="false" />
     </element>

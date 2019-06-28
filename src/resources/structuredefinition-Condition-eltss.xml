@@ -16,6 +16,10 @@
   <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition">
+      <path value="Condition" />
+      <definition value="The eLTSS Condition Profile is based upon the US Core FHIR Condition Resource and created to meet the 2015 Edition Common Clinical Data Set 'Problems' and 'Health Concerns' requirements." />
+    </element>
     <element id="Condition.extension">
       <path value="Condition.extension" />
       <slicing>
@@ -47,7 +51,7 @@
     <element id="Condition.code">
       <path value="Condition.code" />
       <short value="Assessed Need Code" />
-      <definition value="The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service." />
+      <definition value="The clinical and/or community-based necessity or desire as identified byan assessment that should be addressed by a service." />
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
