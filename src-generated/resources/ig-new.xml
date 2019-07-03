@@ -65,6 +65,10 @@
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the eLTSS profiles"/>
     </grouping>
+    <grouping id="valuesets">
+      <name value="ValueSet(s)"/>
+      <description value="ValueSet(s) used in the eLTSS Implementation Guide"/>
+    </grouping>
     <resource>
       <reference>
         <reference value="StructureDefinition/eltss-dueTo"/>
@@ -290,6 +294,7 @@
         <reference value="ValueSet/eltss-observation-code"/>
       </reference>
       <name value="Observation Code Value Set"/>
+      <groupingId value="valuesets"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -477,6 +482,16 @@
         <page>
           <nameUrl value="extension-eltss-RiskPlan.html"/>
           <title value="eLTSS eltss RiskManagement Plan extension for RiskManagement"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="vocabulary.html"/>
+        <title value="eLTSS Value Sets"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="valueset-eltss-observation-code.html"/>
+          <title value="Value Set for Observation codes for the eLTSS Observation Profile"/>
           <generation value="generated"/>
         </page>
       </page>

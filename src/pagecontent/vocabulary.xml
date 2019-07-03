@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <p>These are the ValueSets as designed by the eLTSS project.</p>
+  <p>
+    <table>
+      <tr>
+        <th>Value Set</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="valueset-eltss-observation-code.html">eLTSS Observation Codes</a>
+        </td>
+        <td>Strength and Preference codes for the Observation profile.</td>
+      </tr>
+    </table>
+  </p>
+</div>

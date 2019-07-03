@@ -75,6 +75,11 @@
       "id" : "examples",
       "name" : "Example(s)",
       "description" : "Example(s) showing the use of the eLTSS profiles"
+    },
+    {
+      "id" : "valuesets",
+      "name" : "ValueSet(s)",
+      "description" : "ValueSet(s) used in the eLTSS Implementation Guide"
     }],
     "resource" : [{
       "reference" : {
@@ -300,7 +305,8 @@
       "reference" : {
         "reference" : "ValueSet/eltss-observation-code"
       },
-      "name" : "Observation Code Value Set"
+      "name" : "Observation Code Value Set",
+      "groupingId" : "valuesets"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -488,6 +494,16 @@
         {
           "nameUrl" : "extension-eltss-RiskPlan.html",
           "title" : "eLTSS eltss RiskManagement Plan extension for RiskManagement",
+          "generation" : "generated"
+        }]
+      },
+      {
+        "nameUrl" : "vocabulary.html",
+        "title" : "eLTSS Value Sets",
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "valueset-eltss-observation-code.html",
+          "title" : "Value Set for Observation codes for the eLTSS Observation Profile",
           "generation" : "generated"
         }]
       },

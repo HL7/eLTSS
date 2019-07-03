@@ -230,4 +230,20 @@
             </tbody>
         </table>
     </p>
+    <a name="6"> </a>
+    <h3>ValueSet(s) </h3>
+    <p>ValueSet(s) used in the eLTSS Implementation Guide</p>
+    <p>
+        <table>
+            <tbody>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="valueset-eltss-observation-code.html">
+                        •  Observation Code Value Set</a>
+                    </td>
+                    <td/>
+                </tr>
+            </tbody>
+        </table>
+    </p>
 </div>
