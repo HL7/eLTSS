@@ -1,251 +1,251 @@
-<?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Contract-eltss"/>
-  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss"/>
-  <version value="0.1.0"/>
-  <name value="Contract_eltss"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2019-02-17T00:00:00-05:00"/>
-  <publisher value="HL7 CBCP"/>
-  <description value="Contract for eLTSS"/>
-  <fhirVersion value="4.0.0"/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Contract"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Contract"/>
-  <derivation value="constraint"/>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/fhir/schema/contract.xsd">
+  <id value="Contract-eltss" />
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss" />
+  <version value="0.1.0" />
+  <name value="Contract_eltss" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-02-17T00:00:00-05:00" />
+  <publisher value="HL7 CBCP" />
+  <description value="Contract for eLTSS" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Contract" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Contract" />
+  <derivation value="constraint" />
   <differential>
     <element id="Contract">
-      <path value="Contract"/>
-      <definition value="A legally enforceable, formally recorded unilateral or bilateral directive (i.e., a policy or agreement)."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Contract" />
+      <definition value="A legally enforceable, formally recorded unilateral or bilateral directive (i.e., a policy or agreement)." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Contract.instantiatesCanonical">
-      <path value="Contract.instantiatesCanonical"/>
+      <path value="Contract.instantiatesCanonical" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss" />
       </type>
     </element>
     <element id="Contract.domain">
-      <path value="Contract.domain"/>
+      <path value="Contract.domain" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss" />
       </type>
     </element>
     <element id="Contract.site">
-      <path value="Contract.site"/>
+      <path value="Contract.site" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Location-eltss" />
       </type>
     </element>
     <element id="Contract.author">
-      <path value="Contract.author"/>
+      <path value="Contract.author" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.contentDefinition.publisher">
-      <path value="Contract.contentDefinition.publisher"/>
+      <path value="Contract.contentDefinition.publisher" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.term">
-      <path value="Contract.term"/>
-      <definition value="One or more Contract Provisions which may be related and conveyed as a group and may contain nested groups."/>
+      <path value="Contract.term" />
+      <definition value="One or more Contract Provisions which may be related and conveyed as a group and may contain nested groups." />
     </element>
     <element id="Contract.term.offer">
-      <path value="Contract.term.offer"/>
-      <definition value="The matter of concern in the context of this agreement provision."/>
+      <path value="Contract.term.offer" />
+      <definition value="The matter of concern in the context of this agreement provision." />
     </element>
     <element id="Contract.term.offer.party">
-      <path value="Contract.term.offer.party"/>
-      <definition value="Recipient of the Offer"/>
+      <path value="Contract.term.offer.party" />
+      <definition value="Recipient of the Offer" />
     </element>
     <element id="Contract.term.offer.party.reference">
-      <path value="Contract.term.offer.party.reference"/>
+      <path value="Contract.term.offer.party.reference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.term.asset.valuedItem.responsible">
-      <path value="Contract.term.asset.valuedItem.responsible"/>
+      <path value="Contract.term.asset.valuedItem.responsible" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.term.asset.valuedItem.recipient">
-      <path value="Contract.term.asset.valuedItem.recipient"/>
+      <path value="Contract.term.asset.valuedItem.recipient" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.term.action.subject.reference">
-      <path value="Contract.term.action.subject.reference"/>
+      <path value="Contract.term.action.subject.reference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.term.action.context">
-      <path value="Contract.term.action.context"/>
+      <path value="Contract.term.action.context" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/EpisodeOfCare-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/EpisodeOfCare-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" />
       </type>
     </element>
     <element id="Contract.term.action.requester">
-      <path value="Contract.term.action.requester"/>
+      <path value="Contract.term.action.requester" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.term.action.performer">
-      <path value="Contract.term.action.performer"/>
+      <path value="Contract.term.action.performer" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
       </type>
     </element>
-    <element id="Contract.term.reference">
-      <path value="Contract.term.reasonReference"/>
+    <element id="Contract.term.action.Reference">
+      <path value="Contract.term.action.reasonReference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
       </type>
     </element>
     <element id="Contract.signer">
-      <path value="Contract.signer"/>
-      <short value="Person Signature"/>
-      <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature."/>
-      <comment value="FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. The primary one for the patient/beneficiary is &quot;PAT&quot; (patient), although implementers may use others as well. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized."/>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
+      <path value="Contract.signer" />
+      <short value="Person Signature" />
+      <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature." />
+      <comment value="FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. The primary one for the patient/beneficiary is &quot;PAT&quot; (patient), although implementers may use others as well. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized." />
+      <mustSupport value="true" />
+      <isModifier value="false" />
     </element>
     <element id="Contract.signer.type">
-      <path value="Contract.signer.type"/>
-      <comment value="Would probably use &quot;CONSENTER&quot; which represents &quot;consent signature&quot; in this use case."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Contract.signer.type" />
+      <comment value="Would probably use &quot;CONSENTER&quot; which represents &quot;consent signature&quot; in this use case." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Contract.signer.party">
-      <path value="Contract.signer.party"/>
-      <short value="Person Printed Name"/>
-      <definition value="Reference to resource for Patient , Guardian/Legal Representative . Support Planner or Service Provider as appropriate."/>
-      <comment value="Must match signature.who."/>
+      <path value="Contract.signer.party" />
+      <short value="Person Printed Name" />
+      <definition value="Reference to resource for Patient , Guardian/Legal Representative . Support Planner or Service Provider as appropriate." />
+      <comment value="Must match signature.who." />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
     <element id="Contract.signer.signature">
-      <path value="Contract.signer.signature"/>
-      <definition value="Legally binding Contract DSIG signature contents encoded in Base64."/>
+      <path value="Contract.signer.signature" />
+      <definition value="Legally binding Contract DSIG signature contents encoded in Base64." />
     </element>
     <element id="Contract.signer.signature.type">
-      <path value="Contract.signer.signature.type"/>
-      <comment value="Would probably use &quot;1.2.840.10065.1.12.1.7&quot; which represents &quot;consent signature&quot; in this use case."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Contract.signer.signature.type" />
+      <comment value="Would probably use &quot;1.2.840.10065.1.12.1.7&quot; which represents &quot;consent signature&quot; in this use case." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Contract.signer.signature.when">
-      <path value="Contract.signer.signature.when"/>
-      <short value="Person Signature Date"/>
-      <definition value="Person Signature Date, Guardian/Legal Representative Signature Date, Support Planner Signature Date, Service Provider Signature Date."/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <path value="Contract.signer.signature.when" />
+      <short value="Person Signature Date" />
+      <definition value="Person Signature Date, Guardian/Legal Representative Signature Date, Support Planner Signature Date, Service Provider Signature Date." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Contract.signer.signature.who">
-      <path value="Contract.signer.signature.who"/>
-      <short value="Person Printed Name"/>
-      <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature."/>
-      <comment value="Must match signer.party."/>
+      <path value="Contract.signer.signature.who" />
+      <short value="Person Printed Name" />
+      <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature." />
+      <comment value="Must match signer.party." />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
       </type>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
+      <mustSupport value="false" />
+      <isModifier value="false" />
     </element>
     <element id="Contract.rule.content[x]:contentReference">
-      <path value="Contract.rule.contentReference"/>
-      <sliceName value="contentReference"/>
+      <path value="Contract.rule.contentReference" />
+      <sliceName value="contentReference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
       </type>
     </element>
     <element id="Contract.legallyBinding[x]:legallyBindingReference">
-      <path value="Contract.legallyBindingReference"/>
-      <sliceName value="legallyBindingReference"/>
+      <path value="Contract.legallyBindingReference" />
+      <sliceName value="legallyBindingReference" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
       </type>
     </element>
   </differential>
