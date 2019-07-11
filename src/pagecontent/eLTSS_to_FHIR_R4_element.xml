@@ -197,30 +197,13 @@ This can be included as free text or attachment.</td>
 CarePlan [emergency backup plan]<br/>
          &#8594; description<br/>
 CarePlan [emergency backup plan]<br/>
-         &#8594; partOf(CarePlan) ["main" Care Plan]<br/>
-CarePlan [emergency backup plan]<br/>
-         &#8594; contained &#8594; DocumentReference<br/>
-         &#8594; type<br/>
-CarePlan [emergency backup plan]<br/>
-         &#8594; contained &#8594; DocumentReference<br/>
-         &#8594; content &#8594; attachment<br/>
-CarePlan [emergency backup plan]<br/>
-         &#8594; contained &#8594; DocumentReference<br/>
-         &#8594; context &#8594; related<br/>
-         &#8594; ref(CarePlan) [emergency backup<br/>
-                  plan]</td>
+         &#8594; partOf(CarePlan) ["main" Care Plan]<br/></td>
+
       <td>CarePlan<br/>
 ...subject(Patient) 1<br/>
 ...description 0..1<br/>
 ...part of(CarePlan) 0..*<br/>
-...contained  0..*<br/>
-......DocumentReference 0..1<br/>
-........type 0..1<br/>
-.........content 1..*<br/>
-............attachment 1<br/>
-.........context 0..1<br/>
-............related 0..*<br/>
-...............ref(CarePlan) 0..1<br/></td>
+></td>
       <td>1) The CarePlan resource containing the emergency backup plan refers to the "main" CarePlan resource, rather than the other way around, by using the emergency backup plan CarePlan &#8594; partOf data element to reference the "main" CarePlan data element.<br/>
 2) FHIR requires that CarePlan includes a subject.<br/>
 3) description contains the text of the Emergency Backup Plan if provided as text.<br/>
