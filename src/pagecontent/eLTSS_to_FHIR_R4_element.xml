@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <table border="1">
     <tr>
@@ -26,7 +26,7 @@ Patient &#8594; name &#8594; text</td>
 .........text 0..1</td>
       <td>1) Will use CarePlan &#8594; subject to reference the Patient for the care plan being developed. FHIR requires that CarePlan includes a subject.<br/>
 2) given is used for both first name &amp; MI, so need more than one.<br/>
-3) family is a string with the person's surname<br/>
+3) family is a string with the person's surname.<br/>
 4) text is a string that contains the full name of the person.<br/>
 5) Per US Core 1.0.1, each Patient must have at least one name, and each name must include family and given.</td>
     </tr>
@@ -145,7 +145,7 @@ Patient &#8594; contact &#8594; name &#8594; text</td>
 2) Emergency contact is indicated using a relationship value "C".<br/>
 3) If contact is provided, relationship needs to be provided to indicate this is an emergency contact.<br/>
 4) given is used for both first name &amp; MI, so need more than one.<br/>
-5) family is a string with the person's surname<br/>
+5) family is a string with the person's surname.<br/>
 6) text is a string with the full name of the person.</td>
     </tr>
     <tr>
@@ -197,13 +197,30 @@ This can be included as free text or attachment.</td>
 CarePlan [emergency backup plan]<br/>
          &#8594; description<br/>
 CarePlan [emergency backup plan]<br/>
-         &#8594; partOf(CarePlan) ["main" Care Plan]<br/></td>
-
+         &#8594; partOf(CarePlan) ["main" Care Plan]<br/>
+CarePlan [emergency backup plan]<br/>
+         &#8594; contained &#8594; DocumentReference<br/>
+         &#8594; type<br/>
+CarePlan [emergency backup plan]<br/>
+         &#8594; contained &#8594; DocumentReference<br/>
+         &#8594; content &#8594; attachment<br/>
+CarePlan [emergency backup plan]<br/>
+         &#8594; contained &#8594; DocumentReference<br/>
+         &#8594; context &#8594; related<br/>
+         &#8594; ref(CarePlan) [emergency backup<br/>
+                  plan]</td>
       <td>CarePlan<br/>
 ...subject(Patient) 1<br/>
 ...description 0..1<br/>
 ...part of(CarePlan) 0..*<br/>
-></td>
+...contained  0..*<br/>
+......DocumentReference 0..1<br/>
+........type 0..1<br/>
+.........content 1..*<br/>
+............attachment 1<br/>
+.........context 0..1<br/>
+............related 0..*<br/>
+...............ref(CarePlan) 0..1<br/></td>
       <td>1) The CarePlan resource containing the emergency backup plan refers to the "main" CarePlan resource, rather than the other way around, by using the emergency backup plan CarePlan &#8594; partOf data element to reference the "main" CarePlan data element.<br/>
 2) FHIR requires that CarePlan includes a subject.<br/>
 3) description contains the text of the Emergency Backup Plan if provided as text.<br/>
@@ -276,7 +293,7 @@ Observation &#8594; code &#8594; coding &#8594; system</td>
 ............system 0..1<br/>
 </td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Observation containing the Strength.<br/>
-2) code is required by FHIR, and is a CodeableConcept where coding &#8594; code can be set to "Preference" with the corresponding NEW code &#8594; system "http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code".<br/>
+2) code is required by FHIR, and is a CodeableConcept where coding &#8594; code can be set to "Strength" with the corresponding NEW code &#8594; system "http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code".<br/>
 3) valueString is where the Strength text would be provided.</td>
     </tr>
     <tr>
@@ -419,7 +436,7 @@ Practitioner &#8594; telecom &#8594; value</td>
       <td>1) Will use CarePlan &#8594; encounter to reference the EpisodeOfCare that defines the plan monitor (care manager) for the plan.<br/>
 2) EpisodeOfCare &#8594; careManager references the Practitioner who is monitoring the plan.<br/>
 3) telecom is of type ContactPoint (https://www.hl7.org/fhir/datatypes.html#contactpoint) which contains elements to populate for the phone number.<br/>
-4) system is required if value is provided, and can be: phone, fax, email, pager, url, sms, other<br/>
+4) system is required if value is provided, and can be: phone, fax, email, pager, url, sms, other.<br/>
 5) Per FHIR, phone # should be formatted according to ITU-T E.123, so "(555) 675 5745" or "+22 555 675 5745".</td>
     </tr>
     <tr>
@@ -440,7 +457,7 @@ Observation &#8594; code &#8594; coding &#8594; system<br/></td>
 ............system 0..1</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Observation containing the Preference.<br/>
 2) code is required by FHIR and is a CodeableConcept where coding &#8594; code can be set to "Preference" with the corresponding NEW code -&gt; system "http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code".<br/>
-3) valueString is where the Preference text would provided.</td>
+3) valueString is where the Preference text would be provided.</td>
     </tr>
     <tr>
       <td>Person Centered Planning</td>
@@ -647,7 +664,7 @@ Contract &#8594; signer &#8594; type<br/>
 Contract &#8594; signer &#8594; signature &#8594; data<br/>
 Contract &#8594; signer &#8594; signature &#8594; type<br/>
 Contract &#8594; signer &#8594; signature<br/>
-         &#8594; who(Practitioner | PractionerRole |<br/>
+         &#8594; who(Practitioner | PractitionerRole |<br/>
          RelatedPerson | Patient | Device |<br/>
          Organization)</td>
       <td>CarePlan<br/>
@@ -657,7 +674,7 @@ Contract &#8594; signer &#8594; signature<br/>
 .........signature 1..*<br/>
 ............data 0..1<br/>
 ............type 1<br/>
-............who(Practitioner | PractionerRole |<br/>
+............who(Practitioner | PractitionerRole |<br/>
             RelatedPerson | Patient | Device |<br/>
             Organization) 1</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Contract containing the signatures, names, etc.<br/>
@@ -708,7 +725,7 @@ Contract &#8594; signer &#8594; type<br/>
 Contract &#8594; signer &#8594; signature &#8594; data<br/>
 Contract &#8594; signer &#8594; signature &#8594; type<br/>
 Contract &#8594; signer &#8594; signature<br/>
-         &#8594; who(Practitioner | PractionerRole |<br/>
+         &#8594; who(Practitioner | PractitionerRole |<br/>
          RelatedPerson | Patient | Device |<br/>
          Organization)</td>
       <td>CarePlan<br/>
@@ -718,7 +735,7 @@ Contract &#8594; signer &#8594; signature<br/>
 .........signature 1..*<br/>
 ............data 0..1<br/>
 ............type 1<br/>
-............who(Practitioner | PractionerRole |<br/>
+............who(Practitioner | PractitionerRole |<br/>
             RelatedPerson | Patient | Device |<br/>
             Organization) 1</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Contract containing the signatures, names, etc.<br/>
@@ -727,7 +744,7 @@ Contract &#8594; signer &#8594; signature<br/>
 4) FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. There are multiple values that may be used depending on how states want to map. For example, the list includes: "POWATT" (power of attorney), "GUARD" (guardian), "HPOWATT" (healthcare power of attorney), etc. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized.<br/>
 5) data is the signature content (XML DigSig. JWT, picture, etc.)<br/>
 6) signature requires it's own type element that indicates why the entity signed the contract, and FHIR provides a preferred value set. Would probably use "1.2.840.10065.1.12.1.7" which represents "consent signature" in this case.<br/>
-7) signature requires a who  to indicate who signed, which can be a Patient, Organization, Practitioner, PractionerRole, RelatedPerson or Device although in this case it would be the RelatedPerson..</td>
+7) signature requires a who  to indicate who signed, which can be a Patient, Organization, Practitioner, PractitionerRole, RelatedPerson or Device although in this case it would be the RelatedPerson.</td>
     </tr>
     <tr>
       <td>Plan Signatures</td>
@@ -769,7 +786,7 @@ Contract &#8594; signer &#8594; type<br/>
 Contract &#8594; signer &#8594; signature &#8594; data<br/>
 Contract &#8594; signer &#8594; signature &#8594; type<br/>
 Contract &#8594; signer &#8594; signature<br/>
-         &#8594; who(Practitioner |<br/>
+         &#8594; who(Practitioner | PractitionerRole | Organization<br/>
          RelatedPerson | Patient | Device |<br/>
          Organization)</td>
       <td>CarePlan<br/>
@@ -779,7 +796,7 @@ Contract &#8594; signer &#8594; signature<br/>
 .........signature 1..*<br/>
 ............data 0..1<br/>
 ............type 1<br/>
-............who(Practitioner |PractionerRole |<br/>
+............who(Practitioner |PractitionerRole | Organization<br/>
             RelatedPerson | Patient | Device |<br/>
             Organization) 1</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Contract containing the signatures, names, etc.<br/>
@@ -788,7 +805,7 @@ Contract &#8594; signer &#8594; signature<br/>
 4) FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. There are multiple values that may be used depending on how states want to map. For example, the list includes "AUT" (author) which aligns with author being the support planner for other eLTSS Dataset elements. However other role types may be appropriate as well such as "GUAR" (guarantor). However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized.<br/>
 5) data is the actual signature content (XML DigSig. JWT, picture, etc.)<br/>
 6) signature requires it's own type element that indicates why the entity signed the contract, and FHIR provides a preferred value set, in this case could use "1.2.840.10065.1.12.1.1" for "Author's Signature".<br/>
-7) signature requires a who to indicate who signed, which can be a Patient, Organization, Practitioner, PractionerRole, RelatedPerson or Device. </td>
+7) signature requires a who to indicate who signed, which can be a Patient, Organization, Practitioner, PractitionerRole, RelatedPerson or Device. </td>
     </tr>
     <tr>
       <td>Plan Signatures</td>
@@ -796,13 +813,13 @@ Contract &#8594; signer &#8594; signature<br/>
       <td>The printed or typed name of the support planner.</td>
       <td>CarePlan &#8594; supportingInfo(Contract)<br/>
 <br/>
-Contract &#8594; signer &#8594; party(Practitioner|PractionerRole)</td>
+Contract &#8594; signer &#8594; party(Practitioner|PractitionerRole|Organization)</td>
       <td>CarePlan<br/>
 ...supportingInfo(Contract) 0..*<br/>
 ......signer 0..*<br/>
-.........party(Practitioner|PractitionerRole</td>
+.........party(Practitioner|PractitionerRole|Organization)</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Contract containing the signatures, names, etc.<br/>
-2) In this case, party is a reference to a Practitioner or PractitionerRole (for cases when the Organization of the SupportPlanner is needed), and Practitioner includes a name.</td>
+2) In this case, party is a reference to a Practitioner, PractitionerRole or Organization (for cases when the Organization of the SupportPlanner is needed), and Practitioner and Organization includes a name.</td>
     </tr>
     <tr>
       <td>Plan Signatures</td>
@@ -830,7 +847,7 @@ Contract &#8594; signer &#8594; type<br/>
 Contract &#8594; signer &#8594; signature &#8594; data<br/>
 Contract &#8594; signer &#8594; signature &#8594; type<br/>
 Contract &#8594; signer &#8594; signature<br/>
-         &#8594; who(Practitioner | PractionerRole |<br/>
+         &#8594; who(Practitioner | PractitionerRole |<br/>
          RelatedPerson | Patient | Device |<br/>
          Organization)</td>
       <td>CarePlan<br/>
@@ -840,7 +857,7 @@ Contract &#8594; signer &#8594; signature<br/>
 .........signature 1..*<br/>
 ............data 0..1<br/>
 ............type 1<br/>
-............who(Practitioner |PractionerRole |<br/>
+............who(Practitioner |PractitionerRole |<br/>
             RelatedPerson | Patient | Device |<br/>
             Organization) 1</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Contract containing the signatures, names, etc.<br/>
@@ -849,7 +866,7 @@ Contract &#8594; signer &#8594; signature<br/>
 4) FHIR includes a preferred coding for contract signer roles, which map well to the eLTSS signatories. There are multiple values that may be used depending on how states want to map. The list includes "HPROV" (healthcare provider) which may be the best fit here, although others may be applicable. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized.<br/>
 5) data is the actual signature content (XML DigSig. JWT, picture, etc.)<br/>
 6) signature requires it's own type element that indicates why the entity signed the contract, and FHIR provides a preferred value set. In this case would probably use "1.2.840.10065.1.12.1.3" for "Co-participant's Signature".<br/>
-7) signature requires a who  to indicate who signed, which can be a Patient, Organization, Practitioner, PractionerRole, RelatedPerson or Device.</td>
+7) signature requires a who  to indicate who signed, which can be a Patient, Organization, Practitioner, PractitionerRole, RelatedPerson or Device.</td>
     </tr>
     <tr>
       <td>Plan Signatures</td>
@@ -858,14 +875,14 @@ Contract &#8594; signer &#8594; signature<br/>
       <td>CarePlan &#8594; supportingInfo(Contract)<br/>
 <br/>
 Contract &#8594; signer &#8594; party(Organization |<br/>
-         Patient | Practitioner | RelatedPerson)</td>
+         Patient | Practitioner | PractitionerRole | RelatedPerson)</td>
       <td>CarePlan<br/>
 ...supportingInfo(Contract) 0..*<br/>
 ......signer 0..*<br/>
 .........party(Organization | Patient |<br/>
-         Practitioner | RelatedPerson) 1</td>
+         Practitioner | PractitionerRole | RelatedPerson) 1</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Contract containing the signatures, names, etc.<br/>
-2) party is a reference to an Organization, Patient, Practitioner, or RelatedPerson, all of which include a name. (Patient may not make sense in the context of a service provided by a care plan, but is allowed in FHIR.)</td>
+2) party is a reference to an Organization, Patient, Practitioner, PractitionerRole or RelatedPerson, all of which include a name. (Patient may not make sense in the context of a service provided by a care plan, but is allowed in FHIR.)</td>
     </tr>
     <tr>
       <td>Plan Signatures</td>
@@ -925,7 +942,7 @@ RiskAssessment &#8594; extension(RiskAssessment Mitigation Plan)<br/>
 ...extension(RiskAssessment MitigationPlan)</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the RiskAssessment containing the Risk Management Plan.<br/>
 2) mitigation is a string and would contain the free text Risk Management Plan.<br/>
-3) The new RiskAssessment -&gt; extension -&gt; RiskAssessment Mitigation Plan would be used if the Risk Management Plan is being provided as an attachment rather than as text.</td>
+3) The new RiskAssessment -&gt; extension -&gt; RiskAssessment Mitigation Plan which is a DocumentReference resource would be used if the Risk Management Plan is being provided as an attachment rather than as text.</td>
     </tr>
     <tr>
       <td>Service Information</td>
@@ -1199,10 +1216,10 @@ Practitioner | Patient | RelatedPerson<br/>
          &#8594; name &#8594; given<br/>
 Practitioner | Patient | RelatedPerson<br/>
          &#8594; name &#8594; text<br/>
-         Organization &#8594; name
+         Organization | CareTeam &#8594; name
          </td>
       <td>CarePlan<br/>
-...author(Patient | Practitioner | PractitionerRole |  RelatedPerson ) 0..1<br/>
+...author(Patient | Practitioner | RelatedPerson ) 0..1<br/>
 ......name 0..*<br/>
 .........family 0..1<br/>
 .........given 0..*<br/>
@@ -1212,9 +1229,9 @@ CarePlan<br />
 ......name 0..1</td>
       <td>1) Will use CarePlan &#8594; author to reference a Practitioner, PractitionerRole, RelatedPerson, Organization, CareTeam or Patient (in self-directed plans) who is the primary author of the care plan being developed.<br/>
 2) Practitioner, Organization, CareTeam, RelatedPerson and Patient all include name.<br/>
-3) PractitionerRole should be used when the Organization for whom the Practitioner works for is also needed <br />
+3) PractitionerRole should be used when the Organization for whom the Practitioner works for is also needed. <br />
 4) given is used for both first name &amp; MI, so need more than one.<br/>
-5) family is a string with the person's surname<br/>
+5) family is a string with the person's surname.<br/>
 6) text is a string that contains the full name of the person.</td>
     </tr>
     <tr>
@@ -1234,9 +1251,9 @@ Patient | Practitioner | PractitionerRole |  RelatedPerson | Organization | Care
 .........value 0..1</td>
       <td>1) Will use CarePlan &#8594; author to reference a Practitioner, PractitionerRole, RelatedPerson, Organization, CareTeam or Patient (in self-directed plan) who is the primary author of the care plan being developed.<br/>
 2) Practitioner, PractitionerRole, RelatedPerson, Organization, CareTeam and Patient all include telecom.<br/>
-3) PractitionerRole should be used when the Organization for whom the Practitioner works for is also needed<br />
+3) PractitionerRole should be used when the Organization for whom the Practitioner works for is also needed.<br />
 4) telecom is of type <A href="https://www.hl7.org/fhir/datatypes.html#contactpoint">ContactPoint</A> which contains elements to populate for the phone number.<br/>
-5) system is required if value is provided, and can be: phone, fax, email, pager, url, sms, other<br/>
+5) system is required if value is provided, and can be: phone, fax, email, pager, url, sms, other.<br/>
 6) Per FHIR, phone # should be formatted according to ITU-T E.123, so "(555) 675 5745" or "+22 555 675 5745".</td>
     </tr>
     <tr>
@@ -1313,7 +1330,7 @@ Practitioner | PractitionerRole | CareTeam<br/>
       <td>1) Will use CarePlan &#8594; activity &#8594; reference to reference a ServiceRequest, and performer to reference a RelatedPerson, Organization or HealthcareService. Other options listed are available in FHIR, but may not be appropriate here.<br/>
 2) Per eLTSS Dataset element definition, performer would reference an Organization or HealthcareService for paid services, and RelatedPerson for a non-paid service.<br/>
 3) telecom is of type ContactPoint (https://www.hl7.org/fhir/datatypes.html#contactpoint) which contains elements to populate for the phone number.<br/>
-4) system is required if value is provided, and can be: phone, fax, email, pager, url, sms, other<br/>
+4) system is required if value is provided, and can be: phone, fax, email, pager, url, sms, other.<br/>
 5) Per FHIR, phone # should be formatted according to ITU-T E.123, so "(555) 675 5745" or "+22 555 675 5745".<br/>
 6) US Core requires at least one contact be provided in telecom for an Organization.</td>
     </tr>
@@ -1646,7 +1663,7 @@ FHIR</td>
     </tr>
     <tr>
       <td>Encounter<br/>
-class<br/>
+Class<br/>
 FHIR</td>
       <td>Indicates the classification of patient encounter.</td>
       <td>Encounter &#8594; class &#8594; code</td>
@@ -1656,11 +1673,11 @@ FHIR</td>
       <td>1) class is required by FHIR, and is defined to use the extensible V3 Value SetActEncounterCode value set. Possible values are: ambulatory, emergency, field, home health, inpatient encounter, inpatient acute,  inpatient non-acute, observation encounter, pre-admission, short stay, and virtual. </td>
     </tr>
     <tr>
-      <td>Encounter type <br/> FHIR</td>
+      <td>Encounter Type <br/> FHIR</td>
       <td>Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).</td>
       <td>Encounter -&gt; type</td>
       <td>Encounter<br/>...type 1</td>
-      <td>type is required by US Core and codes SHALL be taken from US Core Encounter Type; other codes may be used where these codes are not suitable </td>
+      <td>1) type is required by US Core and codes SHALL be taken from US Core Encounter Type; other codes may be used where these codes are not suitable. </td>
     </tr>
     <tr>
       <td>EpisodeOfCare Status<br/>

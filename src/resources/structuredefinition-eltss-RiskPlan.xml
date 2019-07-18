@@ -29,7 +29,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Risk Management Plan Document" />
-      <definition value="Description of planned activities to minimize identified risks that endanger the person’s health and safety." />
+      <definition value="Description of planned activities to minimize the identified risks that endanger the person’s health and safety." />
       <comment value="The preferred LOINC value &quot;71482-4&quot; indicates a &quot;Risk Assessment Document&quot;." />
       <isModifier value="false" />
     </element>

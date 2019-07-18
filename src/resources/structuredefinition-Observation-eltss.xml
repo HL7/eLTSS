@@ -26,7 +26,12 @@
       <path value="Observation.code" />
       <short value="Strength or Preference" />
       <definition value="Code representing either a favorable attribute of oneself, his/her support network, environment and/or elements of his/her life or the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
+      <comment value="All code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation." />
       <isModifier value="false" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <requirements value="Allows for alternative encodings within a code system and translations to other code systems." />
     </element>
     <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system" />
@@ -35,7 +40,7 @@
     </element>
     <element id="Observation.code.coding.code">
       <path value="Observation.code.coding.code" />
-      <comment value="Strength or Preference from eltss-observation-code" />
+      <comment value="Preference, Strength from eltss-observation-code" />
       <mustSupport value="true" />
       <isModifier value="false" />
       <binding>
@@ -50,7 +55,7 @@
     <element id="Observation.value[x]:eltss">
       <path value="Observation.value[x]" />
       <sliceName value="eltss" />
-      <short value="Preference or Strength" />
+      <short value="Preference, Strength" />
       <definition value="Presents the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning." />
       <mustSupport value="true" />
       <isModifier value="false" />

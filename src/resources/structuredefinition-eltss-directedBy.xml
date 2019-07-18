@@ -1,50 +1,50 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/eLTSS/src-generated/schemas/fhir-single.xsd">
-  <id value="eltss-directedBy"/>
-  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy"/>
-  <version value="0.1.0"/>
-  <name value="Eltss_directedBy"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2019-02-17T00:00:00-05:00"/>
-  <publisher value="HL7 CBCP"/>
-  <description value="Indicates whether the individual chose to self-direct the service."/>
-  <fhirVersion value="4.0.0"/>
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="eltss-directedBy" />
+  <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy" />
+  <version value="0.1.0" />
+  <name value="Eltss_directedBy" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-02-17T00:00:00-05:00" />
+  <publisher value="HL7 CBCP" />
+  <description value="Indicates whether the individual chose to self-direct the service." />
+  <fhirVersion value="4.0.0" />
   <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
   </mapping>
-  <kind value="complex-type"/>
-  <abstract value="false"/>
+  <kind value="complex-type" />
+  <abstract value="false" />
   <context>
-    <type value="element"/>
-    <expression value="ServiceRequest"/>
+    <type value="element" />
+    <expression value="ServiceRequest" />
   </context>
-  <type value="Extension"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-  <derivation value="constraint"/>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
   <differential>
     <element id="Extension">
-      <path value="Extension"/>
-      <short value="Self-Directed Service Indicator"/>
-      <definition value="Indicates whether the individual chose to self-direct the service."/>
-      <comment value="Can be populated with the value &quot;self&quot; to indicate that this service is self-directed."/>
-      <min value="0"/>
-      <max value="1"/>
-      <isModifier value="false"/>
+      <path value="Extension" />
+      <short value="Self-Directed Service Indicator" />
+      <definition value="Indicates whether the individual chose to  self-direct the service." />
+      <comment value="Can be populated with the value &quot;self&quot; to indicate that this service is self-directed." />
+      <max value="1" />
+      <isModifier value="false" />
     </element>
     <element id="Extension.url">
-      <path value="Extension.url"/>
+      <path value="Extension.url" />
       <type>
-        <code value="uri"/>
+        <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy"/>
+      <fixedUri value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy" />
     </element>
-    <element id="Extension.valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept"/>
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <type>
-        <code value="CodeableConcept"/>
+        <code value="CodeableConcept" />
       </type>
     </element>
   </differential>

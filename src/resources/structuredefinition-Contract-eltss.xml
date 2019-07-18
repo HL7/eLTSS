@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/fhir/schema/contract.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Contract-eltss" />
   <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss" />
   <version value="0.1.0" />
@@ -153,7 +153,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
       </type>
     </element>
-    <element id="Contract.term.action.Reference">
+    <element id="Contract.term.action.reasonReference">
       <path value="Contract.term.action.reasonReference" />
       <type>
         <code value="Reference" />
@@ -168,7 +168,7 @@
     <element id="Contract.signer">
       <path value="Contract.signer" />
       <short value="Person Signature" />
-      <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature." />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature." />
       <comment value="FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. The primary one for the patient/beneficiary is &quot;PAT&quot; (patient), although implementers may use others as well. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized." />
       <mustSupport value="true" />
       <isModifier value="false" />
@@ -182,7 +182,7 @@
     <element id="Contract.signer.party">
       <path value="Contract.signer.party" />
       <short value="Person Printed Name" />
-      <definition value="Reference to resource for Patient , Guardian/Legal Representative . Support Planner or Service Provider as appropriate." />
+      <definition value="Reference to resource for Person, Guardian / Legal Representative, Support Planner, or Service Provider as appropriate." />
       <comment value="Must match signature.who." />
       <type>
         <code value="Reference" />
@@ -206,14 +206,14 @@
     <element id="Contract.signer.signature.when">
       <path value="Contract.signer.signature.when" />
       <short value="Person Signature Date" />
-      <definition value="Person Signature Date, Guardian/Legal Representative Signature Date, Support Planner Signature Date, Service Provider Signature Date." />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature Date." />
       <mustSupport value="false" />
       <isModifier value="false" />
     </element>
     <element id="Contract.signer.signature.who">
       <path value="Contract.signer.signature.who" />
       <short value="Person Printed Name" />
-      <definition value="Person Signature, Guardian/Legal Representative Signature, Support Planner Signature, Service Provider Signature." />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature." />
       <comment value="Must match signer.party." />
       <type>
         <code value="Reference" />
