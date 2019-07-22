@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/eLTSS/src-generated/schemas/fhir-single.xsd">
-  <id value="eltss-observation-code" />
+  <id value="eltss-observation-code"/>
   <url value="http://hl7.org/fhir/us/eLTSS/ValueSet/eltss-observation-code"/>
   <name value="ELTSS_Observation_code"/>
   <title value="Observation Code Value Set"/>
@@ -8,8 +8,8 @@
   <publisher value="CBCC"/>
   <description value="This value set includes the Strength and Preference codes."/>
   <compose>
-  <include>
-  <system value="http://hl7.org/fhir/us/eLTSS/CodeSystem/eltss-observation-code" />
-  </include>
+    <include>
+      <system value="http://hl7.org/fhir/us/eLTSS/CodeSystem/eltss-observation-code"/>
+    </include>
   </compose>
 </ValueSet>

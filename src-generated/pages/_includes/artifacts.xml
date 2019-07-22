@@ -238,10 +238,17 @@
             <tbody>
                 <tr>
                     <td style="column-width:30%">
+                        <a href="eltss-observation-code.html">
+                        •  eLTSS Observation Code CodeSystem</a>
+                    </td>
+                    <td>Code System to define the Strength and Preference Codes for the eLTSS Observation profile</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
                         <a href="valueset-eltss-observation-code.html">
                         •  Observation Code Value Set</a>
                     </td>
-                    <td/>
+                    <td>Value Set to define the Strength and Preference Codes for the eLTSS Observation profile</td>
                 </tr>
             </tbody>
         </table>

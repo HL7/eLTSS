@@ -308,9 +308,20 @@
     },
     {
       "reference" : {
+        "reference" : "CodeSystem/eltss-observation-code"
+      },
+      "name" : "eLTSS Observation Code CodeSystem",
+      "description" : "Code System to define the Strength and Preference Codes for the eLTSS Observation profile",
+      "exampleBoolean" : false,
+      "groupingId" : "valuesets"
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/eltss-observation-code"
       },
       "name" : "Observation Code Value Set",
+      "description" : "Value Set to define the Strength and Preference Codes for the eLTSS Observation profile",
+      "exampleBoolean" : false,
       "groupingId" : "valuesets"
     }],
     "page" : {
@@ -504,11 +515,16 @@
       },
       {
         "nameUrl" : "vocabulary.html",
-        "title" : "eLTSS Value Sets",
+        "title" : "eLTSS Code Systems and Value Sets",
         "generation" : "html",
         "page" : [{
           "nameUrl" : "valueset-eltss-observation-code.html",
           "title" : "Value Set for Observation codes for the eLTSS Observation Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eltss-observation-code.html",
+          "title" : "Code System for Observation codes for the eLTSS Observation Profile",
           "generation" : "generated"
         }]
       },

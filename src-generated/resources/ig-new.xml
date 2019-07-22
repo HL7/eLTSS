@@ -296,9 +296,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/eltss-observation-code"/>
+      </reference>
+      <name value="eLTSS Observation Code CodeSystem"/>
+      <description value="Code System to define the Strength and Preference Codes for the eLTSS Observation profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="valuesets"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/eltss-observation-code"/>
       </reference>
       <name value="Observation Code Value Set"/>
+      <description value="Value Set to define the Strength and Preference Codes for the eLTSS Observation profile"/>
+      <exampleBoolean value="false"/>
       <groupingId value="valuesets"/>
     </resource>
     <page>
@@ -492,11 +503,16 @@
       </page>
       <page>
         <nameUrl value="vocabulary.html"/>
-        <title value="eLTSS Value Sets"/>
+        <title value="eLTSS Code Systems and Value Sets"/>
         <generation value="html"/>
         <page>
           <nameUrl value="valueset-eltss-observation-code.html"/>
           <title value="Value Set for Observation codes for the eLTSS Observation Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="eltss-observation-code.html"/>
+          <title value="Code System for Observation codes for the eLTSS Observation Profile"/>
           <generation value="generated"/>
         </page>
       </page>
