@@ -81,7 +81,6 @@
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
@@ -108,6 +107,10 @@
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
     </element>
+    <element id="Contract.term.action.subject">
+      <path value="Contract.term.action.subject" />
+      <definition value="Entity of the action to be performed." />
+    </element>
     <element id="Contract.term.action.subject.reference">
       <path value="Contract.term.action.subject.reference" />
       <type>
@@ -115,7 +118,6 @@
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
@@ -135,7 +137,6 @@
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
@@ -147,7 +148,6 @@
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
@@ -168,7 +168,7 @@
     <element id="Contract.signer">
       <path value="Contract.signer" />
       <short value="Person Signature" />
-      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature." />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature" />
       <comment value="FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. The primary one for the patient/beneficiary is &quot;PAT&quot; (patient), although implementers may use others as well. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized." />
       <mustSupport value="true" />
       <isModifier value="false" />
@@ -182,7 +182,7 @@
     <element id="Contract.signer.party">
       <path value="Contract.signer.party" />
       <short value="Person Printed Name" />
-      <definition value="Reference to resource for Person, Guardian / Legal Representative, Support Planner, or Service Provider as appropriate." />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Printed Name" />
       <comment value="Must match signature.who." />
       <type>
         <code value="Reference" />
@@ -206,14 +206,14 @@
     <element id="Contract.signer.signature.when">
       <path value="Contract.signer.signature.when" />
       <short value="Person Signature Date" />
-      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature Date." />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature Date" />
       <mustSupport value="false" />
       <isModifier value="false" />
     </element>
     <element id="Contract.signer.signature.who">
       <path value="Contract.signer.signature.who" />
       <short value="Person Printed Name" />
-      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature." />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature " />
       <comment value="Must match signer.party." />
       <type>
         <code value="Reference" />

@@ -135,6 +135,14 @@
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>
+    <element id="CarePlan.supportingInfo">
+      <path value="CarePlan.supportingInfo" />
+      <definition value="Identifies portions of the patient's record that  specifically influenced the formation of the plan.  These might include comorbidities, recent procedures, limitations, recent assessments, etc." />
+    </element>
+    <element id="CarePlan.supportingInfo.reference">
+      <path value="CarePlan.supportingInfo.reference" />
+      <fixedString value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/RiskAssessment-eltss" />
+    </element>
     <element id="CarePlan.goal">
       <path value="CarePlan.goal" />
       <type>
