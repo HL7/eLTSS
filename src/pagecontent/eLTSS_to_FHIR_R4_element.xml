@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <table border="1">
     <tr>
@@ -197,38 +197,16 @@ This can be included as free text or attachment.</td>
 CarePlan [emergency backup plan]<br/>
          &#8594; description<br/>
 CarePlan [emergency backup plan]<br/>
-         &#8594; partOf(CarePlan) ["main" Care Plan]<br/>
-CarePlan [emergency backup plan]<br/>
-         &#8594; contained &#8594; DocumentReference<br/>
-         &#8594; type<br/>
-CarePlan [emergency backup plan]<br/>
-         &#8594; contained &#8594; DocumentReference<br/>
-         &#8594; content &#8594; attachment<br/>
-CarePlan [emergency backup plan]<br/>
-         &#8594; contained &#8594; DocumentReference<br/>
-         &#8594; context &#8594; related<br/>
-         &#8594; ref(CarePlan) [emergency backup<br/>
-                  plan]</td>
+         &#8594; partOf(CarePlan) ["main" Care Plan]<br/></td>
       <td>CarePlan<br/>
 ...subject(Patient) 1<br/>
 ...description 0..1<br/>
 ...part of(CarePlan) 0..*<br/>
-...contained  0..*<br/>
-......DocumentReference 0..1<br/>
-........type 0..1<br/>
-.........content 1..*<br/>
-............attachment 1<br/>
-.........context 0..1<br/>
-............related 0..*<br/>
-...............ref(CarePlan) 0..1<br/></td>
+</td>
       <td>1) The CarePlan resource containing the emergency backup plan refers to the "main" CarePlan resource, rather than the other way around, by using the emergency backup plan CarePlan &#8594; partOf data element to reference the "main" CarePlan data element.<br/>
 2) FHIR requires that CarePlan includes a subject.<br/>
 3) description contains the text of the Emergency Backup Plan if provided as text.<br/>
-4) DocumentReference references an attachment containing the Emergency Backup Plan when provided as an attachment.<br/>
-5) Per FHIR, a DocumentReference must include at least one content data element, which in turn must include one attachment data element.<br/>
-6) attachment supports base64-encoded data and/or a reference to where the data can be accessed.<br/>
-7) type indicates the kind of document, but the documented preferred LOINC value set does not include anything corresponding to an emergency backup plan. Therefore we can use the Codeable Concept's text data element to indicate "Emergency Backup Plan". (type is mandatory in FHIR 3.0.1, but optional in the R4 draft.)<br/>
-8) FHIR requires that if a resource is contained in another resource, one of those resources has to reference the other, which here is done through the related &#8594; ref data element.</td>
+4) type indicates the kind of document, but the documented preferred LOINC value set does not include anything corresponding to an emergency backup plan. Therefore we can use the Codeable Concept's text data element to indicate "Emergency Backup Plan". (type is mandatory in FHIR 3.0.1, but optional in the R4 draft.)<br/></td>
     </tr>
     <tr>
       <td>Goals &amp; Strengths</td>
