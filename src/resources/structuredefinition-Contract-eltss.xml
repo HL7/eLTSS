@@ -213,7 +213,7 @@
     <element id="Contract.signer.signature.who">
       <path value="Contract.signer.signature.who" />
       <short value="Person Printed Name" />
-      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature " />
+      <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature" />
       <comment value="Must match signer.party." />
       <type>
         <code value="Reference" />
@@ -229,17 +229,6 @@
     <element id="Contract.rule.content[x]:contentReference">
       <path value="Contract.rule.contentReference" />
       <sliceName value="contentReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
-      </type>
-    </element>
-    <element id="Contract.legallyBinding[x]:legallyBindingReference">
-      <path value="Contract.legallyBindingReference" />
-      <sliceName value="legallyBindingReference" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />

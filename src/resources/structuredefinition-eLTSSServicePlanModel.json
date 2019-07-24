@@ -20,7 +20,7 @@
   "description": "ServicePlan data included in the eLTSS Dataset.",
   "kind": "logical",
   "abstract": false,
-  "type": "url",
+  "type": "eLTSSServicePlanModel",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
