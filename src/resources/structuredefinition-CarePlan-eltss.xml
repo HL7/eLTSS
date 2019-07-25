@@ -137,7 +137,7 @@
     </element>
     <element id="CarePlan.supportingInfo">
       <path value="CarePlan.supportingInfo" />
-      <definition value="Identifies portions of the patient's record that  specifically influenced the formation of the plan.  These might include comorbidities, recent procedures, limitations, recent assessments, etc." />
+      <definition value="Identifies portions of the patient's record that  specifically influenced the formation of the plan.  These might include comorbidities, recent procedures, limitations, recent assessments, etc.  This includes the RiskAssessment/Risk Management Plan" />
     </element>
     <element id="CarePlan.goal">
       <path value="CarePlan.goal" />

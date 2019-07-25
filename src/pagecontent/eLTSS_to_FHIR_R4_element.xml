@@ -765,7 +765,7 @@ Contract &#8594; signer &#8594; signature &#8594; data<br/>
 Contract &#8594; signer &#8594; signature &#8594; type<br/>
 Contract &#8594; signer &#8594; signature<br/>
          &#8594; who(Practitioner | PractitionerRole | Organization<br/>
-         RelatedPerson | Patient | Device |<br/>
+         RelatedPerson | Patient |<br/>
          Organization)</td>
       <td>CarePlan<br/>
 ...supportingInfo(Contract) 0..*<br/>
@@ -775,7 +775,7 @@ Contract &#8594; signer &#8594; signature<br/>
 ............data 0..1<br/>
 ............type 1<br/>
 ............who(Practitioner |PractitionerRole | Organization<br/>
-            RelatedPerson | Patient | Device |<br/>
+            RelatedPerson | Patient |<br/>
             Organization) 1</td>
       <td>1) Will use CarePlan &#8594; supportingInfo to reference the Contract containing the signatures, names, etc.<br/>
 2) Can use a single Contract element to contain all signatures.<br/>
