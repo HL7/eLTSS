@@ -13,12 +13,10 @@
       <concept>
         <code value="strength"/>
         <display value="Strength"/>
-        <definition value="A favorable attribute of oneself, his/her support network, environment and/or elements of his/her life."/>
       </concept>
       <concept>
         <code value="preference"/>
         <display value="Preference"/>
-        <definition value="Presents the person's personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning."/>
       </concept>
     </include>
   </compose>
