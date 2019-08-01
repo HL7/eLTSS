@@ -206,6 +206,10 @@
     "CodeSystem/eltss-observation-code":{
     },
     "ValueSet/eltss-observation-code":{
+    },
+    "CodeSystem/eltss-condition-category-code":{
+    },
+    "ValueSet/eltss-condition-category-code":{
     }
   }
 }

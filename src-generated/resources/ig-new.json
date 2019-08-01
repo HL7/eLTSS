@@ -323,6 +323,24 @@
       "description" : "Value Set to define the Strength and Preference Codes for the eLTSS Observation profile",
       "exampleBoolean" : false,
       "groupingId" : "valuesets"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/eltss-condition-category-code"
+      },
+      "name" : "eLTSS Condition Category Code CodeSystem",
+      "description" : "Additional code for Assessed Need for Condition Category element",
+      "exampleBoolean" : false,
+      "groupingId" : "valuesets"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/eltss-condition-category-code"
+      },
+      "name" : "Condition Category Code Value Set",
+      "description" : "Additional code for Assessed Need for Condition Category element",
+      "exampleBoolean" : false,
+      "groupingId" : "valuesets"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -525,6 +543,16 @@
         {
           "nameUrl" : "eltss-observation-code.html",
           "title" : "Code System for Observation codes for the eLTSS Observation Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "valueset-eltss-condition-category-code.html",
+          "title" : "Value Set for Condition resource Category codes for the eLTSS Condition Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "eltss-condition-category-code.html",
+          "title" : "Code System for Condition resource Category codes for the eLTSS Condition Profile",
           "generation" : "generated"
         }]
       },

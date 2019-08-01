@@ -250,6 +250,20 @@
                     </td>
                     <td>Value Set to define the Strength and Preference Codes for the eLTSS Observation profile</td>
                 </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="eltss-condition-category-code.html">
+                        •  eLTSS Condition Category Code CodeSystem</a>
+                    </td>
+                    <td>Additional code for Assessed Need for Condition Category element</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="valueset-eltss-condition-category-code.html">
+                        •  Condition Category Code Value Set</a>
+                    </td>
+                    <td>Additional code for Assessed Need for Condition Category element</td>
+                </tr>
             </tbody>
         </table>
     </p>

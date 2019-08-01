@@ -585,8 +585,44 @@
             </reference>
                   
             <name value="Observation Code Value Set"/>
-                        
+                  
             <description value="Value Set to define the Strength and Preference Codes for the eLTSS Observation profile"/>
+                  
+            <exampleBoolean value="false"/>
+                  
+            <groupingId value="valuesets"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="CodeSystem/eltss-condition-category-code"/>
+                      
+            </reference>
+                  
+            <name value="eLTSS Condition Category Code CodeSystem"/>
+                  
+            <description value="Additional code for Assessed Need for Condition Category element"/>
+                  
+            <exampleBoolean value="false"/>
+                  
+            <groupingId value="valuesets"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="ValueSet/eltss-condition-category-code"/>
+                      
+            </reference>
+                  
+            <name value="Condition Category Code Value Set"/>
+                  
+            <description value="Additional code for Assessed Need for Condition Category element"/>
                   
             <exampleBoolean value="false"/>
                   
@@ -997,6 +1033,26 @@
                     <nameUrl value="eltss-observation-code.html"/>
                               
                     <title value="Code System for Observation codes for the eLTSS Observation Profile"/>
+                              
+                    <generation value="generated"/>
+                            
+                </page>
+                        
+                <page>
+                              
+                    <nameUrl value="valueset-eltss-condition-category-code.html"/>
+                              
+                    <title value="Value Set for Condition resource Category codes for the eLTSS Condition Profile"/>
+                              
+                    <generation value="generated"/>
+                            
+                </page>
+                        
+                <page>
+                              
+                    <nameUrl value="eltss-condition-category-code.html"/>
+                              
+                    <title value="Code System for Condition resource Category codes for the eLTSS Condition Profile"/>
                               
                     <generation value="generated"/>
                             
