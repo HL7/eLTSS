@@ -48,7 +48,7 @@
         "min": 1,
         "max": "*",
         "base": {
-          "path": "eLTSSPersonodel.identifier",
+          "path": "eLTSSPersonModel.identifier",
           "min": 1,
           "max": "*"
         },
