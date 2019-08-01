@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/eLTSS/src-generated/schemas/fhir-single.xsd">
+  <id value="eltss-condition-category-code"/>
+  <url value="http://hl7.org/fhir/us/eLTSS/CodeSystem/eltss-condition-category-code"/>
+  <name value="ELTSS_Condition_Category_Codes"/>
+  <title value="eLTSS Condition Category Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <description value="Additional code for Assessed Need for Condition Category element"/>
+  <content value="complete"/>
+  <concept>
+    <code value="assessed-need"/>
+    <display value="Assessed Need"/>
+    <definition value="The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service."/>
+  </concept>
+</CodeSystem>

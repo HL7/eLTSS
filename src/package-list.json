@@ -20,5 +20,13 @@
       "status": "ballot",
       "sequence": "STU1"
     }
+    {
+      "version": "1.0",
+      "date": "xxx",
+      "desc": "Final ",
+      "path": "http://hl7.org/fhir/us/eLTSS",
+      "status": "published",
+      "sequence": "STU1"
+    }
   ]
 }

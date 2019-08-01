@@ -411,7 +411,10 @@
           </coding>
         </verificationStatus>
         <category>
-          <text value="assessed-need"/>
+          <coding>
+            <system value="http://hl7.org/fhir/us/eLTSS/CodeSystem/eltss-condition-category-code"/>
+            <code value="assessed-need"/>
+          </coding>
         </category>
         <code>
           <text value="lack of transportation"/>
@@ -451,7 +454,10 @@
           </coding>
         </verificationStatus>
         <category>
-          <text value="assessed-need"/>
+          <coding>
+            <system value="http://hl7.org/fhir/us/eLTSS/CodeSystem/eltss-condition-category-code"/>
+            <code value="assessed-need"/>
+          </coding>
         </category>
         <code>
           <text value="difficulty in bathing"/>
@@ -491,7 +497,10 @@
           </coding>
         </verificationStatus>
         <category>
-          <text value="assessed-need"/>
+          <coding>
+            <system value="http://hl7.org/fhir/us/eLTSS/CodeSystem/eltss-condition-category-code"/>
+            <code value="assessed-need"/>
+          </coding>
         </category>
         <code>
           <text value="difficulty in dressing"/>

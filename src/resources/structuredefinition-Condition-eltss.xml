@@ -39,12 +39,11 @@
         <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-dueTo" />
       </type>
     </element>
-    <element id="Condition.extension:dueTo.value[x]:valueReference">
-      <path value="Condition.extension.valueReference" />
-      <sliceName value="valueReference" />
-    </element>
     <element id="Condition.category">
       <path value="Condition.category" />
+      <code>
+        <system value="http://hl7.org/fhir/us/eLTSS/ValueSet/eltss-condition-category-code" />
+      </code>
       <short value="Assessed Need Category" />
       <comment value="Could use the value &quot;problem-list-item&quot; to indicate the underlying condition, and extend the value set to add the value &quot;assessed-need&quot;." />
     </element>
