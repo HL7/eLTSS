@@ -40,10 +40,6 @@
         <profile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy" />
       </type>
     </element>
-    <element id="ServiceRequest.extension:directedBy.value[x]:valueCodeableConcept">
-      <path value="ServiceRequest.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
     <element id="ServiceRequest.basedOn">
       <path value="ServiceRequest.basedOn" />
       <type>

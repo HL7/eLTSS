@@ -40,12 +40,5 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-directedBy" />
     </element>
-    <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>

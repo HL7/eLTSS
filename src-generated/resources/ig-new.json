@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "eltss",
+  "id" : "hl7.fhir.us.eltss",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
     "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/resources"
@@ -25,7 +25,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/pages"
   }],
-  "url" : "http://hl7.org/fhir/us/eLTSS/ImplementationGuide/eltss",
+  "url" : "http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss",
   "version" : "0.1.0",
   "name" : "ELTSS",
   "title" : "Electronic Long-Term Services and Supports (eLTSS)",

@@ -40,13 +40,5 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-dueTo" />
     </element>
-    <element id="Extension.value[x]:valueReference">
-      <path value="Extension.valueReference" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>

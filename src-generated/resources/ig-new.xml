@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="eltss"/>
+  <id value="hl7.fhir.us.eltss"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/resources"/>
   </extension>
@@ -20,7 +20,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/pages"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/eltss"/>
+  <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
   <version value="0.1.0"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS)"/>

@@ -9,3 +9,4 @@ fhirspec=http://build.fhir.org/
 #excludejson=Yes
 #excludettl=Yes
 canonicalBase=http://hl7.org/fhir/us/eLTSS
+guideid=hl7.fhir.us.eltss
