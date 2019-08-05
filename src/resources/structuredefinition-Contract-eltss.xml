@@ -234,16 +234,5 @@
       <path value="Contract.rule.content[x]" />
       <short value="Computable Contract Rule(s)" />
     </element>
-    <element id="Contract.rule.content[x]:contentReference">
-      <path value="Contract.rule.contentReference" />
-      <sliceName value="contentReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
-        <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>
