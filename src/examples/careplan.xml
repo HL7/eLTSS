@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
     Original : 5/22/2018
     Updated :  01/23/2019
@@ -416,9 +416,14 @@
             <code value="assessed-need"/>
           </coding>
         </category>
-        <code>
-          <text value="lack of transportation"/>
-        </code>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="713458007"/>
+				<display value="Lack of access to transportation (finding)"/>
+			</coding>
+			<text value="lack of transportation"/>
+		</code>
         <subject>
           <reference value="Patient/patient1"/>
         </subject>
@@ -459,9 +464,14 @@
             <code value="assessed-need"/>
           </coding>
         </category>
-        <code>
-          <text value="difficulty in bathing"/>
-        </code>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="284807005"/>
+				<display value="Difficulty bathing self (finding)"/>
+			</coding>
+			<text value="difficulty in bathing"/>
+		</code>
         <subject>
           <reference value="Patient/patient1"/>
         </subject>
@@ -502,9 +512,14 @@
             <code value="assessed-need"/>
           </coding>
         </category>
-        <code>
-          <text value="difficulty in dressing"/>
-        </code>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="284972002"/>
+				<display value="Difficulty performing dressing activity (finding)"/>
+			</coding>
+			<text value="difficulty in dressing"/>
+		</code>
         <subject>
           <reference value="Patient/patient1"/>
         </subject>
