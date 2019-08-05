@@ -167,7 +167,7 @@
     </element>
     <element id="Contract.signer">
       <path value="Contract.signer" />
-      <short value="Person Signature" />
+      <short value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature" />
       <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature" />
       <comment value="FHIR includes a preferred coding for contract signatory roles, which map well to the eLTSS signatories. The primary one for the patient/beneficiary is &quot;PAT&quot; (patient), although implementers may use others as well. However, implementers must realize that type may be used to differentiate between the patient, service provider, planner, etc. so there need to be distinct role types utilized." />
       <mustSupport value="true" />
@@ -181,7 +181,7 @@
     </element>
     <element id="Contract.signer.party">
       <path value="Contract.signer.party" />
-      <short value="Person Printed Name" />
+      <short value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Printed Name" />
       <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Printed Name" />
       <comment value="Must match signature.who." />
       <type>
@@ -205,14 +205,14 @@
     </element>
     <element id="Contract.signer.signature.when">
       <path value="Contract.signer.signature.when" />
-      <short value="Person Signature Date" />
+      <short value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature Date" />
       <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature Date" />
       <mustSupport value="false" />
       <isModifier value="false" />
     </element>
     <element id="Contract.signer.signature.who">
       <path value="Contract.signer.signature.who" />
-      <short value="Person Printed Name" />
+      <short value="Person, Guardian/Legal Representative, Support Planner, or Service Provider Printed Name" />
       <definition value="Person, Guardian / Legal Representative, Support Planner, or Service Provider Signature" />
       <comment value="Must match signer.party." />
       <type>
@@ -225,6 +225,14 @@
       </type>
       <mustSupport value="false" />
       <isModifier value="false" />
+    </element>
+    <element id="Contract.rule">
+      <path value="Contract.rule" />
+      <definition value="List of Computable Policy Rule Language Representation(s) of this Contract." />
+    </element>
+    <element id="Contract.rule.content[x]">
+      <path value="Contract.rule.content[x]" />
+      <short value="Computable Contract Rule(s)" />
     </element>
     <element id="Contract.rule.content[x]:contentReference">
       <path value="Contract.rule.contentReference" />
