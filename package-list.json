@@ -11,8 +11,8 @@
       "path": "http://hl7.org/fhir/us/eLTSS/",
       "status": "trial-use",
       "sequence": "STU1",
-      "fhirversion": "4.0"
-    }
+      "fhirversion": "4.0.0"
+    },
     {
       "version": "current",
       "date": "n/a",
@@ -28,7 +28,7 @@
       "path": "http://hl7.org/fhir/us/eLTSS/2019May",
       "status": "ballot",
       "sequence": "STU1",
-      "fhirversion": "4.0"
+      "fhirversion": "4.0.0"
     }
 
   ]

@@ -21,7 +21,7 @@
     <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
-  <version value="0.1.0"/>
+  <version value="1.0"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS)"/>
   <status value="draft"/>
