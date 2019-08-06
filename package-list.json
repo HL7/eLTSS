@@ -5,6 +5,15 @@
   "canonical": "http://hl7.org/fhir/us/eLTSS",
   "list": [
     {
+      "version": "1.0",
+      "date": "xxx",
+      "desc": "Publication for Trial Use",
+      "path": "http://hl7.org/fhir/us/eLTSS/",
+      "status": "trial-use",
+      "sequence": "STU1",
+      "fhirversion": "4.0"
+    }
+    {
       "version": "current",
       "date": "n/a",
       "desc": "Continuous Integration Build (latest in version control)",
@@ -18,7 +27,9 @@
       "desc": "STU #1 1st Ballot",
       "path": "http://hl7.org/fhir/us/eLTSS/2019May",
       "status": "ballot",
-      "sequence": "STU1"
+      "sequence": "STU1",
+      "fhirversion": "4.0"
     }
+
   ]
 }
