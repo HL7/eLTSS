@@ -25,7 +25,7 @@
         <td>
           <a href="Condition-eltss.html">eLTSS Condition Profile</a>
         </td>
-        <td>Defines the Condition constraints for eLTSS.  Not all SNOMED codes for potential conditions are added.  For additonal code requirements, please submit a request to <a href="https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/eLTSS+Home">The ONC Confluence page</a></td>
+        <td>Defines the Condition constraints for eLTSS. Not all SNOMED codes for potential conditions (assessed needs) are included in the value set. For additional code requirements, please submit a request to the <a href="https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/eLTSS+Home">eLTSS Confluence page</a></td>
       </tr>
 	  <tr>
         <td>
