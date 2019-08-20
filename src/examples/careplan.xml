@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
     Original : 5/22/2018
     Updated :  01/23/2019
@@ -130,7 +130,7 @@
         </text>
         <!-- identifier is required by US Core -->
         <identifier>
-          <system value="http://hl7.org.fhir/sid/us-npi"/>
+          <system value="http://fhir.hl7.org/sid/us-npi"/>
           <value value="9941339108"/>
         </identifier>
         <identifier>
@@ -146,7 +146,7 @@
         <!-- [eLTSS Support Planner Phone Number] -->
         <telecom>
           <system value="phone"/>
-          <value value="(678) 555 1221"/>
+          <value value="(212) 555 1221"/>
         </telecom>
       </Practitioner>
     </resource>
