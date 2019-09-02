@@ -4,18 +4,8 @@
   <url value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-RiskPlan" />
   <version value="0.1.0" />
   <name value="RiskPlan" />
-  <title value="RiskPlan" />
   <status value="draft" />
-  <experimental value="false" />
-  <date value="2019-02-17T00:00:00+00:00" />
-  <publisher value="HL7 CBCP" />
-  <description value="Description of planned activities to minimize identified risks that endanger the person’s health and safety.." />
   <fhirVersion value="4.0.0" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -28,17 +18,27 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Risk Management Plan Document" />
-      <definition value="Description of planned activities to minimize the identified risks that endanger the person’s health and safety." />
-      <comment value="The preferred LOINC value &quot;71482-4&quot; indicates a &quot;Risk Assessment Document&quot;." />
-      <isModifier value="false" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
-        <code value="uri" />
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/eltss-RiskPlan" />
     </element>
   </differential>
 </StructureDefinition>
