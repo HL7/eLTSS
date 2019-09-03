@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
     Original : 5/22/2018
     Updated :  01/23/2019
@@ -874,7 +874,10 @@
         </text>
         <status value="final"/>
         <code>
-          <text value="Strength"/>
+          <coding>
+            <system value="http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code"/>
+            <code value="strength"/>
+          </coding>
         </code>
         <valueString value="Able to manage her bills. Has strong family support."/>
       </Observation>
@@ -900,7 +903,7 @@
         <code>
           <coding>
             <system value="http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code"/>
-            <code value="strength"/>
+            <code value="preference"/>
           </coding>
         </code>
         <valueString value="Accessing the ICWP Waiver for her current service needs, and would like to remain on ICWP and continue with her current services."/>
@@ -1153,7 +1156,7 @@
             <code value="HPROV"/>
           </type>
           <party>
-            <reference value="Organization/provider2"/>
+            <reference value="Practitioner/provider3"/>
           </party>
           <signature>
             <type>
