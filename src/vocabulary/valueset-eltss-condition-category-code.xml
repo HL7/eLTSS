@@ -5,7 +5,7 @@
   <name value="ELTSS_Condition_Category_code"/>
   <title value="Condition Category Code Value Set"/>
   <status value="draft"/>
-  <publisher value="CBCC"/>
+  <publisher value="HL7 CBCP"/>
   <description value="Additional code for Assessed Need for Condition Category element"/>
   <compose>
     <include>
