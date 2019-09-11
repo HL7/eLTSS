@@ -3,27 +3,27 @@
   "id" : "hl7.fhir.us.eltss",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/resources"
+    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src-generated\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/resources"
+    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/vocabulary"
+    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\vocabulary"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/examples"
+    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/home/loftwyr/FHIR/eLTSS/src/images"
+    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\images"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/home/loftwyr/FHIR/eLTSS/src-generated/pages"
+    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src-generated\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss",
   "version" : "1.0",

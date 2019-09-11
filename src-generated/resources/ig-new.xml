@@ -3,22 +3,22 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.eltss"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/resources"/>
+    <valueString value="C:\Users\Dave\Documents\eLTSS\src-generated\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/home/loftwyr/FHIR/eLTSS/src/resources"/>
+    <valueString value="C:\Users\Dave\Documents\eLTSS\src\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/home/loftwyr/FHIR/eLTSS/src/vocabulary"/>
+    <valueString value="C:\Users\Dave\Documents\eLTSS\src\vocabulary"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/home/loftwyr/FHIR/eLTSS/src/examples"/>
+    <valueString value="C:\Users\Dave\Documents\eLTSS\src\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/home/loftwyr/FHIR/eLTSS/src/images"/>
+    <valueString value="C:\Users\Dave\Documents\eLTSS\src\images"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/home/loftwyr/FHIR/eLTSS/src-generated/pages"/>
+    <valueString value="C:\Users\Dave\Documents\eLTSS\src-generated\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
   <version value="1.0"/>
