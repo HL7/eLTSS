@@ -8,5 +8,5 @@ fhirspec=http://hl7.org/fhir/R4/
 #excludexml=Yes
 #excludejson=Yes
 #excludettl=Yes
-canonicalBase=http://hl7.org/fhir/us/eLTSS
+canonicalBase=http://hl7.org/fhir/us/eLTSS/STU1
 guideid=hl7.fhir.us.eltss

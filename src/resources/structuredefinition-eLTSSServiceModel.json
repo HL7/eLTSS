@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServiceModel",
   "identifier": [
     {
-      "system": "http://hl7.org/fhir/us/eLTSS",
+      "system": "http://hl7.org/fhir/us/eLTSS/STU1"
       "value": "eLTSS.Service"
     }
   ],
