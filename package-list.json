@@ -2,13 +2,13 @@
   "package-id": "hl7.fhir.us.eltss",
   "title": "electronic Long-Term Services and Supports Implementation Guide",
   "introduction": "electronic Long-Term Services and Supports Implementation Guide was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans. ",
-  "canonical": "http://hl7.org/fhir/us/eLTSS",
+  "canonical": "http://hl7.org/fhir/us/eltss",
   "list": [
     {
-      "version": "1.0",
-      "date": "xxx",
+      "version": "1.0.0",
+      "date": "2019-09-12",
       "desc": "Publication for Trial Use",
-      "path": "http://hl7.org/fhir/us/eLTSS/",
+      "path": "http://hl7.org/fhir/us/eltss/STU1",
       "status": "trial-use",
       "sequence": "STU1",
       "fhirversion": "4.0.0"
@@ -23,9 +23,9 @@
     },
     {
       "version": "0.1.0",
-      "date": "xxx",
+      "date": "2019-03-27 ",
       "desc": "STU #1 1st Ballot",
-      "path": "http://hl7.org/fhir/us/eLTSS/2019May",
+      "path": "http://hl7.org/fhir/us/eltss/2019May",
       "status": "ballot",
       "sequence": "STU1",
       "fhirversion": "4.0.0"
