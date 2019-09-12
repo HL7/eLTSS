@@ -5,3 +5,4 @@ The link 'eLTSSServiceModel.sch' for "Schematron" cannot be resolved
 The link 'eLTSSPersonModel.sch' for "Schematron" cannot be resolved
 This element does not match any known slice for the profile http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss
 The questionnaire "http://example.org/eLTSS/questionnaire1" could not be resolved, so no validation can be performed against the base questionnaire
+Profiles SHOULD state their own version
