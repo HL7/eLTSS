@@ -21,9 +21,9 @@
     <valueString value="C:\Users\Dave\Documents\eLTSS\src-generated\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
-  <version value="1.0"/>
-  <name value="ELTSS"/>
-  <title value="Electronic Long-Term Services &amp; Supports (eLTSS), Release 1 - US Realm"/>
+  <version value="1.0.0"/>
+  <name value="Electronic Long-Term Services and  Supports (eLTSS) Release 1 - US Realm"/>
+  <title value="Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>

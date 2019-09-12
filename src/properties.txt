@@ -2,7 +2,7 @@
 guidename=eltss
 copyrightyear=2017+
 license=CC0-1.0
-version=1.0
+version=1.0.0
 ballotstatus=Trial Use
 fhirspec=http://hl7.org/fhir/R4/
 #excludexml=Yes

@@ -26,9 +26,9 @@
     "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src-generated\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss",
-  "version" : "1.0",
-  "name" : "ELTSS",
-  "title" : "Electronic Long-Term Services & Supports (eLTSS), Release 1 - US Realm",
+  "version" : "1.0.0",
+  "name" : "Electronic Long-Term Services and  Supports (eLTSS) Release 1 - US Realm",
+  "title" : "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm",
   "status" : "draft",
   "experimental" : false,
   "publisher" : "HL7 International Community-Based Care and Privacy Work Group",
