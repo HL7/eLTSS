@@ -27,7 +27,7 @@
   }],
   "url" : "http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss",
   "version" : "1.0.0",
-  "name" : "Electronic Long-Term Services and  Supports (eLTSS) Release 1 - US Realm",
+  "name" : "ELTSS",
   "title" : "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm",
   "status" : "draft",
   "experimental" : false,
