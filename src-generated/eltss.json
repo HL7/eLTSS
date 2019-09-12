@@ -14,7 +14,7 @@
     "temp": "../temp/pages",
     "output": "../output",
     "txCache": "txcache",
-    "history" : "http://hl7.org/fhir/us/eLTSS/history.cfml",
+    "history" : "http://hl7.org/fhir/uv/genomics-reporting/history.html",
     "qa": "../temp/qa",
     "specification": "http://hl7.org/fhir/R4/"
   },
@@ -93,14 +93,16 @@
       "format": "valueset-{{[id]}}.{{[fmt]}}.html"
     }
   },
-  "sct-edition" : "http://snomed.info/sct/731000124108",
+  "sct-edition" : "http://snomed.info/sct/900000000000207008731000124108",
   "no-inactive-codes" : "true",
   "canonicalBase": "http://hl7.org/fhir/us/eLTSS",
   "dependencyList": [
     {
       "name" : "core",
       "version" : "3.0.0",
-      "package" : "hl7.fhir.us.core"}
+      "location" : "http://hl7.org/fhir/us/core",
+      "source" : "../../core2/website"
+    }
   ],
   "source": "hl7.fhir.us.eltss.xml",
   "spreadsheets": [

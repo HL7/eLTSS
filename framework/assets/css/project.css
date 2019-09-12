@@ -115,12 +115,6 @@ body {
 #logo img {
   max-width: 100%;
 }
-#fhir-nav {
-  line-height: 50px;
-  float: right;
-  margin-top: 16px;
-  color: #808080;
-}
 #hl7-nav {
   line-height: 50px;
   float: right;
@@ -135,8 +129,6 @@ body {
   float: left;
   margin-top: 16px;
   color: maroon;
-  text-align: center;
-  width: 50%;
 }
 #hl7-search {
   line-height: 50px;
@@ -162,11 +154,6 @@ body {
 }
 #notes a {
   color: #555555;
-}
-#publish-box {
-  background-color: yellow;
-  border: 1px solid maroon;
-  padding: 5px;
 }
 /* GENERIC OBJECTS
 ----------------------------------------------------------------------------------------*/
@@ -430,6 +417,28 @@ div.markdown-toc p.link
   padding-left: 8px;
   margin: 0px;
 }
+
+/* ----------Publish box styling------*/
+
+#publish-box {
+  list-style: none;
+  padding: 0;
+}
+
+p#publish-box {
+  background-color: yellow;
+  border:1px solid maroon;
+  padding: 5px;
+}
+
+img#publish-box {
+  text-align: baseline;
+}
+
+#markdown-toc li{
+  font-size: 1em;
+}
+
 /* Common content for section numbering */
 body{counter-reset:section}
 h2{counter-reset:sub-section}
