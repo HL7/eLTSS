@@ -1,0 +1,16 @@
+{
+  "name": "hl7.fhir.us.eltss",
+  "version": "0.1.0",
+  "tools-version": 3,
+  "type": "fhir.ig",
+  "license": "CC0-1.0",
+  "canonical": "http://hl7.org/fhir/us/eLTSS",
+  "url": "file:///home/loftwyr/FHIR/eLTSS/output",
+  "title": "Electronic Long-Term Services and Supports (eLTSS)",
+  "description": "Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data  elements (built Wed, May 8, 2019 14:19-0400-04:00)",
+  "dependencies": {
+    "hl7.fhir.core": "4.0.0",
+    "hl7.fhir.us.core.r4-4.0.0": "current"
+  },
+  "author": "HL7 International Community-Based Care and Privacy Work Group"
+}
