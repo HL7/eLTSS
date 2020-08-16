@@ -27,7 +27,7 @@
     <element id="Location.address.district">
       <path value="Location.address.district" />
       <short value="County" />
-      <definition value="Country where service is provided." />
+      <definition value="County where service is provided." />
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>

@@ -2,6 +2,7 @@
 <!--
     Original : 5/22/2018
     Updated :  01/23/2019
+	Updated: 8/14/2020
     FHIR version : 4.0
 -->
 <Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schema/fhir-single.xsd">
@@ -24,7 +25,8 @@
         </text>
         <!-- identifier is required by US Core -->
         <identifier>
-          <system value="http://hl7.org.fhir/sid/us-npi"/>
+				<!-- updated systemvalue for #24901 -->
+          <system value="http://hl7.org/fhir/sid/us-npi"/>  
           <value value="9941339108"/>
         </identifier>
         <identifier>

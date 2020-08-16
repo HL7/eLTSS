@@ -2,7 +2,6 @@
 <ImplementationGuide xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir /home/loftwyr/FHIR/fhir/schema/implementationguide.xsd">
   <id value="hl7.fhir.us.eltss"/>
   <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
-  <!--comment for GITHUB-->
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm"/>
   <status value="draft"/>
