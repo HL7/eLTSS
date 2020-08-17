@@ -19,6 +19,14 @@
   "date": "2019-02-07T00:00:00-05:00",
   "publisher": "The HL7 Community Based Care and Privacy Workgroup",
   "description": "Person data included in the eLTSS Dataset.",
+  "jurisdiction": {
+		"coding": [
+			{
+				"system": "urn:iso:std:iso:3166",
+				"code": "US"
+			}
+			]
+			},
   "kind": "logical",
   "abstract": false,
   "type": "eLTSSPersonModel",
