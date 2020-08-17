@@ -40,7 +40,7 @@
       "display" : "United States of America"
     }]
   }],
-  "packageId" : "hl7.fhir.us.eltss#0.1.0",
+  "packageId" : "hl7.fhir.us.eltss",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
   "4.0.1"],

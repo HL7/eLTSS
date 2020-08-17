@@ -536,5 +536,9 @@
         <generation value="html"/>
       </page>
     </page>
+	<parameter>
+      <code value="apply-jurisdiction"/>
+      <value value="true"/>
+    </parameter>
   </definition>
 </ImplementationGuide>
