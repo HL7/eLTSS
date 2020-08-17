@@ -38,6 +38,7 @@
       <definition
                   value="The eLTSS Patient Profile is based upon the US Core Patient Resource and designed to meet the applicable patient demographic data elements from the 2015 Edition Common Clinical Data Set.."/>
     </element>
+	<!--
     <element id="Patient.extension.extension.valueCoding:valueCoding">
       <path value="Patient.extension.extension.valueCoding"/>
       <sliceName value="valueCoding"/>
@@ -65,7 +66,7 @@
     <element id="Patient.extension.valueCode:valueCode">
       <path value="Patient.extension.valueCode"/>
       <sliceName value="valueCode"/>
-    </element>
+    </element>-->
     <element id="Patient.identifier">
       <path value="Patient.identifier"/>
       <short value="Person Identifier"/>

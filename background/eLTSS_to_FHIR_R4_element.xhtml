@@ -1305,7 +1305,7 @@ Contract -&gt; signer -&gt; party(Practitioner)</span></td>
 ......signer 0..*<br />
 &hellip;......party(Practitioner) 1</span></td>
 <td class='flx2 c14'><span class='flx2 c50'>1) Will use&nbsp;<span class='c18'>CarePlan</span>&nbsp;-&gt;&nbsp;<span class='c18'>supportingInfo</span>&nbsp;to reference the&nbsp;<span class='c18'>Contract</span>&nbsp;containing the signatures, names, etc.<br />
-2) In this case,&nbsp;<span class='c18'>party</span>&nbsp;is a reference to a&nbsp;<span class='c18'>Practitioner,</span>&nbsp;and&nbsp;<span class='c18'>Practitioner</span>&nbsp;includes a name.</span>
+2) In this case,&nbsp;<span class='c18'>party</span>&nbsp;is a reference to a&nbsp;<span class='c18'>Practitioner,</span>&nbsp;and&nbsp;<span class='c18'>Practitioner</span>&nbsp;includes a name.</span><br />
 <!--Updated to reflect the resolution of Jira #23058-->
 3) The values for Support Planner Name and Support Planner Printed Name would include the same information.</td>
 </tr>
@@ -1370,7 +1370,7 @@ Contract -&gt; signer -&gt; party(Organization |<br />
 &hellip;......party(Organization | Patient |<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Practitioner | RelatedPerson) 1</td>
 <td class='flx2 c14'>1) Will use&nbsp;<span class='c18'>CarePlan</span>&nbsp;-&gt;&nbsp;<span class='c18'>supportingInfo</span>&nbsp;to reference the&nbsp;<span class='c18'>Contract</span>&nbsp;containing the signatures, names, etc.<br />
-2)&nbsp;<span class='c18'>party</span>&nbsp;is a reference to an&nbsp;<span class='c18'>Organization, Patient, Practitioner,&nbsp;</span>or<span class='c18'>&nbsp;RelatedPerson,&nbsp;</span>all of which include a name. (Patient may not make sense in the context of a service provided by a care plan, but is allowed in FHIR.)
+2)&nbsp;<span class='c18'>party</span>&nbsp;is a reference to an&nbsp;<span class='c18'>Organization, Patient, Practitioner,&nbsp;</span>or<span class='c18'>&nbsp;RelatedPerson,&nbsp;</span>all of which include a name. (Patient may not make sense in the context of a service provided by a care plan, but is allowed in FHIR.)<br />
 <!--Updated to reflect resolution of Jira #23059-->
 3) The values for Service Provider Name and Service Provider Printed Name would include the same information.</td>
 </tr>
