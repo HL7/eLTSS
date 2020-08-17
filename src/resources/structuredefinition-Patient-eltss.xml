@@ -34,94 +34,119 @@
   <derivation value="constraint" />
   <differential>
     <element id="Patient">
-      <path value="Patient" />
-      <definition value="The eLTSS Patient Profile is based upon the US Core Patient Resource and designed to meet the applicable patient demographic data elements from the 2015 Edition Common Clinical Data Set.." />
+      <path value="Patient"/>
+      <definition
+                  value="The eLTSS Patient Profile is based upon the US Core Patient Resource and designed to meet the applicable patient demographic data elements from the 2015 Edition Common Clinical Data Set.."/>
     </element>
-    <element id="Patient.extension:race.extension:ombCategory.value[x]:valueCoding">
-      <path value="Patient.extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Patient.extension.extension.valueCoding:valueCoding">
+      <path value="Patient.extension.extension.valueCoding"/>
+      <sliceName value="valueCoding"/>
     </element>
-    <element id="Patient.extension:race.extension:detailed.value[x]:valueCoding">
-      <path value="Patient.extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Patient.extension.extension.valueCoding:valueCoding">
+      <path value="Patient.extension.extension.valueCoding"/>
+      <sliceName value="valueCoding"/>
     </element>
-    <element id="Patient.extension:race.extension:text.value[x]:valueString">
-      <path value="Patient.extension.extension.valueString" />
-      <sliceName value="valueString" />
+    <element id="Patient.extension.extension.valueString:valueString">
+      <path value="Patient.extension.extension.valueString"/>
+      <sliceName value="valueString"/>
     </element>
-    <element id="Patient.extension:ethnicity.extension:ombCategory.value[x]:valueCoding">
-      <path value="Patient.extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Patient.extension.extension.valueCoding:valueCoding">
+      <path value="Patient.extension.extension.valueCoding"/>
+      <sliceName value="valueCoding"/>
     </element>
-    <element id="Patient.extension:ethnicity.extension:detailed.value[x]:valueCoding">
-      <path value="Patient.extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Patient.extension.extension.valueCoding:valueCoding">
+      <path value="Patient.extension.extension.valueCoding"/>
+      <sliceName value="valueCoding"/>
     </element>
-    <element id="Patient.extension:ethnicity.extension:text.value[x]:valueString">
-      <path value="Patient.extension.extension.valueString" />
-      <sliceName value="valueString" />
+    <element id="Patient.extension.extension.valueString:valueString">
+      <path value="Patient.extension.extension.valueString"/>
+      <sliceName value="valueString"/>
     </element>
-    <element id="Patient.extension:birthsex.value[x]:valueCode">
-      <path value="Patient.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Patient.extension.valueCode:valueCode">
+      <path value="Patient.extension.valueCode"/>
+      <sliceName value="valueCode"/>
     </element>
     <element id="Patient.identifier">
-      <path value="Patient.identifier" />
-      <short value="Person Identifier" />
-      <definition value="A string of character(s) used to identify the person whom the plan is for.&#xA;&#xA;This may be the Medicaid ID number where applicable." />
+      <path value="Patient.identifier"/>
+      <short value="Person Identifier"/>
+      <definition
+                  value="A string of character(s) used to identify the person whom the plan is for.
+
+This may be the Medicaid ID number where applicable."/>
     </element>
     <element id="Patient.identifier.type">
-      <path value="Patient.identifier.type" />
-      <short value="Person Identifier Type" />
-      <definition value="The type of unique identifier used to identify the person whom the plan is for.&#xA;Values include: Medicaid Number (45400-9), State ID, Medical Record Number, Social Security Number (45396-9) or Other (free text)." />
-      <comment value="Can be one of Medicaid Number, State ID, Medical Record Number, Other (free text)." />
+      <path value="Patient.identifier.type"/>
+      <short value="Person Identifier Type"/>
+      <definition
+                  value="The type of unique identifier used to identify the person whom the plan is for.
+Values include: Medicaid Number (45400-9), State ID, Medical Record Number, Social Security Number (45396-9) or Other (free text)."/>
+      <comment
+               value="Can be one of Medicaid Number, State ID, Medical Record Number, Other (free text)."/>
     </element>
     <element id="Patient.name">
-      <path value="Patient.name" />
-      <short value="Person Name" />
-      <definition value="The name of the person whom the plan is for." />
-      <comment value="1) given is used for both first name &amp; MI, so need more than one.&#xA;2) family is a string with the person's surname&#xA;3) text is a string that contains the full name of the person." />
+      <path value="Patient.name"/>
+      <short value="Person Name"/>
+      <definition value="The name of the person whom the plan is for."/>
+      <comment
+               value="1) given is used for both first name &amp; MI, so need more than one.
+2) family is a string with the person&#39;s surname
+3) text is a string that contains the full name of the person."/>
     </element>
     <element id="Patient.telecom">
-      <path value="Patient.telecom" />
-      <short value="Person Phone Number" />
-      <definition value="The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable." />
-      <comment value="For the eLTSS phone number, system should be provided as &quot;phone&quot;." />
+      <path value="Patient.telecom"/>
+      <short value="Person Phone Number"/>
+      <definition
+                  value="The primary phone number of the person whom the plan is for, or his/her legal representative, where applicable."/>
+      <comment
+               value="For the eLTSS phone number, system should be provided as &quot;phone&quot;."/>
     </element>
     <element id="Patient.birthDate">
-      <path value="Patient.birthDate" />
-      <short value="Person Date of Birth" />
-      <definition value="The birth date of the person whom the plan is for." />
-      <comment value="birthDate is in the form &quot;1951-06-04&quot;." />
+      <path value="Patient.birthDate"/>
+      <short value="Person Date of Birth"/>
+      <definition value="The birth date of the person whom the plan is for."/>
+      <comment value="birthDate is in the form &quot;1951-06-04&quot;."/>
     </element>
     <element id="Patient.address">
-      <path value="Patient.address" />
-      <short value="Person Address" />
-      <definition value="The address of the person whom the plan is for." />
-      <comment value="1) text is the full (not broken out) address.&#xA;2) line includes street name, number and suffix (e.g. 123 Main St.).&#xA;3) Information such as apt #, floor &amp; room #, etc. also go into line, generally as a separate data element. &#xA;4) district covers county." />
+      <path value="Patient.address"/>
+      <short value="Person Address"/>
+      <definition value="The address of the person whom the plan is for."/>
+      <comment
+               value="1) text is the full (not broken out) address.
+2) line includes street name, number and suffix (e.g. 123 Main St.).
+3) Information such as apt #, floor &amp; room #, etc. also go into line, generally as a separate data element. 
+4) district covers county."/>
     </element>
     <element id="Patient.contact">
-      <path value="Patient.contact" />
-      <short value="Emergency Contact" />
-      <definition value="Emergency Contact Name + Phone Number + Relationship." />
-      <comment value="1) Emergency contact is indicated using a relationship value &quot;C&quot;.&#xA;2) If contact is provided, relationship needs to be provided to indicate this is an emergency contact.&#xA;3) given is used for both first name &amp; MI, so need more than one.&#xA;4) family is a string with the person's surname&#xA;5) text is a string with the full name of the person." />
-      <mustSupport value="true" />
+      <path value="Patient.contact"/>
+      <short value="Emergency Contact"/>
+      <definition value="Emergency Contact Name + Phone Number + Relationship."/>
+      <comment
+               value="1) Emergency contact is indicated using a relationship value &quot;C&quot;.
+2) If contact is provided, relationship needs to be provided to indicate this is an emergency contact.
+3) given is used for both first name &amp; MI, so need more than one.
+4) family is a string with the person&#39;s surname
+5) text is a string with the full name of the person."/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.relationship">
-      <path value="Patient.contact.relationship" />
-      <short value="Emergency Contact Relationship" />
-      <definition value="The relationship (e.g., spouse, neighbor, guardian, daughter) of the individual identified to contact in case of emergency." />
-      <comment value="Recommended Value Set is PatientContactRelationship http://hl7.org/fhir/ValueSet/patient-contactrelationship." />
+      <path value="Patient.contact.relationship"/>
+      <short value="Emergency Contact Relationship"/>
+      <definition
+                  value="The relationship (e.g., spouse, neighbor, guardian, daughter) of the individual identified to contact in case of emergency."/>
+      <comment
+               value="Recommended Value Set is PatientContactRelationship http://hl7.org/fhir/ValueSet/patient-contactrelationship."/>
     </element>
     <element id="Patient.contact.name">
-      <path value="Patient.contact.name" />
-      <short value="Emergency Contact Name" />
-      <definition value="The name of the individual or entity identified to contact in case of emergency." />
+      <path value="Patient.contact.name"/>
+      <short value="Emergency Contact Name"/>
+      <definition
+                  value="The name of the individual or entity identified to contact in case of emergency."/>
     </element>
     <element id="Patient.contact.telecom">
-      <path value="Patient.contact.telecom" />
-      <short value="Emergency Contact Phone" />
-      <definition value="The primary phone number (and extension when applicable) of the individual or entity identified to contact in case of emergency." />
+      <path value="Patient.contact.telecom"/>
+      <short value="Emergency Contact Phone"/>
+      <definition
+                  value="The primary phone number (and extension when applicable) of the individual or entity identified to contact in case of emergency."/>
     </element>
   </differential>
 </StructureDefinition>
