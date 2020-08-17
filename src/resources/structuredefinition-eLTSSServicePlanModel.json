@@ -18,6 +18,15 @@
   "date": "2019-02-07",
   "publisher": "The HL7 Community Based Care and Privacy Workgroup",
   "description": "ServicePlan data included in the eLTSS Dataset.",
+  "jurisdiction": [
+	{
+	   "coding": {
+		"system value": "urn:iso:std:iso:3166",
+		"code value": "US",
+		"display value": "United States of America"
+		},
+	}
+  ],
   "kind": "logical",
   "abstract": false,
   "type": "eLTSSServicePlanModel",

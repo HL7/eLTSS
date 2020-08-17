@@ -10,6 +10,13 @@
   <date value="2019-02-17T00:00:00+00:00" />
   <publisher value="HL7 CBCP" />
   <description value="Further conditions, problems, diagnoses, procedures or events or the substance that caused/triggered this Condition." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
