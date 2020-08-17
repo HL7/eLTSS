@@ -5,6 +5,14 @@
   "canonical": "http://hl7.org/fhir/us/eltss",
   "list": [
     {
+      "version": "current",
+      "date": "n/a",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://build.fhir.org/ig/HL7/eLTSS",
+      "status": "ci-build",
+      "current": true
+    },
+	{
       "version": "1.0.0",
       "date": "2019-09-12",
       "desc": "Publication for Trial Use",
@@ -12,14 +20,6 @@
       "status": "trial-use",
       "sequence": "STU1",
       "fhirversion": "4.0.0"
-    },
-    {
-      "version": "current",
-      "date": "n/a",
-      "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/HL7/eLTSS",
-      "status": "ci-build",
-      "current": true
     },
     {
       "version": "0.1.0",

@@ -3,22 +3,22 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.eltss"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\Dave\Documents\eLTSS\src-generated\resources"/>
+    <valueString value="C:\Users\becky\Documents\eLTSSv4\eLTSSSTU1.0.1\src-generated\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\Dave\Documents\eLTSS\src\resources"/>
+    <valueString value="C:\Users\becky\Documents\eLTSSv4\eLTSSSTU1.0.1\src\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\Dave\Documents\eLTSS\src\vocabulary"/>
+    <valueString value="C:\Users\becky\Documents\eLTSSv4\eLTSSSTU1.0.1\src\vocabulary"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\Dave\Documents\eLTSS\src\examples"/>
+    <valueString value="C:\Users\becky\Documents\eLTSSv4\eLTSSSTU1.0.1\src\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\Dave\Documents\eLTSS\src\images"/>
+    <valueString value="C:\Users\becky\Documents\eLTSSv4\eLTSSSTU1.0.1\src\images"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\Dave\Documents\eLTSS\src-generated\pages"/>
+    <valueString value="C:\Users\becky\Documents\eLTSSv4\eLTSSSTU1.0.1\src-generated\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
   <version value="1.0.0"/>
@@ -35,10 +35,10 @@
       <display value="United States of America"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.us.eltss"/>
+  <packageId value="hl7.fhir.us.eltss#0.1.0"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="core">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
