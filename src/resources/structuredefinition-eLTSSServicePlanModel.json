@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSServicePlanModel",
   "identifier": [
     {
-      "system": "http://hl7.org/fhir/us/eLTSS/STU1",
+      "system": "http://build.fhir.org/ig/HL7/eLTSS",
       "value": "eLTSS.ServicePlan"
     }
   ],
