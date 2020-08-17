@@ -10,7 +10,7 @@
   <description value="Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data  elements"/>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166#US"/>
+      <system value="urn:iso:std:iso:3166:-2#US"/>
       <code value="US"/>
       <display value="United States of America"/>
     </coding>
