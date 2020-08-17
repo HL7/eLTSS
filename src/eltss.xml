@@ -12,7 +12,6 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
-      <display value="United States of America"/>
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.us.eltss"/>
