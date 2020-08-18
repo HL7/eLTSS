@@ -26,7 +26,7 @@
           </party>
           <signature>
             <type>
-              <!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <system value="urn:iso-astm:E1762-95:2013"/>
               <code value="1.2.840.10065.1.12.1.1"/>
             </type>
             <when value="2018-04-02T03:00:00Z"/>
@@ -49,7 +49,7 @@
           </party>
           <signature>
             <type>
-              <!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+			  <system value="urn:iso-astm:E1762-95:2013"/>
               <code value="1.2.840.10065.1.12.1.7"/>
             </type>
             <when value="2018-04-02T03:00:00Z"/>
@@ -72,7 +72,7 @@
           </party>
           <signature>
             <type>
-              <!--              <system value="urn:iso-astm:E1762-95:2013"/> -->
+              <system value="urn:iso-astm:E1762-95:2013"/>
               <code value="1.2.840.10065.1.12.1.7"/>
             </type>
             <when value="2018-04-02T03:00:00Z"/>

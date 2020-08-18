@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/eLTSS/StructureDefinition/eLTSSPersonModel",
   "identifier": [
     {
-      "system": "http://hl7.org/fhir/us/eLTSS",
+      "system": "http://build.fhir.org/ig/HL7/eLTSS",
       "value": "eLTSS.Person"
     }
   ],

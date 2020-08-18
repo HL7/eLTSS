@@ -7,6 +7,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <description value="Observation codes for Strength and Preference"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <content value="complete"/>
   <concept>
     <code value="strength"/>
