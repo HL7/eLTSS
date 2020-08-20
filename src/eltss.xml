@@ -97,7 +97,7 @@
     <!-- Profiles -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/CarePlan-eltss"/>
+        <reference value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"/>
       </reference>
       <name value="eLTSS CarePlan Profile"/>
       <description value="Base profile that defines the CarePlan constraints for eLTSS"/>
