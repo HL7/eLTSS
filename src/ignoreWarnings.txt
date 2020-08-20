@@ -1,4 +1,5 @@
-﻿==Supressed Messages ==
+﻿==Suppressed Messages ==
+# These are "true" info messages that are just noise
 A resource should have narrative for robust management [text.div.exists()]
 The link 'eLTSSServicePlanModel.sch' for "Schematron" cannot be resolved
 The link 'eLTSSServiceModel.sch' for "Schematron" cannot be resolved
