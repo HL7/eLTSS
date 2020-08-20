@@ -238,7 +238,7 @@
       </reference>
       <name value="eLTSS CarePlan Example"/>
       <description value="Test instance showing data from the eLTSS spec"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"/>
+      <exampleCanonical value="http://www.google.com"/>
       <groupingId value="examples"/>
     </resource>
     <resource>
