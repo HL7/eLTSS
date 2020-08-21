@@ -267,7 +267,7 @@
       },
       "name" : "eLTSS CarePlan Example",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/CarePlan-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss",
       "groupingId" : "examples"
     },
     {
