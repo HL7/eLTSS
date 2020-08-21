@@ -3,6 +3,7 @@
   "title": "electronic Long-Term Services and Supports Implementation Guide",
   "introduction": "electronic Long-Term Services and Supports Implementation Guide was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans. ",
   "canonical": "http://hl7.org/fhir/us/eLTSS",
+  "category": "Care Planning",
   "list": [
     {
       "version": "current",

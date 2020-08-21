@@ -276,7 +276,7 @@
       },
       "name" : "eLTSS CarePlan Claim Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Claim-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Claim-eltss",
       "groupingId" : "examples"
     },
     {
@@ -285,7 +285,7 @@
       },
       "name" : "eLTSS CarePlan Contract Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Contract-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss",
       "groupingId" : "examples"
     },
     {
@@ -294,7 +294,7 @@
       },
       "name" : "eLTSS CarePlan Patient Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Patient-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss",
       "groupingId" : "examples"
     },
     {
@@ -303,7 +303,7 @@
       },
       "name" : "eLTSS CarePlan Planner Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Practitioner-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss",
       "groupingId" : "examples"
     },
     {
