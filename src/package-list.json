@@ -12,6 +12,22 @@
       "status": "ci-build",
       "current": true
     },
+	{
+      "version": "1.1.0",
+      "date": "xxx",
+      "desc": "STU #2 ",
+      "path": "http://hl7.org/fhir/us/eLTSS",
+      "status": "update",
+      "sequence": "STU2"
+    }
+	{
+      "version": "1.0.0",
+      "date": "xxx",
+      "desc": "STU #1 ",
+      "path": "http://hl7.org/fhir/us/eLTSS",
+      "status": "published",
+      "sequence": "STU1"
+    },
     {
       "version": "0.1.0",
       "date": "xxx",
@@ -20,14 +36,7 @@
       "status": "ballot",
       "sequence": "STU1"
     }
-    {
-      "version": "1.0.0",
-      "date": "xxx",
-      "desc": "STU #1 ",
-      "path": "http://hl7.org/fhir/us/eLTSS",
-      "status": "published",
-      "sequence": "STU1"
-    }
+
   ]
   "category": "Public Health"
 }
