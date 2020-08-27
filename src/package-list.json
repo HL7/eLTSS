@@ -14,7 +14,7 @@
     },
 	{
       "version": "1.1.0",
-      "date": "xxx",
+      "date": "2020-09-24",
       "desc": "STU #2 ",
       "path": "http://hl7.org/fhir/us/eLTSS",
       "status": "update",
@@ -22,7 +22,7 @@
     }
 	{
       "version": "1.0.0",
-      "date": "xxx",
+      "date": "2019-09-12",
       "desc": "STU #1 ",
       "path": "http://hl7.org/fhir/us/eLTSS",
       "status": "published",
@@ -30,7 +30,7 @@
     },
     {
       "version": "0.1.0",
-      "date": "xxx",
+      "date": "2019-03-27",
       "desc": "STU #1 1st Ballot",
       "path": "http://hl7.org/fhir/us/eLTSS/2019May",
       "status": "ballot",
