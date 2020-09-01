@@ -21,7 +21,7 @@
     <valueString value="C:\Users\becky\Documents\eLTSSv4\eLTSSSTU1.0.1\src-generated\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm"/>
   <status value="draft"/>
