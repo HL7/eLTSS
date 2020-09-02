@@ -6,6 +6,15 @@
   "category": "Care Planning",
   "list": [
     {
+      "version": "1.1.0",
+      "date": "2020-09-24",
+      "desc": "STU Update #2. This update addresses the following Jira trackers that were deemed to be non-substantial changes:\n1) Add clarification text to CarePlan.partOf.comment. (<a href="https://jira.hl7.org/browse/FHIR-23046">FHIR-23046</a>).\n2) Clarify wording in the mappings for Goal. (<a href="https://jira.hl7.org/browse/FHIR-23047">FHIR-23047</a>).\n3) Add clarification in the mapping that printed name and name elements would include the same information. (<a href="https://jira.hl7.org/browse/FHIR-23058">FHIR-23058</a> and <a href="https://jira.hl7.org/browse/FHIR-23059">FHIR-23059</a>).\n4)Update the .system values in the CarePlan and Planner examples. (<a href="https://jira.hl7.org/browse/FHIR-24901">FHIR-24901</a>).\n5) Update the "eLTSS element name" for ServiceRequest.locationReference. <a href="https://jira.hl7.org/browse/FHIR-28148">FHIR-28148</a>).\n6) Add explanatory text to the Location profile on the Profile page. (<a href="https://jira.hl7.org/browse/FHIR-28149">FHIR-28149</a>).\n7) Include a link to a downloadable eLTSS to FHIR mapping spreadsheet. (<a href="https://jira.hl7.org/browse/FHIR-28237">FHIR-28237"</a>).\n8) Specify US Core version. (<a href="https://jira.hl7.org/browse/FHIR-28236">FHIR-28236</a>).",
+      "path": "http://hl7.org/fhir/us/eLTSS/STU2",
+      "status": "update",
+      "sequence": "STU2",
+      "fhirversion": "4.0.1"
+    },
+	{
       "version": "current",
       "date": "n/a",
       "desc": "Continuous Integration Build (latest in version control)",
@@ -13,16 +22,7 @@
       "status": "ci-build",
       "current": true
     },
-	{
-      "version": "1.1.0",
-      "date": "2020-09-24",
-      "desc": "STU Update #2",
-      "path": "http://hl7.org/fhir/us/eLTSS/STU2",
-      "status": "update",
-      "sequence": "STU2",
-      "fhirversion": "4.0.1"
-    },
-	{
+		{
       "version": "1.0.0",
       "date": "2019-09-12",
       "desc": "Publication for Trial Use",
