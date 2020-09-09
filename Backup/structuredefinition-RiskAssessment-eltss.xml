@@ -445,10 +445,6 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="RiskAssessmentMethod"/>
-        </extension>
-        <strength value="example"/>
         <description value="The mechanism or algorithm used to make the assessment; e.g. TIMI, PRISM, Cardiff Type 2 diabetes, etc."/>
       </binding>
       <mapping>
@@ -854,10 +850,6 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="RiskAssessmentOutcome"/>
-        </extension>
-        <strength value="example"/>
         <description value="The condition or other outcome; e.g. death, remission, amputation, infection, etc."/>
       </binding>
       <mapping>

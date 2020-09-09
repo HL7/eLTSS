@@ -20,6 +20,13 @@
     </telecom>
   </contact>
   <description value="This profile defines the expected capabilities of the eLTSS Server."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <kind value="requirements"/>
   <imports value="http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"/>
   <fhirVersion value="4.0.0"/>

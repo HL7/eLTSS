@@ -9,6 +9,13 @@
   <date value="2019-06-01T00:00:00-05:00" />
   <publisher value="HL7 CBCP" />
   <description value="CarePlan for eLTSS" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="v2" />
@@ -66,7 +73,8 @@
       <path value="CarePlan.partOf" />
       <short value="Emergency Backup Plan" />
       <definition value="Description of how to address unforeseen events, emergency health events, emergency events, problems with medical equipment and supplies, and unavailable staffing situations for critical services that put the person’s health and safety at risk.&#xA;&#xA;This can be included as free text or attachment." />
-      <comment value="The CarePlan resource containing the emergency backup plan refers to the &quot;main&quot; CarePlan resource, rather than the other way around, by using the emergency backup plan CarePlan -&gt; partOf data element to reference the &quot;main&quot; CarePlan data element." />
+      <!--Updated comment value with verbiage to address #23046-->
+	  <comment value="The CarePlan resource containing the emergency backup plan refers to the &quot;main&quot; CarePlan resource, rather than the other way around, by using the emergency backup plan CarePlan -&gt; partOf data element to reference the &quot;main&quot; CarePlan data element. An Emergency Backup Plan linked with CarePlan->partOf should have only required elements duplicated from the base CarePlan." />
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
           <valueBoolean value="true" />
@@ -199,8 +207,8 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Condition-eltss" />
         <targetProfile value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Observation-eltss" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" />
       </type>
       <mustSupport value="false" />
       <isModifier value="false" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Original : 5/22/2018
-    Updated :  01/23/2019
+    Updated :  08/14/2020
     FHIR version : 4.0
 -->
 <Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
@@ -130,7 +130,8 @@
         </text>
         <!-- identifier is required by US Core -->
         <identifier>
-          <system value="http://fhir.hl7.org/sid/us-npi"/>
+						<!-- updated systemvalue for #24901 -->
+          <system value="http://hl7.org/fhir/sid/us-npi"/> 
           <value value="9941339108"/>
         </identifier>
         <identifier>

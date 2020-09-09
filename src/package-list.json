@@ -5,28 +5,38 @@
   "canonical": "http://hl7.org/fhir/us/eLTSS",
   "list": [
     {
+      "version": "1.1.0",
+      "date": "2020-09-24",
+      "desc": "STU #2. This update addresses the following Jira trackers that were deemed by the HL7 CBCP WG to be non-substantial changes:\n1) Add clarification text to CarePlan.partOf.comment [FHIR-23046](https://jira.hl7.org/browse/FHIR-23046).\n2) Clarify wording in the mappings for Goal [FHIR-23047](https://jira.hl7.org/browse/FHIR-23047).\n3) Add clarification in the mapping that printed name and name elements would include the same information [FHIR-23058](https://jira.hl7.org/browse/FHIR-23058) and [FHIR-23059](https://jira.hl7.org/browse/FHIR-23059).\n4)Update the .system values in the CarePlan and Planner examples [FHIR-24901](https://jira.hl7.org/browse/FHIR-24901).\n5) Update the eLTSS element name for ServiceRequest.locationReference [FHIR-28148](https://jira.hl7.org/browse/FHIR-28148).\n6) Add explanatory text to the Location profile on the Profile page [FHIR-28149](https://jira.hl7.org/browse/FHIR-28149).\n7) Include a link to a downloadable eLTSS to FHIR mapping spreadsheet [FHIR-28237](https://jira.hl7.org/browse/FHIR-28237).\n8) Specify US Core version [FHIR-28236](https://jira.hl7.org/browse/FHIR-28236).",
+      "path": "http://hl7.org/fhir/us/eLTSS",
+      "status": "update",
+      "sequence": "STU2"
+    },
+	{
       "version": "current",
       "date": "n/a",
-      "desc": "Continuous Integration Build (latest in version control)",
+      "desc": "Continuous Integration Build (latest in version control). This update addresses the following Jira trackers that were deemed by the HL7 CBCP WG to be non-substantial changes:\n1) Add clarification text to CarePlan.partOf.comment [FHIR-23046](https://jira.hl7.org/browse/FHIR-23046).\n2) Clarify wording in the mappings for Goal [FHIR-23047](https://jira.hl7.org/browse/FHIR-23047).\n3) Add clarification in the mapping that printed name and name elements would include the same information [FHIR-23058](https://jira.hl7.org/browse/FHIR-23058) and [FHIR-23059](https://jira.hl7.org/browse/FHIR-23059).\n4)Update the .system values in the CarePlan and Planner examples [FHIR-24901](https://jira.hl7.org/browse/FHIR-24901).\n5) Update the eLTSS element name for ServiceRequest.locationReference [FHIR-28148](https://jira.hl7.org/browse/FHIR-28148).\n6) Add explanatory text to the Location profile on the Profile page [FHIR-28149](https://jira.hl7.org/browse/FHIR-28149).\n7) Include a link to a downloadable eLTSS to FHIR mapping spreadsheet [FHIR-28237](https://jira.hl7.org/browse/FHIR-28237).\n8) Specify US Core version [FHIR-28236](https://jira.hl7.org/browse/FHIR-28236).",
       "path": "http://build.fhir.org/ig/HL7/eLTSS",
       "status": "ci-build",
       "current": true
     },
+	{
+      "version": "1.0.0",
+      "date": "2019-09-12",
+      "desc": "STU #1 ",
+      "path": "http://hl7.org/fhir/us/eLTSS",
+      "status": "published",
+      "sequence": "STU1"
+    },
     {
       "version": "0.1.0",
-      "date": "xxx",
+      "date": "2019-03-27",
       "desc": "STU #1 1st Ballot",
       "path": "http://hl7.org/fhir/us/eLTSS/2019May",
       "status": "ballot",
       "sequence": "STU1"
     }
-    {
-      "version": "1.0.0",
-      "date": "xxx",
-      "desc": "STU #1 ",
-      "path": "http://hl7.org/fhir/us/eLTSS",
-      "status": "published",
-      "sequence": "STU1"
-    }
+
   ]
+  "category": "Public Health"
 }

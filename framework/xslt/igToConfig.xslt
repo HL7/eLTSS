@@ -108,7 +108,7 @@
     </xsl:choose>
     <text>",
     "txCache": "txcache",
-    "history" : "http://hl7.org/fhir/uv/genomics-reporting/history.html",
+    "history" : "http://hl7.org/fhir/us/eLTSS/history.html",
     "qa": "../temp</text>
     <xsl:if test="$additional">
       <xsl:value-of select="$additional"/>

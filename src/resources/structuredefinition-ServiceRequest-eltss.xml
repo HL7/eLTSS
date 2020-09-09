@@ -9,6 +9,13 @@
   <date value="2019-02-17T00:00:00-05:00" />
   <publisher value="HL7 CBCP" />
   <description value="ServiceRequest resource mapping for eLTSS" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -130,7 +137,8 @@
     </element>
     <element id="ServiceRequest.locationReference">
       <path value="ServiceRequest.locationReference" />
-      <short value="Service Location" />
+	  <!--Updated to reflect resolution for Jira #28148-->
+      <short value="Service Delivery Address" />
       <definition value="The address where service delivery will take place if service will not be provided at the person's address." />
       <type>
         <code value="Reference" />

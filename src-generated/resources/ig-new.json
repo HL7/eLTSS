@@ -3,30 +3,30 @@
   "id" : "hl7.fhir.us.eltss",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src-generated\\resources"
+    "valueString" : "C:\\Users\\becky\\Documents\\eLTSSv4\\eLTSSSTU1.0.1\\src-generated\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\resources"
+    "valueString" : "C:\\Users\\becky\\Documents\\eLTSSv4\\eLTSSSTU1.0.1\\src\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\vocabulary"
+    "valueString" : "C:\\Users\\becky\\Documents\\eLTSSv4\\eLTSSSTU1.0.1\\src\\vocabulary"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\examples"
+    "valueString" : "C:\\Users\\becky\\Documents\\eLTSSv4\\eLTSSSTU1.0.1\\src\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src\\images"
+    "valueString" : "C:\\Users\\becky\\Documents\\eLTSSv4\\eLTSSSTU1.0.1\\src\\images"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\Dave\\Documents\\eLTSS\\src-generated\\pages"
+    "valueString" : "C:\\Users\\becky\\Documents\\eLTSSv4\\eLTSSSTU1.0.1\\src-generated\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss",
-  "version" : "1.0.0",
+  "version" : "1.1.0",
   "name" : "ELTSS",
   "title" : "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm",
   "status" : "draft",
@@ -43,7 +43,7 @@
   "packageId" : "hl7.fhir.us.eltss",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
-  "4.0.0"],
+  "4.0.1"],
   "dependsOn" : [{
     "id" : "core",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -267,7 +267,7 @@
       },
       "name" : "eLTSS CarePlan Example",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/CarePlan-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss",
       "groupingId" : "examples"
     },
     {
@@ -276,7 +276,7 @@
       },
       "name" : "eLTSS CarePlan Claim Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Claim-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Claim-eltss",
       "groupingId" : "examples"
     },
     {
@@ -285,7 +285,7 @@
       },
       "name" : "eLTSS CarePlan Contract Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Contract-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Contract-eltss",
       "groupingId" : "examples"
     },
     {
@@ -294,7 +294,7 @@
       },
       "name" : "eLTSS CarePlan Patient Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Patient-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Patient-eltss",
       "groupingId" : "examples"
     },
     {
@@ -303,7 +303,7 @@
       },
       "name" : "eLTSS CarePlan Planner Example 1",
       "description" : "Test instance showing data from the eLTSS spec",
-      "exampleCanonical" : "StructureDefinition/Practitioner-eltss",
+      "exampleCanonical" : "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss",
       "groupingId" : "examples"
     },
     {

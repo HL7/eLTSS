@@ -49,7 +49,8 @@
         <td>
           <a href="Location-eltss.html">eLTSS Location Profile</a>
         </td>
-        <td>Defines the Location constraints for eLTSS.</td>
+        <!--Updated to reflect resolution for Jira 28149-->
+        <td>Defines the Location constraints for eLTSS. This profile should only be used for Service Delivery Address when the service or support is provided outside the person's home address. Use Person.address when service or support is provided in the person's residence.</td>
       </tr>
 	  <tr>
         <td>

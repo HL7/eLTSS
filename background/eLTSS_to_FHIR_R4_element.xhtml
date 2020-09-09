@@ -733,7 +733,8 @@ Goal -&gt; description -&gt; text</td>
 <td class='flx2 c14'>1) Will use&nbsp;<span class='c18'>CarePlan</span>&nbsp;-&gt;&nbsp;<span class='c18'>goal</span>&nbsp;to reference the&nbsp;<span class='c18'>Goal</span>&nbsp;for the care plan being developed.<br />
 2)<span class='c18'>&nbsp;description</span>&nbsp;is required by both FHIR and US Core, and is a CodableConcept whose&nbsp;<span class='c18'>text</span>&nbsp;element, per US Core, must include a text description of the goal.<br />
 3) Each goal should go into a separate&nbsp;<span class='c18'>Goal</span>&nbsp;element so each can potentially reference a step or action(s), or a service(s) that addresses the goal.<br />
-4) A&nbsp;<span class='c18'>Goal</span>&nbsp;can be referenced from a Step or Action or from a service. For Step or Action, the&nbsp;<span class='c18'>CarePlan -&gt; activity -&gt; detail -&gt; goal</span>&nbsp;data element would be used. For a service, the&nbsp;<span class='c18'>ServiceRequest -&gt; extension -&gt; goal-pertainsToGoal</span>&nbsp;data element would be used.<br />
+<!--Updated 4) in response to Jira #23047-->
+4) A&nbsp;<span class='c18'>Goal</span>&nbsp;can be referenced from a Step or Action or from a service. For a goal related to a step or action, use&nbsp;<span class='c18'>CarePlan -&gt; activity -&gt; detail -&gt; goal</span>&nbsp;. For a service request specific goal, use&nbsp;<span class='c18'>ServiceRequest -&gt; extension -&gt; goal-pertainsToGoal</span>&nbsp;. Logically, these goals are exclusive to each other and the same goal isn't duplicated at both levels.<br />
 5) US Core requires the use of&nbsp;<span class='c18'>Goal -&gt; Subject</span>&nbsp;to reference back to the&nbsp;<span class='c18'>Patient.</span>&nbsp;</td>
 </tr>
 <tr class='c32'>
@@ -1304,7 +1305,9 @@ Contract -&gt; signer -&gt; party(Practitioner)</span></td>
 ......signer 0..*<br />
 &hellip;......party(Practitioner) 1</span></td>
 <td class='flx2 c14'><span class='flx2 c50'>1) Will use&nbsp;<span class='c18'>CarePlan</span>&nbsp;-&gt;&nbsp;<span class='c18'>supportingInfo</span>&nbsp;to reference the&nbsp;<span class='c18'>Contract</span>&nbsp;containing the signatures, names, etc.<br />
-2) In this case,&nbsp;<span class='c18'>party</span>&nbsp;is a reference to a&nbsp;<span class='c18'>Practitioner,</span>&nbsp;and&nbsp;<span class='c18'>Practitioner</span>&nbsp;includes a name.</span></td>
+2) In this case,&nbsp;<span class='c18'>party</span>&nbsp;is a reference to a&nbsp;<span class='c18'>Practitioner,</span>&nbsp;and&nbsp;<span class='c18'>Practitioner</span>&nbsp;includes a name.</span><br />
+<!--Updated to reflect the resolution of Jira #23058-->
+3) The values for Support Planner Name and Support Planner Printed Name would include the same information.</td>
 </tr>
 <tr class='c23'>
 <td class='flx2 c14'>Plan Signatures</td>
@@ -1367,7 +1370,9 @@ Contract -&gt; signer -&gt; party(Organization |<br />
 &hellip;......party(Organization | Patient |<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Practitioner | RelatedPerson) 1</td>
 <td class='flx2 c14'>1) Will use&nbsp;<span class='c18'>CarePlan</span>&nbsp;-&gt;&nbsp;<span class='c18'>supportingInfo</span>&nbsp;to reference the&nbsp;<span class='c18'>Contract</span>&nbsp;containing the signatures, names, etc.<br />
-2)&nbsp;<span class='c18'>party</span>&nbsp;is a reference to an&nbsp;<span class='c18'>Organization, Patient, Practitioner,&nbsp;</span>or<span class='c18'>&nbsp;RelatedPerson,&nbsp;</span>all of which include a name. (Patient may not make sense in the context of a service provided by a care plan, but is allowed in FHIR.)</td>
+2)&nbsp;<span class='c18'>party</span>&nbsp;is a reference to an&nbsp;<span class='c18'>Organization, Patient, Practitioner,&nbsp;</span>or<span class='c18'>&nbsp;RelatedPerson,&nbsp;</span>all of which include a name. (Patient may not make sense in the context of a service provided by a care plan, but is allowed in FHIR.)<br />
+<!--Updated to reflect resolution of Jira #23059-->
+3) The values for Service Provider Name and Service Provider Printed Name would include the same information.</td>
 </tr>
 <tr class='c23'>
 <td class='flx2 c14'>Plan Signatures</td>
