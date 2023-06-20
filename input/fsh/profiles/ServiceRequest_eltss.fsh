@@ -52,7 +52,7 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * performer ^mustSupport = false
 * performer ^isModifier = false
 * locationReference only Reference(Location_eltss)
-* locationReference ^short = "Service Location"
+* locationReference ^short = "Service Delivery Address"
 * locationReference ^definition = "The address where service delivery will take place if service will not be provided at the person's address."
 * locationReference ^mustSupport = false
 * locationReference ^isModifier = false
