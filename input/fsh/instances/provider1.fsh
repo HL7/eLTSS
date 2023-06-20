@@ -1,7 +1,7 @@
 Instance: provider1
 InstanceOf: Practitioner_eltss
 Usage: #inline
-* identifier.system = "http://www.acme.org/practitioners"
+* identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "987654"
 * name.text = "Lisa Performer"
 * name.family = "Performer"

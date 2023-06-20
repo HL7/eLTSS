@@ -1,7 +1,7 @@
 Instance: provider2
 InstanceOf: Organization
 Usage: #inline
-* identifier.system = "http://www.acme.org/practitioners"
+* identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "24680"
 * name = "The Transporter, Inc."
 * telecom.system = #phone
