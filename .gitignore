@@ -1,3 +1,6 @@
+fsh-generated/
+template/
+input-cache/
 output
 /temp
 *.dropbox
