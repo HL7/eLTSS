@@ -22,6 +22,13 @@ Description: "RiskAssessment resource mapping for eLTSS"
 * prediction ^definition = "An aspect of a person’s life, behavior, environmental exposure, personal characteristic, or barrier that increases the likelihood of  disease, condition,  injury to self or others, or interaction with the criminal justice system."
 * prediction ^mustSupport = false
 * prediction ^isModifier = false
+//* prediction.outcome.binding.valueset = "https://example.org"
+
+* prediction.outcome ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* prediction.outcome ^binding.extension.valueString = "RiskPredictionOutcome"
+* prediction.outcome ^binding.description = "The condition or other outcome; e.g. death, remission, amputation, infection, etc."
+* prediction.outcome ^binding.valueSet = "http://terminology.hl7.org/ValueSet/v2-0241"
+
 * mitigation ^short = "Risk Management Plan"
 * mitigation ^definition = "Description of planned activities to minimize identified risks that endanger the person's health and safety. This can be included as free text or attachment."
 * mitigation ^mustSupport = false
