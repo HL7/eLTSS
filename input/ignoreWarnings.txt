@@ -1,0 +1,19 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
+# (And include comments like this justifying why)
+
+# the cardinality has been reviewed an is correct. There is a choice of reference or codeable concept data types
+The slice definition for Extension.extension:item.value[x] has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
+
+
+#an example used in the IG
+Code System URI 'http://examplesystem' is unknown so the code cannot be validated
+
+
+#meeting with Terminology to talk about inclusion of this code system as a known external code system
+% system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
+UNKNOWN_CODESYSTEM; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server)
+Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
+Binding http://hl7.org/fhir/uv/ae-research-backport-ig/ValueSet/adverse-event-outcome-clinical-research-vs could not be expanded

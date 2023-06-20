@@ -1,0 +1,44 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+
+<p>
+LTSS is currently a document-oriented exchange paradigm (i.e., consumers exchange the entire service plan as a document), however during outreach stakeholders expressed an interest in the ability to exchange portions of service plan data, query specific elements, receive notifications, etc. The aim of eLTSS is to enable those exchanges and features for LTSS data.
+</p><p>
+During the eLTSS Initiative, two user stories were developed and documented into the <a href="https://oncprojectracking.healthit.gov/wiki/download/attachments/16123461/eLTSS_Use_Case_final_published_20151105.docx">use case document</a>:
+</p>
+<nl>
+<li>LTSS Eligibility Determination, eLTSS Plan Creation and Approval </li>
+<li>Sharing a Person-Centered eLTSS Plan.</li>
+</nl>
+<p>
+The first user story would use FHIR Resources to generate an eLTSS plan in an LTSS case management system. The set of FHIR Resources to represent the eLTSS Dataset elements could include: Bundle, CarePlan, Claim, Condition, Contract, Coverage, DocumentReference, Encounter, EpisodeOfCare, Goal, Location, Observation, Organization, Patient, Practitioner, Questionnaire, QuestionnaireResponse, Related Person, RiskAssesment, ServiceRequest
+</p><p>
+Once an eLTSS plan is created using FHIR, there are 4 sample use cases that highlight the possible exchanges that an eLTSS Plan may be involved in (user story 2 above). The figure below illustrates these use cases.
+</p>
+<img src="eLTSS_Scenarios.png"/>
+<a name="u1"></a>
+<h3>Exchange eLTSS Plan from Support Planner (case management system) to Clinical and Institutional-based Provider (EHR system)</h3>
+<p>
+Purpose: The clinical and institutional-based provider is informed of what service(s) the Beneficiary is eligible for and to supply additional details around the services as well as the Beneficiary to enable better delivery of services and support. 
+</p><p>
+eLTSS Data: Clinical and Institutional-based Provider may need cost information (Claim), emergency backup plan (CarePlan), full details on service quantities (ServiceRequest), etc. Important information includes contact information for a financial management worker (Practitioner).
+</p>
+<a name="u2"></a>
+<h3>Exchange eLTSS Plan from Support Planner (case management system) to HCBS Provider (provider system)</h3>
+<p>
+Purpose: To inform HCBS Provider of service(s) requested by Beneficiary, or are authorized for the Beneficiary, as well as to supply additional detail around those services and the Beneficiary to enable better delivery of services and supports.
+</p><p>
+eLTSS Data: HCBS Providers may need service and cost information (Units and Unit Costs, Effective Dates, etc.) (ServiceRequest, Claim), especially if there is a change (e.g., due to a re-assessment). This use case could be the vehicle to communicate these data elements to the HCBS Providers officially, even if the services (and quantity and rates) were previously negotiated. Signatures (Contract) may not be required; however, the eLTSS Signature Date data elements (Contract) indicating when the plan was approved (CarePlan) could be important.
+</p>
+<a name="u3"></a>
+<h3>Exchange eLTSS Plan from Support Planner (case management system) to Beneficiary (PHR)</h3>
+<p>
+Purpose: The Beneficiary has a complete record of what is either proposed or to be provided to them and by whom, and potentially be imported into the Beneficiary’s PHR.
+</p><p>
+eLTSS Data: Beneficiary may not need signatures (Contract) and may not need cost information (Claim).
+</p>
+<a name="u4"></a>
+<h3>Exchange eLTSS Plan from HCBS Provider (provider system) to Clinical Provider (EHR) (vice versa)</h3>
+<p>
+Purpose: The Clinical Provider is aware of the services the Beneficiary is receiving and what their goals/needs/risks are or have been. The HCBS Provider is aware of the Beneficiary's recent hospital/doctor visit and any discharge/treatment instructions to follow.
+</p>
+</div>

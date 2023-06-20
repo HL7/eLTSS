@@ -1,0 +1,36 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+
+<p>
+The eLTSS Initiative is a joint CMS and ONC project initiated in 2014 as one of the four components of the Medicaid Testing Experience and Functional Tools (TEFT) demonstration grant program.  It is facilitated through a public collaborative platform, the ONC Tech Lab (previously referred to as the Standards and Interoperability Framework) and includes participants from six TEFT-grantee states (Colorado, Connecticut, Georgia, Kentucky, Maryland and Minnesota), and the broader HCBS community to include service providers, advocates, consumer representatives and HCBS system vendors. 
+</p><p>
+The primary objectives of the eLTSS Initiative are: 1) to identify components or data elements needed for the electronic creation and interoperable exchange of person-centered service plans by health care and HCBS providers, payers and the individuals they serve; and 2) to field test these data elements within participating organizations’ electronic systems.
+</p><p>
+Unlike previous federal-led initiatives that focused on advancing health IT adoption and health information exchange between clinical and institutional settings, eLTSS is the first federal initiative that addresses the interoperability gap between HCBS providers, beneficiaries, and their caregivers and between HCBS providers and clinical providers. It is also unique in that it addresses information requirements for social determinants of health (SDOH) data such as housing, education, and transportation, each of which influence individuals’ ability to maintain their health.
+</p><p>
+The key artifact of interest for the HL7 Community is the eLTSS Dataset. The eLTSS Dataset was developed using a consensus-based approach where eLTSS participants determined the set of data elements commonly found on a service plan. The data elements were initially derived from the service plans each of the TEFT grantees are using within their respective states, most of which were paper-based. The data elements were consolidated, reviewed and harmonized into a smaller set through facilitated public sessions with the eLTSS ONC Tech Lab participants. The process described above culminated in the publication of a set of 56 common data elements, referred to as the eLTSS Dataset.
+</p><p>
+The Georgia Team (representatives from Department of Community Health (DCH) and Georgia Tech Research Institute (GTRI)) with assistance from ONC and CMS developed an Informative Document titled <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=495">“HL7 Cross-Paradigm Information Sharing for Electronic Long-Term Services and Supports (eLTSS), Release 1”</a> balloted during the September 2018 cycle. This Informative Document included detailed mappings of the eLTSS Dataset to HL7’s Standards of FHIR and C-CDA. This Implementation Guide is advancing the FHIR mapping from that artifact into an HL7 FHIR Implementation Guide.
+</p><p>
+Extensive documentation of the initiative process, interim documents produced, summaries of decisions made, and other detailed documentation are available on the <a href="https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/eLTSS+Home">ONC eLTSS wiki site</a>.
+</p>
+<a name="purpose"></a>
+<h3>eLTSS Project Purpose</h3>
+<p>
+Electronic Long-Term Services and Supports (eLTSS) aims to enable electronic data-level interoperability and exchange of data reflected on the person-centered service plans. The goal is to leverage HIT standards and electronic information sharing to improve the delivery and coordination of community-based care provided under programs such as Medicaid Waivers. Current HL7 Standards include content to enable the creation and exchange of medically-focused care plans. This effort aims to provide guidance to access and exchange community-based service information alongside the medical interventions for a comprehensive picture of a person’s care. 
+</p><p>
+The adoption and use of Health IT and quality measurement for community-based long-term services and supports is limited. Limitations include: 
+</p>
+<ul>
+<li>lack of uniformity in the terminology and definitions of data elements, including those important to the beneficiary, needed for assessments and service plans used across and between community-based information systems, clinical care systems and personal health record systems; </li>
+<li>insufficient business and/or financial incentives for service providers to acquire and use Health IT to support coordination of services; </li>
+<li>minimal national standards for quality measurement in LTSS outcomes; </li>
+<li>lack of consensus on the inter-relationships between a beneficiary’s plans across care, services and supports;</li>
+<li>lack of evidence and understanding of how Health IT may benefit the beneficiary and encourage their adoption and use of Health IT; and </li> 
+<li>lack of established best practices for complying with legal security and privacy requirements when electronically exchanging data between covered clinical entities and non-clinical entities providing community-based services. </li>
+</ul>
+<p>
+The eLTSS FHIR IG will help drive the discussion to begin to remove these limitations by providing an official compilation of FHIR-related artifacts and documentation that enable exchange of the eLTSS Dataset via FHIR (e.g. eLTSS Profiles, eLTSS Logical Models, Examples). The IG will be matured to a Standard for Trial Use (STU) and will serve to support continued testing activities and evaluation by implementers.
+</p>
+
+
+</div>
