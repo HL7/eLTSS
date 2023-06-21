@@ -223,8 +223,8 @@ Goal &#8594; description &#8594; text</td>
       <td>1) Will use CarePlan &#8594; goal to reference the Goal for the care plan being developed.<br/>
 2) description is required by both FHIR and US Core, and is a CodableConcept whose text element, per US Core, must include a text description of the goal.<br/>
 3) Each goal should go into a separate Goal element so each can potentially reference a step or action(s), or a service(s) that addresses the goal.<br/>
-<!--Updated 4) in reponse to Jira #23047-->
-4) A Goal can be referenced from a Step or Action or from a service. For a goal related to a step or action, use activity &#8594; detail &#8594; goal. For a service request specific goal, use ServiceRequest &#8594; extension. Logically, these goals are exclusive to each other and the same goal isn't duplicated at both levels.<br/>
+<!--Updated 4) in response to JIRA #23047 and matching XLS-->
+4) A Goal can be referenced from a Step or Action or from a service. For a goal related to a step or action, use CarePlan &#8594; activity &#8594; detail &#8594; goal. For a service request specific goal, use ServiceRequest &#8594; extension &#8594; goal-pertainsToGoal. Logically, these goals are exclusive to each other and the same goal isn't duplicated at both levels.<br/>
 5) US Core requires the use of Goal &#8594; Subject to reference back to the Patient. </td>
     </tr>
     <tr>
@@ -391,7 +391,8 @@ Practitioner &#8594; name &#8594; text</td>
 2) EpisodeOfCare &#8594; careManager references the Practitioner who is monitoring the plan.<br/>
 3) given is used for both first name &amp; MI, so need more than one.<br/>
 4) family is a string with the person's surname.<br/>
-5) text is a string that contains the full name of the person.</td>
+5) text is a string that contains the full name of the person.<br/>
+6) The values for Plan Monitor Name and Plan Monitor Printed Name would include the same information.</td>
     </tr>
     <tr>
       <td>Person Centered Planning</td>
