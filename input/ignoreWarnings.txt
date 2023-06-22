@@ -13,6 +13,7 @@ Code System URI 'http://examplesystem' is unknown so the code cannot be validate
 
 
 #meeting with Terminology to talk about inclusion of this code system as a known external code system
+#may remove
 % system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
 UNKNOWN_CODESYSTEM; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server)
 Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
