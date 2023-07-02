@@ -35,7 +35,7 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * quantity[x] ^mustSupport = false
 * quantity[x] ^isModifier = false 
 
-* subject only Reference(Patient_eltss or Group or $us-core-device or Location_eltss)
+* subject only Reference(Patient_eltss or Group or $us-core-device or Device or Location_eltss)
 * encounter only Reference($us-core-encounter)
 //* eltss ^short = "Service Start + End Date"
 //* eltss ^definition = "The start and end date of the service being provided."
@@ -45,8 +45,8 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * occurrence[x] ^definition = "The start and end date of the service being provided."
 * occurrence[x] ^mustSupport = false
 * occurrence[x] ^isModifier = false
-* requester only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device)
-* performer only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device or $us-core-careteam or HealthcareService)
+* requester only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device or Device)
+* performer only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device or Device or $us-core-careteam or HealthcareService)
 * performer ^short = "Service Provider Name + Phone + Relationship"
 * performer ^definition = "The entity or individual providing the service. For paid services use the organization/agency name, for non-paid services use the first and last name of the individual providing the service."
 * performer ^mustSupport = false

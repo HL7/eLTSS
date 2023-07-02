@@ -16,7 +16,7 @@ Description: "RiskAssessment resource mapping for eLTSS"
 * subject only Reference(Patient_eltss)
 * encounter only Reference($us-core-encounter)
 * condition only Reference(Condition_eltss)
-* performer only Reference(Practitioner_eltss or $us-core-practitionerrole or $us-core-device)
+* performer only Reference(Practitioner_eltss or $us-core-practitionerrole or $us-core-device or Device)
 * reasonReference only Reference(Condition_eltss or Observation_eltss or $us-core-diagnosticreport-note or $us-core-documentreference)
 * prediction ^short = "Identified Risk"
 * prediction ^definition = "An aspect of a person’s life, behavior, environmental exposure, personal characteristic, or barrier that increases the likelihood of  disease, condition,  injury to self or others, or interaction with the criminal justice system."

@@ -87,6 +87,6 @@ Description: "CarePlan for eLTSS"
 * activity.detail.location only Reference(Location_eltss)
 * activity.detail.location ^mustSupport = false
 * activity.detail.location ^isModifier = false
-* activity.detail.performer only Reference(Practitioner_eltss or $us-core-practitionerrole or RelatedPerson or Patient_eltss or $us-core-organization or $us-core-careteam or HealthcareService or $us-core-device)
+* activity.detail.performer only Reference(Practitioner_eltss or $us-core-practitionerrole or RelatedPerson or Patient_eltss or $us-core-organization or $us-core-careteam or HealthcareService or $us-core-device or Device)
 * activity.detail.performer ^mustSupport = false
 * activity.detail.performer ^isModifier = false
