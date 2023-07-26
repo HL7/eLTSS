@@ -562,16 +562,6 @@
         </page-->
       </page>
 		<page>
-			<nameUrl value="security.html"/>
-			<title value="Security Note"/>
-			<generation value="markdown"/>
-		</page>
-		<page>
-			<nameUrl value="downloads.html"/>
-			<title value="Useful Downloads"/>
-			<generation value="markdown"/>
-		</page>
-		<page>
 			<nameUrl value="cross_version_analysis.html"/>
 			<title value="IG Change History"/>
 			<generation value="markdown"/>
@@ -581,6 +571,23 @@
 			<title value="Dependencies and Globals"/>
 			<generation value="markdown"/>
 		</page>
+		<page>
+			<nameUrl value="security.html"/>
+			<title value="Security Note"/>
+			<generation value="markdown"/>
+		</page>
+		<page>
+			<nameUrl value="ip_statement.html"/>
+			<title value="IP statement"/>
+			<generation value="markdown"/>
+		</page>
+		<page>
+			<nameUrl value="downloads.html"/>
+			<title value="Useful Downloads"/>
+			<generation value="markdown"/>
+		</page>
+
+
     </page>
 	<parameter>
       <code value="apply-jurisdiction"/>
