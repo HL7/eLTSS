@@ -13,10 +13,14 @@ Description: "Goal resource mapping for eLTSS"
 //* target.eltss contains eltss
 //slicing on dueby[x] no restriction but putting duration back in
 //* target.eltss ^sliceName = "eltss"
-* target.dueDuration 0..1 MS
-* target contains dueDateDurationStart 0..1
-* target.extenstion[dueDateDurationStart] ^short = "Start-date of the duration of time when the goal is due. End-date is found in dueDate"
-* target.extenstion[dueDateDurationStart] ^description = "If applicable, this is the Start-date of the duration of time when the goal is due. End-date is found in dueDate""
+
+//switch to startDate
+//* target contains dueDateDurationStart 0..1
+//* target.extenstion[dueDateDurationStart] ^short = "Start-date of the duration of time when the goal is due. End-date is found in dueDate"
+//* target.extenstion[dueDateDurationStart] ^description = "If applicable, this is the Start-date of the duration of time when the goal is due. End-date is found in dueDate""
+* startDate 0..1 MS
+* startDate ^short = "Start-date of the duration of time when the goal is due. End-date is found in dueDate"
+* startDate ^definition = "If applicable, this is the Start-date of the duration of time when the goal is due. End-date is found in dueDate"
 
 * expressedBy only Reference(Patient_eltss or Practitioner or $us-core-practitionerrole or RelatedPerson)
 * expressedBy ^mustSupport = false

@@ -1,5 +1,6 @@
 Profile: ServiceRequest_eltss
 Parent: ServiceRequest
+//Parent: $us-core-servicerequest
 Id: ServiceRequest-eltss
 Description: "ServiceRequest resource mapping for eLTSS"
 * ^version = "1.0.0"

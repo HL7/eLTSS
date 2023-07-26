@@ -15,6 +15,7 @@ Alias: $ex-USCLS = http://terminology.hl7.org/CodeSystem/ex-USCLS
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $us-core-careplan = http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan
 Alias: $us-core-condition = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
+//Alias: $us-core-servicerequest = http://hl7.org/fhir/us/core/StructureDefinition/
 Alias: $us-core-goal = http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal
 Alias: $us-core-location = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
 Alias: $us-core-patient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient

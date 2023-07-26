@@ -255,7 +255,7 @@
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
-    <resource>
+    <!--resource>
       <reference>
         <reference value="Bundle/careplan"/>
       </reference>
@@ -299,7 +299,7 @@
       <description value="Test instance showing data from the eLTSS spec"/>
       <exampleCanonical value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/Practitioner-eltss"/>
       <groupingId value="examples"/>
-    </resource>
+    </resource-->
     <!-- Value Sets -->
     <resource>
       <reference>
@@ -337,6 +337,15 @@
       <exampleBoolean value="false"/>
       <groupingId value="valuesets"/>
     </resource>
+	<!-- expansion parameters -->
+	<!--resource>
+		<reference>
+			<reference value="Parameters/expansion-parameters-eltss"/>
+		</reference>
+		<name value="Expansion Parameters SNOMED US Version"/>
+		<description value="Parameter file"/>
+		<exampleBoolean value="true"/>
+	</resource-->
     <!-- document structure starts here -->
     <page>
       <nameUrl value="toc.html"/>
@@ -562,5 +571,9 @@
       <code value="apply-jurisdiction"/>
       <value value="true"/>
     </parameter>
+	<parameter>
+		<code value="path-expansion-params"/>
+		<value value="resources/parameters/terminology-settings.xml"/>
+	</parameter>
   </definition>
 </ImplementationGuide>
