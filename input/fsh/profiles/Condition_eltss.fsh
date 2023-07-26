@@ -7,10 +7,11 @@ Description: "Condition for eLTSS"
 * ^date = "2019-02-17T00:00:00-05:00"
 * ^publisher = "HL7 CBCP"
 * . ^definition = "The eLTSS Condition Profile is based upon the US Core FHIR Condition Resource and created to meet the 2015 Edition Common Clinical Data Set 'Problems' and 'Health Concerns' requirements."
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.discriminator[0].type = #value
+* extension ^slicing.discriminator[=].path = "url"
 * extension ^slicing.rules = #open
-* extension contains ELTSS_dueTo named dueTo 0..*
+* extension contains $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS and ELTSS_dueTo named dueTo 0..*
+* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
 * extension[dueTo] ^sliceIsConstraining = false
 * category ^code.system = "http://hl7.org/fhir/us/eLTSS/ValueSet/eltss-condition-category-code"
 * category ^short = "Assessed Need Category"

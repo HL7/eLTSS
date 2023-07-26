@@ -10,6 +10,12 @@ Description: "Contract for eLTSS"
 * . ^definition = "A legally enforceable, formally recorded unilateral or bilateral directive (i.e., a policy or agreement)."
 * . ^mustSupport = false
 * . ^isModifier = false
+* extension ^slicing.discriminator.type = #type
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS
+* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+
 * instantiatesCanonical only Reference(Contract_eltss)
 * domain only Reference(Location_eltss)
 * site only Reference(Location_eltss)

@@ -10,6 +10,16 @@ Description: "Claim Resource profile for eLTSS"
 * . ^comment = "The eLTSS Claim resource profile fulfills three information request requirements: Claim - a request for adjudication for reimbursement for products and/or services provided; Preauthorization - a request to authorize the future provision of products and/or services including an anticipated adjudication; and, Predetermination - a request for a non-bind adjudication of possible future products and/or services."
 * . ^mustSupport = false
 * . ^isModifier = false
+* extension ^label = "Label"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^mustSupport = false
+* extension contains
+    $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS
+* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+
+
 * patient only Reference(Patient_eltss)
 * enterer only Reference(Practitioner_eltss or $us-core-practitionerrole)
 * provider only Reference(Practitioner_eltss or $us-core-practitionerrole or $us-core-organization)

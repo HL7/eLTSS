@@ -1,3 +1,4 @@
+Alias: $resource-pertainsToGoal = http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal
 Alias: $condition-category = http://hl7.org/fhir/us/core/CodeSystem/condition-category
 Alias: $careplan-category = http://hl7.org/fhir/us/core/CodeSystem/careplan-category
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203

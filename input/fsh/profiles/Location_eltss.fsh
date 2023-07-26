@@ -7,6 +7,16 @@ Description: "Location for eLTSS. This profile should only be used for Service D
 * ^date = "2019-02-17T00:00:00-05:00"
 * ^publisher = "HL7 CBCP"
 * . ^definition = "Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, and/or accommodated."
+
+* extension ^label = "Label"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^mustSupport = false
+* extension contains
+    $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS
+* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+
 * address ^definition = "Physical or geographical location."
 * address.district MS
 * address.district ^short = "County"

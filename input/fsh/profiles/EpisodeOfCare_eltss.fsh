@@ -10,6 +10,17 @@ Description: "EpisodeOfCare for eLTSS"
 * . ^short = "An association of a Patient with an Organization and Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility"
 * . ^mustSupport = false
 * . ^isModifier = false
+
+* extension ^label = "Label"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^mustSupport = false
+* extension contains
+    $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS
+* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+
+
 * patient only Reference(Patient_eltss)
 * referralRequest only Reference(ServiceRequest_eltss)
 * careManager only Reference(Practitioner_eltss)

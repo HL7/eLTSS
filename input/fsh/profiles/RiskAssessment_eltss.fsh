@@ -12,7 +12,10 @@ Description: "RiskAssessment resource mapping for eLTSS"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension contains RiskPlan named riskPlan 0..*
+* extension contains RiskPlan named riskPlan 0..* and $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS
+
+* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+
 * subject only Reference(Patient_eltss)
 * encounter only Reference($us-core-encounter)
 * condition only Reference(Condition_eltss)
