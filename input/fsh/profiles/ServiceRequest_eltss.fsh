@@ -40,6 +40,9 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * quantity[x] ^comment = "The numerical amount of the service unit being provided for a frequency.  This element is slated to be used in conjunction with Service Quantity Interval and Unit of Service Type elements to form a full description of how often a service is provided. \nOR \nA named quantity in terms of which services are measured or specified, used as a standard measurement of like services.\nOR \nA period of time corresponding to the quantity of service(s) indicated. Values include: per day, per week, per month, per year, one time only, other (free text)."
 * quantity[x] ^mustSupport = false
 * quantity[x] ^isModifier = false 
+* quantityQuantity.unit ^short = "UCUM codes are very useful here"
+* quantityRatio.numerator.unit ^short = "UCUM codes are very useful here"
+* quantityRatio.denominator.unit ^short = "UCUM codes are very useful here"
 
 * subject only Reference(Patient_eltss or Group or $us-core-device or Device or Location_eltss)
 * encounter only Reference($us-core-encounter)
@@ -51,6 +54,9 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * occurrence[x] ^definition = "The start and end date of the service being provided."
 * occurrence[x] ^mustSupport = false
 * occurrence[x] ^isModifier = false
+* occurrencePeriod ^short = "Use this when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServicePlan.quantity of 5 [USD]/day."
+* occurrenceTiming ^short = "Please consider using this for timing information that fluctuates or is sufficiently complex. You will need to calculate end-date, or use occurrenceTiming.period to ascribe a start and end date. E.g. Give ServicePlan.quantity 5 with unit=[USD]/day with the occuranceTiming.period of May 31, 2023 to June 23, 2023 on occuranceTiming.dayOfWeek = Mon and Wed at occuranceTiming.timeOfDay = 3 pm."
+
 * requester only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device or Device)
 * performer only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device or Device or $us-core-careteam or HealthcareService)
 * performer ^short = "Service Provider Name + Phone + Relationship"

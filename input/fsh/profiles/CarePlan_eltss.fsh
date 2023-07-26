@@ -66,27 +66,28 @@ Description: "CarePlan for eLTSS"
 * activity.reference only Reference(Appointment or CommunicationRequest or DeviceRequest or MedicationRequest or NutritionOrder or Task or ServiceRequest_eltss or VisionPrescription or RequestGroup)
 * activity.reference ^mustSupport = false
 * activity.reference ^isModifier = false
-* activity.detail ^short = "Plan Step or Action"
-* activity.detail ^definition = "A planned measurable step or action that needs to be taken to accomplish a goal identified by the person."
-* activity.detail ^mustSupport = false
-* activity.detail ^isModifier = false
-* activity.detail.instantiatesCanonical only canonical
-* activity.detail.instantiatesCanonical ^type.targetProfile[0] = "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
-* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss"
-* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/Measure"
-* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
-* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
-* activity.detail.instantiatesCanonical ^mustSupport = false
-* activity.detail.instantiatesCanonical ^isModifier = false
-* activity.detail.reasonReference only Reference(Condition_eltss or Observation_eltss )//or MedicationStatement or NutritionOrder)
-* activity.detail.reasonReference ^mustSupport = false
-* activity.detail.reasonReference ^isModifier = false
-* activity.detail.goal only Reference(Goal_eltss)
-* activity.detail.goal ^mustSupport = false
-* activity.detail.goal ^isModifier = false
-* activity.detail.location only Reference(Location_eltss)
-* activity.detail.location ^mustSupport = false
-* activity.detail.location ^isModifier = false
-* activity.detail.performer only Reference(Practitioner_eltss or $us-core-practitionerrole or RelatedPerson or Patient_eltss or $us-core-organization or $us-core-careteam or HealthcareService or $us-core-device or Device)
-* activity.detail.performer ^mustSupport = false
-* activity.detail.performer ^isModifier = false
+* activity.detail 0..0
+//* activity.detail ^short = "Plan Step or Action"
+//* activity.detail ^definition = "A planned measurable step or action that needs to be taken to accomplish a goal identified by the person."
+//* activity.detail ^mustSupport = false
+//* activity.detail ^isModifier = false
+//* activity.detail.instantiatesCanonical only canonical
+//* activity.detail.instantiatesCanonical ^type.targetProfile[0] = "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
+//* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss"
+//* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/Measure"
+//* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
+//* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
+//* activity.detail.instantiatesCanonical ^mustSupport = false
+//* activity.detail.instantiatesCanonical ^isModifier = false
+//* activity.detail.reasonReference only Reference(Condition_eltss or Observation_eltss )//or MedicationStatement or NutritionOrder)
+//* activity.detail.reasonReference ^mustSupport = false
+//* activity.detail.reasonReference ^isModifier = false
+//* activity.detail.goal only Reference(Goal_eltss)
+//* activity.detail.goal ^mustSupport = false
+//* activity.detail.goal ^isModifier = false
+//* activity.detail.location only Reference(Location_eltss)
+//* activity.detail.location ^mustSupport = false
+//* activity.detail.location ^isModifier = false
+//* activity.detail.performer only Reference(Practitioner_eltss or $us-core-practitionerrole or RelatedPerson or Patient_eltss or $us-core-organization or $us-core-careteam or HealthcareService or $us-core-device or Device)
+//* activity.detail.performer ^mustSupport = false
+//* activity.detail.performer ^isModifier = false
