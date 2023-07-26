@@ -561,11 +561,26 @@
           <generation value="generated"/>
         </page-->
       </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Implementation Guide Downloads"/>
-        <generation value="html"/>
-      </page>
+		<page>
+			<nameUrl value="security.html"/>
+			<title value="Security Note"/>
+			<generation value="markdown"/>
+		</page>
+		<page>
+			<nameUrl value="downloads.html"/>
+			<title value="Useful Downloads"/>
+			<generation value="markdown"/>
+		</page>
+		<page>
+			<nameUrl value="cross_version_analysis.html"/>
+			<title value="IG Change History"/>
+			<generation value="markdown"/>
+		</page>
+		<page>
+			<nameUrl value="dependencies_globals.html"/>
+			<title value="Dependencies and Globals"/>
+			<generation value="markdown"/>
+		</page>
     </page>
 	<parameter>
       <code value="apply-jurisdiction"/>

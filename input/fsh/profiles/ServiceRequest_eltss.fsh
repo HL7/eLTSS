@@ -22,6 +22,11 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * code ^comment = "Use HCPCS (https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo/) code + modifiers or free text."
 * code ^mustSupport = false
 * code ^isModifier = false
+//* code from adverse-event-contributing-factor-vs (example)
+//* extension[item].valueCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+//* extension[item].valueCodeableConcept ^binding.extension.valueString = "AdverseEventContributingFactor"
+* code from http://terminology.hl7.org/ValueSet/v3-HealthCareCommonProcedureCodingSystem (preferred)
+* code ^binding.description = "Use HCPCS (https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo/) code + modifiers or free text."
 //* eltss contains
 //    eltss and
 //    eltss
