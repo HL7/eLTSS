@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
+  <div class="dragon">Look for changes that look like this 
+	<br></br> 
+	<div class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal
+	</div>
+  </div>
+  <br></br>
   <table border="1">
     <tr>
       <th>eLTSS Grouping</th>
@@ -8,6 +15,7 @@
       <th>FHIR R4 Resource Element(s)</th>
       <th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
       <th>Additional Mapping Details</th>
+	  <th class="stu-note">Important change</th>
     </tr>
     <tr>
       <td>Beneficiary Demographics</td>
@@ -208,7 +216,7 @@ CarePlan [emergency backup plan]<br/>
 3) description contains the text of the Emergency Backup Plan if provided as text.<br/>
 4) type indicates the kind of document, but the documented preferred LOINC value set does not include anything corresponding to an emergency backup plan. Therefore we can use the Codeable Concept's text data element to indicate "Emergency Backup Plan". (type is mandatory in FHIR 3.0.1, but optional in the R4 draft.)<br/></td>
     </tr>
-    <tr>
+    <tr bgcolor="#fff2ff">
       <td>Goals &amp; Strengths</td>
       <td>Goal</td>
       <td>A statement of a desired result that the person wants to achieve.</td>
@@ -224,34 +232,33 @@ Goal &#8594; description &#8594; text</td>
 2) description is required by both FHIR and US Core, and is a CodableConcept whose text element, per US Core, must include a text description of the goal.<br/>
 3) Each goal should go into a separate Goal element so each can potentially reference a step or action(s), or a service(s) that addresses the goal.<br/>
 <!--Updated 4) in response to JIRA #23047 and matching XLS-->
-4) A Goal can be referenced from a Step or Action or from a service. For a goal related to a step or action, use CarePlan &#8594; activity &#8594; detail &#8594; goal. For a service request specific goal, use ServiceRequest &#8594; extension &#8594; goal-pertainsToGoal. Logically, these goals are exclusive to each other and the same goal isn't duplicated at both levels.<br/>
+4) A Goal can be referenced from a Step or Action or from a service. For a goal related to a step or action, use extension(pertainsToGoal). For a service request specific goal, also use extension(pertainsToGoal). Logically, these goals are exclusive to each other and the same goal isn't duplicated at both levels.<br/>
 5) US Core requires the use of Goal &#8594; Subject to reference back to the Patient. </td>
+<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td>
     </tr>
-    <tr>
+    <tr bgcolor="#fff2ff">
       <td>Goals &amp; Strengths</td>
       <td>Step or Action</td>
       <td>A planned measurable step or action that needs to be taken to accomplish a goal identified by the person.</td>
-      <td>CarePlan &#8594; activity &#8594; detail &#8594; description<br/>
-CarePlan &#8594; activity &#8594; detail &#8594; goal(Goal)<br/>
-or<br/>
+	  <td>
 CarePlan &#8594; activity<br/>
-         &#8594; reference(ServiceRequest) &#8594; note<br/>
-         &#8594; text</td>
+         &#8594; reference(Resource) &#8594; note<br/>
+         &#8594; text
+		 &#8594; extension(pertainsToGoal)</td>
       <td>CarePlan<br/>
 ...activity 0..*<br/>
-......detail 0..1<br/>
-.........description 0..1<br/>
-.........goal(Goal) 0..*<br/>
-......reference(ServiceRequest) 0..1<br/>
+......reference(Resource) 0..1<br/>
 .........note 0..*<br/>
-............text 1<br/></td>
-      <td>1) CarePlan includes activity &#8594; detail, as well as a reference to ServiceRequest.<br/>
-2) ServiceRequest would be used when the Step or Action is a task under a service, and activity &#8594; detail when the Step or Action is an informal support or an activity being undertaken by the beneficiary.<br/>
-3) activity &#8594; detail is linked to the Goal the step or action addresses through the goal data element.<br/>
-4) activity &#8594; detail includes a performer data element that can be used to reference who is responsible for performing the step or action, such as to indicate that the person or a related person is responsible.<br/>
-5) description or text is where the Step or Action text would be provided, depending on which representation is used.<br/>
+............text 1<br/>
+.........extension(pertainsToGoal)</td>
+      <td>1) CarePlan includes activity &#8594; reference, which can be a reference to ServiceRequest, Task or other Resource.<br/>
+2) ServiceRequest would be used when the Step or Action is a task under a service. If the Step or Action is an informal support or an activity being undertaken by the beneficiary the Task Resource, similar to a Patient Task used in the Gravity SDOH IG, can be used.<br/>
+3) activity &#8594; reference(Resource) is linked to the Goal the step or action addresses through the pertainsToGoal Extension in the referenced activity.<br/>
+4) activity &#8594; reference(Resource) includes a performer, author, participant with type or other data element that can be used to reference who is responsible for performing the step or action, such as to indicate that the person or a related person is responsible.<br/>
+5) text is where the Step or Action text would be provided.<br/>
 6) text is required by FHIR if note is provided.<br/>
 7) Note that a stated goal may lead directly to a service, and not necessarily to an explicit Step or Action. For example, a person's goal could be to attend church regularly, and this would be achieved through a transportation service.</td>
+	<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td>
     </tr>
     <tr>
       <td>Goals &amp; Strengths</td>
@@ -971,7 +978,7 @@ ServiceRequest &#8594; extension<br/>
 ...............text 0..1</td>
       <td>1) activity is part of CarePlan, so no references are required to link the two.<br/>
 2) The procedure-directedBy extension is indicated by populating the url data attribute with the value "http://hl7.org/fhir/StructureDefinition/procedure-directedBy".<br/>
-3) The text data element can be populated with the value "self" to indicate that this service is self-directed. Other values could be provided to indicate that someone else is directing the service.</td>
+3) The text data element can be populated with the value "self" to indicate that this service is self-directed. Other values could be provided to indicate that someone else is directing the service. This is in addition to populating the proper element in the Resource indicated in CarePlan.activity.reference such as Task, Observation etc to indicate who is responsible or carried out the task.</td>
     </tr>
     <tr>
       <td>Service Information</td>
@@ -1085,7 +1092,7 @@ Organization | Patient | RelatedPerson<br/>
       <td>1) Will use CarePlan &#8594; activity &#8594; reference to reference a ServiceRequest, and insurance to reference a Coverage resource, which must include a payor that is a person or an organization.<br/>
 2) Coverage resource may be used to register "SelfPay" where an individual or organization other than an insurer is taking responsibility for payment for a portion of the health care cost.</td>
     </tr>
-    <tr>
+    <tr bgcolor="#fff2ff">
       <td>Service Information</td>
       <td>Service Unit Quantity</td>
       <td>The numerical amount of the service unit being provided for a frequency.<br/>
@@ -1122,7 +1129,9 @@ ServiceRequest &#8594; quantityRatio &#8594; denominator<br/>
 2) quantityQuantity can be used to represent simple quantities such as "1 installation" or "5 trips". quantityRatio can be used to represent quantities with intervals such as "8 hours a day" or "7 units per week". Either quantityQuantity or quantityRatio can be used, but not both for the same ServiceRequest.<br/>
 3) value is a decimal, and unit is a string.<br/>
 4) numerator and denominator are used to represent a quantity with an interval. For example, to represent 8 hours a day, numerator &#8594; value would be "8" and numerator &#8594; unit would be "hour", while denominator &#8594; value would be "1" and denominator &#8594; unit would be "day".<br/>
-5) See the "qty-unit-interval examples" worksheet in this spreadsheet for additional details.</td>
+5) See the "qty-unit-interval examples" worksheet in this spreadsheet for additional details.<br/>
+6) Please also consider occurrencePeriod for use when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServicePlan.quantity of 5 [USD]/day. AND, use occurrenceTiming for timing information that fluctuates or is sufficiently complex. The recipient may need to calculate end-date, or one can use occurrenceTiming.period to ascribe a start and end date. E.g. Give ServicePlan.quantity 5 with unit=[USD]/day with the occuranceTiming.period of May 31, 2023 to June 23, 2023 on occuranceTiming.dayOfWeek = Mon and Wed at occuranceTiming.timeOfDay = 3 pm.</td>
+	<td class="stu-note">Added guidance on ServiceRequest.occurrenceTiming and ServiceRequest.occurrencePeriod</td>
     </tr>
     <tr>
       <td>Service Information</td>
@@ -1403,16 +1412,25 @@ CarePlan &#8594; category &#8594; coding &#8594; code</td>
       <td>1) Per US Core, one category must appear, and must include system with the value "http://hl7.org/fhir/us/core/CodeSystem/careplan-category" and  code with the value "assess-plan".<br/>
 2) US Core does not restrict the number of additional category elements that may appear.</td>
     </tr>
-    <tr>
-      <td>CarePlan Activity Detail Status<br/>
+    <tr bgcolor="#fff2ff">
+      <td>CarePlan Activity Status<br/>
 FHIR</td>
       <td>Identifies what progress is being made for the specific activity.</td>
-      <td>CarePlan &#8594; activity &#8594; detail &#8594; status</td>
+      <td>CarePlan &#8594; activity &#8594; reference(Resource) &#8594; status<br/>
+			and<br/>
+			CarePlan&#8594; activity &#8594; progress</td>
       <td>CarePlan<br/>
 ...activity<br/>
-......detail<br/>
-.........status 1</td>
-      <td>1) status is required by FHIR, and must use the CarePlanActivityStatus value set (http://hl7.org/fhir/valueset-care-plan-activity-status.html). Possible values are: not-started, scheduled, in-progress, on-hold, completed, cancelled, stopped, unknown, and entered-in-error.</td>
+......reference(Resource)<br/>
+.........status 1<br/>
+and
+CarePlan<br/>
+...activity<br/>
+......progress<br/>
+</td>
+      <td>1) status is required by FHIR in Resources Reference by CarePlan.activity.reference. Possible values are: not-started, scheduled, in-progress, on-hold, completed, cancelled, stopped, unknown, and entered-in-error.<br/>
+	  2) There is also CarePlan.activity.progress to add a free-text description of the progress, or note. CarePlan.activity.progress is an Annotation data type in FHIR, this means it can be dated and contain the identification of the person who uttered the text. This might be used, for example, when the status stays in the same state, i.e. 'in-progress,' but where there is a evolution of that progress.</td>	  
+	<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the use of the status element in the referenced activity and CarePlan.activity.progress free-text annotation</td>
     </tr>
     <tr>
       <td>CareTeam Status<br/>
