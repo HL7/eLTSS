@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  <p>Logical models document the requirements of the LTSS domain without alignment to FHIR. The only thing that makes the logical models 'FHIR Logical Models' is the use of the StructureDefinition resource as a formal representation. The purpose of the logical model is to gather requirements from domain experts that can subsequently feed into the design process for profiles and implementation guides. A logical model ‘bridges the gap’ by documenting the requirements in a computable fashion without placing any constraints on the model structure.</p>
+  <p>If interested in the original 'FHIR Logical Models' please see [STU-1](https://hl7.org/fhir/us/eltss/models.html)</p>
+  
+  <!--p>Logical models document the requirements of the LTSS domain without alignment to FHIR. The only thing that makes the logical models 'FHIR Logical Models' is the use of the StructureDefinition resource as a formal representation. The purpose of the logical model is to gather requirements from domain experts that can subsequently feed into the design process for profiles and implementation guides. A logical model ‘bridges the gap’ by documenting the requirements in a computable fashion without placing any constraints on the model structure.</p>
   <p>
     <table>
       <tr>
@@ -22,5 +24,5 @@
         <td>Defines the Logical Model for eLTSS Service Plan.</td>
       </tr>
     </table>
-  </p>
+  </p-->
 </div>
