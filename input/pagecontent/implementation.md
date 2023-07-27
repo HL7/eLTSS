@@ -24,9 +24,9 @@ Finally, the eCare guide also provides important guidance on alignment with the 
 
 
 ### Where does this guide fit in
-The eLTSS IG focuses on being able to package eLTSS data in a CarePlan so that a reader of the data can find all they need to perform their role and function. Da Vinci extends the financial and business transactions found in this guide (primarily seen as a tracking of the signature of various actors). The Gravity SDOH IG works more closely with the Task and ServiceRequest transaction, data components of activities that would be refer to by a CarePlan. The eLTSS, by focusing on CarePlan, adds additional opportunity to share other important actives (either as activity.outcomes - things that were done as a result of the activity - or as activity.reference items - things planned to be done).
+The eLTSS IG focuses on being able to package eLTSS data in a CarePlan so that a reader of the data can find all they need to perform their role and function. Da Vinci extends the financial and business transactions found in this guide (primarily seen as a tracking of the signature of various actors). The Gravity SDOH IG works more closely with the Task and ServiceRequest transaction, data components of activities that would be refereed to by a CarePlan. The eLTSS, by focusing on CarePlan, adds additional opportunity to share other important actives (either as activity.outcomes - things that were done as a result of the activity - or as activity.reference items - things planned to be done).
 
-Please take all these guides into consideration when implementing in the eLTSS space. They provide important guidance on aspects that are not the central purview of this particular guide, but which effect the workflow which the eLTSS data elements flow. Importantly, these guides us US CORE as a base.
+Please take all these guides into consideration when implementing in the eLTSS space. They provide important guidance on aspects that are not the central purview of this particular guide, but which effect the workflow in which the eLTSS data elements flow. Importantly, these guides us US CORE as a base.
 
 
 ## [Mapping page eLTSS data elements to FHIR](eLTSS_to_FHIR_R4_element.html)
