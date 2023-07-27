@@ -380,6 +380,11 @@
             <generation value="html"/>
           </page>
         </page>
+		<page>
+          <nameUrl value="implementation.html"/>
+          <title value="Implementation"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="profiles.html"/>

@@ -1,5 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+
+
+<div class="stu-note">
+
+  <!--h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4-->
+
+  <p>Changes to look out for:</p>
+
+  <ul>
+    <li>Deprecation of CarePlan.activity.detail, reduces opportunity for variability in delivery of data elements</li>
+    <li>Recommendations on use of Task and the extension:pertainsToGoal</li>
+	<li>Clarification on </li>
+	<li>USCORE version in this current branch is 3.1 - other branches will follow</li>
+  </ul>
+</div>
+
+
   <h3>Introduction</h3><a name="introduction"> </a>
 <p><!--Updated the first sentence and 2 other areas to specify US Core 3.0 for #28236-->
 The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
@@ -58,7 +75,7 @@ This also includes an organization including, but not limited to a hospital incl
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <!--tr>
         <td>Amber Patel</td>
         <td>Author</td>
         <td>Security Risk Solutions</td>
@@ -127,7 +144,7 @@ This also includes an organization including, but not limited to a hospital incl
         <td>Mark Meadows</td>
         <td>Contributor</td>
         <td>Georgia Department of Community Health</td>
-      </tr>
+      </tr-->
     </tbody>
   </table>
 </div>
