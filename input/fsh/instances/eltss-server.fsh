@@ -26,7 +26,7 @@ Usage: #definition
 * implementationGuide[+] = "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"
 * implementationGuide[+] = "http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata"
 * implementationGuide[+] = "https://hl7.org/fhir/us/sdoh-clinicalcare/"
-* implementationGuide[+] = "DIVINCI??"
+* implementationGuide[+] = "http://hl7.org/fhir/us/davinci-pct/2022Jan/"
 * rest.mode = #server
 * rest.resource.type = #CarePlan
 * rest.resource.supportedProfile = "http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"

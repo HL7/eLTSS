@@ -10,8 +10,9 @@
 
   <ul>
     <li>Deprecation of CarePlan.activity.detail, reduces opportunity for variability in delivery of data elements</li>
-    <li>Recommendations on use of Task and the extension:pertainsToGoal</li>
-	<li>Clarification on </li>
+    <li>Recommendations on use of Task and the <a href="http://build.fhir.org/ig/HL7/eLTSS/implementation.html#pertainstogoal-extension">extension:pertainsToGoal</a></li>
+	<li>Clarification on occuranceTiming</li>
+	<li>See, <a href="http://build.fhir.org/ig/HL7/eLTSS/eLTSS_to_FHIR_R4_element.html">changes to Mapping eLTSS to FHIR</a>, <a href="http://build.fhir.org/ig/HL7/eLTSS/StructureDefinition-ServiceRequest-eltss.html">ServiceRequest.occurrence[x]</a>, <a href="http://build.fhir.org/ig/HL7/eLTSS/implementation.html">Implementation topics</a>, <a href="http://build.fhir.org/ig/HL7/eLTSS/StructureDefinition-CarePlan-eltss.html">CarePlan removal of CarePlan.activity.detail</a></li>
 	<li>USCORE version in this current branch is 3.1 - other branches will follow</li>
   </ul>
 </div>

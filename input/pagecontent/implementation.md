@@ -44,22 +44,26 @@ The following comes from the [MCC eCare IG](https://build.fhir.org/ig/HL7/fhir-u
 ### [pertainsToGoal extension](http://hl7.org/fhir/R4/extension-resource-pertainstogoal.html)
 This extension is used extensively in the MCC eCare guide to provide a link within FHIR Resources back to the target Goal. A single data point, such as a clinical test observation, can serve for multiple goals. Thus, pertainsToGoal is given 0..* cardinality.
 
-### Task and ServiceRequest following Gravity SDOH
+### Workflow Task and ServiceRequest following Gravity SDOH
 The guidance from Gravity is to extensive to fit into a single paragraph. The SDOHCC Task for Referral Management  Here is a list of important pages from the Gravity SDOH guide:
-* example of a Task, SDOHCC Task for Referral Mangement http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/StructureDefinition-SDOHCC-TaskForReferralManagement.html
+* example of a Task, SDOHCC Task for Referral Management http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/StructureDefinition-SDOHCC-TaskForReferralManagement.html
 * working with the status of Task http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/checking_task_status.html
 * referral workflow showing Task used in context http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/referral_workflow.html
 * notes on initiating communication http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/connecting_applications_with_api_data_sources.html
 Generally, the Task is a way of communicating what is actually being performed in relationship to the requested service. 
 
 ### Patient Tasks
-A slight variation on the Gravity Patient Task is the suggested use of Task to record/track tasks a patient will be performing or is choosing to be responsible for. Here's the section in Gravity SDOH which focuses on the subset of tasks around questionnaires.
+A slight variation on the Gravity Patient Task is the suggested use of Task to record/track tasks a patient will be performing or is choosing to be responsible for. As an example, see the section in Gravity SDOH which focuses specifically on the subset of tasks around questionnaires [SDOHCC Task For Patient](https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/StructureDefinition-SDOHCC-TaskForPatient.html). 
+
+For general purpose use, the generic Task Resource would be sufficient, but the Task.for would reference a US CORE Patient Profile instance that represented the Patient. Task.owner and Task.requester would also be used to indicate who is responsible for the Task and who requested it. 
+
 
 ### Use of Annotation data types and codeableConcept.text 
 There are several ways that text can be added in FHIR Resources, for those times when you absolutely need to. The Annotation data type, used in CarePlan.progress, provides a slot for attribution to a creator of the text, a time stamp and a large space for text. For shorter briefer clarification or communications (or when you cannot provide an appropriate code)m the codeableConcept.text field is useful. Brief comments can be things like the words uttered by the patient. It is worth noting that the use of text does not make the text as usable as nicely structured data. Use sparingly, ideally you will use structured data elements. 
 
 ### Quantities, UCUM and the Timing data type
-Qua
+Quantities can 
+[UCUM](https://ucum.org/ucum#para-37) is a coding system for units of measure. There is an HL7 value set [here](https://build.fhir.org/valueset-ucum-units.html). 
 
 ### Terminology from MCC eCare and Gravity SDOH
 There has been a strong effort in both of these IGs to help organize coded concepts for use in specific data elements. The organization aides both discovery and normalization of terms used. It can be a time saver to start with the terminology work done in those two guides. See http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/gravity_terminology.html and https://build.fhir.org/ig/HL7/fhir-us-mcc/mcc_value_set_libraries_and_usage.html
