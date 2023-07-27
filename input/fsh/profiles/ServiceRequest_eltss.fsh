@@ -58,7 +58,7 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * occurrence[x] ^mustSupport = false
 * occurrence[x] ^isModifier = false
 * occurrencePeriod ^short = "Use this when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServicePlan.quantity of 5 [USD]/day."
-* occurrenceTiming ^short = "Please consider using this for timing information that fluctuates or is sufficiently complex. You will need to calculate end-date, or use occurrenceTiming.period to ascribe a start and end date. E.g. Give ServicePlan.quantity 5 with unit=[USD]/day with the occuranceTiming.period of May 31, 2023 to June 23, 2023 on occuranceTiming.dayOfWeek = Mon and Wed at occuranceTiming.timeOfDay = 3 pm."
+* occurrenceTiming ^short = "Please consider using this for timing information that fluctuates or is sufficiently complex. You will need to calculate end-date, or use occurrenceTiming.boundsPeriod to ascribe a start and end date. E.g. Give ServicePlan.quantity 5 with unit=[USD]/day with the occuranceTiming.boundsPeriod of May 31, 2023 to June 23, 2023 on occuranceTiming.dayOfWeek = Mon and Wed at occuranceTiming.timeOfDay = 3 pm."
 
 * requester only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device or Device)
 * performer only Reference(Practitioner_eltss or $us-core-practitionerrole or Patient_eltss or $us-core-organization or RelatedPerson or $us-core-device or Device or $us-core-careteam or HealthcareService)
