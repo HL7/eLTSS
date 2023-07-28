@@ -18,7 +18,7 @@
 		<p>Questions:</p>
 		<ul>
 			<li>Should we constrain ServiceRequest.occurrence to ONLY allow occurenceTiming in the IG?</li>
-			<li>Familiarity with HL7 projects such as [Da Vinci Project](https://www.hl7.org/about/davinci/)</li>
+			<li>Familiarity with HL7 projects such as <a href="https://www.hl7.org/about/davinci/">Da Vinci Project</a></li>
 			<li>Do any of the changes break your current implementation?</li>
 			<li>Do any of the changes improve your current implementation or planning?</li>
 			<li>Additional implementation concerns?</li>
