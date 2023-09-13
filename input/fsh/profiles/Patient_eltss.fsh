@@ -15,14 +15,7 @@ Description: "Patient resource mapping for eLTSS"
 //* extension.extension.valueString[valueString] ^sliceName = "valueString"
 //* extension.valueCode[valueCode] ^sliceName = "valueCode"
 
-* extension ^label = "Label"
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^mustSupport = false
-* extension contains
-    $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS
-* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+
 
 
 * identifier ^short = "Person Identifier"
