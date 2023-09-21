@@ -27,8 +27,20 @@
   </ul>
 </div>
 
+  <h3>Introduction to the Guide</h3><a name="introduction"> </a>
+<p><!--Updated the first sentence and 2 other areas to specify US Core 3.0 for #28236-->
+The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
+</p>
 
-  <h3>Introduction</h3><a name="introduction"> </a>
+<p>This guide is not the place to learn about the eLTSS use case. It is expected that readers of this guide have become familiar with FHIR R4 and the eLTSS use case prior to reading this guide.
+This guide does provide implementation guidance for eLTSS data elements, including communicating patient participation in care. The guidance is found as a mixture of mapping guidance, narration, example, testing recommendation, and FHIR artifacts. FHIR R4 Core and US CORE 3.1.1 provide a rich resource of detail for implementers. It is a perquisite of this guide that implementers become familiar with both.
+</p>
+
+
+
+
+
+  <h3>Background on eLTSS</h3><a name="background"> </a>
 <p><!--Updated the first sentence and 2 other areas to specify US Core 3.0 for #28236-->
 The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
 </p>
@@ -50,14 +62,18 @@ For more information, please see the <a href="background.html">Project Backgroun
   <p>The scope of this implementation guide is to describe how LTSS (also referred to as Home and Community-Based Service (HCBS)) data requirements, documented in the 56 data elements included in the eLTSS Dataset, can be represented for exchange and sharing using FHIR.</p>
   <p>
 The concept of an eLTSS service plan most closely aligns with the FHIR CarePlan resource, which is semantically a good fit. The diagram below shows the FHIR resources utilized in the mapping as well as the FHIR data elements used to link these resources. Parentheses indicates the eLTSS Dataset data element (e.g. Assessed Need, Preference) or group of elements (e.g. Beneficiary Demographics, Person Indicators). Lines indicate linkages between FHIR resources and are labeled with the FHIR data element that provides the reference.</p>
-  <img src="CarePlan_FHIR_mapping_centered_narrow.png"/>
+  <!--img src="CarePlan_FHIR_mapping_centered_narrow.png"/-->
+  <img src="eltssCut.svg"/>
   <br/>
   <br/>
   <p>The IG will use <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a>, and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.0</a> as a starting point and will profile resources as necessary to enable eLTSS Plan Creation and Exchange. Please refer to <a href="profiles.html">eLTSS FHIR Profiles</a> for additional details.</p>
   <p> For a detailed view of how eLTSS maps to FHIR R4, please refer to the <a href="eLTSS_to_FHIR_R4_element.html">eLTSS Dataset to FHIR Release 4 Mapping</a> included in this guide.</p>
+  
+  
   <a name="us-core"/>
   <h3>US Core Dependency</h3>
   <p>Please note that implementations using this eLTSS FHIR IG must comply with US Core v3.0 when applicable. US Core defines the minimum conformance requirements for accessing patient data as defined by the Argonaut pilot implementations and the ONC 2015 Edition Common Clinical Data Set (CCDS). These profiles are intended to be the foundation for US Realm FHIR implementation guides. Therefore, <a href="http://www.hl7.org/fhir/us/core/#us-core-profiles">US Core Profiles</a>, <a href="http://www.hl7.org/fhir/us/core/terminology.html">US Core Terminology</a>,  <a href="http://www.hl7.org/fhir/us/core/capstmnts.html">US Core Capability Statements / Conformance Requirements</a>, and <a href="http://www.hl7.org/fhir/us/core/security.html">Security Considerations</a> not specifically noted in this guide must be included when applicable. Please refer to the <a href="eLTSS_FHIR_USCore_Mapping.html">eLTSS Dataset to FHIR US Core Mapping</a> included in this guide</p>
+  
   <a name="actors"/>
   <h3>eLTSS Actors</h3>
   <p>The eLTSS Informative Document identified four actors who may be involved in the exchange of service plans. The list below outlines these actors and a brief description of their role in LTSS:</p>
@@ -75,6 +91,70 @@ This also includes an organization including, but not limited to a hospital incl
     <li><b>US Core Responder:</b> A product that responds to the data access request providing patient and service data. This can be thought of as the server in a client-server interaction.</li>
   </ul>
   <p>The eLTSS actors correspond to the US Core requestor actor when an eLTSS plan is exchanged using FHIR.</p>
+  
+  
+  <a name="how-to-read-this-guide"/>
+  <h3>How to Read this guide</h3>
+  <p>This Guide is divided into several pages, which can be found on the menu bar on the top of each page</p>
+  
+  
+  <p>
+The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This page is a very important page. eLTSS requires very few constraints beyond US CORE 3.1.1 on core FHIR R4, thus the profiles are largely for convenience. There are a few Must Supports not included in US CORE 3.1.1 and some Resources which are not covered by US CORE 3.1.1, so the FHIR profiles are still needed. However, the mapping page is a summation of where eLTSS data elements should be placed/found in FHIR.  
+</p>
+
+
+  <ul>
+  <li><a href="index.html" >IG Home</a>: Provides the introduction and background.</li>
+  <li><a href="implementation.html">Implementation</a>: This page provides guidance on implementing eLTSS using FHIR, including other Implementation Guides</li>
+  <li><a href="taskProcedure.html" >Task Guidance</a>: Provides guidance on using Task - includes aspects of patient engagement</li>
+  
+  <!--li><a href="index.html" title="IG Home">Conformance</a>: Recommendations on testing.</li-->
+  <li><a href="index.html" >Mapping</a>: Provides implementers with the location of FHIR fields where eLTSS data elements should be found.
+  <ul><li><a href="eLTSS_to_FHIR_R4_element.html"></a>:Guidance for eLTSS elements in FHIR R4.</li></ul>
+  </li>
+  
+  <li><a href="" >Artifacts</a>: FHIR artifacts can be found here
+  <ul>
+	<li><a href="profiles.html">Profiles</a>: FHIR profiles contain machine readable constraints on the FHIR specification. The narrative sections are important to review as well.</li>
+	<li><a href="examples.html">Examples</a>: Look here for examples to guide your implementation.</li>
+	<li><a href="extensions.html">Extensions</a>: Extensions provide specific additional data elements not found in the core specification.</li>
+	<li><a href="OperationDefinition-all-eltss-careplan.html">All-eLTSS retrieval Operation</a>: The Operation is an extension of the FHIR search specification for returning all data associated with an eLTSS CarePlan.</li>
+	<li><a href="capabilities.html">Capability Statements</a>: Capability statements describe the capabilities of systems implementing the IG.</li>
+	<li><a href="vocabulary.html">Value Sets</a>: This page contains the value sets created for the IG. The value sets provide coded terms for use with specific data elements.</li>
+  </ul>
+  </li>
+  
+  
+  <!--li><a href="guidance.html">Guidance</a>: The Guidance pages document best practices and how to use the profiles and transactions defined in this guide.
+    <ul>
+      <li><a href="uscdi.html">USCDI</a>: This page maps the US Core Profiles to the (USCDI) data classes and data elements.</li>
+      <li><a href="general-guidance.html" title="General Guidance Page">General Guidance</a>: This page provides guidance and definitions and requirements common to all actors and profiles used in this guide.</li>
+      <li><a href="clinical-notes.html">Clinical Notes</a>: This page gives guidance on the interactions between Consumers and Producers of clinical notes.</li>
+      <li><a href="medication-list.html">Medication List</a>: This page gives guidance on how a patient or provider can access a patient’s medications.</li>
+      <li><a href="basic-provenance.html">Basic Provenance</a>: This page provides implementers with important definitions to create and share the Provenance Resource.</li>
+      <li><a href="screening-and-assessments.html">Screening and Assessments</a>: This page documents how US Core Profiles are used to represent screenings and assessments for patient health status</li>
+      <li><a href="changes-between-versions.html">Changes Between Versions</a>: This page considers the user and developer experience when transitioning between versions of US Core and documents the changes between versions.</li>
+      <li><a href="future-of-US-core.html">Future of US Core</a>: This page outlines the approach to adding new content to US Core.</li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">FHIR Artifacts</a>: These pages provide detailed descriptions and formal definitions for all the FHIR objects defined in this guide.
+    <ul>
+      <li><a href="profiles-and-extensions.html">Profiles and Extensions</a>: This page lists the US Core Profiles and Extensions defined in this guide to exchange quality data.
+        <ul>
+          <li>Each US Core Profile page includes a narrative description that lists all the <a href="must-support.html">Mandatory</a> and <a href="must-support.html">Must Support</a> data elements, profile-specific implementation guidance, and formal definition. A “Quick Start” guide summarizes the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it also may cover un-profiled elements to aid with implementation and certification.</li>
+        </ul>
+      </li>
+      <li><a href="search-parameters-and-operations.html">Search Parameters and Operations</a>: This page lists the defined US Core Operations and Search Parameters used in US Core transactions.</li>
+      <li><a href="terminology.html" title="Terminology Page">Terminology</a>: This page lists the US Core ValueSets, and CodeSystems defined for the profiles.</li>
+      <li><a href="capability-statements.html">Capability Statements</a>: These pages define the expected FHIR capabilities of the US Core Servers and Clients.</li>
+    </ul>
+  </li>
+  <li><a href="security.html">Security</a>: This page documents the general security requirements and recommendations for actors.</li>
+  <li><a href="examples.html">Examples</a>: This page lists all the examples used in this guide. These example instances show what data produced and consumed by systems conforming with this implementation guide might look like. Every effort has been made to ensure that the examples are correct and useful, but they are not a normative part of the specification nor are they fully representative of real world examples.</li>
+  <li><a href="downloads.html" title="Downloads Page">Downloads</a>: This page provides links to downloadable artifacts.</li>
+  <li><a href="changes.html">Change Log</a>: This page documents the changes across the versions of US Core</li-->
+</ul>
+  
   <a name="Credits"/>
   <h3>Credits</h3>
   <table Border="1">

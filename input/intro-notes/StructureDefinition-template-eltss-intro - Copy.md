@@ -1,13 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
-  <div class="dragon">Look for changes that look like this 
-	<br></br> 
-	<div class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal
-	</div>
-  </div>
-  <br></br>
-  <table border="1">
+
+
+
+
+
+
+<table border="1">
     <tr>
       <th>eLTSS Grouping</th>
       <th>eLTSS Data Element Name</th>
@@ -1875,531 +1872,71 @@ FHIR</td>
       <td/>
     </tr>
   </table>
-  <table class="flxmain_bordered_table c107" border="1" cellpadding="0" cellspacing="0" summary="Excel Sheet: legend">
-    <col/>
-    <col/>
-    <tr>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <th colspan="2" rowspan="1">Definitions for Columns of the eLTSS Dataset Element Mapping Spreadsheet</th>
-    </tr>
-    <tr>
-      <td>Column</td>
-      <td> Definition</td>
-    </tr>
-    <tr>
-      <td>eLTSS Grouping</td>
-      <td>Indicates the top-level group of data elements defined in the eLTSS Dataset.</td>
-    </tr>
-    <tr>
-      <td>eLTSS Data Element Name</td>
-      <td>Name of the data element as defined in the eLTSS Dataset.</td>
-    </tr>
-    <tr>
-      <td>FHIR Data Element Name<br/>
-Requirement Source</td>
-      <td>FHIR resource and data element name. Italics indicates whether mandatory requirement is from FHIR and/or US Core.</td>
-    </tr>
-    <tr>
-      <td>Data Element Definition</td>
-      <td> eLTSS element mapping tab: The definition of the data element as defined in the eLTSS  Dataset. Includes examples, potential lists of values, and usage notes where applicable.<br/>
-mandatory FHIR data elements tab: The definition of the data element as defined in FHIR.</td>
-    </tr>
-    <tr>
-      <td>eLTSS Datatype / Format</td>
-      <td>The type of data for the eLTSS Dataset data element, including format where applicable.</td>
-    </tr>
-    <tr>
-      <td>FHIR R4 Resource Element(s)</td>
-      <td>The data elements from FHIR Release 4 that correspond to the eLTSS Dataset data element. The "&#8594;" notation indicates the hierarchy. So for example, "Patient &#8594; name &#8594; family" means that the mapping includes the FHIR "Patient" data element which has the FHIR data element "name" as its child, and "name" has the FHIR data element "family" as its child.<br/>
-<br/>
-For FHIR data elements that are references to other FHIR resources, the type of resource that is being referenced is included in parenthesis. So for example, the notation "Contract &#8594; signer &#8594; party(Patient)" indicates that "party" data element references a Patient resource. Where the reference can be to different types of resource, the "|" is used, for example "CareTeam &#8594; participant &#8594; member(Practitioner | Patient)" indicates that the "member" data element can reference either a Practitioner resource or a Patient resource. </td>
-    </tr>
-    <tr>
-      <td>FHIR R4 Resource Element Cardinality (with US Core Constraints)</td>
-      <td>The cardinality of each data element listed in this column. US Core requires a number of data elements, so cardinality may different between the FHIR specification and US Core requirements.<br/>
-<br/>
-"1" means the data element is mandatory and can appear only once.<br/>
-"0..1" means the data element is optional, and if it occurs can only occur once.<br/>
-"0..*" means the data element is optional, and if it occurs can occur any number of times.<br/>
-"1..*" means the data element is mandatory, and if it occurs can occur any number of times.<br/>
-"0..x" where 'x' is a number means the data element is optional, and if it occurs can occur up to 'x' number of times.</td>
-    </tr>
-    <tr>
-      <td>Additional Mapping Details</td>
-      <td>Provides addition detail regarding the data mapping, including references that are required to link all the data elements, information on data types, notes such as why the additional related data elements may be useful, values available in a referenced code list, etc.</td>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-    </tr>
-  </table>
-  <table border="1">
-    <tr>
-      <th colspan="4">Quantity, Unit and Interval Examples</th>
-    </tr>
-    <tr>
-      <th>  </th>
-      <th colspan="3">eLTSS Dataset Elements</th>
-      <th colspan="3">FHIR quantityQuantity Elements</th>
-      <th colspan="6">FHIR quantityRatio Elements</th>
-    </tr>
-    <tr>
-      <th>Example</th>
-      <td>Svc Unit Qty</td>
-      <td>Unit of Svc Type</td>
-      <td>Svc Unit Qty Interval</td>
-      <td>value</td>
-      <td>unit</td>
-	  <td>unit code and system</td>
-      <td>numerator value</td>
-      <td>numerator unit</td>
-	  <td>numerator unit code and system</td>
-      <td>denominator value</td>
-      <td>denominator unit</td>
-	  <td>denominator unit code and system</td>
-    </tr>
-    <tr>
-      <td>8 hours a day</td>
-      <td>8</td>
-      <td>hour</td>
-      <td>per day</td>
-	  <td/>
-	  <td/>
-      <td/>
-      <td>8</td>
-      <td>Hour</td>
-	  <td>hr | UCUM (http://unitsofmeasure.org)</td>
-      <td>1</td>
-      <td>Day</td>
-	  	  <td>d | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>adult day care - full day every day</td>
-      <td>5</td>
-      <td>full day</td>
-      <td>per week</td>
-	  	  <td/>
-      <td/>
-      <td/>
-      <td>5</td>
-      <td>full day</td>
-	  	  <td>d | UCUM (http://unitsofmeasure.org)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>adult day care - half day twice a week</td>
-      <td>2</td>
-      <td>half day</td>
-      <td>per week</td>
-      	  <td/>
-		  <td/>
-      <td/>
-      <td>2</td>
-      <td>Half day</td>
-	  	  <td>d/2 | UCUM (http://unitsofmeasure.org)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>30 minutes a day</td>
-      <td>30</td>
-      <td>minute</td>
-      <td>per day</td>
-      	  <td/>
-	  <td/>
-      <td/>
-      <td>30</td>
-      <td>Minute</td>
-	  	  <td>min | UCUM (http://unitsofmeasure.org)</td>
-      <td>1</td>
-      <td>Day</td>
-	  	  <td>d | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>5 quarter hours weekly</td>
-      <td>5</td>
-      <td>quarter hour</td>
-      <td>per week</td>
-      <td/>
-	  	  <td/>
-      <td/>
-      <td>1</td>
-      <td>Quarter hour</td>
-	  	  <td>hr/4 | UCUM (http://unitsofmeasure.org)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>1 day a week</td>
-      <td>1</td>
-      <td>day</td>
-      <td>per week</td>
-      <td/>
-	  	  <td/>
-      <td/>
-      <td>1</td>
-      <td>Day</td>
-	  	  <td>d | UCUM (http://unitsofmeasure.org)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>1 visit a week</td>
-      <td>1</td>
-      <td>visit</td>
-      <td>per week</td>
-      <td/>
-	  	  <td/>
-      <td/>
-      <td>1</td>
-      <td>Visit</td>
-	  	  <td>C25716 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>10 physical therapy sessions</td>
-      <td>10</td>
-      <td>visit</td>
-      <td>(blank)</td>
-      <td>10</td>
-      <td>Visit</td>
-      <td>C25716 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-	  <td/>
-	  	  <td/>
-      <td/>
-      <td/>
-      <td/>
-	  	  <td></td>
-    </tr>
-    <tr>
-      <td>5 meals a week</td>
-      <td>5</td>
-      <td>meal</td>
-      <td>per week</td>
-      <td/>
-	  	  <td/>
-      <td/>
-      <td>5</td>
-      <td>Meal</td>
-	  	  <td>C80248 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>50 meals</td>
-      <td>50</td>
-      <td>meal</td>
-      <td>(blank)</td>
-      <td>50</td>
-      <td>Meal</td>
-      <td>C80248 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td/>	 
-	  <td/>	  
-	  <td></td>
-	  	  <td></td>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td>Hospital bed for the home (delivered)</td>
-      <td>1</td>
-      <td>none</td>
-      <td>one time only</td>
-      <td>1</td>
-      <td/>
-      <td/>
-	  	  <td/>
-	  	  <td></td>
-		  	  <td></td>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td>Doorbell installation for a deaf person</td>
-      <td>1</td>
-      <td>install</td>
-      <td>one time only</td>
-      <td>1</td>
-      <td>Deploy</td>
-	  <td>C81906 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td/>
-	  	  <td/>
-      <td/>
-      <td/>
-	  <td/>
-	  <td/>
-    </tr>
-    <tr>
-      <td>Transportation to the doctor 10 times</td>
-      <td>10</td>
-      <td>other<br/>
-(trips)</td>
-      <td>(blank)</td>
-      <td>10</td>
-      <td>Transportation</td>
-      <td>C141286 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td/>
-	  	  <td/>
-	  	  <td></td>
-		  	  <td></td>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td>Transportation to church every week</td>
-      <td>1</td>
-      <td>other<br/>
-(trips)</td>
-      <td>per week</td>
-      <td/>
-      <td/>
-	  	  <td/>
-      <td>1</td>
-      <td>Transportation</td>
-      <td>C141286 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>Transportation</td>
-      <td>100</td>
-      <td>mile</td>
-      <td>per week</td>
-      <td/>
-      <td/>
-	  	  <td/>
-      <td>100</td>
-      <td>Mile</td>
-	  	  <td>C71183 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td>1</td>
-      <td>Week</td>
-	  	  <td>wk | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-    <tr>
-      <td>Medical Alert System Monthly Payment</td>
-      <td>9.95</td>
-      <td>dollar</td>
-      <td>per month</td>
-      <td/>
-      <td/>
-	  	  <td/>
-      <td>9.95</td>
-      <td>Dollar</td>
-	  	  <td>C173108 | NCIT (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</td>
-      <td>1</td>
-      <td>Month</td>
-	  	  <td>mo | UCUM (http://unitsofmeasure.org)</td>
-    </tr>
-  </table>
-  
-  <!--table>
-    <tr>
-      <td>
-        <bold>Values defined in eLTSS Dataset</bold>
-      </td>
-      <td/>
-      <td>minute</td>
-      <td>per day</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>8 hour</td>
-      <td>per week</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>quarter hour</td>
-      <td>per month</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>hour</td>
-      <td>per year</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>half day</td>
-      <td>one time only</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>full day</td>
-      <td>other (free text)</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>day</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>week</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>month</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>dollar</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>meal</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>mile</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>visit/<br/>
-session</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>install</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>none</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-    <tr>
-      <td/>
-      <td/>
-      <td>other</td>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-      <td/>
-    </tr>
-  </table-->
-</div>
+
+
+
+
+
+
+
+
+
+A Care Plan is a consensus-driven dynamic plan that represents a patient’s and Care Team Members’ prioritized concerns, goals, and planned interventions. It serves as a blueprint shared by all Care Team Members (including the patient, their caregivers, and providers), to guide the patient’s care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions. A Care Plan may represent one or more Care Plans and serves to reconcile and resolve conflicts between the various plans developed for a specific patient by different providers. It supports the following use cases:
+ 
+* Query for patient data across providers and compile into a consolidated care plan representation.
+* Encourage capture of and communication of a patient's health concerns and related goals, interventions, and outcomes.
+* Gather and aggregate patient data for uses beyond the point of care (e.g. public health, population health, quality measurement, risk adjustment, quality improvement, and research.)
+
+### Standards Supported Care Planning and Coordination Process
+
+The vision of this implementation guide (IG), with the FHIR Care Plan profile as its framework,  is to define a profile on the FHIR Care Plan resource that describes how it can be implemented and leveraged to support machine assisted care coordination between systems. It is assumed that clinician and patient facing SMART on FHIR Apps can be designed off of this guide to achieve that goal. The IG will also inform EHR systems on how to implement a structured encoded Care Plan.
+
+The dynamic care plan process diagram shows Care Plan Cornerstones as they exist within the clinical world and elements and attributes from the FHIR Care Plan resource structure that support the process. In order to encourage reuse and dynamic, machine assisted care coordination, the Care Plan profile design leverages referrencing profiles wherever possible, especially within CarePlan.Activity. 
+
+#### High Level Dynamic Care Plan Process Diagram
+<table><tr><td><img src="CarePlanProcessCornerstones.png" /></td></tr></table>
+
+This profile on the [FHIR Care Plan Resource](http://hl7.org/fhir/R4/careplan.html) describes rules and contraints to record, search, and fetch care plan data associated with a patient with multiple chronic conditions. It identifies which profiles, core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. Care plan data may or may not be tagged in an EHR as part of a care plan, but is also useful to retrieve data such as goals, problems, medications etc. and their time stamps from EHRs and other health system records to bring into an aggegated plan. This includes care plans that may be authored by a patient.
+
+
+#### Multiple Chronic Condition FHIR Care Plan Profile Relationship Diagram
+<table><tr><td><img width="975px" height="975px" src="carePlanProfileRelationshipDiagram.svg" /></td></tr></table>
+
+### Supporting Machine Assisted Dynamic Care Coordination/Planning with the FHIR Care Plan Resource and FHIR Goal Resource
+
+The machine assisted dynamic care planning/coordination is supported in FHIR by leveraging together the Care Plan resource, the Goal resource, resource referencing and available extensions within those resources to “link together the health concern or problem, and it’s associated goals, interventions and outcomes. The intention is to re-use data entered in the EHR, whether it is in a Care Plan Application, or elsewhere in the EHR or other information system, rather than having a care plan be a double documentation burden. For example, if a procedure is ordered and performed and the health concern or problem reason for that procedure is asserted in the ordering workflow or documentation workflow - this information can be pulled into the Care Plan. If a goal is asserted for a patient outside of a care plan, along with the reason for that goal, this also can be pulled into a care plan. The Care Plan profile relies on referencing of profiles rather than “in-line” representation or documentation to enable a dynamic workflow and to be able to pull in and aggregate care coordination activities from disparate systems to provide a comprehensive care coordination view for patients
+
+CarePlan.Activity" is a Backbone element.
+It identifies an action that has occurred or is a planned action to occur as part of the plan. 
+For example, a medication to be used, lab tests to perform, self-monitoring that has occurred, education etc., within which in R4 can be OutcomeCodeableConcept, OutcomeReference, Progress Note when using activity.reference. 
+		
+OUTCOME REFERENCE (aka PERFORMED ACTIVITY reference): to be renamed in R5 to "CarePlan.performedActivity". Please see https://jira.hl7.org/browse/FHIR-26064.) OutcomeReference is not only an outcome but rather an action such as Procedure or an Encounter that was made or occurred or an Observation. Within CarePlan.performedActivity, the extension, "resource-pertainsToGoal" **SHALL** be used to reference this activity's related goal. Within the resource referenced within performedActivity, "Procedure.reason" **SHALL** be used to reference the health concern or problem for which the activity is done.
+
+ACTIVITY REFERENCE (aka PLANNED ACTIVITY reference): to be renamed in R5 to "PlannedActivityReference". Please see https://jira.hl7.org/browse/FHIR-26064.) Within plannedActivityReference, the extension, "resource-pertainsToGoal" **SHALL** be used to reference this activity's request's related goal. "xxx.Request.reason" **SHALL** be used to reference the health concern or problem for which the activity is done. Within the referenced Goal resource, goal.address **SHALL** be used to reference the goal's related Condition, Observation, MedicationStatement, NutritionOrder, ServiceRequest or RiskAssessment. Within the referenced Goal resource, Goal.outcomeReference, references the outcome (e.g observations related to the goal).
+
+
+**Health Concerns** represented with:
+
+ - CarePlan.addresses
+ - CarePlan.suppportingInfo
+ - CarePlan.addresses (from within referenced goal)
+ - Goal.addresses
+ - activity.reason.reference
+
+**Goals** represented with:
+ - CarePlan.goal (for entire plan)
+ - resource-pertainsToGoal
+ - CarePlan.activity.outcomeReference.MCC Goal Profile
+
+**Interventions** represented with:
+
+ - CarePlan.plannedActivityReference (aka activity.reference)
+ - CarePlan.performedActivityReference (aka activity.outcome.reference)
+
+**Outcomes** represented with:
+
+ - CarePlan.ActivityOutcome
+ - Goal.outcome.reference
+
+#### Instanciated FHIR Supported Dynamic Care Planning and Coordination
+<table><tr><td><img src="InstanciatedFHIRSuppportedDynamicCarePlanning.png" /></td></tr></table>

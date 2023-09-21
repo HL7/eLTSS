@@ -255,6 +255,15 @@
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
+	<resource>
+      <reference>
+        <reference value="Bundle/bundle-HenryJones"/>
+      </reference>
+      <name value="eLTSS Example Henry Jones"/>
+      <description value="bundle-HenryJones"/>
+      <!--exampleCanonical value="http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"/-->
+      <groupingId value="examples"/>
+    </resource>
     <!--resource>
       <reference>
         <reference value="Bundle/careplan"/>
@@ -385,6 +394,11 @@
           <title value="Implementation"/>
           <generation value="markdown"/>
         </page>
+		<page>
+          <nameUrl value="taskProcedure.html"/>
+          <title value="Task and Procedure"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
@@ -459,7 +473,7 @@
       <page>
         <nameUrl value="examples.html"/>
         <title value="eLTSS Examples"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
         <!--page>
           <nameUrl value="careplan.html"/>
           <title value="eLTSS Care Plan Example"/>
@@ -506,6 +520,11 @@
           <generation value="generated"/>
         </page-->
       </page>
+	  <!--page>
+		<nameUrl value="OperationDefinition-all-eltss-careplan.html"/>
+        <title value="All eLTSS data retrieval Operation"/>
+        <generation value="generated"/>
+	  </page-->
       <page>
         <nameUrl value="capabilities.html"/>
         <title value="Capability Statements"/>
