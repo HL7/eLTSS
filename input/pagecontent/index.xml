@@ -155,17 +155,24 @@ The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This p
   <li><a href="changes.html">Change Log</a>: This page documents the changes across the versions of US Core</li-->
 </ul>
   
-  <a name="Credits"/>
-  <h3>Credits</h3>
+  <a name="Credits and Authors"/>
+  <h3>Credits and Authors</h3>
   <table Border="1">
     <thead>
       <tr>
         <th>Name</th>
         <th>Role</th>
         <th>Organization</th>
+	<th>Email</th>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td>Bret Heale</td>
+        <td>STU2 IG developer</td>
+        <td>ELIMU and Humanized Health Consulting</td>
+	<td>bheale@elimu.io</td>
+      </tr>
       <!--tr>
         <td>Amber Patel</td>
         <td>Author</td>
