@@ -9,6 +9,8 @@ src/.DS_Store
 .DS_Store
 /temp/
 /src-generated/
+parkinglot/
+
 ### Windows template
 # Windows thumbnail cache files
 Thumbs.db
