@@ -8,7 +8,7 @@
 		<valueInteger value="2"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-		<valueCode value="brr"/>
+		<valueCode value="hsswg"/>
 	</extension>
   <url value="http://hl7.org/fhir/us/eLTSS/ImplementationGuide/hl7.fhir.us.eltss"/>
 <version value="2.0.0"/>
@@ -17,7 +17,21 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2023-06-21"/>
-  <publisher value="HL7 International Community-Based Care and Privacy Work Group"/>
+  <publisher value="HL7 International / Human and Social Services"/>
+  <contact>
+    <name value="HL7 International / Human and Social Services"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/hsswg"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hhswg@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  
+  
+  <!--publisher value="HL7 International Community-Based Care and Privacy Work Group"/ cbcc -->
   <description value="Provides guidance to US Realm implementers to use the FHIR for implementing access and exchange Electronic Long-Term Services and Supports (eLTSS) Dataset data  elements"/>
   <jurisdiction>
     <coding>
@@ -33,7 +47,12 @@
     <!--uri value="http://hl7.org/fhir/us/core"/-->
     <packageId value="hl7.fhir.us.core"/>
     <version value="3.1.1"/>
-  </dependsOn>      
+  </dependsOn> 
+  <dependsOn id="hl7_fhir_uv_extensions">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions"/>
+    <version value="current"/>
+  </dependsOn>  
  <!-- "packageId": "hl7.fhir.us.core",
       "version": "3.1.1",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
