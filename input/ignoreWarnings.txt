@@ -18,3 +18,14 @@ Code System URI 'http://examplesystem' is unknown so the code cannot be validate
 UNKNOWN_CODESYSTEM; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server)
 Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
 Binding http://hl7.org/fhir/uv/ae-research-backport-ig/ValueSet/adverse-event-outcome-clinical-research-vs could not be expanded
+
+#HL7 administrative process information to be addressed before publication, not relevant to implementation
+Reference to draft item http://hl7.org/fhir/hl7-work-group|5.1.0-cibuild
+Reference to draft item http://hl7.org/fhir/standards-status|5.1.0-cibuild
+The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no examples for this extension
+The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
+The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+
+The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk

@@ -1,8 +1,13 @@
-An example has been provided to aid in implementation. The intent is to create an example that is accurate and comprehensive enough to be instructive during development and useful for testing server/client capability.
 
-*We will continue to refine the example with feedback from an ongoing pilot.*
+*Example has been pulled to avoid confusion*
 
-The current example is based on work done for the 2021 HL7 Connectathon (September 13-15 2021).You can find the example [here](Bundle-bundle-HenryJones.html). The example is for the following story-line:
+
+
+*We will continue to refine an example with feedback from an ongoing pilot.*
+
+The intent is to create an example that is accurate and comprehensive enough to be instructive during development and useful for testing server/client capability.
+
+An example story-line:
 
 1. Henry has an annual ISP meeting with Stacy, his service coordinator. Stacy updates Henry’s care plan in the state’s case management system (ConneXion) to reflect his employment goals and reviews current health information. 
 1. Once that has been identified, Stacy emails/calls the selected service provider, Job Avenue Specialists to refer Henry for supported employment services and Henry gets assigned to John Gomez, an Employment Consultant.
