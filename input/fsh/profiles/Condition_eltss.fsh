@@ -13,7 +13,7 @@ Description: "Condition for eLTSS"
 * extension contains $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS and ELTSS_dueTo named dueTo 0..*
 * extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
 * extension[dueTo] ^sliceIsConstraining = false
-* category ^code.system = "http://hl7.org/fhir/us/eLTSS/ValueSet/eltss-condition-category-code"
+* category ^code.system = "http://hl7.org/fhir/us/eltss/ValueSet/eltss-condition-category-code"
 * category ^short = "Assessed Need Category"
 * category ^comment = "Could use the value \"problem-list-item\" to indicate the underlying condition, and extend the value set to add the value \"assessed-need\"."
 * code ^short = "Assessed Need Code"

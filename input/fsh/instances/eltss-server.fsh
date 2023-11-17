@@ -3,7 +3,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>eLTSS IG Server.</p>\n    </div>"
-* url = "http://hl7.org/fhir/us/eLTSS/CapabilityStatement/eltss-server"
+* url = "http://hl7.org/fhir/us/eltss/CapabilityStatement/eltss-server"
 * name = "ELTSS_Server"
 * title = "eLTSS Server"
 * status = #active
@@ -29,7 +29,7 @@ Usage: #definition
 * implementationGuide[+] = "http://hl7.org/fhir/us/davinci-pct/2022Jan/"
 * rest.mode = #server
 * rest.resource.type = #CarePlan
-* rest.resource.supportedProfile = "http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"
+* rest.resource.supportedProfile = "http://hl7.org/fhir/us/eltss/StructureDefinition/CarePlan-eltss"
 * rest.resource.interaction[0].code = #search-type
 * rest.resource.interaction[+].code = #read
 * rest.resource.interaction[+].code = #history-instance

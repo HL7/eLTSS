@@ -9,7 +9,7 @@ Description: "CarePlan for eLTSS"
 * . ^short = "eLTSS Healthcare plan for patient or group"
 * instantiatesCanonical only canonical
 * instantiatesCanonical ^type.targetProfile[0] = "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
-* instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss"
+* instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss"
 * instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/Measure"
 * instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
 * instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
@@ -73,7 +73,7 @@ Description: "CarePlan for eLTSS"
 //* activity.detail ^isModifier = false
 //* activity.detail.instantiatesCanonical only canonical
 //* activity.detail.instantiatesCanonical ^type.targetProfile[0] = "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
-//* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/us/eLTSS/StructureDefinition/Questionnaire-eltss"
+//* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss"
 //* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/Measure"
 //* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
 //* activity.detail.instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"

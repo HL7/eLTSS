@@ -3,7 +3,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>eLTSS IG Client.      </p>\n      <p>This is a profile on the US Core Implementation Guide and adheres to the requirements </p>\n    </div>"
-* url = "http://hl7.org/fhir/us/eLTSS/CapabilityStatement/eltss-client"
+* url = "http://hl7.org/fhir/us/eltss/CapabilityStatement/eltss-client"
 * name = "ELTSS_Client"
 * title = "eLTSS Client"
 * status = #active
@@ -19,7 +19,7 @@ Usage: #definition
 * format[+] = #json
 * rest.mode = #client
 * rest.resource.type = #CarePlan
-* rest.resource.supportedProfile = "http://hl7.org/fhir/us/eLTSS/StructureDefinition/CarePlan-eltss"
+* rest.resource.supportedProfile = "http://hl7.org/fhir/us/eltss/StructureDefinition/CarePlan-eltss"
 * rest.resource.interaction[0].code = #search-type
 * rest.resource.interaction[+].code = #read
 * rest.resource.interaction[+].code = #history-instance
