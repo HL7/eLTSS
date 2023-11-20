@@ -20,6 +20,10 @@ This element does not match any known slice defined in the profile http://hl7.or
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 
+# Using standard extension capabilitystatement-expectation for CapabilityStatement in additional contexts to fully express intended capabilities: see FHIR-12419 (115) NONE
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-cibuild
+
+
 # Variance requested. Our IG is dependent on US CORE 3.1.1 There is only one US CORE Condition profile for this version of US CORE and we are deriving from it.
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles
 

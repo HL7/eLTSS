@@ -1,11 +1,9 @@
 
-*Example has been pulled to avoid confusion*
+*You can find data instance examples for Resources used in eLTSS here: *
+The data instances work together as a single example. Start with the CarePlan and follow the references.
 
 
-
-*We will continue to refine an example with feedback from an ongoing pilot.*
-
-The intent is to create an example that is accurate and comprehensive enough to be instructive during development and useful for testing server/client capability.
+We plan to continue to refine examples with feedback from an ongoing pilot. The intent is to create examples that are accurate and comprehensive enough to be instructive during development and useful for testing server/client capability.
 
 An example story-line:
 

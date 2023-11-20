@@ -18,6 +18,9 @@
   <li>
     <a href="mapping.html">Mapping</a>
   </li>
+  <li>
+    <a href="testing.html">Testing FHIR</a>
+  </li>
   
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret">
