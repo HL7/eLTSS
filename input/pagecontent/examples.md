@@ -1,5 +1,8 @@
 
 *You can find data instance examples for Resources used in eLTSS here: *
+ - [examples where data elements are in profiles in the IG](artifacts.html#example-example-instances)
+ - [examples where the data elements are not in the IG profiles](artifacts.html#other)
+ 
 The data instances work together as a single example. Start with the CarePlan and follow the references.
 
 

@@ -64,12 +64,36 @@
         </td>
         <td>Defines the Patient/Person constraints for eLTSS.</td>
       </tr>
+	  <tr>
+		<td style="column-width:30%">
+		   <a href="StructureDefinition-RelatedPerson-eltss.html" title="StructureDefinition/RelatedPerson-eltss">eLTSS RelatedPerson Profile</a>
+		</td>
+		<td>
+		<p>This profile sets minimum expectations for the RelatedPerson resource to record, search, and fetch basic administrative information about persons with a legal or familial relationship to a patient. It is patterned off of USCORE.</p>
+		</td>
+      </tr>
       <tr>
         <td>
           <a href="StructureDefinition-Practitioner-eltss.html">eLTSS Practitioner Profile</a>
         </td>
         <td>Defines the Practitioner constraints for eLTSS.</td>
       </tr>
+	  <tr>
+		<td style="column-width:30%">
+		   <a href="StructureDefinition-PractitionerRole-eltss.html" title="StructureDefinition/PractitionerRole-eltss">eLTSS PractitionerRole Profile</a>
+		</td>
+		<td>
+		<p>Defines the PractitionerRole constraints for eLTSS</p>
+		</td>
+	  </tr>
+	  <tr>
+		<td style="column-width:30%">
+		   <a href="StructureDefinition-QuestionnaireResponse-eltss.html" title="StructureDefinition/QuestionnaireResponse-eltss">eLTSS QuestionnaireResponse Profile</a>
+		</td>
+		<td>
+		<p>Defines the QuestionnaireResponse constraints for eLTSS</p>
+		</td>
+	  </tr>
       <tr>
         <td>
           <a href="StructureDefinition-Questionnaire-eltss.html">eLTSS Questionnaire Profile</a>

@@ -48,11 +48,16 @@
     <packageId value="hl7.fhir.us.core"/>
     <version value="3.1.1"/>
   </dependsOn> 
-  <dependsOn id="hl7_fhir_uv_extensions">
+  <dependsOn >
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions"/>
     <version value="current"/>
   </dependsOn>  
+  <dependsOn >
+    <uri value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"/>
+    <packageId value="hl7.fhir.uv.smart-app-launch"/>
+    <version value="current"/>
+  </dependsOn>
   <!--dependsOn id="hl7_fhir_us_mcc">
     <uri value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc"/>
     <packageId value="hl7.fhir.us.mcc"/>

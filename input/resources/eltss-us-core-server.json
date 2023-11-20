@@ -3,8 +3,8 @@
   "id": "eltss-server",
   "url": "http://hl7.org/fhir/us/eltss/CapabilityStatement/eltss-server",
   "version": "2.0.0-ballot",
-  "name": "eLTSSServerCapabilityStatement",
-  "title": "eLTSS Server CapabilityStatement",
+  "name": "eltssservercapabilitystatement",
+  "title": "eLTSS Server Capability Statement",
   "status": "active",
   "experimental": false,
   "date": "2023-11-20T00:35:01.173356-08:00",
@@ -45,7 +45,7 @@
     }
   ],
   "imports": [
-    "http://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement/us-core-server"
+    "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"
 	],
 	"_imports": [
     {
@@ -95,7 +95,7 @@
   ],
   "implementationGuide": [
     "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
-    "http://hl7.org/fhir/us/core/STU3.1.1/ImplementationGuide/hl7.fhir.us.core"
+    "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"
   ],
   "_implementationGuide": [
     {
@@ -802,18 +802,7 @@
               "type": "reference",
               "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
             },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "role",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-            },
+
             {
               "extension": [
                 {
@@ -1128,30 +1117,6 @@
                   "valueCode": "MAY"
                 }
               ],
-              "name": "abatement-date",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date",
-              "type": "date",
-              "documentation": "A client **SHALL** provide a value precise to the *second + time offset*.\n\nA server **SHALL** support a value precise to the *second + time offset*."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "asserted-date",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date",
-              "type": "date",
-              "documentation": "A client **SHALL** provide a value precise to the *second + time offset*.\n\nA server **SHALL** support a value precise to the *second + time offset*."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
               "name": "category",
               "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category",
               "type": "token",
@@ -1181,18 +1146,7 @@
               "type": "token",
               "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
             },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "encounter",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
+
             {
               "extension": [
                 {
@@ -1216,18 +1170,6 @@
               "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "recorded-date",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date",
-              "type": "date",
-              "documentation": "A client **SHALL** provide a value precise to the *second + time offset*.\n\nA server **SHALL** support a value precise to the *second + time offset*."
             }
           ]
         },
@@ -1346,20 +1288,6 @@
                   "valueCode": "SHALL"
                 }
               ]
-            }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
             }
           ]
         },
@@ -1540,18 +1468,6 @@
               "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "status",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
             },
             {
               "extension": [
@@ -1977,7 +1893,7 @@
               ]
             }
           ],
-          "documentation": "* The `DocumentReference.type` binding **SHALL** support at a minimum the [5 Common Clinical Notes](ValueSet-us-core-clinical-note-type.html) and may extend to the full US Core DocumentReference Type Value Set\n* The DocumentReference resources can represent the referenced content using either an address where the document can be retrieved using `DocumentReference.attachment.url` or the content as inline base64 encoded data using `DocumentReference.attachment.data`.\n    *  Although both are marked as must support, the server system is not required to support an address, and inline base64 encoded data, but **SHALL** support at least one of these elements.\n    *  The client application **SHALL** support both elements.\n    *  The `content.url` may refer to a FHIR Binary Resource (i.e. [base]/Binary/[id]), FHIR Document Bundle (i.e [base]/Bundle/[id] or another endpoint.\n        * If the endpoint is outside the FHIR base URL, it **SHOULD NOT** require additional authorization to access.\n   * If there are multiple `DocumentReference.content` element repetitions, these **SHALL** all represent the same document in different format or attachment metadata. The content element **SHALL** not contain different versions of the same content. For version handling use multiple DocumentReferences with `DocumentReference.relatesTo`\n* Every DocumentReference must have a responsible Organization. The organization responsible for the DocumentReference **SHALL** be present either in `DocumentReference.custodian` or accessible in the Provenance resource targeting the DocumentReference using `Provenance.agent.who` or `Provenance.agent.onBehalfOf`.",
+          "documentation": "* The `DocumentReference.type` binding **SHALL** support at a minimum the [5 Common Clinical Notes](http://hl7.org/fhir/us/core/ValueSet-us-core-clinical-note-type.html) and may extend to the full US Core DocumentReference Type Value Set\n* The DocumentReference resources can represent the referenced content using either an address where the document can be retrieved using `DocumentReference.attachment.url` or the content as inline base64 encoded data using `DocumentReference.attachment.data`.\n    *  Although both are marked as must support, the server system is not required to support an address, and inline base64 encoded data, but **SHALL** support at least one of these elements.\n    *  The client application **SHALL** support both elements.\n    *  The `content.url` may refer to a FHIR Binary Resource (i.e. [base]/Binary/[id]), FHIR Document Bundle (i.e [base]/Bundle/[id] or another endpoint.\n        * If the endpoint is outside the FHIR base URL, it **SHOULD NOT** require additional authorization to access.\n   * If there are multiple `DocumentReference.content` element repetitions, these **SHALL** all represent the same document in different format or attachment metadata. The content element **SHALL** not contain different versions of the same content. For version handling use multiple DocumentReferences with `DocumentReference.relatesTo`\n* Every DocumentReference must have a responsible Organization. The organization responsible for the DocumentReference **SHALL** be present either in `DocumentReference.custodian` or accessible in the Provenance resource targeting the DocumentReference using `Provenance.agent.who` or `Provenance.agent.onBehalfOf`.",
           "interaction": [
             {
               "extension": [
@@ -2459,18 +2375,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "discharge-disposition",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode": "SHOULD"
                 }
               ],
@@ -2479,18 +2383,7 @@
               "type": "token",
               "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
             },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "location",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
+
             {
               "extension": [
                 {
@@ -2818,17 +2711,6 @@
             }
           ],
           "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "description",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description",
-              "type": "token"
-            },
             {
               "extension": [
                 {
@@ -3744,44 +3626,6 @@
                   "valueCode": "SHALL"
                 }
               ]
-            }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "status",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "type",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
             }
           ]
         },
@@ -4807,18 +4651,6 @@
                   "valueCode": "MAY"
                 }
               ],
-              "name": "death-date",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date",
-              "type": "date",
-              "documentation": "A client **SHALL** provide a value precise to the *day*.\n\nA server **SHALL** support a value a value precise to the *day*."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
               "name": "family",
               "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family",
               "type": "string",
@@ -4991,17 +4823,6 @@
             }
           ],
           "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id",
-              "type": "token"
-            },
             {
               "extension": [
                 {
@@ -5270,7 +5091,7 @@
               ]
             }
           ],
-          "documentation": "* Procedure codes can be taken from SNOMED-CT, CPT, HCPCS II, ICD-10-PCS, CDT. LOINC.\n  * Only LOINC concepts that reflect actual procedures **SHOULD** be used\n* A procedure including an implantable device **SHOULD** use `Procedure.focalDevice` with a reference to the *US Core Implantable Device Profile*.\n* The Reason or justification for a referral or consultation is communicated through:\n  1. `ServiceRequest.reason` or `ServiceRequest.reason`, and `Procedure.basedOn` that links the Procedure to the US Core ServiceRequest Profile.\n     - `ServiceRequest.reasonCode` and `ServiceRequest.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](general-guidance.html#referencing-us-core-profiles), when using  `ServiceRequest.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n  1. `Procedure.reasonCode` or `Procedure.reasonReference` when the Procedure does not have an associated ServiceRequest.\n     - Although both `Procedure.reasonCode` and `Procedure.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](general-guidance.html#referencing-us-core-profiles), when using  `Procedure.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n\n    Certifying Servers and Clients **SHALL** support options 1 and 2 as Additional USCDI Requirements.",
+          "documentation": "* Procedure codes can be taken from SNOMED-CT, CPT, HCPCS II, ICD-10-PCS, CDT. LOINC.\n  * Only LOINC concepts that reflect actual procedures **SHOULD** be used\n* A procedure including an implantable device **SHOULD** use `Procedure.focalDevice` with a reference to the *US Core Implantable Device Profile*.\n* The Reason or justification for a referral or consultation is communicated through:\n  1. `ServiceRequest.reason` or `ServiceRequest.reason`, and `Procedure.basedOn` that links the Procedure to the US Core ServiceRequest Profile.\n     - `ServiceRequest.reasonCode` and `ServiceRequest.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](http://hl7.org/fhir/us/core/general-guidance.html#referencing-us-core-profiles), when using  `ServiceRequest.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n  1. `Procedure.reasonCode` or `Procedure.reasonReference` when the Procedure does not have an associated ServiceRequest.\n     - Although both `Procedure.reasonCode` and `Procedure.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](http://hl7.org/fhir/us/core/general-guidance.html#referencing-us-core-profiles), when using  `Procedure.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n\n    Certifying Servers and Clients **SHALL** support options 1 and 2 as Additional USCDI Requirements.",
           "interaction": [
             {
               "extension": [
@@ -5824,67 +5645,6 @@
                 }
               ]
             }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "authored",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored",
-              "type": "date",
-              "documentation": "A client **SHALL** provide a value precise to the *second + time offset*.\n\nA server **SHALL** support a value precise to the *second + time offset*."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "questionnaire",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "status",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-            }
           ]
         },
         {
@@ -6033,42 +5793,6 @@
                 }
               ]
             }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "name",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name",
-              "type": "string"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            }
           ]
         },
         {
@@ -6185,7 +5909,7 @@
               ]
             }
           ],
-          "documentation": "* The Reason or justification for a referral or consultation is communicated through:\n  1. `ServiceRequest.reason` or `ServiceRequest.reason`, and `Procedure.basedOn` that links the Procedure to the US Core ServiceRequest Profile.\n     - `ServiceRequest.reasonCode` and `ServiceRequest.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](general-guidance.html#referencing-us-core-profiles), when using  `ServiceRequest.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n  1. `Procedure.reasonCode` or `Procedure.reasonReference` when the Procedure does not have an associated ServiceRequest.\n     - Although both `Procedure.reasonCode` and `Procedure.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](general-guidance.html#referencing-us-core-profiles), when using  `Procedure.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n\n    Certifying Servers and Clients **SHALL** support options 1 and 2 as Additional USCDI Requirements.",
+          "documentation": "* The Reason or justification for a referral or consultation is communicated through:\n  1. `ServiceRequest.reason` or `ServiceRequest.reason`, and `Procedure.basedOn` that links the Procedure to the US Core ServiceRequest Profile.\n     - `ServiceRequest.reasonCode` and `ServiceRequest.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](http://hl7.org/fhir/us/core/general-guidance.html#referencing-us-core-profiles), when using  `ServiceRequest.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n  1. `Procedure.reasonCode` or `Procedure.reasonReference` when the Procedure does not have an associated ServiceRequest.\n     - Although both `Procedure.reasonCode` and `Procedure.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n     - As documented [here](http://hl7.org/fhir/us/core/general-guidance.html#referencing-us-core-profiles), when using  `Procedure.reasonReference`, the referenced resources **SHOULD** be a US Core Profile.\n\n    Certifying Servers and Clients **SHALL** support options 1 and 2 as Additional USCDI Requirements.",
           "interaction": [
             {
               "extension": [
@@ -6294,79 +6018,6 @@
                 }
               ]
             }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "authored",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored",
-              "type": "date",
-              "documentation": "A client **SHALL** provide a value precise to the *second + time offset*.\n\nA server **SHALL** support a value precise to the *second + time offset*."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "category",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "code",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "status",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status",
-              "type": "token",
-              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-            }
           ]
         },
         {
@@ -6471,30 +6122,6 @@
                   "valueCode": "SHOULD"
                 }
               ]
-            }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient",
-              "type": "reference"
             }
           ]
         },
