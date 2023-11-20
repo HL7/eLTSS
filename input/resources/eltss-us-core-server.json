@@ -3,7 +3,7 @@
   "id": "eltss-server",
   "url": "http://hl7.org/fhir/us/eltss/CapabilityStatement/eltss-server",
   "version": "2.0.0-ballot",
-  "name": "eltssservercapabilitystatement",
+  "name": "ELTSSSERVERCAPABILITYSTATEMENT",
   "title": "eLTSS Server Capability Statement",
   "status": "active",
   "experimental": false,

@@ -7,6 +7,7 @@
 	</div>
   </div>
   <br></br>
+  <h3>R4 mapping table</h3><a name="r4mapping"></a>
   <table border="1">
     <tr>
       <th>eLTSS Grouping</th>
@@ -1358,6 +1359,8 @@ RelatedPerson &#8594; relationship</td>
 3) relationship is a CodeableConcept, and FHIR provides a preferred value set whose values can be found in the PatientRelationshipType here: https://www.hl7.org/fhir/relatedperson.html. The list is very long and detailed, for example including not only sister, but stepsister, half-sister, twin sister, natural sister, and identical twin sister.</td>
     </tr>
   </table>
+  <br></br>
+  <h3>R4 useful elements</h3><a name="usefulelements"></a>
   <table border="1">
     <tr>
       <th colspan="5">Data Requirements Not Specific to eLTSS Dataset Data Elements<br/>
@@ -1882,6 +1885,9 @@ FHIR</td>
       <td/>
     </tr>
   </table>
+  
+  <br></br>
+  <h3>Units</h3><a name="helpfulunits"></a>
   <table class="flxmain_bordered_table c107" border="1" cellpadding="0" cellspacing="0" summary="Excel Sheet: legend">
     <col/>
     <col/>
