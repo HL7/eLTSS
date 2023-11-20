@@ -242,6 +242,15 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/RelatedPerson-eltss"/>
+      </reference>
+      <name value="eLTSS RelatedPerson Profile"/>
+      <description value="This profile sets minimum expectations for the RelatedPerson resource to record, search, and fetch basic administrative information about persons with a legal or familial relationship to a patient. It is patterned off of USCORE."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Practitioner-eltss"/>
@@ -251,12 +260,30 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/PractitionerRole-eltss"/>
+      </reference>
+      <name value="eLTSS PractitionerRole Profile"/>
+      <description value="Defines the PractitionerRole constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Questionnaire-eltss"/>
       </reference>
       <name value="eLTSS Questionnaire Profile"/>
       <description value="Defines the Questionnaire constraints for eLTSS"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/QuestionnaireResponse-eltss"/>
+      </reference>
+      <name value="eLTSS QuestionnaireResponse Profile"/>
+      <description value="Defines the QuestionnaireResponse constraints for eLTSS"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -298,6 +325,319 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
       <groupingId value="capability"/>
     </resource>
     <!-- Examples -->
+	<resource>
+	  <reference>
+		<reference value="Patient/patientBSJ1" />
+		<display value="patientBSJ1" />
+	  </reference>
+	  <name value="patientBSJ1" />
+	  <description value="Example of Patient eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="CarePlan/careplan1" />
+		<display value="careplan1" />
+	  </reference>
+	  <name value="careplan1" />
+	  <description value="Example of CarePlan eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Task/Task1" />
+		<display value="Task1" />
+	  </reference>
+	  <name value="Task1" />
+	  <description value="Example of Task as used in eLTSS" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Task/Task2" />
+		<display value="Task2" />
+	  </reference>
+	  <name value="Task2" />
+	  <description value="Example of Task as used in eLTSS" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Goal/goal2" />
+		<display value="goal2" />
+	  </reference>
+	  <name value="goal2" />
+	  <description value="Example of Goal eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Goal/goal1" />
+		<display value="goal1" />
+	  </reference>
+	  <name value="goal1" />
+	  <description value="Example of Goal eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Practitioner/planner1" />
+		<display value="planner1" />
+	  </reference>
+	  <name value="planner1" />
+	  <description value="Example of Practitioner eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="ServiceRequest/service2" />
+		<display value="service2" />
+	  </reference>
+	  <name value="service2" />
+	  <description value="Example of ServiceRequest eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="ServiceRequest/service3" />
+		<display value="service3" />
+	  </reference>
+	  <name value="service3" />
+	  <description value="Example of ServiceRequest eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="ServiceRequest/service4" />
+		<display value="service4" />
+	  </reference>
+	  <name value="service4" />
+	  <description value="Example of ServiceRequest eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="RelatedPerson/son1" />
+		<display value="son1" />
+	  </reference>
+	  <name value="son1" />
+	  <description value="Example of RelatedPerson eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Observation/strength1" />
+		<display value="strength1" />
+	  </reference>
+	  <name value="strength1" />
+	  <description value="Example of Observation eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Observation/strength2" />
+		<display value="strength2" />
+	  </reference>
+	  <name value="strength2" />
+	  <description value="Example of Observation eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Practitioner/caremgr1" />
+		<display value="caremgr1" />
+	  </reference>
+	  <name value="caremgr1" />
+	  <description value="Example of Practitioner eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="CarePlan/careplan2" />
+		<display value="careplan2" />
+	  </reference>
+	  <name value="careplan2" />
+	  <description value="Example of CarePlan eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Claim/claim1" />
+		<display value="claim1" />
+	  </reference>
+	  <name value="claim1" />
+	  <description value="Example of Claim eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Claim/claim2" />
+		<display value="claim2" />
+	  </reference>
+	  <name value="claim2" />
+	  <description value="Example of Claim eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Claim/claim3" />
+		<display value="claim3" />
+	  </reference>
+	  <name value="claim3" />
+	  <description value="Example of Claim eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Contract/contract1" />
+		<display value="contract1" />
+	  </reference>
+	  <name value="contract1" />
+	  <description value="Example of Contract eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Coverage/coverage1" />
+		<display value="coverage1" />
+	  </reference>
+	  <name value="coverage1" />
+	  <description value="Example of Coverage used in eLTSS" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="EpisodeOfCare/episode1" />
+		<display value="episode1" />
+	  </reference>
+	  <name value="episode1" />
+	  <description value="Example of EpisodeOfCare eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Organization/funding1" />
+		<display value="funding1" />
+	  </reference>
+	  <name value="funding1" />
+	  <description value="Example of Organization used in eLTSS" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="RelatedPerson/guardian1" />
+		<display value="guardian1" />
+	  </reference>
+	  <name value="guardian1" />
+	  <description value="Example of RelatedPerson eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Location/location1" />
+		<display value="location1" />
+	  </reference>
+	  <name value="location1" />
+	  <description value="Example of Location eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Condition/need1" />
+		<display value="need1" />
+	  </reference>
+	  <name value="need1" />
+	  <description value="Example of Condition eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Condition/need2" />
+		<display value="need2" />
+	  </reference>
+	  <name value="need2" />
+	  <description value="Example of Condition eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Condition/need3" />
+		<display value="need3" />
+	  </reference>
+	  <name value="need3" />
+	  <description value="Example of Condition eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Condition/need4" />
+		<display value="need4" />
+	  </reference>
+	  <name value="need4" />
+	  <description value="Example of Condition eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Observation/pref1" />
+		<display value="pref1" />
+	  </reference>
+	  <name value="pref1" />
+	  <description value="Example of Observation eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Organization/provider2a" />
+		<display value="provider2a" />
+	  </reference>
+	  <name value="provider2a" />
+	  <description value="Example of Organization as used in eLTSS" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Practitioner/provider2b" />
+		<display value="provider2b" />
+	  </reference>
+	  <name value="provider2b" />
+	  <description value="Example of Practitioner eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Practitioner/provider3" />
+		<display value="provider3" />
+	  </reference>
+	  <name value="provider3" />
+	  <description value="Example of Practitioner eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Practitioner/provider4" />
+		<display value="provider4" />
+	  </reference>
+	  <name value="provider4" />
+	  <description value="Example of Practitioner eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="PractitionerRole/PractitionerRole-1" />
+		<display value="PractitionerRole-1" />
+	  </reference>
+	  <name value="PractitionerRole-1" />
+	  <description value="Example of PractitionerRole eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Location/communitysite" />
+		<display value="communitysite" />
+	  </reference>
+	  <name value="communitysite" />
+	  <description value="Example of Location eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="Questionnaire/questionnaire1" />
+		<display value="questionnaire1" />
+	  </reference>
+	  <name value="questionnaire1" />
+	  <description value="Example of Questionnaire eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="QuestionnaireResponse/questionnaireresponse1" />
+		<display value="questionnaireresponse1" />
+	  </reference>
+	  <name value="questionnaireresponse1" />
+	  <description value="Example of QuestionnaireResponse eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="RiskAssessment/risk1" />
+		<display value="risk1" />
+	  </reference>
+	  <name value="risk1" />
+	  <description value="Example of RiskAssessment eLTSS Profile" />
+	</resource>
+	<resource>
+	  <reference>
+		<reference value="ServiceRequest/service1" />
+		<display value="service1" />
+	  </reference>
+	  <name value="service1" />
+	  <description value="Example of ServiceRequest eLTSS Profile" />
+	</resource>
+
 	<!-- resource>
       <reference>
         <reference value="Bundle/bundle-HenryJones"/>
@@ -355,12 +695,12 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
     <!-- Value Sets -->
     <resource>
       <reference>
-        <reference value="CodeSystem/eltss-observation-code"/>
+        <reference value="CodeSystem/eltss-observation-codes-temporary"/>
       </reference>
       <name value="eLTSS Observation Code CodeSystem"/>
       <description value="Code System to define the Strength and Preference Codes for the eLTSS Observation profile"/>
       <exampleBoolean value="false"/>
-      <groupingId value="valuesets"/>
+      <!--groupingId value="codesystems"/-->
     </resource>
     <resource>
       <reference>
@@ -369,16 +709,16 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
       <name value="Observation Code Value Set"/>
       <description value="Value Set to define the Strength and Preference Codes for the eLTSS Observation profile"/>
       <exampleBoolean value="false"/>
-      <groupingId value="valuesets"/>
+      <!--groupingId value="valuesets"/-->
     </resource>
-    <resource>
+    <!--resource>
       <reference>
-        <reference value="CodeSystem/eltss-condition-category-code"/>
+        <reference value="CodeSystem/eltss-condition-category-codes"/>
       </reference>
       <name value="eLTSS Condition Category Code CodeSystem"/>
       <description value="Additional code for Assessed Need for Condition Category element"/>
       <exampleBoolean value="false"/>
-      <groupingId value="valuesets"/>
+
     </resource>
     <resource>
       <reference>
@@ -388,7 +728,7 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
       <description value="Additional code for Assessed Need for Condition Category element"/>
       <exampleBoolean value="false"/>
       <groupingId value="valuesets"/>
-    </resource>
+    </resource-->
 	<!-- expansion parameters -->
 	<!--resource>
 		<reference>

@@ -16,8 +16,9 @@ Description: "Location for eLTSS. This profile should only be used for Service D
 * extension contains
     $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS
 * extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
-
+* description MS
 * address ^definition = "Physical or geographical location."
+* address.type ^comment = "The definition of Address states that \"address is intended to describe postal addresses, not physical locations\". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the Location resource)."
 * address.district MS
 * address.district ^short = "County"
 * address.district ^definition = "Country where service is provided."

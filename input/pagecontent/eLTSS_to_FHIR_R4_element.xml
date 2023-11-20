@@ -282,7 +282,10 @@ Observation &#8594; code &#8594; coding &#8594; system</td>
 2) code is required by FHIR, and is a CodeableConcept where coding &#8594; code can be set to "Strength" with the corresponding NEW code &#8594; system "http://hl7.org/us/eLTSS/CodeSystem/eltss-observation-code".<br/>
 3) valueString is where the Strength text would be provided.</td>
     </tr>
-    <tr>
+	
+	
+	
+    <tr bgcolor="#fff2ff">
       <td>Person Centered Planning</td>
       <td>Assessed Need</td>
       <td>The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service. </td>
@@ -296,11 +299,15 @@ Condition &#8594; category</td>
 .........text 0..1<br/>
 ......category 1..*</td>
       <td>1) Will use CarePlan &#8594; addresses to reference the Condition(s) for the care plan being developed.<br/>
-2) code is required by US Core and is a CodeableConcept which per US Core is bound to the extensible Problem Value Set. That value set is based on SNOMED-CT and includes very specific values that do not line up with assessed needs. Per US Core's documentation on extensible CodeableConcepts, the CodeableConcept's text element can be used "if no suitable codes exist", so we can use the text element for the assessed need.<br/>
+2) code is required by US Core and is a CodeableConcept which per US Core is bound to the extensible Problem Value Set. That value set is based on SNOMED-CT and includes very specific values that do not line up with assessed needs. Per US Core's documentation on extensible CodeableConcepts, the CodeableConcept's text element can be used "if no suitable codes exist", so we can use the text element for the assessed need. Additionally, the Gravity SDOH FHIR IG has a value set of SDOH conditions.<br/>
 3) Each assessed need should go into a separate Condition element so each can potentially be linked to a service(s) that addresses it.<br/>
-4) category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis. Could use the value "problem-list-item" to indicate the underlying condition, and extend the value set to add the value "assessed-need".<br/>
+4) Category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis and health-concern. 'Health Concern' can be used to relate that the Condition instance is about the clinical and/or community-based necessity or desire, as identified through an assessment, that should be addressed by a service.<br/>
 5) An "assessed need" condition can refer to another condition via the condition-dueTo extension.</td>
+      <td class="stu-note">Now using US CORE Condition Category value set element "Health Concern"</td>
     </tr>
+	
+	
+	
     <tr>
       <td>Person Centered Planning</td>
       <td>Person Setting Choice Indicator</td>
@@ -1130,7 +1137,7 @@ ServiceRequest &#8594; quantityRatio &#8594; denominator<br/>
 3) value is a decimal, and unit is a string.<br/>
 4) numerator and denominator are used to represent a quantity with an interval. For example, to represent 8 hours a day, numerator &#8594; value would be "8" and numerator &#8594; unit would be "hour", while denominator &#8594; value would be "1" and denominator &#8594; unit would be "day".<br/>
 5) See the "qty-unit-interval examples" worksheet in this spreadsheet for additional details.<br/>
-6) Please also consider occurrencePeriod for use when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServicePlan.quantity of 5 [USD]/day. AND, use occurrenceTiming for timing information that fluctuates or is sufficiently complex. The recipient may need to calculate end-date, or one can use occurrenceTiming.boundsPeriod to ascribe a start and end date. E.g. Give ServicePlan.quantity 5 with unit=[USD]/day with the occuranceTiming.boundsPeriod of May 31, 2023 to June 23, 2023 on occuranceTiming.dayOfWeek = Mon and Wed at occuranceTiming.timeOfDay = 3 pm.</td>
+6) Please also consider occurrencePeriod for use when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServicePlan.quantity of 5 [USD]/day. AND, use occurrenceTiming for timing information that fluctuates or is sufficiently complex. The recipient may need to calculate end-date, or one can use occurrenceTiming.boundsPeriod to ascribe a start and end date. E.g. Give ServicePlan.quantity 5 with unit=[USD]/day with the occurrenceTiming.boundsPeriod of May 31, 2023 to June 23, 2023 on occurrenceTiming.dayOfWeek = Mon and Wed at occurrenceTiming.timeOfDay = 3 pm.</td>
 	<td class="stu-note">Added guidance on ServiceRequest.occurrenceTiming and ServiceRequest.occurrencePeriod</td>
     </tr>
     <tr>

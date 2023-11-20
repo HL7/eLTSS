@@ -11,7 +11,9 @@ The following aids in finding the location of eLTSS data elements. See [R4 FHIR 
       <th>Additional Mapping Details</th>
 	  <th class="stu-note">Important change</th>
     </tr>	
-    <tr>
+	
+	
+	<tr bgcolor="#fff2ff">
       <td>Person Centered Planning</td>
       <td>Assessed Need</td>
       <td>The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service. </td>
@@ -25,11 +27,15 @@ Condition &#8594; category</td>
 .........text 0..1<br/>
 ......category 1..*</td>
       <td>1) Will use CarePlan &#8594; addresses to reference the Condition(s) for the care plan being developed.<br/>
-2) code is required by US Core and is a CodeableConcept which per US Core is bound to the extensible Problem Value Set. That value set is based on SNOMED-CT and includes very specific values that do not line up with assessed needs. Per US Core's documentation on extensible CodeableConcepts, the CodeableConcept's text element can be used "if no suitable codes exist", so we can use the text element for the assessed need.<br/>
+2) code is required by US Core and is a CodeableConcept which per US Core is bound to the extensible Problem Value Set. That value set is based on SNOMED-CT and includes very specific values that do not line up with assessed needs. Per US Core's documentation on extensible CodeableConcepts, the CodeableConcept's text element can be used "if no suitable codes exist", so we can use the text element for the assessed need. Additionally, the Gravity SDOH FHIR IG has a value set of SDOH conditions.<br/>
 3) Each assessed need should go into a separate Condition element so each can potentially be linked to a service(s) that addresses it.<br/>
-4) category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis. Could use the value "problem-list-item" to indicate the underlying condition, and extend the value set to add the value "assessed-need".<br/>
+4) Category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis and health-concern. 'Health Concern' can be used to relate that the Condition instance is about the clinical and/or community-based necessity or desire, as identified through an assessment, that should be addressed by a service.<br/>
 5) An "assessed need" condition can refer to another condition via the condition-dueTo extension.</td>
+      <td class="stu-note">Now using US CORE Condition Category value set element "Health Concern"</td>
     </tr>
+	
+	
+	
   </table>
   <table border="1">
     <tr>

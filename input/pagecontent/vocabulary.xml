@@ -13,12 +13,12 @@
         </td>
         <td>Strength and Preference codes for the Observation profile.</td>
       </tr>
-       <tr>
+       <!--tr>
         <td>
           <a href="ValueSet-eltss-condition-category-code.html">eLTSS Category Condition Codes</a>
         </td>
         <td>Additional code for Assessed Need for Condition Category element.</td>
-      </tr>
+      </tr-->
     </table>
   </p>
 </div>

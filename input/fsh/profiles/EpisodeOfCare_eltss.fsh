@@ -23,8 +23,9 @@ Description: "EpisodeOfCare for eLTSS"
 
 * patient only Reference(Patient_eltss)
 * referralRequest only Reference(ServiceRequest_eltss)
+* careManager MS
 * careManager only Reference(Practitioner_eltss)
 * careManager ^short = "Plan Monitor"
 * careManager ^definition = "The person responsible for monitoring the plan."
-* careManager ^mustSupport = false
+//* careManager ^mustSupport = false
 * careManager ^isModifier = false

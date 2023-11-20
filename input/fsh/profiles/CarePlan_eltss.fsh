@@ -13,7 +13,7 @@ Description: "CarePlan for eLTSS"
 * instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/Measure"
 * instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
 * instantiatesCanonical ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
-* instantiatesCanonical ^mustSupport = false
+//* instantiatesCanonical ^mustSupport = false
 * instantiatesCanonical ^isModifier = false
 * basedOn only Reference(CarePlan_eltss)
 * basedOn ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
@@ -23,7 +23,7 @@ Description: "CarePlan for eLTSS"
 * replaces only Reference(CarePlan_eltss)
 * replaces ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
 * replaces ^type.extension.valueBoolean = true
-* replaces ^mustSupport = false
+//* replaces ^mustSupport = false
 * replaces ^isModifier = false
 * partOf only Reference(CarePlan_eltss)
 * partOf ^short = "Emergency Backup Plan"
@@ -31,22 +31,40 @@ Description: "CarePlan for eLTSS"
 * partOf ^comment = "The CarePlan resource containing the emergency backup plan refers to the \"main\" CarePlan resource, rather than the other way around, by using the emergency backup plan CarePlan -> partOf data element to reference the \"main\" CarePlan data element."
 * partOf ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
 * partOf ^type.extension.valueBoolean = true
-* partOf ^mustSupport = false
+* partOf ^mustSupport = true
 * partOf ^isModifier = false
 * subject only Reference(Patient_eltss)
 * subject ^short = "CarePlan Subject"
 * subject ^definition = "Referencing the Person from CarePlan."
 * subject ^comment = "Reference the Patient for the care plan being developed."
+* encounter MS
 * period MS
 * period ^short = "Plan Effective Date"
 * period ^definition = "The date upon which the plan goes into effect. Start date is required, end date is optional."
 * period ^isModifier = false
-* author only Reference(Patient_eltss or Practitioner_eltss or $us-core-practitionerrole or RelatedPerson or $us-core-organization or $us-core-careteam)
+* period.start 1..1 MS
+* period.end 0..1 MS
+* author MS
+* author only Reference(Patient_eltss or Practitioner_eltss or PractitionerRole_eltss or RelatedPerson_eltss or $us-core-organization or $us-core-careteam)
 * author ^short = "Support Planner"
 * author ^definition = "The  person (e.g., Case Manager, Care Coordinator, Plan Coordinator) who helped develop the plan."
 * author ^comment = "Support Planner Name + Phone."
-* contributor only Reference(Patient_eltss or Practitioner_eltss or $us-core-practitionerrole or RelatedPerson or $us-core-organization or $us-core-careteam)
-* contributor ^mustSupport = false
+* author ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* author ^type.targetProfile[=].extension.valueBoolean = false
+* author ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* author ^type.targetProfile[=].extension.valueBoolean = true
+* author ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* author ^type.targetProfile[=].extension.valueBoolean = true
+* author ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* author ^type.targetProfile[=].extension.valueBoolean = false
+* author ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* author ^type.targetProfile[=].extension.valueBoolean = false
+* author ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* author ^type.targetProfile[=].extension.valueBoolean = false
+
+
+* contributor only Reference(Patient_eltss or Practitioner_eltss or PractitionerRole_eltss or RelatedPerson_eltss or $us-core-organization or $us-core-careteam)
+//* contributor ^mustSupport = false
 * contributor ^isModifier = false
 * addresses only Reference(Condition_eltss)
 * addresses MS
@@ -56,15 +74,35 @@ Description: "CarePlan for eLTSS"
 * addresses ^isModifier = false
 * supportingInfo ^definition = "Identifies portions of the patient's record that  specifically influenced the formation of the plan.  These might include comorbidities, recent procedures, limitations, recent assessments, etc.  This includes the RiskAssessment/Risk Management Plan"
 * goal only Reference(Goal_eltss)
-* goal ^mustSupport = false
+* goal ^mustSupport = true
 * goal ^isModifier = false
+* supportingInfo MS
 * activity ^short = "Action to occur as part of a plan"
 * activity ^definition = "A planned measurable step or action that needs to be taken to accomplish a goal identified by the person."
 * activity ^comment = "Note that a stated goal may lead directly to a service, and not necessarily to an explicit Step or Action. For example, a person's goal could be to attend church regularly, and this would be achieved through a transportation service."
-* activity ^mustSupport = false
+* activity ^mustSupport = true
 * activity ^isModifier = false
+* activity.reference MS
 * activity.reference only Reference(Appointment or CommunicationRequest or DeviceRequest or MedicationRequest or NutritionOrder or Task or ServiceRequest_eltss or VisionPrescription or RequestGroup)
-* activity.reference ^mustSupport = false
+* activity.reference ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = true
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = false
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = false
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = false
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = false
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = true
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = true
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = false
+* activity.reference ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* activity.reference ^type.targetProfile[=].extension.valueBoolean = false
+
 * activity.reference ^isModifier = false
 * activity.detail 0..0
 //* activity.detail ^short = "Plan Step or Action"
@@ -88,6 +126,7 @@ Description: "CarePlan for eLTSS"
 //* activity.detail.location only Reference(Location_eltss)
 //* activity.detail.location ^mustSupport = false
 //* activity.detail.location ^isModifier = false
-//* activity.detail.performer only Reference(Practitioner_eltss or $us-core-practitionerrole or RelatedPerson or Patient_eltss or $us-core-organization or $us-core-careteam or HealthcareService or $us-core-device or Device)
+//* activity.detail.performer only Reference(Practitioner_eltss or PractitionerRole_eltss or RelatedPerson_eltss or Patient_eltss or $us-core-organization or $us-core-careteam or HealthcareService or $us-core-device or Device)
 //* activity.detail.performer ^mustSupport = false
 //* activity.detail.performer ^isModifier = false
+* note MS

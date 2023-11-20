@@ -1,31 +1,53 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
-# (And include comments like this justifying why)
-
-# the cardinality has been reviewed an is correct. There is a choice of reference or codeable concept data types
-The slice definition for Extension.extension:item.value[x] has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
-
-
-#an example used in the IG
-Code System URI 'http://examplesystem' is unknown so the code cannot be validated
-
-
-#meeting with Terminology to talk about inclusion of this code system as a known external code system
-#may remove
-% system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-UNKNOWN_CODESYSTEM; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server)
-Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-Binding http://hl7.org/fhir/uv/ae-research-backport-ig/ValueSet/adverse-event-outcome-clinical-research-vs could not be expanded
-
-#HL7 administrative process information to be addressed before publication, not relevant to implementation
-Reference to draft item http://hl7.org/fhir/hl7-work-group|5.1.0-cibuild
+# HL7 administrative process information to be addressed before publication, not relevant to implementation
 Reference to draft item http://hl7.org/fhir/standards-status|5.1.0-cibuild
-The Implementation Guide contains no examples for this profile
-The Implementation Guide contains no examples for this extension
-The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
-The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+Reference to draft item http://hl7.org/fhir/narrative-status|4.0.1
 
-The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+# These have been reviewed an appear appropriate
+The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
+
+# The codes have been validated as correct and from the code systems
+The definition for the Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
+The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/HCPCS-all-codes' doesnt provide any codes so the code cannot be validated
+The definition for the Code System with URI 'http://www.ama-assn.org/go/cpt' doesnt provide any codes so the code cannot be validated
+Code System URI 'http://hl7.org/us/eltss/CodeSystem/eltss-observation-code-temporary' is unknown so the code cannot be validated
+Unknown System 'http://hl7.org/us/eltss/CodeSystem/eltss-observation-code-temporary' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://hl7.org/us/eltss/CodeSystem/eltss-observation-code-temporary' is unknown so the code cannot be validated)
+Unknown System 'http://hl7.org/us/eltss/CodeSystem/eltss-observation-code-temporary' specified, so Concepts and Filters can't be checked (Details: The CodeSystem http://hl7.org/us/eltss/CodeSystem/eltss-observation-code-temporary is unknown (from Tx-Server))
+
+# The slices are not meant to represent known slices but they are valid examples of additional slices that could be used
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+# Variance requested. Our IG is dependent on US CORE 3.1.1 There is only one US CORE Condition profile for this version of US CORE and we are deriving from it.
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles
+
+# Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a Simple Observation Profile in that version. Our profile is not a Lab nor a Smoking cessation observation. 
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a profile in that version for QuestionnaireResponse, RelatedPerson nor ServiceRequest
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/RelatedPerson-eltss').baseDefinition: US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile
+
+
+# Need to report to Grahame et al
+WARNING: StructureDefinition/CarePlan-eltss: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+INFORMATION: StructureDefinition/Contract-eltss: StructureDefinition.snapshot.element[191].mapping[1].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+
+# Need to ask for help
+WARNING: ValueSet.where(id = 'eltss-observation-code'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://loinc.org
+
+
+
+# Variance requested. Our IG is dependent on US CORE 3.1.1  We profile from the USCORE 3.1.1 Condition profile.
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles
+
+# Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a Simple Observation Profile in that version.
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a profile in that version for QuestionnaireResponse, RelatedPerson nor ServiceRequest
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/RelatedPerson-eltss').baseDefinition: US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile

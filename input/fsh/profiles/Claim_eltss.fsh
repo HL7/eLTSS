@@ -21,22 +21,25 @@ Description: "Claim Resource profile for eLTSS"
 
 
 * patient only Reference(Patient_eltss)
-* enterer only Reference(Practitioner_eltss or $us-core-practitionerrole)
-* provider only Reference(Practitioner_eltss or $us-core-practitionerrole or $us-core-organization)
+* enterer only Reference(Practitioner_eltss or PractitionerRole_eltss)
+* provider only Reference(Practitioner_eltss or PractitionerRole_eltss or $us-core-organization)
 * related.claim only Reference(Claim_eltss)
-* payee.party only Reference(Practitioner_eltss or $us-core-practitionerrole or $us-core-organization or Patient_eltss or RelatedPerson)
+* payee.party only Reference(Practitioner_eltss or PractitionerRole_eltss or $us-core-organization or Patient_eltss or RelatedPerson_eltss)
 * referral only Reference(ServiceRequest_eltss)
 * facility only Reference(Location_eltss)
-* careTeam.provider only Reference(Practitioner_eltss or $us-core-practitionerrole or $us-core-organization)
+* careTeam.provider only Reference(Practitioner_eltss or PractitionerRole_eltss or $us-core-organization)
 * diagnosis.diagnosisReference[diagnosisReference] only Reference(Condition_eltss)
 * diagnosis.diagnosisReference[diagnosisReference] ^sliceName = "diagnosisReference"
 * accident.locationReference[locationReference] only Reference(Location_eltss)
 * accident.locationReference[locationReference] ^sliceName = "locationReference"
+* item MS
 * item ^definition = "A claim line. Either a simple  product or service or a 'group' of details which can each be a simple items or groups of sub-details provided."
+* item.unitPrice MS
 * item.unitPrice ^short = "Service Rate per Unit name"
 * item.unitPrice ^definition = "The rate of one unit for a service."
 * item.unitPrice ^mustSupport = false
 * item.unitPrice ^isModifier = false
+* item.net MS
 * item.net ^short = "Total Cost of Service"
 * item.net ^definition = "The total cost of a service for the plan."
 * item.net ^mustSupport = false
