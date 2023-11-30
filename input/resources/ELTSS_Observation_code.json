@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "eltss-observation-code",
+
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "hsswg"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "informative",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss"
+          }
+        ]
+      }
+    }
+  ],
+  "url" : "http://hl7.org/fhir/us/eltss/ValueSet/eltss-observation-code",
+  "version" : "2.0.0",
+  "name" : "ELTSS_Observation_code",
+  "title" : "Observation Code Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2019-09-12T13:05:35-04:00",
+  "publisher" : "HL7 International / Human and Social Services",
+  "contact" : [
+    {
+      "name" : "HL7 International / Human and Social Services",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/hsswg"
+        },
+        {
+          "system" : "email",
+          "value" : "hhswg@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description" : "This value set includes the Strength and Preference codes.",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }
+      ]
+    }
+  ],
+  "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://loinc.org",
+        "concept" : [
+          {
+            "code" : "95541-9",
+            "display" : "Care experience preference"
+          }
+        ]
+      },
+      {
+        "system" : "http://hl7.org/fhir/us/eltss/CodeSystem/eltss-observation-codes-temporary",
+        "concept" : [
+          {
+            "code" : "strength",
+            "display" : "Strength"
+          }
+        ]
+      }
+    ]
+  }
+}

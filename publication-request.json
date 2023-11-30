@@ -2,15 +2,15 @@
   "package-id": "http://hl7.org/fhir/us/eltss",
 	"version": "2.0.0-ballot",
 	"path": "http://hl7.org/fhir/us/eltss/2024Jan",
-        "mode" : "working",
 	"status": "ballot",
 	"sequence": "STU 2",
-	
-	"desc": "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
-	"descmd": "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
-	"first" : false,
-	"title": "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
-	"ci-build" : "https://build.fhir.org/ig/HL7/eLTSS/", 
-	"category": "Public Health",
-	"introduction": "Electronic Long-Term Services & Supports (eLTSS) Service Plan Project aims to enable electronic data-level interoperability and exchange of data reflected on the person-centered service plans."
+	"milestone": false,
+	"desc": "Ballot version for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
+	"descmd": "Ballot version for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
+	"changes": "change_log.html"
+	"first" : false
+	//"title": "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
+	//"ci-build" : "https://build.fhir.org/ig/HL7/eLTSS/", 
+	//"category": "Public Health",
+	//"introduction": "Electronic Long-Term Services & Supports (eLTSS) Service Plan Project aims to enable electronic data-level interoperability and exchange of data reflected on the person-centered service plans."
 }
