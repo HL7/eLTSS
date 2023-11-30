@@ -7,7 +7,7 @@
 	"milestone": false,
 	"desc": "Ballot version for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
 	"descmd": "Ballot version for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
-	"changes": "change_log.html"
+	"changes": "change_log.html",
 	"first" : false
 	//"title": "Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
 	//"ci-build" : "https://build.fhir.org/ig/HL7/eLTSS/", 
