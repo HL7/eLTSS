@@ -16,13 +16,20 @@ The definition for the Code System with URI 'http://terminology.hl7.org/CodeSyst
 The definition for the Code System with URI 'http://www.ama-assn.org/go/cpt' doesnt provide any codes so the code cannot be validated
 
 
-
-# The slices are not meant to represent known slices but they are valid examples of additional slices that could be used
+# The slices are not meant to represent known slices but they are valid examples of other slices
 INFORMATION: Organization/provider2a: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# The slices are not meant to represent known slices but they are valid examples of additional slices that could be used
-INFORMATION: Practitioner/caremgr1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+# The slices are not meant to represent known slices but they are valid examples of other slices
+INFORMATION: Practitioner/caremgr1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated\resources\Practitioner-planner1.json ==
+INFORMATION: Practitioner/planner1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated\resources\Practitioner-provider2b.json ==
+INFORMATION: Practitioner/provider2b: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated\resources\Practitioner-provider3.json ==
+INFORMATION: Practitioner/provider3: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated\resources\Practitioner-provider4.json ==
+INFORMATION: Practitioner/provider4: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+
 
 # As in US CORE, using standard extension capabilitystatement-expectation for CapabilityStatement in additional contexts to fully express intended capabilities: see FHIR-12419
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-cibuild
