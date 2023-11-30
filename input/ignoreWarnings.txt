@@ -13,7 +13,6 @@ INFORMATION: CarePlan/careplan1: CarePlan.text.status: Reference to draft item h
 # The codes have been validated as correct and from the code systems
 The definition for the Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
 The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/HCPCS-all-codes' doesnt provide any codes so the code cannot be validated
-The definition for the Code System with URI 'http://www.ama-assn.org/go/cpt' doesnt provide any codes so the code cannot be validated
 
 
 # The slices are not meant to represent known slices but they are valid examples of other slices
@@ -21,13 +20,9 @@ INFORMATION: Organization/provider2a: Organization.identifier[0]: This element d
 
 # The slices are not meant to represent known slices but they are valid examples of other slices
 INFORMATION: Practitioner/caremgr1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-== fsh-generated\resources\Practitioner-planner1.json ==
 INFORMATION: Practitioner/planner1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-== fsh-generated\resources\Practitioner-provider2b.json ==
 INFORMATION: Practitioner/provider2b: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-== fsh-generated\resources\Practitioner-provider3.json ==
 INFORMATION: Practitioner/provider3: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-== fsh-generated\resources\Practitioner-provider4.json ==
 INFORMATION: Practitioner/provider4: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 
