@@ -36,13 +36,13 @@ This element does not match any known slice defined in the profile http://hl7.or
 INFORMATION: CapabilityStatement/eltss-server: CapabilityStatement.rest[0].resource[0].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
 
 
-# Variance requested. Our IG is dependent on US CORE 3.1.1 There is only one US CORE Condition profile for this version of US CORE and we are deriving from it.
+# https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is only one US CORE Condition profile for this version of US CORE and we are deriving from it.
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles
 
-# Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a Simple Observation Profile in that version. Our profile is not a Lab nor a Smoking cessation observation. 
+# https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a Simple Observation Profile in that version. Our profile is not a Lab nor a Smoking cessation observation. 
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
-# Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a profile in that version for QuestionnaireResponse, RelatedPerson nor ServiceRequest
+# https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a profile in that version for QuestionnaireResponse, RelatedPerson nor ServiceRequest
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/RelatedPerson-eltss').baseDefinition: US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile
