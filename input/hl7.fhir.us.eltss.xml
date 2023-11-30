@@ -11,7 +11,7 @@
 		<valueCode value="hsswg"/>
 	</extension>
   <url value="http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss"/>
-<version value="2.0.0"/>
+<version value="2.0.0-ballot"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm"/>
   <status value="active"/>
