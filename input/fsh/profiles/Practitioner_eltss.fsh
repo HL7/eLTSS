@@ -2,7 +2,7 @@ Profile: Practitioner_eltss
 Parent: $us-core-practitioner
 Id: Practitioner-eltss
 Description: "Practitioner for eLTSS"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2019-02-17T00:00:00-05:00"
 * ^publisher = "HL7 CBCP"

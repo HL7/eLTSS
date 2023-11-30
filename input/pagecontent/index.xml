@@ -16,8 +16,8 @@
 	<li>USCORE version is 3.1.1</li>
 	<li>Add <a href="http://build.fhir.org/ig/HL7/eLTSS/eLTSS_to_FHIR_R4_element.html#units">non-ucum coded units and ucum units</a> as examples for use in quantities</li>
 	<li>Removed US CORE mapping page as the data is now redundant through Profiling of USCORE Profiles</li>
-	<li>Added <a href="http://build.fhir.org/ig/HL7/eLTSS/taskProcedure.html">Task Guidance page </a>and  <a href="http://build.fhir.org/ig/HL7/eLTSS/artifacts.html#other">examples</a> of Task</li>
-	<li>Added simulated example of CarePlan and associated artifacts to aid implementers <a href="http://build.fhir.org/ig/HL7/eLTSS/artifacts.html#example-example-instances">here</a> and <a href=" http://build.fhir.org/ig/HL7/eLTSS/artifacts.html#other">here</a></li>
+	<li>Added <a href="http://build.fhir.org/ig/HL7/eLTSS/taskProcedure.html">Task Guidance page </a>and  <a href="artifacts.html#other">examples</a> of Task</li>
+	<li>Added simulated example of CarePlan and associated artifacts to aid implementers <a href="http://build.fhir.org/ig/HL7/eLTSS/artifacts.html#example-example-instances">here</a> and <a href="artifacts.html#other">here</a></li>
 	<li>Added page on <a href="http://build.fhir.org/ig/HL7/eLTSS/testing.html">Testing</a>	</li>
 	<li>Added draft for new <a href="http://build.fhir.org/ig/HL7/eLTSS/OperationDefinition-all-eltss-careplan.html">FHIR Operation</a> for retrieving all eLTSS data associated with a CarePlan</li>
 	<li>Enhanced server capability statement to make the expectations more clear <a href="http://build.fhir.org/ig/HL7/eLTSS/CapabilityStatement/eltss-server">eLTSS USCORE Capability Statement</a></li>

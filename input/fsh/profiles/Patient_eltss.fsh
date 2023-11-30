@@ -2,7 +2,7 @@ Profile: Patient_eltss
 Parent: $us-core-patient
 Id: Patient-eltss
 Description: "Patient resource mapping for eLTSS"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2019-06-01T01:00:00-04:00"
 * ^publisher = "HL7 CBCP"

@@ -14,7 +14,7 @@
 <version value="2.0.0"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2023-06-21"/>
   <publisher value="HL7 International / Human and Social Services"/>

@@ -2,7 +2,7 @@ Profile: Condition_eltss
 Parent: $us-core-condition
 Id: Condition-eltss
 Description: "Condition for eLTSS"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2019-02-17T00:00:00-05:00"
 * ^publisher = "HL7 CBCP"

@@ -3,7 +3,7 @@ Id: eltss-dueTo
 Title: "ELTSS-dueTo"
 Description: "Further conditions, problems, diagnoses, procedures or events or the substance that caused/triggered this Condition."
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2019-02-16T19:00:00-05:00"
 * ^publisher = "HL7 CBCP"

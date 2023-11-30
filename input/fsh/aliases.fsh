@@ -12,7 +12,10 @@ Alias: $nct = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 Alias: $ucum = http://unitsofmeasure.org
 
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
-Alias: $eltss-observation-code = http://hl7.org/us/eltss/CodeSystem/eltss-observation-code-temporary
+
+Alias: $eltss-observation-code = eltss-observation-codes-temporary
+
+
 Alias: $contractsignertypecodes = http://terminology.hl7.org/CodeSystem/contractsignertypecodes
 Alias: $claim-type = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: $processpriority = http://terminology.hl7.org/CodeSystem/processpriority

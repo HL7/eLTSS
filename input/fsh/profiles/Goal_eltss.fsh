@@ -2,7 +2,7 @@ Profile: Goal_eltss
 Parent: $us-core-goal
 Id: Goal-eltss
 Description: "Goal resource mapping for eLTSS"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2019-02-17T00:00:00-05:00"
 * ^publisher = "HL7 CBCP"
@@ -23,13 +23,6 @@ Description: "Goal resource mapping for eLTSS"
 * startDate 0..1 MS
 * startDate ^short = "Start-date of the duration of time when the goal is due. End-date is found in dueDate"
 * startDate ^definition = "If applicable, this is the Start-date of the duration of time when the goal is due. End-date is found in dueDate"
-
 * expressedBy only Reference(Patient_eltss or Practitioner or PractitionerRole_eltss or RelatedPerson_eltss)
-* expressedBy ^mustSupport = false
-* expressedBy ^isModifier = false
 * addresses only Reference(Condition_eltss or Observation_eltss or ServiceRequest_eltss or RiskAssessment_eltss or NutritionOrder or MedicationStatement)
-* addresses ^mustSupport = false
-* addresses ^isModifier = false
 * outcomeReference only Reference(Observation)
-* outcomeReference ^mustSupport = false
-* outcomeReference ^isModifier = false

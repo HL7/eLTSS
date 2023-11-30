@@ -1,1 +1,1 @@
-Please review the guidance on Security from [FHIR CORE](https://hl7.org/fhir/R4/security.html). This implementation guide is a starting point for further specification in the Clinical Research domain, specifically from the AdverseEvent Clinical Research Profile. Please provide relevant further details on use case specific security concerns when deriving from this implementation guide. 
+Please review the guidance on Security from [US CORE 3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/security.html). The noted security considerations are expected to be followed.

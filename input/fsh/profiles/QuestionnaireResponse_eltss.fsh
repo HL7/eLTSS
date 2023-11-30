@@ -5,6 +5,8 @@ Parent: QuestionnaireResponse
 Id: QuestionnaireResponse-eltss
 Title: "US Core QuestionnaireResponse Profile"
 Description: "To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the QuestionnaireResponse resource to record, search, and fetch retrieve captures the responses to form/survey and assessment tools such as the *Protocol for Responding to and Assessing Patients’ Assets, Risks, and Experiences (PRAPARE) Survey*.   This profile is based on the [Structured Data Capture (SDC) Questionnaire Response Profile](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaireresponse.html) and identifies the *additional* core elements, extensions, vocabularies and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific uses cases."
+* ^status = #active
+* ^experimental = false
 * ^date = "2023-10-17"
 * . ^short = "US Core Profile based on SDC QuestionnaireResponse"
 * . ^definition = "\\-"

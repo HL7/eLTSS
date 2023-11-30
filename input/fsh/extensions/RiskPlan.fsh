@@ -3,7 +3,7 @@ Extension: RiskPlan
 Id: eltss-RiskPlan
 Description: "Risk Management Plan eLTSS data set element"
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * ^date = "2019-09-12T13:05:35-04:00"
 * ^context.type = #element
 * ^context.expression = "RiskAssessment"
