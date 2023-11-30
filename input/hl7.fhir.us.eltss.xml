@@ -1038,6 +1038,11 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
 			<title value="Useful Downloads"/>
 			<generation value="markdown"/>
 		</page>
+		<page>
+			<nameUrl value="change_log.html"/>
+			<title value="Changes"/>
+			<generation value="markdown"/>
+		</page>
 
     </page>
 	        <parameter>
