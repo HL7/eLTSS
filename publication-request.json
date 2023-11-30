@@ -3,7 +3,7 @@
 	"version": "2.0.0-ballot",
 	"path": "http://hl7.org/fhir/us/eltss/2024Jan",
 	"status": "ballot",
-	"sequence": "STU 2",
+	"sequence": "STU2",
 	"mode": "working",
 	"milestone": false,
 	"desc": "Ballot version for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
