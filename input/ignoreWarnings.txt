@@ -35,14 +35,19 @@ INFORMATION: CapabilityStatement/eltss-server: CapabilityStatement.rest[0].resou
 
 # https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is only one US CORE Condition profile for this version of US CORE and we are deriving from it.
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a Simple Observation Profile in that version. Our profile is not a Lab nor a Smoking cessation observation. 
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a profile in that version for QuestionnaireResponse, RelatedPerson nor ServiceRequest
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Proces
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/RelatedPerson-eltss').baseDefinition: US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/RelatedPerson-eltss').baseDefinition: US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # Inherited from base Resource specification and cannot be changed
 WARNING: StructureDefinition/CarePlan-eltss: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
