@@ -1,4 +1,4 @@
-## Care Coordination across IGs
+### Care Coordination across IGs
 
 Care Coordination requires the orchestration of many moving parts, that do not move in isolation. In addition to the eLTSS artifacts in this IG and especially the mapping into FHIR spreadsheet, we recommend the following Implementation Guides to supplement the guidance in this guide:
 
@@ -24,12 +24,12 @@ Finally, the eCare guide also provides important guidance on alignment with the 
 
 
 ### Where does this guide fit in
-The eLTSS IG focuses on being able to package eLTSS data in a CarePlan so that a reader of the data can find all they need to perform their role and function. Da Vinci extends the financial and business transactions found in this guide (primarily seen as a tracking of the signature of various actors). The Gravity SDOH IG works more closely with the Task and ServiceRequest transaction, data components of activities that would be refereed to by a CarePlan. The eLTSS, by focusing on CarePlan, adds additional opportunity to share other important actives (either as activity.outcomes - things that were done as a result of the activity - or as activity.reference items - things planned to be done).
+The eLTSS IG focuses on being able to package eLTSS data in a CarePlan so that a reader of the data can find all they need to perform their role and function. Da Vinci extends the financial and business transactions found in this guide (primarily seen as a tracking of the signature of various actors). The Gravity SDOH IG works more closely with the Task and ServiceRequest transaction, data components of activities that would be referred to by a CarePlan. The eLTSS IG, by focusing on CarePlan, adds additional opportunity to share other important actives (either as activity.outcomes - things that were done as a result of the activity - or as activity.reference items - things planned to be done).
 
-Please take all these guides into consideration when implementing in the eLTSS space. They provide important guidance on aspects that are not the central purview of this particular guide, but which effect the workflow in which the eLTSS data elements flow. Importantly, these guides us US CORE as a base.
+Please take all these guides into consideration when implementing in the eLTSS space. They provide important guidance on aspects that are not the central purview of this particular guide, but which affect the workflow in which the eLTSS data elements flow. Importantly, these guides use US CORE as a base.
 
 
-## [Mapping page eLTSS data elements to FHIR](eLTSS_to_FHIR_R4_element.html)
+### [Mapping page eLTSS data elements to FHIR](eLTSS_to_FHIR_R4_element.html)
 The eLTSS to FHIR mapping page of this IG is the most important section of this IG. It provides identification of the expected location in sending/receiving eLTSS data. Please review it. We will elaborate further on a few key points.
 
 ### CarePlan activity - planned and performed activities
@@ -45,7 +45,7 @@ The following comes from the [MCC eCare IG](https://build.fhir.org/ig/HL7/fhir-u
 This extension is used extensively in the MCC eCare guide to provide a link within FHIR Resources back to the target Goal. A single data point, such as a clinical test observation, can serve for multiple goals. Thus, pertainsToGoal is given 0..* cardinality.
 
 ### Workflow Task and ServiceRequest following Gravity SDOH
-The guidance from Gravity is too extensive to fit into a single paragraph. The SDOHCC Task for Referral Management  Here is a list of important pages from the Gravity SDOH guide:
+The guidance from Gravity is too extensive to fit into a single paragraph. Here is a list of important pages from the Gravity SDOH guide:
 * example of a Task, [SDOHCC Task for Referral Management ](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/StructureDefinition-SDOHCC-TaskForReferralManagement.html)
 * working with the status of [Task](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/checking_task_status.html)
 * referral workflow showing Task used in context: [workflow](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/referral_workflow.html)
@@ -72,5 +72,5 @@ The [Period](http://hl7.org/fhir/R4/datatypes.html#Period) data type is a much s
 ### Terminology from MCC eCare and Gravity SDOH
 There has been a strong effort in both of these IGs to help organize coded concepts for use in specific data elements. The organization aides both discovery and normalization of terms used. It can be a time saver to start with the terminology work done in those two guides. See http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/gravity_terminology.html and https://build.fhir.org/ig/HL7/fhir-us-mcc/mcc_value_set_libraries_and_usage.html
 
-## Server Capability Statement
+### Server Capability Statement
 The Capability Statement in this guide reflects the guidance above by requiring eLTSS compliant servers to support these IGs.
