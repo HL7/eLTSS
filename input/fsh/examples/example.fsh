@@ -373,8 +373,10 @@ Usage: #example
 * item.productOrService = http://terminology.hl7.org/CodeSystem/HCPCS-all-codes#T2003
 
 * item.unitPrice.value = 60
+* item.currency = #USD
 
 * item.net.value = 600
+* item.currency = #USD
 
 Instance: claim2
 InstanceOf: Claim
@@ -397,8 +399,10 @@ Usage: #example
 * item.productOrService = http://terminology.hl7.org/CodeSystem/HCPCS-all-codes#G0108
 
 * item.unitPrice.value = 55
+* item.currency = #USD
 
 * item.net.value = 660
+* item.currency = #USD
 
 Instance: claim3
 InstanceOf: Claim
@@ -421,8 +425,10 @@ Usage: #example
 * item.productOrService = http://www.ama-assn.org/go/cpt#97110
 
 * item.unitPrice.value = 65
+* item.currency = #USD
 
 * item.net.value = 780
+* item.currency = #USD
 
 Instance: contract1
 InstanceOf: Contract
