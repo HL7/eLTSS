@@ -4,7 +4,7 @@ Profile: QuestionnaireResponse_eltss
 Parent: QuestionnaireResponse
 Id: QuestionnaireResponse-eltss
 Title: "eLTSS QuestionnaireResponse Profile"
-Description: "This profile is consistent with the USCORE QuestionnaireResponse Profile and identifies *additional* core elements, extensions, vocabularies and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile."
+Description: "This profile is consistent with the USCORE QuestionnaireResponse Profile, which is itself related to the SDCQuestionnaireResponse Profile. It supports core elements, vocabularies and value sets from the resource that are used to communicate eLTSS data elements."
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-10-17"
