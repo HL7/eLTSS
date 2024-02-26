@@ -74,7 +74,7 @@ For more information, please see the <a href="background.html">Project Backgroun
   <p>
 The concept of an eLTSS service plan most closely aligns with the FHIR CarePlan resource, which is semantically a good fit. The diagram below shows the FHIR resources utilized in the mapping as well as the FHIR data elements used to link these resources. Parentheses indicates the eLTSS Dataset data element (e.g. Assessed Need, Preference) or group of elements (e.g. Beneficiary Demographics, Person Indicators). Lines indicate linkages between FHIR resources and are labeled with the FHIR data element that provides the reference.</p>
   <!--img src="CarePlan_FHIR_mapping_centered_narrow.png"/-->
-  <img src="eltssCut.svg"/>
+  <img src="eLTSS_FHIRresourceView.png"/>
   <br/>
   <br/>
   <p>The IG will use <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a>, and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a> as a starting point and will profile resources as necessary to enable eLTSS Plan Creation and Exchange. Please refer to <a href="profiles.html">eLTSS FHIR Profiles</a> for additional details.</p>
