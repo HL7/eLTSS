@@ -10,11 +10,11 @@
     <a href="models.html">Logical Models</a>
   </li-->
   <li>
-    <a href="implementation.html">Implementation</a>
+    <a href="implementation.html">Implementation Considerations</a>
   </li>
-  <li>
+  <!--li>
     <a href="taskProcedure.html">Task Guidance</a>
-  </li>
+  </li-->
   <li>
     <a href="mapping.html">Mapping</a>
   </li>
@@ -33,6 +33,7 @@
 	  <li><a href="OperationDefinition-all-eltss-careplan.html">All-eLTSS retrieval Operation</a></li>
       <li><a href="capabilities.html">Capability Statements</a></li>
 	  <li><a href="vocabulary.html">Value Sets</a></li>
+	  <li><a href="artifacts.html">Summary</a></li>
     </ul> 
   </li>
   

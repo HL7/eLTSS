@@ -814,14 +814,14 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
         </page>
 		<page>
           <nameUrl value="implementation.html"/>
-          <title value="Implementation"/>
+          <title value="Implementation Considerations"/>
           <generation value="markdown"/>
         </page>
-		<page>
+		<!--page>
           <nameUrl value="taskProcedure.html"/>
           <title value="Task and Procedure"/>
           <generation value="markdown"/>
-        </page>
+        </page-->
 		<page>
 		  <nameUrl value="testing.html"/>
           <title value="Testing FHIR"/>
