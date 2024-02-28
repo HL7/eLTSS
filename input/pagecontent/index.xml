@@ -125,7 +125,7 @@ The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This p
   </li>
   <li><a href="testing.html">Testing</a>: Provides pointers on testing</li>
   
-  <li><a href="" >Artifacts</a>: FHIR artifacts can be found here
+  <li>Artifacts: FHIR artifacts can be found here
   <ul>
 	<li><a href="profiles.html">Profiles</a>: FHIR profiles contain machine readable constraints on the FHIR specification. The narrative sections are important to review as well.</li>
 	<li><a href="examples.html">Examples</a>: Look here for examples to guide your implementation.</li>
