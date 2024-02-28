@@ -1,3 +1,12 @@
+#### Requesting and Recording payment for Task, Procedure or ServiceRequest
+An important step in eLTSS is payment for services. The following highlights basic CORE FHIR associations that can be used, should business requirements request it.
+
+A Claim FHIR Resource provides costing information, this can be a "claim" or "preauthorization" or "predetermination" (indicated with Claim.use).  The claim should be connected to the ServiceRequest with the Claim.referral referencing the ServiceRequest instance. As mentioned, the Procedure Resource can be used to communicate work performed if the business requirements need it. The Procedure can be connected to a Claim using Claim.procedure.procedureReference. Any Task records can be included by referencing using Claim.supportingInfo.
+
+If business rules require it, the FHIR ClaimResponse Resource can be used "to provide the results of the adjudication and/or authorization of a set of healthcare-related products and services for a patient against the patient's insurance coverages, or to respond with what the adjudication would be for a supplied set of products or services should they be actually supplied to the patient." see [FHIR R4 ClaimResponse Resource](https://hl7.org/fhir/R4/claimresponse.html#bnr) In other words, the ClaimResponse Resource is used to respond to a FHIR Claim data instance. The ClaimResponse would detail the actual monies that could or would be paid. 
+
+A final consideration is the use of ClaimResponse.net and Claim.net. They both detail the total cost. Using the total cost and the FHIR ServiceRequest (or FHIR Procedure) frequency and quantity information a system could theoretically calculate the hourly rate for a service requested or approved. This might be less ambiguous and more convenient than requesting entry of the cost per unit.
+
 #### Implementer mapping guidance
 The following aids in finding the location of eLTSS data elements. See [R4 FHIR Mapping page](eLTSS_to_FHIR_R4_element.html) for complete guidance, here we are providing a subset of fields for convenience. 
 
