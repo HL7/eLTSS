@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
-  <div class="dragon">Look for changes that look like this 
-	<br></br> 
-	<div class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal
-	</div>
+
+<div class="bg-primary text example">
+  <p style="font-size: 14px;">This Page contains three tables to aid in FHIR representation and use of eLTSS data.</p>
+  <ul>
+	  <li style="font-size:14px">The R4 mapping table indicates where eLTSS DAM data elements are to be placed/found in FHIR. </li>
+	  <li style="font-size:14px">The R4 Useful elements table details important accessory data elements in meeting the eLTSS use case. </li>
+	  <li style="font-size:14px">The Units table provides guidance on using units for things such as 'visit/week.'</li>
+  </ul>
   </div>
+  
   <br></br>
   <h3>R4 mapping table</h3><a name="r4mapping"></a>
   <table border="1">
@@ -1138,7 +1143,7 @@ ServiceRequest &#8594; quantityRatio &#8594; denominator<br/>
 3) value is a decimal, and unit is a string.<br/>
 4) numerator and denominator are used to represent a quantity with an interval. For example, to represent 8 hours a day, numerator &#8594; value would be "8" and numerator &#8594; unit would be "hour", while denominator &#8594; value would be "1" and denominator &#8594; unit would be "day".<br/>
 5) See the "qty-unit-interval examples" worksheet in this spreadsheet for additional details.<br/>
-6) Please also consider occurrencePeriod for use when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServicePlan.quantity of 5 [USD]/day. AND, use occurrenceTiming for timing information that fluctuates or is sufficiently complex. The recipient may need to calculate end-date, or one can use occurrenceTiming.boundsPeriod to ascribe a start and end date. E.g. Give ServicePlan.quantity 5 with unit=[USD]/day with the occurrenceTiming.boundsPeriod of May 31, 2023 to June 23, 2023 on occurrenceTiming.dayOfWeek = Mon and Wed at occurrenceTiming.timeOfDay = 3 pm.</td>
+6) Please also consider occurrencePeriod for use when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServiceRequest.quantityRatio of 5 USD per day. AND, use occurrenceTiming for timing information that fluctuates or is sufficiently complex. The recipient may need to calculate end-date, or one can use occurrenceTiming.boundsPeriod to ascribe a start and end date. E.g. Give ServiceRequest.quantityRatio of 5 USD per day. with the occurrenceTiming.boundsPeriod of May 31, 2023 to June 23, 2023 on occurrenceTiming.dayOfWeek = Mon and Wed at occurrenceTiming.timeOfDay = 3 pm.</td>
 	<td class="stu-note">Added guidance on ServiceRequest.occurrenceTiming and ServiceRequest.occurrencePeriod</td>
     </tr>
     <tr>
