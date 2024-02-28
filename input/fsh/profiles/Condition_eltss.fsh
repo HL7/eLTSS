@@ -14,8 +14,9 @@ Description: "Condition for eLTSS"
 * extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
 * extension[dueTo] ^sliceIsConstraining = false
 
-* extension contains $condition-assertedDate named assertedDate 0..1 MS
-* extension[assertedDate] ^short = "Date the condition was first asserted"
+//* extension contains $condition-assertedDate named assertedDate 0..1 MS
+//* extension[assertedDate] ^short = "Date the condition was first asserted"
+
 * clinicalStatus MS
 * clinicalStatus from $condition-clinical-values (required)
 * verificationStatus MS

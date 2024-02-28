@@ -46,7 +46,7 @@
 	<uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <!--uri value="http://hl7.org/fhir/us/core"/-->
     <packageId value="hl7.fhir.us.core"/>
-    <version value="3.1.1"/>
+    <version value="6.1.0"/>
   </dependsOn> 
   <dependsOn >
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
