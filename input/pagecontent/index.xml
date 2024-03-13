@@ -43,13 +43,10 @@
 The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
 </p>
 
-<p>This guide is not the place to learn about the eLTSS use case. It is expected that readers of this guide have become familiar with FHIR R4 and the eLTSS use case prior to reading this guide.
-This guide does provide implementation guidance for eLTSS data elements, including communicating patient participation in care. The guidance is found as a mixture of mapping guidance, narration, example, testing recommendation, and FHIR artifacts. FHIR R4 Core and US CORE 3.1.1 provide a rich resource of detail for implementers. It is a perquisite of this guide that implementers become familiar with both.
+<p>
+It is expected that the readers of this guide are familiar with the eLTSS use case, FHIR R4 and USCORE. To become familiar with the eLTSS use case, please refer to the ONC documentation of the use case, found here <a href="https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/eLTSS+Use+Case+Development+and+Functional+Requirements">https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/eLTSS+Use+Case+Development+and+Functional+Requirements</a>. Additionally, an HL7 Domain Analysis Model (DAM), which defines data elements important to eLTSS data transmission, can be found here <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=495">“HL7 Cross-Paradigm Information Sharing for Electronic Long-Term Services and Supports (eLTSS), Release 1”</a>. 
+Please note, this implementation guide attempts to inform how to package eLTSS data elements for exchange between systems. This guide provides implementation guidance for eLTSS data elements, including communicating patient participation in care. The guidance is found as a mixture of mapping guidance, narration, example, testing recommendation, and FHIR artifacts. FHIR R4 Core and USCORE provide a rich resource of detail to support the base FHIR implementation that this IG assumes. To successfully implement an eLTSS solution in FHIR, implementers should become familiar with both. Access to FHIR R4 Core and USCORE guidance can be found where relevant through the artifacts of this guide. For instance, when reviewing profiles, please be sure to view the Snapshot Table on the FHIR profiles, as well as the Differential Table, and note the links to the guidance on the artifact from which the profile is derived.
 </p>
-
-
-
-
 
   <h3>Background on eLTSS</h3><a name="background"> </a>
 <p><!--Updated the first sentence and 2 other areas to specify US Core 3.0 for #28236-->
