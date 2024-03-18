@@ -9,9 +9,11 @@ Notable:
 
 
 #### [Gravity SDOH IG](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/)
-The Gravity SDOH IG specializes in communication of SDOH concerns and service fulfillment. It contains a large terminology resource for this space, and, importantly has a focus on the ServiceRequest-Task data workflow. We recommend taking a close look at how the Gravity SDOH IG ties Task status updates with the originating ServiceRequest. At a high level, Tasks are created in response to the needs communicated in the ServiceRequest. As the Tasks are completed the system originating the ServiceRequest has an opportunity to know what Task was completed and by whom.
+The Gravity SDOH IG specializes in communication of SDOH concerns and service fulfillment. It contains a large terminology resource for this space.
 
-Here is a list of important pages from the Gravity SDOH guide that relate to Task:
+The Gravity SDOH IG makes progress on the referral workflow process. Importantly, the guidance is a work in progress and involves collaboration with [BSER](https://build.fhir.org/ig/HL7/bser/) and [360X](https://oncprojectracking.healthit.gov/wiki/display/TechLab360X/360X+Implementation+Guide). As an exploration, Gravity SDOH IG ties Task status updates with the originating ServiceRequest. At a high level, Tasks are created in response to the needs communicated in the ServiceRequest. As the Tasks are completed the system originating the ServiceRequest has an opportunity to know what Task was completed and by whom.
+
+Here is a list of pages from the Gravity SDOH guide that relate to Task and the ongoing work towards defining this space:
 * example of a Task, [SDOHCC Task for Referral Management ](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/StructureDefinition-SDOHCC-TaskForReferralManagement.html)
 * working with the status of [Task](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/checking_task_status.html)
 * referral workflow showing Task used in context: [workflow](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/referral_workflow.html)
