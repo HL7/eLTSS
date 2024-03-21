@@ -3,13 +3,13 @@
 <div>
   <ul>
     <li>Deprecation of CarePlan.activity.detail, reduces opportunity for variability in delivery of data elements</li>
-    <li>Recommendations on use of Task and the <a href="implementation.html#pertainstogoal-extension">extension:pertainsToGoal</a></li>
+    <li>Recommendations on use of Task and the <a href="implementation.html#resource-pertainstogoal-extension">extension:resource-pertainstogoal</a></li>
 	<li>Clarification on occurrenceTiming</li>
 	<li>See, <a href="eLTSS_to_FHIR_R4_element.html">changes to Mapping eLTSS to FHIR</a>, <a href="StructureDefinition-ServiceRequest-eltss.html">additional guidance on ServiceRequest.occurrence[x]</a>, <a href="implementation.html">new guidance on Implementation topics</a>, <a href="StructureDefinition-CarePlan-eltss.html">CarePlan removal of CarePlan.activity.detail</a></li>
 	<li>USCORE version is 3.1.1</li>
 	<li>Add <a href="eLTSS_to_FHIR_R4_element.html#units">non-ucum coded units and ucum units</a> as examples for use in quantities</li>
 	<li>Removed US CORE mapping page as the data is now redundant through Profiling of USCORE Profiles</li>
-	<li>Added <a href="taskProcedure.html">Task Guidance page </a>and  <a href="artifacts.html#other">examples</a> of Task</li>
+	<li>Added <a href="https://build.fhir.org/ig/HL7/eLTSS/branches/master/implementation.html#task-used-with-servicerequest">Task Guidance on Implementation topics page </a>and  <a href="artifacts.html#other">examples</a> of Task</li>
 	<li>Added simulated example of CarePlan and associated artifacts to aid implementers <a href="artifacts.html#example-example-instances">here</a> and <a href="artifacts.html#other">here</a></li>
 	<li>Added page on <a href="testing.html">Testing</a>	</li>
 	<li>Added draft for new <a href="OperationDefinition-all-eltss-careplan.html">FHIR Operation</a> for retrieving all eLTSS data associated with a CarePlan</li>
