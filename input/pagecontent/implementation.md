@@ -9,9 +9,11 @@ Notable:
 
 
 #### [Gravity SDOH IG](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/)
-The Gravity SDOH IG specializes in communication of SDOH concerns and service fulfillment. It contains a large terminology resource for this space, and, importantly has a focus on the ServiceRequest-Task data workflow. We recommend taking a close look at how the Gravity SDOH IG ties Task status updates with the originating ServiceRequest. At a high level, Tasks are created in response to the needs communicated in the ServiceRequest. As the Tasks are completed the system originating the ServiceRequest has an opportunity to know what Task was completed and by whom.
+The Gravity SDOH IG specializes in communication of SDOH concerns and service fulfillment. It contains a large terminology resource for this space.
 
-Here is a list of important pages from the Gravity SDOH guide that relate to Task:
+The Gravity SDOH IG makes progress on the referral workflow process. Importantly, the guidance is a work in progress and involves collaboration with [BSER](https://build.fhir.org/ig/HL7/bser/) and [360X](https://oncprojectracking.healthit.gov/wiki/display/TechLab360X/360X+Implementation+Guide). As an exploration, Gravity SDOH IG ties Task status updates with the originating ServiceRequest. At a high level, Tasks are created in response to the needs communicated in the ServiceRequest. As the Tasks are completed the system originating the ServiceRequest has an opportunity to know what Task was completed and by whom.
+
+Here is a list of pages from the Gravity SDOH guide that relate to Task and the ongoing work towards defining this space:
 * example of a Task, [SDOHCC Task for Referral Management ](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/StructureDefinition-SDOHCC-TaskForReferralManagement.html)
 * working with the status of [Task](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/checking_task_status.html)
 * referral workflow showing Task used in context: [workflow](http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/referral_workflow.html)
@@ -23,7 +25,7 @@ Additionally, in Gravity SDOH they introduce a concept of Patient Task. For thos
 #### [MCC eCare Plan IG](https://build.fhir.org/ig/HL7/fhir-us-mcc/index.html)
 The CarePlan Resource has a great opportunity to tie together a prospective or retrospective look at care planning. Central to the concept of patient led patient care is the Goal Resource. The MCC eCare IG uses the [resource-pertainsToGoal](http://hl7.org/fhir/R4/extension-resource-pertainstogoal.html)) extension as the major tool to connect care data elements directly to Goals, we suggest following this lead in this guide. Similar to Gravity, in the MCC eCare IG there is also rich set of value sets to aid in discovery of care planning data elements. 
 
-An important feature of the eCare IG is also a consistent theme of caregiver and patient involvement in care planning. You will find Observations meant to be authored by care givers and patients, in order to communicate how they feel about the condition(s) being addressed and in order to share the status of the care giver's ability to provide care. The [MCC eCare CareTeam profile]() shows how the two roles are represented on the care team. 
+An important feature of the eCare IG is also a consistent theme of caregiver and patient involvement in care planning. You will find Observations meant to be authored by caregivers and patients, in order to communicate how they feel about the condition(s) being addressed and in order to share the status of the caregiver's ability to provide care. The [MCC eCare CareTeam profile]() shows how the two roles are represented on the care team. 
 
 Additionally, the eCare guide has this page on aggregating care plan data: [CarePlan aggregation](https://build.fhir.org/ig/HL7/fhir-us-mcc/careplanAggregation.html)
 

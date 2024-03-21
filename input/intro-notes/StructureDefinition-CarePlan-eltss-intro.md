@@ -28,7 +28,7 @@ CarePlan &#8594; activity<br/>
 ............text 1<br/>
 .........extension(pertainsToGoal)</td>
       <td>1) CarePlan includes activity &#8594; reference, which can be a reference to ServiceRequest, Task or other Resource.<br/>
-2) ServiceRequest would be used when the Step or Action is a task under a service. If the Step or Action is an informal support or an activity being undertaken by the beneficiary the Task Resource, similar to a Patient Task used in the Gravity SDOH IG, can be used.<br/>
+2) ServiceRequest would be used when the Step or Action is a task under a service. If the Step or Action is an informal support or an activity being undertaken by the patient/care recipient, the Task Resource, similar to a Patient Task used in the Gravity SDOH IG, can be used.<br/>
 3) activity &#8594; reference(Resource) is linked to the Goal the step or action addresses through the pertainsToGoal Extension in the referenced activity.<br/>
 4) activity &#8594; reference(Resource) includes a performer, author, participant with type or other data element that can be used to reference who is responsible for performing the step or action, such as to indicate that the person or a related person is responsible.<br/>
 5) text is where the Step or Action text would be provided.<br/>

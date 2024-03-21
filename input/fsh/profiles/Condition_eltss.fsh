@@ -10,8 +10,9 @@ Description: "Condition for eLTSS"
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"
 * extension ^slicing.rules = #open
-* extension contains $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS and ELTSS_dueTo named dueTo 0..*
-* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+//* extension contains $resource-pertainsToGoal named resource-pertainsToGoal 0..* MS and ELTSS_dueTo named dueTo 0..*
+//* extension[resource-pertainsToGoal] ^short = "The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."
+* extension contains ELTSS_dueTo named dueTo 0..*
 * extension[dueTo] ^sliceIsConstraining = false
 
 //* extension contains $condition-assertedDate named assertedDate 0..1 MS

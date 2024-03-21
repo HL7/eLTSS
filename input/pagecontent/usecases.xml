@@ -18,27 +18,27 @@ Once an eLTSS plan is created using FHIR, there are 4 sample use cases that high
 <a name="u1"></a>
 <h3>Exchange eLTSS Plan from Support Planner (case management system) to Clinical and Institutional-based Provider (EHR system)</h3>
 <p>
-Purpose: The clinical and institutional-based provider is informed of what service(s) the Beneficiary is eligible for and to supply additional details around the services as well as the Beneficiary to enable better delivery of services and support. 
+Purpose: The clinical and institutional-based provider is informed of what service(s) the patient/care recipient is eligible for and to supply additional details around the services as well as the patient/care recipient to enable better delivery of services and support. 
 </p><p>
 eLTSS Data: Clinical and Institutional-based Provider may need cost information (Claim), emergency backup plan (CarePlan), full details on service quantities (ServiceRequest), etc. Important information includes contact information for a financial management worker (Practitioner).
 </p>
 <a name="u2"></a>
 <h3>Exchange eLTSS Plan from Support Planner (case management system) to HCBS Provider (provider system)</h3>
 <p>
-Purpose: To inform HCBS Provider of service(s) requested by Beneficiary, or are authorized for the Beneficiary, as well as to supply additional detail around those services and the Beneficiary to enable better delivery of services and supports.
+Purpose: To inform HCBS Provider of service(s) requested by patient/care recipient, or are authorized for the patient/care recipient, as well as to supply additional detail around those services and the patient/care recipient to enable better delivery of services and supports.
 </p><p>
 eLTSS Data: HCBS Providers may need service and cost information (Units and Unit Costs, Effective Dates, etc.) (ServiceRequest, Claim), especially if there is a change (e.g., due to a re-assessment). This use case could be the vehicle to communicate these data elements to the HCBS Providers officially, even if the services (and quantity and rates) were previously negotiated. Signatures (Contract) may not be required; however, the eLTSS Signature Date data elements (Contract) indicating when the plan was approved (CarePlan) could be important.
 </p>
 <a name="u3"></a>
-<h3>Exchange eLTSS Plan from Support Planner (case management system) to Beneficiary (PHR)</h3>
+<h3>Exchange eLTSS Plan from Support Planner (case management system) to patient/care recipient (PHR)</h3>
 <p>
-Purpose: The Beneficiary has a complete record of what is either proposed or to be provided to them and by whom, and potentially be imported into the Beneficiary’s PHR.
+Purpose: The patient/care recipient has a complete record of what is either proposed or to be provided to them and by whom, and potentially be imported into the patient/care recipient’s PHR.
 </p><p>
-eLTSS Data: Beneficiary may not need signatures (Contract) and may not need cost information (Claim).
+eLTSS Data: patient/care recipient may not need signatures (Contract) and may not need cost information (Claim).
 </p>
 <a name="u4"></a>
 <h3>Exchange eLTSS Plan from HCBS Provider (provider system) to Clinical Provider (EHR) (vice versa)</h3>
 <p>
-Purpose: The Clinical Provider is aware of the services the Beneficiary is receiving and what their goals/needs/risks are or have been. The HCBS Provider is aware of the Beneficiary's recent hospital/doctor visit and any discharge/treatment instructions to follow.
+Purpose: The Clinical Provider is aware of the services the patient/care recipient is receiving and what their goals/needs/risks are or have been. The HCBS Provider is aware of the patient/care recipient's recent hospital/doctor visit and any discharge/treatment instructions to follow.
 </p>
 </div>

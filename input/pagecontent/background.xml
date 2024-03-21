@@ -5,7 +5,7 @@ The eLTSS Initiative is a joint CMS and ONC project initiated in 2014 as one of 
 </p><p>
 The primary objectives of the eLTSS Initiative are: 1) to identify components or data elements needed for the electronic creation and interoperable exchange of person-centered service plans by health care and HCBS providers, payers and the individuals they serve; and 2) to field test these data elements within participating organizations’ electronic systems.
 </p><p>
-Unlike previous federal-led initiatives that focused on advancing health IT adoption and health information exchange between clinical and institutional settings, eLTSS is the first federal initiative that addresses the interoperability gap between HCBS providers, beneficiaries, and their caregivers and between HCBS providers and clinical providers. It is also unique in that it addresses information requirements for social determinants of health (SDOH) data such as housing, education, and transportation, each of which influence individuals’ ability to maintain their health.
+Unlike previous federal-led initiatives that focused on advancing health IT adoption and health information exchange between clinical and institutional settings, eLTSS is the first federal initiative that addresses the interoperability gap between HCBS providers, patient/care recipients, and their caregivers and between HCBS providers and clinical providers. It is also unique in that it addresses information requirements for social determinants of health (SDOH) data such as housing, education, and transportation, each of which influence individuals’ ability to maintain their health.
 </p><p>
 The key artifact of interest for the HL7 Community is the eLTSS Dataset. The eLTSS Dataset was developed using a consensus-based approach where eLTSS participants determined the set of data elements commonly found on a service plan. The data elements were initially derived from the service plans each of the TEFT grantees are using within their respective states, most of which were paper-based. The data elements were consolidated, reviewed and harmonized into a smaller set through facilitated public sessions with the eLTSS ONC Tech Lab participants. The process described above culminated in the publication of a set of 56 common data elements, referred to as the eLTSS Dataset.
 </p><p>
@@ -21,11 +21,11 @@ Electronic Long-Term Services and Supports (eLTSS) aims to enable electronic dat
 The adoption and use of Health IT and quality measurement for community-based long-term services and supports is limited. Limitations include: 
 </p>
 <ul>
-<li>lack of uniformity in the terminology and definitions of data elements, including those important to the beneficiary, needed for assessments and service plans used across and between community-based information systems, clinical care systems and personal health record systems; </li>
+<li>lack of uniformity in the terminology and definitions of data elements, including those important to the patient/care recipient, needed for assessments and service plans used across and between community-based information systems, clinical care systems and personal health record systems; </li>
 <li>insufficient business and/or financial incentives for service providers to acquire and use Health IT to support coordination of services; </li>
 <li>minimal national standards for quality measurement in LTSS outcomes; </li>
-<li>lack of consensus on the inter-relationships between a beneficiary’s plans across care, services and supports;</li>
-<li>lack of evidence and understanding of how Health IT may benefit the beneficiary and encourage their adoption and use of Health IT; and </li> 
+<li>lack of consensus on the inter-relationships between a patient/care recipient’s plans across care, services and supports;</li>
+<li>lack of evidence and understanding of how Health IT may benefit the patient/care recipient and encourage their adoption and use of Health IT; and </li> 
 <li>lack of established best practices for complying with legal security and privacy requirements when electronically exchanging data between covered clinical entities and non-clinical entities providing community-based services. </li>
 </ul>
 <p>
