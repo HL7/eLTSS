@@ -57,3 +57,22 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/Structure
 WARNING: StructureDefinition/CarePlan-eltss: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 INFORMATION: StructureDefinition/Contract-eltss: StructureDefinition.snapshot.element[191].mapping[1].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
+
+Unknown Code 'C25716' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
+Unknown Code 'C81906' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
+Unknown Code 'C141286' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
+There are multiple different potential matches for the url 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.2.0', found versions: 2.1.0, 2.2.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/processpriority|0.1.0
+Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-ballot1 (this may not be a problem, but you should check that it's not intended to match a slice)
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+Unknown Code 'C25716' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
+
+# Goal can take just description.text
+No code provided, and a code should be provided from the value set 'US Core Goal Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description|6.1.0)

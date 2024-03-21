@@ -1,6 +1,5 @@
 Profile: ServiceRequest_eltss
-Parent: ServiceRequest
-//Parent: $us-core-servicerequest
+Parent: $us-core-servicerequest
 Id: ServiceRequest-eltss
 Description: "ServiceRequest resource mapping for eLTSS"
 * ^version = "1.0.0"
@@ -29,9 +28,8 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * code ^comment = "Use HCPCS (https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo/) code + modifiers or free text."
 
 //* code from adverse-event-contributing-factor-vs (example)
-//* extension[item].valueCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-//* extension[item].valueCodeableConcept ^binding.extension.valueString = "AdverseEventContributingFactor"
-* code from http://terminology.hl7.org/ValueSet/v3-HealthCareCommonProcedureCodingSystem (preferred)
+//* code from http://terminology.hl7.org/ValueSet/v3-HealthCareCommonProcedureCodingSystem (preferred)
+* code from http://terminology.hl7.org/ValueSet/v3-HealthCareCommonProcedureCodingSystem
 * code ^binding.description = "Use HCPCS (https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo/) code + modifiers or free text."
 * code MS
 * code.text MS
@@ -74,10 +72,10 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * quantityRatio.denominator.code MS
 * quantityRatio.denominator.system MS
 
-* subject MS
-* subject only Reference(Patient_eltss or Group or $us-core-device or Device or Location_eltss)
-* subject ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* subject ^type.targetProfile[=].extension.valueBoolean = true
+//* subject MS
+* subject only Reference(Patient_eltss)
+//* subject ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+//* subject ^type.targetProfile[=].extension.valueBoolean = true
 
 * encounter only Reference($us-core-encounter)
 //* eltss ^short = "Service Start + End Date"
@@ -97,12 +95,27 @@ Description: "ServiceRequest resource mapping for eLTSS"
 * occurrenceTiming.repeat.boundsPeriod MS
 * occurrenceTiming.repeat.boundsPeriod.start MS
 * occurrenceTiming.repeat.boundsPeriod.end MS
-* authoredOn MS
+//* authoredOn MS
 
-* requester MS
+//* requester MS
 * requester only Reference(Practitioner_eltss or PractitionerRole_eltss or Patient_eltss or $us-core-organization or RelatedPerson_eltss or $us-core-device or Device)
 * requester ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * requester ^type.targetProfile[=].extension.valueBoolean = true
+* requester ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = false
+* requester ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = false
+* requester ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = false
+* requester ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = false
+* requester ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = false
+* requester ^type.targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = false
+
+
+
 * performer MS
 * performer only Reference(Practitioner_eltss or PractitionerRole_eltss or Patient_eltss or $us-core-organization or RelatedPerson_eltss or $us-core-device or Device or $us-core-careteam or HealthcareService)
 * performer ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"

@@ -13,7 +13,7 @@
     <li>Recommendations on use of Task and the <a href="implementation.html#pertainstogoal-extension">extension:pertainsToGoal</a></li>
 	<li>Clarification on occurrenceTiming</li>
 	<li>See, <a href="eLTSS_to_FHIR_R4_element.html">changes to Mapping eLTSS to FHIR</a>, <a href="StructureDefinition-ServiceRequest-eltss.html">ServiceRequest.occurrence[x]</a>, <a href="implementation.html">Implementation topics</a>, <a href="StructureDefinition-CarePlan-eltss.html">CarePlan removal of CarePlan.activity.detail</a></li>
-	<li>USCORE version is 3.1.1</li>
+	<li>USCORE version is 6.1.0</li>
 	<li>Add <a href="eLTSS_to_FHIR_R4_element.html#units">non-ucum coded units and ucum units</a> as examples for use in quantities</li>
 	<li>Removed US CORE mapping page as the data is now redundant through Profiling of USCORE Profiles</li>
 	<li>Added <a href="taskProcedure.html">Task Guidance page </a>and  <a href="artifacts.html#other">examples</a> of Task</li>
@@ -40,7 +40,7 @@
 
   <h3>Introduction to the Guide</h3><a name="introduction"> </a>
 <p><!--Updated the first sentence and 2 other areas to specify US Core 3.0 for #28236-->
-The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
+The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU6.1/index.html">US Core v6.1.0</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
 </p>
 
 <p>
@@ -50,7 +50,7 @@ Please note, this implementation guide attempts to inform how to package eLTSS d
 
   <h3>Background on eLTSS</h3><a name="background"> </a>
 <p><!--Updated the first sentence and 2 other areas to specify US Core 3.0 for #28236-->
-The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
+The electronic Long-Term Services and Supports (eLTSS) Implementation Guide (IG) is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a> and <a href="http://hl7.org/fhir/us/core/STU6.1/index.html">US Core v6.1.0</a>. It was developed to support exchange of data generated during the planning and provision of long-term services and supports and is currently scoped to data commonly found on LTSS service plans.
 </p>
   <p>
   Long-term services and supports (LTSS) are needed by millions of people, including children, adults and individuals over age 65, due to various disabling conditions and chronic illnesses. Long-term services are comprised of a diverse set of assistances designed to help with general care, activities of daily living (ADLs), and instrumental activities of daily living (IADLs) like eating, toileting, dressing, cooking, driving, managing money, etc. These services are provided across various settings from facility-based or institutional care to community-based settings. Services and supports provided in the person’s home or in a community setting are referred to as Community-Based Long-Term Services and Supports (CB-LTSS) or Home and Community-Based Services (HCBS).
@@ -74,13 +74,13 @@ The concept of an eLTSS service plan most closely aligns with the FHIR CarePlan 
   <img src="eLTSS_FHIRresourceView.png"/>
   <br/>
   <br/>
-  <p>The IG will use <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a>, and <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a> as a starting point and will profile resources as necessary to enable eLTSS Plan Creation and Exchange. Please refer to <a href="profiles.html">eLTSS FHIR Profiles</a> for additional details.</p>
+  <p>The IG will use <a href="http://hl7.org/fhir/R4/index.html">FHIR R4</a>, and <a href="http://hl7.org/fhir/us/core/STU6.1/index.html">US Core v6.1.0</a> as a starting point and will profile resources as necessary to enable eLTSS Plan Creation and Exchange. Please refer to <a href="profiles.html">eLTSS FHIR Profiles</a> for additional details.</p>
   <p> For a detailed view of how eLTSS maps to FHIR R4, please refer to the <a href="eLTSS_to_FHIR_R4_element.html">eLTSS Dataset to FHIR Release 4 Mapping</a> included in this guide.</p>
   
   
   <a name="us-core"/>
   <h3>US Core Dependency</h3>
-  <p>Please note that implementations using this eLTSS FHIR IG must comply with <a href="http://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core v3.1.1</a> when applicable. US Core defines the minimum conformance requirements for accessing patient data as defined by the Argonaut pilot implementations and the ONC 2015 Edition Common Clinical Data Set (CCDS). These profiles are intended to be the foundation for US Realm FHIR implementation guides. Therefore, <a href="http://www.hl7.org/fhir/us/core/#us-core-profiles">US Core Profiles</a>, <a href="http://www.hl7.org/fhir/us/core/STU3.1.1/terminology.html">US Core Terminology</a>,  <a href="http://www.hl7.org/fhir/us/core/STU3.1.1/capstmnts.html">US Core Capability Statements / Conformance Requirements</a>, and <a href="http://www.hl7.org/fhir/us/core/STU3.1.1/security.html">Security Considerations</a> not specifically noted in this guide must be included when applicable.</p>
+  <p>Please note that implementations using this eLTSS FHIR IG must comply with <a href="http://hl7.org/fhir/us/core/STU6.1/index.html">US Core v6.1.0</a> when applicable. US Core defines the minimum conformance requirements for accessing patient data as defined by the Argonaut pilot implementations and the ONC 2015 Edition Common Clinical Data Set (CCDS). These profiles are intended to be the foundation for US Realm FHIR implementation guides. Therefore, <a href="http://www.hl7.org/fhir/us/core/#us-core-profiles">US Core Profiles</a>, <a href="http://www.hl7.org/fhir/us/core/STU6.1/terminology.html">US Core Terminology</a>,  <a href="http://www.hl7.org/fhir/us/core/STU6.1/capstmnts.html">US Core Capability Statements / Conformance Requirements</a>, and <a href="http://www.hl7.org/fhir/us/core/STU6.1/security.html">Security Considerations</a> not specifically noted in this guide must be included when applicable.</p>
   
   <a name="actors"/>
   <h3>eLTSS Actors</h3>
