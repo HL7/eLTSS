@@ -10,13 +10,13 @@
 
   <ul>
     <li>Deprecation of CarePlan.activity.detail, reduces opportunity for variability in delivery of data elements</li>
-    <li>Recommendations on use of Task and the <a href="implementation.html#pertainstogoal-extension">extension:pertainsToGoal</a></li>
+    <li>Recommendations on use of Task and the <a href="implementation.html#resource-pertainstogoal-extension">extension:resource-pertainstogoal</a></li>
 	<li>Clarification on occurrenceTiming</li>
 	<li>See, <a href="eLTSS_to_FHIR_R4_element.html">changes to Mapping eLTSS to FHIR</a>, <a href="StructureDefinition-ServiceRequest-eltss.html">ServiceRequest.occurrence[x]</a>, <a href="implementation.html">Implementation topics</a>, <a href="StructureDefinition-CarePlan-eltss.html">CarePlan removal of CarePlan.activity.detail</a></li>
 	<li>USCORE version is 6.1.0</li>
 	<li>Add <a href="eLTSS_to_FHIR_R4_element.html#units">non-ucum coded units and ucum units</a> as examples for use in quantities</li>
 	<li>Removed US CORE mapping page as the data is now redundant through Profiling of USCORE Profiles</li>
-	<li>Added <a href="taskProcedure.html">Task Guidance page </a>and  <a href="artifacts.html#other">examples</a> of Task</li>
+	<li>Added <a href="https://build.fhir.org/ig/HL7/eLTSS/branches/master/implementation.html#task-used-with-servicerequest">Task Guidance on Implementation topics page</a> and <a href="artifacts.html#other">examples</a> of Task</li>
 	<li>Added simulated example of CarePlan and associated artifacts to aid implementers <a href="artifacts.html#example-example-instances">here</a> and <a href="artifacts.html#other">here</a></li>
 	<li>Added page on <a href="testing.html">Testing</a>	</li>
 	<li>Added draft for new <a href="OperationDefinition-all-eltss-careplan.html">FHIR Operation</a> for retrieving all eLTSS data associated with a CarePlan</li>
@@ -113,8 +113,7 @@ The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This p
 
   <ul>
   <li><a href="index.html" >IG Home</a>: Provides the introduction and background.</li>
-  <li><a href="implementation.html">Implementation</a>: This page provides guidance on implementing eLTSS using FHIR, including other Implementation Guides</li>
-  <li><a href="taskProcedure.html" >Task Guidance</a>: Provides guidance on using Task - includes aspects of patient engagement</li>
+  <li><a href="implementation.html">Implementation Considerations</a>: This page provides considerations for implementing eLTSS using FHIR, including other Implementation Guides, Task and ClaimResource</li>
   
   <!--li><a href="index.html" title="IG Home">Conformance</a>: Recommendations on testing.</li-->
   <li><a href="index.html" >Mapping</a>: Provides implementers with the location of FHIR fields where eLTSS data elements should be found.
