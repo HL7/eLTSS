@@ -888,7 +888,7 @@ Contract &#8594; signer &#8594; signature &#8594; when</td>
     <tr>
       <td>Risks</td>
       <td>Identified Risk</td>
-      <td>An aspect of a person's life, behavior, environmental exposure, personal characteristic, or barrier that increases the likelihood of  disease, condition,  injury to self or others, or interaction with the criminal justice system.</td>
+      <td>An aspect of a person's life, behavior, environmental exposure, personal characteristic, Social determinants of health (SDOH), or other barrier that increases the likelihood of  disease, condition, injury to self or others, or interaction with the criminal justice system.</td>
       <td>CarePlan &#8594; supportingInfo(RiskAssessment)<br/>
 <br/>
 RiskAssessment &#8594; prediction &#8594; outcome<br/>
