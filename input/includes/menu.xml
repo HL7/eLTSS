@@ -42,10 +42,10 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-	  <li><a href="cross_version_analysis.html">Cross Version Analysis</a></li>
-	  <li><a href="dependencies_globals.html">Dependencies and Globals</a></li>
+	  <li><a href="change_log.html">Change log</a></li>
       <li><a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
 	  <li><a href="security.html">Security Note</a></li>
+	  <li><a href="dependencies_globals_CrossVersionAnalysis.html">Dependencies, Globals and Cross FHIR version analysis</a></li>
 	  <li><a href="ip_statement.html">IP statement</a></li>	 
       <li><a href="downloads.html">Downloads</a></li> 
     </ul> 

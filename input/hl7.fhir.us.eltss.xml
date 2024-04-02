@@ -1013,14 +1013,14 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
           <generation value="generated"/>
         </page-->
       </page>
-		<page>
+		<!--page>
 			<nameUrl value="cross_version_analysis.html"/>
 			<title value="IG Change History"/>
 			<generation value="markdown"/>
-		</page>
+		</page-->
 		<page>
-			<nameUrl value="dependencies_globals.html"/>
-			<title value="Dependencies and Globals"/>
+			<nameUrl value="dependencies_globals_CrossVersionAnalysis.html"/>
+			<title value="Dependencies, Globals and Cross FHIR version analysis"/>
 			<generation value="markdown"/>
 		</page>
 		<page>
