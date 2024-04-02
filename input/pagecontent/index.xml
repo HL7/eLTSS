@@ -163,6 +163,90 @@ The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This p
   <li><a href="changes.html">Change Log</a>: This page documents the changes across the versions of US Core</li-->
 </ul>
   
+  <a  name="Initial eLTSS development Team"/>
+  <h3>Acknowledgment of initial eLTSS development Team</h3>
+    <table Border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Organization</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Amber Patel</td>
+        <td>STU1 Author</td>
+        <td>Security Risk Solutions</td>
+      </tr>
+      <tr>
+        <td>Anastasia Perchem</td>
+        <td>Contributor</td>
+        <td>Office of the National Coordinator for Health Information Technology</td>
+      </tr>
+      <tr>
+        <td>Becky Angeles</td>
+        <td>STU1 Author</td>
+        <td>Carradora Health, Inc.</td>
+      </tr>
+      <tr>
+        <td>Bonnie Young</td>
+        <td>Contributor</td>
+        <td>Georgia Department of Community Health</td>
+      </tr>
+      <tr>
+        <td>David Pyke</td>
+        <td>STU1 Author</td>
+        <td>Ready Computing</td>
+      </tr>
+      <tr>
+        <td>Elizabeth Palena-Hall</td>
+        <td>Contributor</td>
+        <td>Office of the National Coordinator for Health Information Technology</td>
+      </tr>
+      <tr>
+        <td>Greg White</td>
+        <td>STU1 Author</td>
+        <td>Security Risk Solutions</td>
+      </tr>
+      <tr>
+        <td>Irina Connelly</td>
+        <td>STU1 Author</td>
+        <td>Georgia Tech Research Institute</td>
+      </tr>
+      <tr>
+        <td>Jack Wallace</td>
+        <td>STU1 Author</td>
+        <td>Georgia Tech Research Institute</td>
+      </tr>
+      <tr>
+        <td>Jamie Parker</td>
+        <td>STU1 Author</td>
+        <td>Carradora Health, Inc.</td>
+      </tr>
+      <tr>
+        <td>John Moehrke</td>
+        <td>STU1 Author</td>
+        <td>By Light Professional IT Services</td>
+      </tr>
+      <tr>
+        <td>Johnathan Coleman</td>
+        <td>STU1 Author</td>
+        <td>Security Risk Solutions</td>
+      </tr>
+      <tr>
+        <td>Kerry Lida</td>
+        <td>Contributor</td>
+        <td>Centers for Medicare &amp; Medicaid Services</td>
+      </tr>
+      <tr>
+        <td>Mark Meadows</td>
+        <td>Contributor</td>
+        <td>Georgia Department of Community Health</td>
+      </tr>
+    </tbody>
+  </table>
+  
   <a name="Credits and Authors"/>
   <h3>Credits and Authors</h3>
   <table Border="1">
@@ -177,80 +261,40 @@ The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This p
     <tbody>
       <tr>
         <td>Bret Heale</td>
-        <td>STU2 IG developer</td>
+        <td>STU2 IG developer/author</td>
         <td>ELIMU and Humanized Health Consulting</td>
-	<td>bheale@elimu.io</td>
+	     <td>bheale@humanizedhealthconsulting.com</td>
       </tr>
-      <!--tr>
-        <td>Amber Patel</td>
-        <td>Author</td>
-        <td>Security Risk Solutions</td>
+	  <tr>
+        <td>James Shalaby</td>
+        <td>STU2 IG development/author</td>
+        <td>ELIMU</td>
+	   <td>jshalaby@elimu.io</td>
       </tr>
-      <tr>
-        <td>Anastasia Perchem</td>
+	  <tr>
+        <td>Nancy Lush</td>
         <td>Contributor</td>
-        <td>Office of the National Coordinator for Health Information Technology</td>
+        <td>Patient Centric Solutions, Inc</td>
+	   <td>nlush@patientcentricsolutions.com</td>
       </tr>
-      <tr>
-        <td>Becky Angeles</td>
-        <td>Author</td>
-        <td>Carradora Health, Inc.</td>
-      </tr>
-      <tr>
-        <td>Bonnie Young</td>
+	  <tr>
+        <td>Mark Wholey</td>
         <td>Contributor</td>
-        <td>Georgia Department of Community Health</td>
+        <td>Patient Centric Solutions, Inc</td>
+	   <td>markw@patientcentricsolutions.com</td>
       </tr>
-      <tr>
-        <td>David Pyke</td>
-        <td>Author</td>
-        <td>Ready Computing</td>
+	  <tr>
+        <td>Sheetal Shah</td>
+        <td>Pilot Coordinator</td>
+        <td>EMI Advisors</td>
+	   <td>sheetal.shah@emiadvisors.net</td>
       </tr>
-      <tr>
-        <td>Elizabeth Palena-Hall</td>
-        <td>Contributor</td>
-        <td>Office of the National Coordinator for Health Information Technology</td>
+	  <tr>
+        <td>Evelyn Gallego</td>
+        <td>Facilitator</td>
+        <td>EMI Advisors</td>
+	   <td>evelyn.gallego@emiadvisors.net</td>
       </tr>
-      <tr>
-        <td>Greg White</td>
-        <td>Author</td>
-        <td>Security Risk Solutions</td>
-      </tr>
-      <tr>
-        <td>Irina Connelly</td>
-        <td>Author</td>
-        <td>Georgia Tech Research Institute</td>
-      </tr>
-      <tr>
-        <td>Jack Wallace</td>
-        <td>Author</td>
-        <td>Georgia Tech Research Institute</td>
-      </tr>
-      <tr>
-        <td>Jamie Parker</td>
-        <td>Author</td>
-        <td>Carradora Health, Inc.</td>
-      </tr>
-      <tr>
-        <td>John Moehrke</td>
-        <td>Author</td>
-        <td>By Light Professional IT Services</td>
-      </tr>
-      <tr>
-        <td>Johnathan Coleman</td>
-        <td>Author</td>
-        <td>Security Risk Solutions</td>
-      </tr>
-      <tr>
-        <td>Kerry Lida</td>
-        <td>Contributor</td>
-        <td>Centers for Medicare &amp; Medicaid Services</td>
-      </tr>
-      <tr>
-        <td>Mark Meadows</td>
-        <td>Contributor</td>
-        <td>Georgia Department of Community Health</td>
-      </tr-->
     </tbody>
   </table>
 </div>
