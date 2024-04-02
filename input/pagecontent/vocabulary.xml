@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  <p>These are the ValueSets as designed by the eLTSS project.</p>
+  <p>These are the ValueSet and Condition category code as designed by the eLTSS project.</p>
   <p>
     <table>
       <tr>
@@ -20,5 +20,24 @@
         <td>Additional code for Assessed Need for Condition Category element.</td>
       </tr-->
     </table>
+	<table>
+      <tr>
+        <th>Condition Category Code</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="CodeSystem-eltss-condition-category-code.html">Assessed needs code</a>
+        </td>
+        <td>Code to communicate that a condition belongs to an assessed needs category</td>
+      </tr>
+       <!--tr>
+        <td>
+          <a href="ValueSet-eltss-condition-category-code.html">eLTSS Category Condition Codes</a>
+        </td>
+        <td>Additional code for Assessed Need for Condition Category element.</td>
+      </tr-->
+    </table>
+	
   </p>
 </div>

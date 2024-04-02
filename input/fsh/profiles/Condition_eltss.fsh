@@ -22,8 +22,16 @@ Description: "Condition for eLTSS"
 * verificationStatus MS
 * verificationStatus from $condition-ver-status-values (required)
 
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
 //* category ^code.system = "http://hl7.org/fhir/us/eltss/ValueSet/eltss-condition-category-code"
-* category ^short = "Assessed Need Category"
+
+* category contains assessed-need 0..1 MS
+* category[assessed-need] = eltss-condition-category-code#assessed-need
+* category[assessed-need] ^short = "Assessed Need Category"
+* category[assessed-need] ^definition = "Assessed Need Category Code indicates the clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service. Consider also using the US Core 6.1.0 screening-assessment categories  https://www.hl7.org/fhir/us/core/ValueSet-us-core-screening-assessment-condition-category.html"
+* category[assessed-need] ^requirements = "Assessed Need Category Code"
 //* category ^comment = "Could use the value \"problem-list-item\" to indicate the underlying condition, and extend the value set to add the value \"assessed-need\"."
 * code ^short = "Assessed Need Code"
 * code ^definition = "The clinical and/or community-based necessity or desire as identified byan assessment that should be addressed by a service."
