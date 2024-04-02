@@ -38,6 +38,7 @@ Description: "Patient resource mapping for eLTSS"
 * address ^short = "Person Address"
 * address ^definition = "The address of the person whom the plan is for."
 * address ^comment = "1) text is the full (not broken out) address.\n2) line includes street name, number and suffix (e.g. 123 Main St.).\n3) Information such as apt #, floor & room #, etc. also go into line, generally as a separate data element. \n4) district covers county."
+* address.district MS
 * contact MS
 * contact ^short = "Emergency Contact"
 * contact ^definition = "Emergency Contact Name + Phone Number + Relationship."
