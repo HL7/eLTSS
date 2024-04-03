@@ -760,6 +760,9 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss"
 * name = "Questionnaire1"
 * status = #active
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:oid:2.999"
+
 * item[0].linkId = "q1"
 * item[=].text = "Did you choose the setting in which you reside?"
 * item[=].type = #boolean
