@@ -11,7 +11,7 @@
 		<valueCode value="hsswg"/>
 	</extension>
   <url value="http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss"/>
-<version value="2.0.0-ballot"/>
+<version value="2.0.0"/>
   <name value="ELTSS"/>
   <title value="Electronic Long-Term Services and Supports (eLTSS) Release 1 - US Realm"/>
   <status value="active"/>
@@ -677,7 +677,14 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
 	  <name value="service1" />
 	  <description value="Example of ServiceRequest eLTSS Profile" />
 	</resource>
-
+	<resource>
+      <reference>
+        <reference value="Bundle/2039212f3fa5406bb4ffd4a"/>
+		<display value="bundle" />
+      </reference>
+      <name value="eLTSS data elements example"/>
+      <description value="Example of a Bundle with eLTSS data elements. Note: Review JSON and/or XML, as not all elements are rendered by the publisher in the narrative content"/>
+    </resource>
 	<!-- resource>
       <reference>
         <reference value="Bundle/bundle-HenryJones"/>
@@ -751,16 +758,16 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
       <exampleBoolean value="false"/>
       <!--groupingId value="valuesets"/-->
     </resource>
-    <!--resource>
+    <resource>
       <reference>
-        <reference value="CodeSystem/eltss-condition-category-codes"/>
+        <reference value="CodeSystem/eltss-condition-category-code"/>
       </reference>
       <name value="eLTSS Condition Category Code CodeSystem"/>
       <description value="Additional code for Assessed Need for Condition Category element"/>
       <exampleBoolean value="false"/>
-
     </resource>
-    <resource>
+
+    <!--resource>
       <reference>
         <reference value="ValueSet/eltss-condition-category-code"/>
       </reference>
@@ -1051,7 +1058,7 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="ballot"/>
+            <value value="STU2"/>
         </parameter>
 	<parameter>
       <code value="apply-jurisdiction"/>

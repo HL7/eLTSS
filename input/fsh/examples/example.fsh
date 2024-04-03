@@ -86,13 +86,19 @@ Usage: #example
 * goal[0] = Reference(goal1)
 * goal[+] = Reference(goal2)
 * activity[+].reference = Reference(service1)
+* activity[=].reference.display = "Service 1"
 * activity[+].reference = Reference(service2)
+* activity[=].reference.display = "Service 2"
 * activity[+].reference = Reference(service3)
+* activity[=].reference.display = "Service 3"
 * activity[+].reference = Reference(service4)
+* activity[=].reference.display = "Service 4"
 * activity[+].reference = Reference(Task1)
+* activity[=].reference.display = "Task1"
 * activity[=].progress.time = "2020-05-10"
 * activity[=].progress.text = "Betsy will start doing balance exercises"
 * activity[+].reference = Reference(Task2)
+* activity[=].reference.display = "Task2"
 * activity[=].progress.time = "2020-05-10"
 * activity[=].progress.text = "Betsy working on mobility to dance at son's upcoming wedding" 
 
@@ -180,8 +186,9 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss"
 * status = #active
 * intent = #plan
-
-* code = http://terminology.hl7.org/CodeSystem/HCPCS-all-codes#T2003
+//http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
+//http://terminology.hl7.org/CodeSystem/HCPCS-all-codes
+* code = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#T2003
 * code.text = "Non-emergency transportation; encounter/trip"
 
 * quantityRatio.numerator.value = 2
@@ -216,7 +223,9 @@ Usage: #example
 * status = #active
 * intent = #plan
 
-* code = http://terminology.hl7.org/CodeSystem/HCPCS-all-codes#G0108
+//http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
+//http://terminology.hl7.org/CodeSystem/HCPCS-all-codes
+* code = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0108
 * code.text = "Diabetes outpatient self-management training services, individual, per 30 minutes"
 
 * quantityRatio.numerator.value = 1
@@ -584,7 +593,9 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
-* category = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern"
+* category[0] = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern" 	
+* category[+] = eltss-condition-category-code#assessed-need
+* category[+] = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#sdoh
 * code = $sct#713458007 "Lack of access to transportation (finding)"
 * code.text = "Needs transportation"
 * subject = Reference(Patient/patientBSJ1)
@@ -598,7 +609,8 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
-* category = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern"
+* category[0] = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern"
+* category[+] = eltss-condition-category-code#assessed-need
 * code = $sct#734920002 "Diabetes mellitus education service"
 * code.text = "Needs health / nutrition education for diabetes"
 * subject = Reference(Patient/patientBSJ1)
@@ -612,7 +624,9 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
-* category = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern"
+* category[0] = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern"
+* category[+] = eltss-condition-category-code#assessed-need
+* category[+] = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#cognitive-status
 * code = $sct#35489007 "Depressive disorder (disorder)"
 * code.text = "Depression (on treatment)"
 * subject = Reference(Patient/patientBSJ1)
@@ -628,7 +642,9 @@ Usage: #example
 * extension.valueReference = Reference(Condition/need3)
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
-* category = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern"
+* category[0] = http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern "Health Concern"
+* category[+] = eltss-condition-category-code#assessed-need
+* category[+] = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#sdoh
 * code = $sct#183301007 "Physical exercises (regime/therapy)"
 * code.text = "Needs physical exercises"
 * subject = Reference(Patient/patientBSJ1)
@@ -831,8 +847,9 @@ Usage: #example
 * extension.valueCodeableConcept.text = "self"
 * status = #active
 * intent = #plan
-
-* code = http://terminology.hl7.org/CodeSystem/HCPCS-all-codes#E0241
+//http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
+//http://terminology.hl7.org/CodeSystem/HCPCS-all-codes
+* code = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#E0241
 * code.text = "Bath tub wall rail, each"
 
 * quantityQuantity.value = 1
