@@ -1,13 +1,12 @@
 {
   "package-id": "hl7.fhir.us.eltss",
-	"version": "2.0.0-ballot",
-	"path": "http://hl7.org/fhir/us/eltss/2024Jan",
-	"status": "ballot",
+	"version": "2.0.0",
+	"path": "http://hl7.org/fhir/us/eltss/STU2",
+	"status": "trial-use",
 	"sequence": "STU2",
-	"mode": "working",
-	"milestone": false,
-	"desc": "Ballot version for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
-	"descmd": "Ballot version for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
+	"mode": "milestone",
+	"desc": "FHIR STU Release 1 STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
+	"descmd": "FHIR STU Release 1 for STU2 update Electronic Long-Term Services and Supports (eLTSS) Release 1 - US",
 	"changes": "change_log.html",
 	"first" : false
 }
