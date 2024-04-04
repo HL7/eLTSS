@@ -6,7 +6,7 @@
     <li>Recommendations on use of Task and the <a href="implementation.html#resource-pertainstogoal-extension">extension:resource-pertainstogoal</a></li>
 	<li>Clarification on occurrenceTiming</li>
 	<li>See, <a href="eLTSS_to_FHIR_R4_element.html">changes to Mapping eLTSS to FHIR</a>, <a href="StructureDefinition-ServiceRequest-eltss.html">additional guidance on ServiceRequest.occurrence[x]</a>, <a href="implementation.html">new guidance on Implementation topics</a>, <a href="StructureDefinition-CarePlan-eltss.html">CarePlan removal of CarePlan.activity.detail</a></li>
-	<li>USCORE version is 3.1.1</li>
+	<li>USCORE version is 6.1.0</li>
 	<li>Add <a href="eLTSS_to_FHIR_R4_element.html#units">non-ucum coded units and ucum units</a> as examples for use in quantities</li>
 	<li>Removed US CORE mapping page as the data is now redundant through Profiling of USCORE Profiles</li>
 	<li>Added <a href="implementation.html#task-used-with-servicerequest">Task Guidance on Implementation topics page </a>and  <a href="artifacts.html#other">examples</a> of Task</li>
