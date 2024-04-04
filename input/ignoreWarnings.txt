@@ -28,6 +28,9 @@ Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 # reference to task-code is intended
 Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
 
+# reference to observation-category is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+
 # reference to eltss-condition-category-code is intended
 Reference to experimental CodeSystem http://hl7.org/fhir/us/eltss/CodeSystem/eltss-condition-category-code|2.0.0
 
@@ -103,12 +106,12 @@ There are multiple different potential matches for the url 'http://hl7.org/fhir/
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/processpriority|0.1.0
 Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-ballot1 (this may not be a problem, but you should check that it's not intended to match a slice)
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 Unknown Code 'C25716' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
 
