@@ -107,7 +107,7 @@ This also includes an organization including, but not limited to a hospital incl
   
   
   <p>
-The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This page is a very important page. eLTSS requires very few constraints beyond US CORE 3.1.1 on core FHIR R4, thus the profiles are largely for convenience. There are a few Must Supports not included in US CORE 3.1.1 and some Resources which are not covered by US CORE 3.1.1, so the FHIR profiles are still needed. However, the mapping page is a summation of where eLTSS data elements should be placed/found in FHIR.  
+The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This page is a very important page. eLTSS requires very few constraints beyond US CORE 6.1.0 on core FHIR R4, thus the profiles are largely for convenience. There are a few Must Supports not included in US CORE 6.1.0 and some Resources which are not covered by US CORE 6.1.0, so the FHIR profiles are still needed. However, the mapping page is a summation of where eLTSS data elements should be placed/found in FHIR.  
 </p>
 
 
