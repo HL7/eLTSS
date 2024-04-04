@@ -262,7 +262,8 @@ Usage: #example
 * status = #active
 * intent = #plan
 
-* code = http://www.ama-assn.org/go/cpt#97110
+* code.coding[0] = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#97110
+//* code.coding[+] = http://www.ama-assn.org/go/cpt#97110
 * code.text = "therapeutic exercises to improve balance skills"
 
 * quantityRatio.numerator.value = 1
@@ -559,7 +560,7 @@ Usage: #example
 * identifier[=].value = "1144221847"    
 * identifier[+].system = "urn:oid:2.16.840.1.113883.4.7"
 * identifier[=].value = "12D4567890"
-* identifier[+].value = "ICWP"
+//* identifier[+].value = "ICWP"
 * name = "Texas Department of Community Health"
 * address.text = "7430 Louis Pasteur Dr, San Antonio, TX 78229"
 
@@ -683,8 +684,8 @@ Usage: #example
 * identifier[=].value = "1144221847"    
 * identifier[+].system = "urn:oid:2.16.840.1.113883.4.7"
 * identifier[=].value = "12D4567890"
-* identifier.system = "http://www.acme.org/practitioners"
-* identifier.value = "24680"
+//* identifier.system = "http://www.acme.org/practitioners"
+//* identifier.value = "24680"
 * name = "The Transporter, Inc."
 * telecom.system = #phone
 * telecom.value = "(210) 555 1313"
@@ -767,6 +768,7 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss"
 * name = "Questionnaire1"
 * status = #active
+* url = "http://hl7.org/fhir/us/eltss/Questionnaire/questionnaire1"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.999"
 
