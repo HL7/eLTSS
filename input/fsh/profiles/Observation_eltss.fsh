@@ -1,5 +1,5 @@
 Profile: Observation_eltss
-Parent: Observation
+Parent: $us-core-simple-observation
 Id: Observation-eltss
 Description: "Observation resource mapping for eLTSS"
 * ^version = "1.0.0"
@@ -27,18 +27,23 @@ Description: "Observation resource mapping for eLTSS"
 * subject ^type.targetProfile[=].extension.valueBoolean = true 
 
 * effective[x] only dateTime or Period or Timing or instant
-* effective[x] MS
+//* effective[x] MS
 * effective[x] ^definition = "The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the \"physiologically relevant time\"."
 * effective[x] ^comment = "At least a date should be present unless this observation is a historical report."
 * effective[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * effective[x] ^type[=].extension.valueBoolean = true
 
 * category MS
+//* category ^slicing.discriminator.type = #pattern
+//* category ^slicing.discriminator.path = "$this"
+//* category ^slicing.rules = #open
+//* category contains eltss 0..1 MS
+* category[us-core] = http://terminology.hl7.org/CodeSystem/observation-category#social-history
+
 * code MS
 * code ^short = "Strength or Preference"
 * code ^definition = "Code representing either a favorable attribute of oneself, his/her support network, environment and/or elements of his/her life or the person’s personal thoughts about something he or she feels is relevant to his or her life experience and may be pertinent when planning."
 //* code ^comment = "All code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation."
-
 * code from ELTSS_Observation_code (preferred)
 * code.coding MS
 * code.coding ^requirements = "Allows for alternative encodings within a code system and translations to other code systems."
@@ -51,7 +56,7 @@ Description: "Observation resource mapping for eLTSS"
 * code.text MS
 
 * performer only Reference(Patient_eltss or Practitioner_eltss or PractitionerRole_eltss or RelatedPerson_eltss or $us-core-organization or $us-core-careteam)
-* performer MS
+//* performer MS
 * performer ^type[0].targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * performer ^type[=].targetProfile[=].extension.valueBoolean = false
 * performer ^type[=].targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"

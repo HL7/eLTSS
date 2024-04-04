@@ -22,8 +22,17 @@ Alias: $processpriority = http://terminology.hl7.org/CodeSystem/processpriority
 Alias: $ex-USCLS = http://terminology.hl7.org/CodeSystem/ex-USCLS
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $us-core-careplan = http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan
-Alias: $us-core-condition = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
-//Alias: $us-core-servicerequest = http://hl7.org/fhir/us/core/StructureDefinition/
+
+//Alias: $us-core-condition = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
+Alias: $us-core-condition = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
+
+Alias: $us-core-relatedperson = http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
+Alias: $us-core-servicerequest = http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest
+Alias: $us-core-questionnaireresponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
+Alias: $us-core-simple-observation = http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+
+Alias: $sdc-questionnaire = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire
+
 Alias: $us-core-goal = http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal
 Alias: $us-core-location = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
 Alias: $us-core-patient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
@@ -46,3 +55,4 @@ Alias: $condition-ver-status-values = http://hl7.org/fhir/ValueSet/condition-ver
 Alias: $us-core-problem-or-health-concern = http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern
 Alias: $us-core-screening-assessment-condition-category = http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category
 Alias: $us-core-condition-code = http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code
+Alias: $us-core-category = http://hl7.org/fhir/us/core/CodeSystem/us-core-category

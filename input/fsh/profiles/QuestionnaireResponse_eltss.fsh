@@ -1,7 +1,7 @@
 //Alias: $sdc-questionnaireresponse = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse
 
 Profile: QuestionnaireResponse_eltss
-Parent: QuestionnaireResponse
+Parent: $us-core-questionnaireresponse
 Id: QuestionnaireResponse-eltss
 Title: "eLTSS QuestionnaireResponse Profile"
 Description: "This profile is consistent with the USCORE QuestionnaireResponse Profile, which is itself related to the SDCQuestionnaireResponse Profile. It supports core elements, vocabularies and value sets from the resource that are used to communicate eLTSS data elements."
@@ -15,11 +15,11 @@ Description: "This profile is consistent with the USCORE QuestionnaireResponse P
 * questionnaire MS
 * questionnaire ^type.targetProfile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss"
 * status MS
-* subject 1.. MS
-* subject only Reference(Patient_eltss or Resource)
-* subject ^comment = "-"
-* subject ^type[0].targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* subject ^type[=].targetProfile[=].extension.valueBoolean = true
+//* subject 1.. MS
+* subject only Reference(Patient_eltss)
+//* subject ^comment = "-"
+//* subject ^type[0].targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+//* subject ^type[=].targetProfile[=].extension.valueBoolean = true
 * authored MS
 * author MS
 

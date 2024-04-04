@@ -1,1 +1,1 @@
-Please review the guidance on Security from [US CORE 3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/security.html). The noted security considerations are expected to be followed.
+Please review the guidance on Security from [US CORE 3.1.1](http://hl7.org/fhir/us/core/STU6.1/security.html). The noted security considerations are expected to be followed.

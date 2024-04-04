@@ -15,8 +15,9 @@ Description: "Condition for eLTSS"
 * extension contains ELTSS_dueTo named dueTo 0..*
 * extension[dueTo] ^sliceIsConstraining = false
 
-* extension contains $condition-assertedDate named assertedDate 0..1 MS
-* extension[assertedDate] ^short = "Date the condition was first asserted"
+//* extension contains $condition-assertedDate named assertedDate 0..1 MS
+//* extension[assertedDate] ^short = "Date the condition was first asserted"
+
 * clinicalStatus MS
 * clinicalStatus from $condition-clinical-values (required)
 * verificationStatus MS

@@ -186,8 +186,10 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss"
 * status = #active
 * intent = #plan
+
 //http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
 //http://terminology.hl7.org/CodeSystem/HCPCS-all-codes
+
 * code = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#T2003
 * code.text = "Non-emergency transportation; encounter/trip"
 
@@ -223,8 +225,10 @@ Usage: #example
 * status = #active
 * intent = #plan
 
+
 //http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
 //http://terminology.hl7.org/CodeSystem/HCPCS-all-codes
+
 * code = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0108
 * code.text = "Diabetes outpatient self-management training services, individual, per 30 minutes"
 
@@ -304,6 +308,7 @@ Usage: #example
 * meta.source = "#KZ0jzPjXDrhCiMif"
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss"
 * status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#social-history "Social History"
 * code = $eltss-observation-code#strength "Strength"
 * effectiveDateTime = "2013-04-02T10:30:10+01:00"
 * issued = "2013-04-03T15:30:10+01:00"
@@ -319,6 +324,7 @@ Usage: #example
 * meta.source = "#KZ0jzPjXDrhCiMif"
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss"
 * status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#social-history "Social History"
 * code = $eltss-observation-code#strength "Strength"
 * effectiveDateTime = "2013-04-02T10:30:10+01:00"
 * issued = "2013-04-03T15:30:10+01:00"
@@ -335,7 +341,7 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss"
 
 * identifier[+].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[=].value = "9941339109"
+* identifier[=].value = "1144221847"
 * identifier[+].system = "http://www.acme.org/practitioners"
 * identifier[=].value = "25457"
 
@@ -379,7 +385,7 @@ Usage: #example
 * insurance.focal = true
 * insurance.coverage = Reference(coverage1)
 * item.sequence = 1
-* item.productOrService = http://terminology.hl7.org/CodeSystem/HCPCS-all-codes#T2003
+* item.productOrService = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#T2003
 
 * item.unitPrice.value = 60
 * item.unitPrice.currency = #USD
@@ -405,7 +411,7 @@ Usage: #example
 * insurance.focal = true
 * insurance.coverage = Reference(coverage1)
 * item.sequence = 1
-* item.productOrService = http://terminology.hl7.org/CodeSystem/HCPCS-all-codes#G0108
+* item.productOrService = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0108
 
 * item.unitPrice.value = 55
 * item.unitPrice.currency = #USD
@@ -550,10 +556,10 @@ Usage: #example
 * meta.profile = $us-core-organization
 * active = true
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[=].value = "9941339101"    
+* identifier[=].value = "1144221847"    
 * identifier[+].system = "urn:oid:2.16.840.1.113883.4.7"
-* identifier[=].value = "25456"
-* identifier.value = "ICWP"
+* identifier[=].value = "12D4567890"
+* identifier[+].value = "ICWP"
 * name = "Texas Department of Community Health"
 * address.text = "7430 Louis Pasteur Dr, San Antonio, TX 78229"
 
@@ -658,6 +664,7 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss"
 * status = #final
 * code = $lnc#95541-9 "Care experience preference"
+* category = http://terminology.hl7.org/CodeSystem/observation-category#social-history "Social History"
 * effectiveDateTime = "2013-04-02T10:30:10+01:00"
 * issued = "2013-04-03T15:30:10+01:00"
 * performer = Reference(Practitioner/caremgr1) "Care Manager"
@@ -673,9 +680,9 @@ Usage: #example
 * meta.profile = $us-core-organization
 * active = true
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[=].value = "9941339101"    
+* identifier[=].value = "1144221847"    
 * identifier[+].system = "urn:oid:2.16.840.1.113883.4.7"
-* identifier[=].value = "25456"
+* identifier[=].value = "12D4567890"
 * identifier.system = "http://www.acme.org/practitioners"
 * identifier.value = "24680"
 * name = "The Transporter, Inc."
@@ -797,6 +804,8 @@ Usage: #example
 * questionnaire = "http://hl7.org/fhir/us/eltss/Questionnaire/questionnaire1"
 * status = #completed
 * subject = Reference(Patient/patientBSJ1)
+* authored = "2020-09-03T10:16:03.512-04:00"
+//* author = Reference(caremgr1)
 
 * item[+].linkId = "q1"
 * item[=].answer.valueBoolean = true
@@ -850,8 +859,10 @@ Usage: #example
 * extension.valueCodeableConcept.text = "self"
 * status = #active
 * intent = #plan
+
 //http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
 //http://terminology.hl7.org/CodeSystem/HCPCS-all-codes
+
 * code = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#E0241
 * code.text = "Bath tub wall rail, each"
 
