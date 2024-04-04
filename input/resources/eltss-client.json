@@ -1,0 +1,107 @@
+{
+    "resourceType": "CapabilityStatement",
+    "id": "eltss-client",
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">eLTSS Client</h2><ul><li>Implementation Guide Version: 2.0.0</li><li>FHIR Version: 4.0.0</li><li>Supported Formats: <code>xml</code>, <code>json</code></li><li>Supported Patch Formats: </li><li>Published on: Thu Feb 07 22:00:00 MST 2019</li><li>Published by: HL7 International / Human and Social Services</li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as &quot;SHALL NOT&quot;. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>client</code></h3></div><div class=\"panel-body\"><div class=\"lead\"><em>This requirements capability statement imports the entirety of the US Core Client CapabilityStatement from <a href=\"https://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement-us-core-client.html\">US Core</a>. Refer to the imported capability statement for full information on the capabilities defined by this capability statement.</em><br></br><br></br><p>The imports field in the JSON indicates from which capability statements an IG imports. As an implementer, you can think of this as similar to profiling. This means that the expectation of this Client Capability statement is that the entire US Core capability statement will be conformed too, in addition to specifications that follow. The JSON/XML version of the CapabilityStatement is the computable specification. This narrative is for convenience only.</p></div></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET past versions of resources (vread interaction)\">V-R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th class=\"text-center\"><b title=\"GET changes to a resource (history interaction on instance)\">H-I</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#CarePlan1-1\">CarePlan</a></td><td>Supported profiles:<br/>  <a href=\"StructureDefinition-CarePlan-eltss.html\">CarePlan_eltss</a></td><td>y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"></td><td class=\"text-center\"></td><td class=\"text-center\">y</td><td></td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"CarePlan1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: supported</span>CarePlan</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>history-instance</code>, <code>vread</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Supported Profiles</span><p><a href=\"StructureDefinition-CarePlan-eltss.html\">http://hl7.org/fhir/us/eltss/StructureDefinition/CarePlan-eltss</a></p></div></div><p/></div></div></div></div>"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+            "valueCode": "hsswg"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+            "valueInteger": 2,
+            "_valueInteger": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+                        "valueCanonical": "http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "trial-use",
+            "_valueCode": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+                        "valueCanonical": "http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss"
+                    }
+                ]
+            }
+        }
+    ],
+    "url": "http://hl7.org/fhir/us/eltss/CapabilityStatement/eltss-client",
+    "version": "2.0.0",
+    "name": "ELTSS_Client",
+    "title": "eLTSS Client",
+    "status": "active",
+    "date": "2019-02-08T00:00:00-05:00",
+    "publisher": "HL7 International / Human and Social Services",
+    "contact": [
+        {
+            "name": "HL7 International / Human and Social Services",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://www.hl7.org/Special/committees/hsswg"
+                },
+                {
+                    "system": "email",
+                    "value": "hhswg@lists.HL7.org"
+                }
+            ]
+        }
+    ],
+    "description": "This profile defines the expected capabilities of the eLTSS Client.",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "urn:iso:std:iso:3166",
+                    "code": "US"
+                }
+            ]
+        }
+    ],
+    "kind": "requirements",
+    "imports": [
+        "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-client|3.1.1"
+    ],
+    "fhirVersion": "4.0.0",
+    "format": [
+        "xml",
+        "json"
+    ],
+    "rest": [
+        {
+            "mode": "client",
+            "resource": [
+                {
+                    "type": "CarePlan",
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/eltss/StructureDefinition/CarePlan-eltss"
+                    ],
+                    "interaction": [
+                        {
+                            "code": "search-type"
+                        },
+                        {
+                            "code": "read"
+                        },
+                        {
+                            "code": "history-instance"
+                        },
+                        {
+                            "code": "vread"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
