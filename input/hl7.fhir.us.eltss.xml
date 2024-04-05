@@ -1086,8 +1086,15 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
 		<code value="special-url-base"/>
 		<value value="http://hl7.org/fhir/us/core/STU3.1.1/"/>
 	</parameter-->
-	
-		<parameter>
+	<parameter>
+		<code value = "version-comparison"/>
+		<value value = "1.0.0"/>
+	</parameter>
+	<parameter>
+		<code value = "version-comparison"/>
+		<value value = "2.0.0-ballot"/>
+	</parameter>
+	<parameter>
 		<code value="special-url-base"/>
 		<value value="http://hl7.org/fhir/us/core/SearchParameter/"/>
 	</parameter>

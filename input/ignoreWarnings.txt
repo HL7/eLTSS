@@ -1,32 +1,31 @@
 == Suppressed Messages ==
 
-# can safely be ignored at this time
-The link 'http://hl7.org/fhir/us/core/2024Jan/CodeSystem-us-core-category.html' for "US Core Category" cannot be resolved
-
 # code is in the value set. http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets  is in THO on https://terminology.hl7.org/5.5.0/CodeSystem-hcpcs-Level-II.html. Not sure of TX server issue. 
 Unable to check whether the code is in the value set 'http://terminology.hl7.org/ValueSet/v3-HealthCareCommonProcedureCodingSystem|4.0.0' because the code system http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets was not found
 A definition for CodeSystem 'http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://terminology.hl7.org/ValueSet/v3-HealthCareCommonProcedureCodingSystem|4.0.0' because the code system http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets was not found
 A definition for CodeSystem 'http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found, so the code cannot be validated
+
+
+# See https://terminology.hl7.org/5.5.0/ValueSet-v2-0005.html the codes are in urn:oid:2.16.840.1.113883.6.238#2106-3
+INFORMATION: Patient/patientBSJ1: Patient.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
+INFORMATION: Patient/patientBSJ1: Patient.extension[1].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
+INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[0].resource/*Patient/patientBSJ1*/.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
+INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[0].resource/*Patient/patientBSJ1*/.extension[1].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 
 # bundle is the result of custom operation 
 No types could be determined from the search string, so the types can''t be checked
 Unable to determine if this resource is a valid resource type for this search
 SearchSet bundles should have search modes on the entries
 
-# code has been reviewed and is appropriate for example
-None of the codings provided are in the value set 'HealthCareCommonProcedureCodingSystem' (http://terminology.hl7.org/ValueSet/v3-HealthCareCommonProcedureCodingSystem|4.0.0), and a coding is recommended to come from this value set) (codes = http://www.ama-assn.org/go/cpt#97110)
-
-# using slices from uscore 6.1.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss|2.0.0
-
-# codesystem is different in 6.1.0. Health-concern is in it.
-Constraint failed: us-core-1: 'A code in Condition.category SHOULD be from US Core Condition Category Codes value set.' (defined in http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) (Best Practice Recommendation)
 
 # reference to narrative-status is intended
 Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 
 # reference to task-code is intended
 Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
+
+# reference to observation-category is intended
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 
 # reference to eltss-condition-category-code is intended
 Reference to experimental CodeSystem http://hl7.org/fhir/us/eltss/CodeSystem/eltss-condition-category-code|2.0.0
@@ -40,15 +39,6 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/processprior
 # using experimental codes for demonstrative purposes in this draft for trial use
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# The codes have been validated as correct and from the code systems
-Unknown Code 'C25716' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-Unknown Code 'C141286' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-Unknown Code 'C81906' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/HCPCS-all-codes' could not be found, so the code cannot be validated
-
-# The slices are not meant to represent known slices but they are valid examples of other slices
-INFORMATION: Organization/provider2a: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-
 # The slices are not meant to represent known slices but they are valid examples of other slices
 INFORMATION: Practitioner/caremgr1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Practitioner/planner1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -61,27 +51,15 @@ INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[32].resource/*Practiti
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[6].resource/*Practitioner/planner1*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[13].resource/*Practitioner/caremgr1*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
+# These links in the definition are coming from the base Profile https://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html The links were created as relative URLs. see discussion on https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20Publisher.20errors/near/271461613 
+The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
+The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
+
 
 # As in US CORE, using standard extension capabilitystatement-expectation for CapabilityStatement in additional contexts to fully express intended capabilities: see FHIR-12419. Two suppression expressions as the Publisher alternates between the two messages
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-cibuild
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-ballot1
 
-# https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is only one US CORE Condition profile for this version of US CORE and we are deriving from it.
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
-
-# https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a Simple Observation Profile in that version. Our profile is not a Lab nor a Smoking cessation observation. 
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/Observation-eltss').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
-
-# https://jira.hl7.org/browse/FHIR-43154 Variance requested. Our IG is dependent on US CORE 3.1.1 There is not a profile in that version for QuestionnaireResponse, RelatedPerson nor ServiceRequest
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Proces
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/QuestionnaireResponse-eltss').baseDefinition: US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/RelatedPerson-eltss').baseDefinition: US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/RelatedPerson-eltss').baseDefinition: US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/eltss/StructureDefinition/ServiceRequest-eltss').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # Inherited from base Resource specification and cannot be changed
 WARNING: StructureDefinition/CarePlan-eltss: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
@@ -90,28 +68,12 @@ INFORMATION: StructureDefinition/Contract-eltss: StructureDefinition.snapshot.el
 
 # using alternative codes
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[22].resource/*RelatedPerson/guardian1*/.relationship[0]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GUARD)
-INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[29].resource/*Organization/provider2a*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[33].resource/*PractitionerRole/PractitionerRole-1*/.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#171M00000X)
-
-# will be updated before publishing
-WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
-
-Unknown Code 'C25716' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
-Unknown Code 'C81906' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
-Unknown Code 'C141286' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
-There are multiple different potential matches for the url 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.2.0', found versions: 2.1.0, 2.2.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/processpriority|0.1.0
-Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-ballot1 (this may not be a problem, but you should check that it's not intended to match a slice)
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Questionnaire-eltss|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-Unknown Code 'C25716' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment (from http://tx.fhir.org/r4)
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
 
 # Goal can take just description.text
 No code provided, and a code should be provided from the value set 'US Core Goal Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description|6.1.0)
 
+
+# These are meant to be repeatable
+INFORMATION: StructureDefinition/Practitioner-eltss: StructureDefinition.snapshot.element[18].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/Observation-eltss: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

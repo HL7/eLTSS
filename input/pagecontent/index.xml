@@ -2,9 +2,9 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
 
 
-<div class="stu-note">
+<!--div class="stu-note">
 
-  <!--h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4-->
+  <h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
 
   <p>Changes to look out for:</p>
 
@@ -27,16 +27,16 @@
 	<li>eLTSS Observation <a href="ValueSet-eltss-observation-code.html">value set for Preference and Strength</a> now using LOINC code for "Care experience Preference"</li>	
 	<li>
 		<p>Please review and comment</p>
-		<!--ul>
+		<ul>
 			<li>Should we constrain ServiceRequest.occurrence to ONLY allow occurenceTiming in the IG?</li>
 			<li>Familiarity with HL7 projects such as <a href="https://www.hl7.org/about/davinci/">Da Vinci Project</a></li>
 			<li>Do any of the changes break your current implementation?</li>
 			<li>Do any of the changes improve your current implementation or planning?</li>
 			<li>Additional implementation concerns?</li>
-		</ul-->
+		</ul>
 	</li>
   </ul>
-</div>
+</div-->
 
   <h3>Introduction to the Guide</h3><a name="introduction"> </a>
 <p><!--Updated the first sentence and 2 other areas to specify US Core 3.0 for #28236-->
@@ -107,7 +107,7 @@ This also includes an organization including, but not limited to a hospital incl
   
   
   <p>
-The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This page is a very important page. eLTSS requires very few constraints beyond US CORE 3.1.1 on core FHIR R4, thus the profiles are largely for convenience. There are a few Must Supports not included in US CORE 3.1.1 and some Resources which are not covered by US CORE 3.1.1, so the FHIR profiles are still needed. However, the mapping page is a summation of where eLTSS data elements should be placed/found in FHIR.  
+The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This page is a very important page. eLTSS requires very few constraints beyond US CORE 6.1.0 on core FHIR R4, thus the profiles are largely for convenience. There are a few Must Supports not included in US CORE 6.1.0 and some Resources which are not covered by US CORE 6.1.0, so the FHIR profiles are still needed. However, the mapping page is a summation of where eLTSS data elements should be placed/found in FHIR.  
 </p>
 
 
