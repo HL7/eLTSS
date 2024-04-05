@@ -39,12 +39,6 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/processprior
 # using experimental codes for demonstrative purposes in this draft for trial use
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# The codes have been requested to be added to the TX server NCIT fragment
-Unknown Code 'C25716' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-Unknown Code 'C141286' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-Unknown Code 'C81906' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-
-
 # The slices are not meant to represent known slices but they are valid examples of other slices
 INFORMATION: Practitioner/caremgr1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Practitioner/planner1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/eltss/StructureDefinition/Practitioner-eltss|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -75,9 +69,6 @@ INFORMATION: StructureDefinition/Contract-eltss: StructureDefinition.snapshot.el
 # using alternative codes
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[22].resource/*RelatedPerson/guardian1*/.relationship[0]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GUARD)
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[33].resource/*PractitionerRole/PractitionerRole-1*/.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#171M00000X)
-
-# will be updated before publishing
-WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
 
 # Goal can take just description.text
 No code provided, and a code should be provided from the value set 'US Core Goal Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description|6.1.0)
