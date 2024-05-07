@@ -1,9 +1,23 @@
+//Instance: 2039212f3fa5406bb4ffd4a
+//InstanceOf: Bundle
+//Usage: #example
+//* type = #transaction-response 
+//* link.relation = #self
+//* link.url = "https://example.com/base/CarePlan/253/$all-eltss-careplan"
+
+//* entry[+].fullUrl = "https://hl7.org/fhir/Bundle/collectionBundleResponse"
+//* entry[=].resource = collectionBundleResponse
+//* entry[=].response.status = "200 OK"
+
+//Instance: collectionBundleResponse
 Instance: 2039212f3fa5406bb4ffd4a
 InstanceOf: Bundle
 Usage: #example
 //Description: "Example of a Bundle with eLTSS data elements. Note: Review JSON and/or XML, as not all elements are rendered by the publisher in the narrative content"
 //https://hl7.org/fhir/R4B/medicinalproductdefinition-operation-everything.html
-* type = #searchset
+* type = #collection
+//#searchset
+//# transaction-response 
 * link.relation = #self
 * link.url = "https://example.com/base/CarePlan/253/$all-eltss-careplan"
 

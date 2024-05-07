@@ -12,12 +12,6 @@ INFORMATION: Patient/patientBSJ1: Patient.extension[1].extension[0].value.ofType
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[0].resource/*Patient/patientBSJ1*/.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 INFORMATION: Bundle/2039212f3fa5406bb4ffd4a: Bundle.entry[0].resource/*Patient/patientBSJ1*/.extension[1].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 
-# bundle is the result of custom operation 
-No types could be determined from the search string, so the types can''t be checked
-Unable to determine if this resource is a valid resource type for this search
-SearchSet bundles should have search modes on the entries
-
-
 # reference to narrative-status is intended
 Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 

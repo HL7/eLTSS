@@ -12,7 +12,7 @@ Usage: #definition
 * experimental = true
 //* date = "2023-07-25T14:43:25+00:00"
 
-* description = "Provide all eLTSS data for a given Patient's CarePlan. Given a CarePlan with a specific Patient and ID, this operation will return all the referenced artifacts necessary to satisfy the eLTSS data element set found in the DAM. The Operation reduces the number of queries that a client must make. This operation definition is in draft and should be revised in subsequent versions of this IG."
+* description = "Provide all eLTSS data for a given Patient's CarePlan. Given a CarePlan with a specific Patient and ID, this operation will return all the referenced artifacts necessary to satisfy the eLTSS data element set found in the DAM. The Operation reduces the number of queries that a client must make. This operation definition is in draft and should be revised in subsequent versions of this IG. The parameter here is a single output parameter named return. This means that the expectation is that a single Bundle Resource will be returned. The type for the bundle can be collection."
 * jurisdiction = $m49.htm#001 "World"
 * code = #all-eltss-careplan
 * comment = "Use example URL: [base]/CarePlan/[id]/$all-eltss-careplan \n Resources which should be returned:
@@ -24,7 +24,7 @@ Usage: #definition
 * type = false
 * instance = true
 
-* parameter[0].name = #eLTSSdata
+* parameter[0].name = #return
 * parameter[=].documentation = "eLTSS data will come as a FHIR bundle."
 * parameter[=].use = #out
 * parameter[=].min = 1
