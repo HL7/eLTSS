@@ -9,7 +9,7 @@ The following aids in finding the location of eLTSS data elements. See [R4 FHIR 
       <th>FHIR R4 Resource Element(s)</th>
       <th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
       <th>Additional Mapping Details</th>
-	  <th class="stu-note">Important change</th>
+	  
     </tr>
  
     <tr>

@@ -1,5 +1,5 @@
 #### Implementer mapping guidance
-The following aids in finding the location of eLTSS data elements. See [R4 FHIR Mapping page](eLTSS_to_FHIR_R4_element.html) for complete guidance, here we are providing a subset of fields for convenience. The CarePlan Resource links to all eLTSS data elements, while specific elements are provided below the implementer should review all the guidance on [R4 FHIR Mapping page](eLTSS_to_FHIR_R4_element.html). This is especially imporant for ServiceRequest related items, Person Centered Planning concepts such as "Person Setting Choice Options," risk assessments, signatures and financial data.
+The following aids in finding the location of eLTSS data elements. See [R4 FHIR Mapping page](eLTSS_to_FHIR_R4_element.html) for complete guidance, here we are providing a subset of fields for convenience. The CarePlan Resource links to all eLTSS data elements, while specific elements are provided below the implementer should review all the guidance on [R4 FHIR Mapping page](eLTSS_to_FHIR_R4_element.html). This is especially important for ServiceRequest related items, Person Centered Planning concepts such as "Person Setting Choice Options," risk assessments, signatures and financial data.
 
 <table border="1">
     <tr>

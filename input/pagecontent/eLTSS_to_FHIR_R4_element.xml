@@ -7,7 +7,7 @@
   <ul>
   
   
-	  <li style="font-size:14px">The <a href="eLTSS_to_FHIR_R4_element.html#r4-mapping-table">R4 mapping table</a> indicates where eLTSS DAM data elements are to be placed/found in FHIR. </li>eLTSS_to_FHIR_R4_element.html#r4-mapping-table
+	  <li style="font-size:14px">The <a href="eLTSS_to_FHIR_R4_element.html#r4-mapping-table">R4 mapping table</a> indicates where eLTSS DAM data elements are to be placed/found in FHIR. </li>
 	  <li style="font-size:14px">The <a href="eLTSS_to_FHIR_R4_element.html#r4-useful-elements">R4 Useful elements table</a> details important accessory data elements in meeting the eLTSS use case. </li>
 	  <li style="font-size:14px">The <a href="eLTSS_to_FHIR_R4_element.html#units">Units table</a> provides guidance on using units for things such as 'visit/week.'</li> 
   </ul>
@@ -224,7 +224,7 @@ CarePlan [emergency backup plan]<br/>
 3) description contains the text of the Emergency Backup Plan if provided as text.<br/>
 4) type indicates the kind of document, but the documented preferred LOINC value set does not include anything corresponding to an emergency backup plan. Therefore we can use the Codeable Concept's text data element to indicate "Emergency Backup Plan". (type is mandatory in FHIR 3.0.1, but optional in the R4 draft.)<br/></td>
     </tr>
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Goals &amp; Strengths</td>
       <td>Goal</td>
       <td>A statement of a desired result that the person wants to achieve.</td>
@@ -244,7 +244,7 @@ Goal &#8594; description &#8594; text</td>
 5) US Core requires the use of Goal &#8594; Subject to reference back to the Patient. </td>
 <!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
     </tr>
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Goals &amp; Strengths</td>
       <td>Step or Action</td>
       <td>A planned measurable step or action that needs to be taken to accomplish a goal identified by the person.</td>
@@ -293,7 +293,7 @@ Observation &#8594; code &#8594; coding &#8594; system</td>
 	
 	
 	
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Person Centered Planning</td>
       <td>Assessed Need</td>
       <td>The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service. </td>
@@ -1107,7 +1107,7 @@ Organization | Patient | RelatedPerson<br/>
       <td>1) Will use CarePlan &#8594; activity &#8594; reference to reference a ServiceRequest, and insurance to reference a Coverage resource, which must include a payor that is a person or an organization.<br/>
 2) Coverage resource may be used to register "SelfPay" where an individual or organization other than an insurer is taking responsibility for payment for a portion of the health care cost.</td>
     </tr>
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Service Information</td>
       <td>Service Unit Quantity</td>
       <td>The numerical amount of the service unit being provided for a frequency.<br/>
@@ -1429,7 +1429,7 @@ CarePlan &#8594; category &#8594; coding &#8594; code</td>
       <td>1) Per US Core, one category must appear, and must include system with the value "http://hl7.org/fhir/us/core/CodeSystem/careplan-category" and  code with the value "assess-plan".<br/>
 2) US Core does not restrict the number of additional category elements that may appear.</td>
     </tr>
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>CarePlan Activity Status<br/>
 FHIR</td>
       <td>Identifies what progress is being made for the specific activity.</td>

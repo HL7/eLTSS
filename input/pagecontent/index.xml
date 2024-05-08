@@ -116,8 +116,8 @@ The guide contains a mapping page for eLTSS elements mapped into FHIR R4. This p
   <li><a href="implementation.html">Implementation Considerations</a>: This page provides considerations for implementing eLTSS using FHIR, including other Implementation Guides, Task and ClaimResource</li>
   
   <!--li><a href="index.html" title="IG Home">Conformance</a>: Recommendations on testing.</li-->
-  <li><a href="index.html" >Mapping</a>: Provides implementers with the location of FHIR fields where eLTSS data elements should be found.
-  <ul><li><a href="eLTSS_to_FHIR_R4_element.html"></a>:Guidance for eLTSS elements in FHIR R4.</li></ul>
+  <li><a href="mapping.html" >Mapping</a>: Provides implementers with the location of FHIR fields where eLTSS data elements should be found.
+  <ul><li><a href="eLTSS_to_FHIR_R4_element.html"></a>Guidance for eLTSS elements in FHIR R4.</li></ul>
   </li>
   <li><a href="testing.html">Testing</a>: Provides pointers on testing</li>
   

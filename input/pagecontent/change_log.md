@@ -16,7 +16,7 @@
 	<li>Enhanced server capability statement to make the expectations more clear <a href="CapabilityStatement-eltss-client.html">eLTSS USCORE Capability Statement</a></li>
 	<li>Increased clarity of FHIR data elements to support for eLTSS data exchange through additional Must Support (MS) in <a href="profiles.html">all Profiles</a></li>
 	<li>Extended guidance with new profiles for <a href="StructureDefinition-PractitionerRole-eltss.html">PractitionerRole</a>, <a href="StructureDefinition-QuestionnaireResponse-eltss.html">QuestionnaireResponse</a> and <a href="StructureDefinition-RelatedPerson-eltss.html">RelatedPerson</a></li>
-	<li><a href="StructureDefinition-Condition-eltss.html">Condition category</a> now using "Health Concern" from USCORE</li>
+	<li><a href="StructureDefinition-Condition-eltss.html">Condition</a> now based on US Core Condition Problems and Health Concerns Profile which includes screening assessment categories such as SDOH.</li>
 	<li>eLTSS Observation <a href="ValueSet-eltss-observation-code.html">value set for Preference and Strength</a> now using LOINC code for "Care experience Preference"</li>	
   </ul>
 </div>
