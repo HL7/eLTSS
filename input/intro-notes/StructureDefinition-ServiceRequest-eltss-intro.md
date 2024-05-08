@@ -9,7 +9,7 @@ The following aids in finding the location of eLTSS data elements. See [R4 FHIR 
       <th>FHIR R4 Resource Element(s)</th>
       <th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
       <th>Additional Mapping Details</th>
-	  <th class="stu-note">Important change</th>
+	  <!--th class="stu-note">Important change</th-->
     </tr>
 
     <tr>
@@ -169,7 +169,7 @@ Organization | Patient | RelatedPerson<br/>
       <td>1) Will use CarePlan &#8594; activity &#8594; reference to reference a ServiceRequest, and insurance to reference a Coverage resource, which must include a payor that is a person or an organization.<br/>
 2) Coverage resource may be used to register "SelfPay" where an individual or organization other than an insurer is taking responsibility for payment for a portion of the health care cost.</td>
     </tr>
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Service Information</td>
       <td>Service Unit Quantity</td>
       <td>The numerical amount of the service unit being provided for a frequency.<br/>
@@ -208,7 +208,7 @@ ServiceRequest &#8594; quantityRatio &#8594; denominator<br/>
 4) numerator and denominator are used to represent a quantity with an interval. For example, to represent 8 hours a day, numerator &#8594; value would be "8" and numerator &#8594; unit would be "hour", while denominator &#8594; value would be "1" and denominator &#8594; unit would be "day".<br/>
 5) See the "qty-unit-interval examples" worksheet in this spreadsheet for additional details.<br/>
 6) Please also consider occurrencePeriod for use when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServiceRequest.quantityRatio of 5 USD per day. AND, use occurrenceTiming for timing information that fluctuates or is sufficiently complex. The recipient may need to calculate end-date, or one can use occurrenceTiming.boundsPeriod to ascribe a start and end date. E.g. Give ServiceRequest.quantityRatio of 5 USD per day. with the occurrenceTiming.boundsPeriod of May 31, 2023 to June 23, 2023 on occurrenceTiming.dayOfWeek = Mon and Wed at occurrenceTiming.timeOfDay = 3 pm.</td>
-	<td class="stu-note">Added guidance on ServiceRequest.occurrenceTiming and ServiceRequest.occurrencePeriod</td>
+	<!--td class="stu-note">Added guidance on ServiceRequest.occurrenceTiming and ServiceRequest.occurrencePeriod</td-->
     </tr>
     <tr>
       <td>Service Information</td>

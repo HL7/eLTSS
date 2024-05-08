@@ -5,9 +5,11 @@
 <div class="bg-primary text example">
   <p style="font-size: 14px;">This Page contains three tables to aid in FHIR representation and use of eLTSS data.</p>
   <ul>
-	  <li style="font-size:14px">The R4 mapping table indicates where eLTSS DAM data elements are to be placed/found in FHIR. </li>
-	  <li style="font-size:14px">The R4 Useful elements table details important accessory data elements in meeting the eLTSS use case. </li>
-	  <li style="font-size:14px">The Units table provides guidance on using units for things such as 'visit/week.'</li>
+  
+  
+	  <li style="font-size:14px">The <a href="eLTSS_to_FHIR_R4_element.html#r4-mapping-table">R4 mapping table</a> indicates where eLTSS DAM data elements are to be placed/found in FHIR. </li>eLTSS_to_FHIR_R4_element.html#r4-mapping-table
+	  <li style="font-size:14px">The <a href="eLTSS_to_FHIR_R4_element.html#r4-useful-elements">R4 Useful elements table</a> details important accessory data elements in meeting the eLTSS use case. </li>
+	  <li style="font-size:14px">The <a href="eLTSS_to_FHIR_R4_element.html#units">Units table</a> provides guidance on using units for things such as 'visit/week.'</li> 
   </ul>
   </div>
   
@@ -21,7 +23,7 @@
       <th>FHIR R4 Resource Element(s)</th>
       <th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
       <th>Additional Mapping Details</th>
-	  <th class="stu-note">Important change</th>
+	  <!--th class="stu-note">Important change</th-->
     </tr>
     <tr>
       <td>Beneficiary Demographics</td>
@@ -240,7 +242,7 @@ Goal &#8594; description &#8594; text</td>
 <!--Updated 4) in response to JIRA #23047 and matching XLS-->
 4) A Goal can be referenced from a Step or Action or from a service. For a goal related to a step or action, use extension(pertainsToGoal). For a service request specific goal, also use extension(pertainsToGoal). Logically, these goals are exclusive to each other and the same goal isn't duplicated at both levels.<br/>
 5) US Core requires the use of Goal &#8594; Subject to reference back to the Patient. </td>
-<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td>
+<!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
     </tr>
     <tr bgcolor="#fff2ff">
       <td>Goals &amp; Strengths</td>
@@ -264,7 +266,7 @@ CarePlan &#8594; activity<br/>
 5) text is where the Step or Action text would be provided.<br/>
 6) text is required by FHIR if note is provided.<br/>
 7) Note that a stated goal may lead directly to a service, and not necessarily to an explicit Step or Action. For example, a person's goal could be to attend church regularly, and this would be achieved through a transportation service.</td>
-	<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td>
+	<!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
     </tr>
     <tr>
       <td>Goals &amp; Strengths</td>
@@ -309,7 +311,7 @@ Condition &#8594; category</td>
 3) Each assessed need should go into a separate Condition element so each can potentially be linked to a service(s) that addresses it.<br/>
 4) Category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis and health-concern. The additional 'assessed-need' code can be used to relate that the Condition instance is about the clinical and/or community-based necessity or desire, as identified through an assessment, that should be addressed by a service. Consider also using the US Core 6.1.0 screening-assessment categories  https://www.hl7.org/fhir/us/core/ValueSet-us-core-screening-assessment-condition-category.html.<br/>
 5) An "assessed need" condition can refer to another condition via the condition-dueTo extension.</td>
-      <td class="stu-note">Now using US CORE Condition Category value set element "Health Concern"</td>
+      <!--td class="stu-note">Now using US CORE Condition Category value set element "Health Concern"</td-->
     </tr>
 	
 	
@@ -1144,7 +1146,7 @@ ServiceRequest &#8594; quantityRatio &#8594; denominator<br/>
 4) numerator and denominator are used to represent a quantity with an interval. For example, to represent 8 hours a day, numerator &#8594; value would be "8" and numerator &#8594; unit would be "hour", while denominator &#8594; value would be "1" and denominator &#8594; unit would be "day".<br/>
 5) See the "qty-unit-interval examples" worksheet in this spreadsheet for additional details.<br/>
 6) Please also consider occurrencePeriod for use when the quantity is meant to be performed within a defined, simple start and end date. E.g. For May 31,2023 to June 10, 2023 give ServiceRequest.quantityRatio of 5 USD per day. AND, use occurrenceTiming for timing information that fluctuates or is sufficiently complex. The recipient may need to calculate end-date, or one can use occurrenceTiming.boundsPeriod to ascribe a start and end date. E.g. Give ServiceRequest.quantityRatio of 5 USD per day. with the occurrenceTiming.boundsPeriod of May 31, 2023 to June 23, 2023 on occurrenceTiming.dayOfWeek = Mon and Wed at occurrenceTiming.timeOfDay = 3 pm.</td>
-	<td class="stu-note">Added guidance on ServiceRequest.occurrenceTiming and ServiceRequest.occurrencePeriod</td>
+	<!--td class="stu-note">Added guidance on ServiceRequest.occurrenceTiming and ServiceRequest.occurrencePeriod</td-->
     </tr>
     <tr>
       <td>Service Information</td>
@@ -1445,7 +1447,7 @@ CarePlan<br/>
 </td>
       <td>1) status is required by FHIR in Resources Reference by CarePlan.activity.reference. Possible values are: not-started, scheduled, in-progress, on-hold, completed, cancelled, stopped, unknown, and entered-in-error.<br/>
 	  2) There is also CarePlan.activity.progress to add a free-text description of the progress, or note. CarePlan.activity.progress is an Annotation data type in FHIR, this means it can be dated and contain the identification of the person who uttered the text. This might be used, for example, when the status stays in the same state, i.e. 'in-progress,' but where there is a evolution of that progress.</td>	  
-	<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the use of the status element in the referenced activity and CarePlan.activity.progress free-text annotation</td>
+	<!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the use of the status element in the referenced activity and CarePlan.activity.progress free-text annotation</td-->
     </tr>
     <tr>
       <td>CareTeam Status<br/>

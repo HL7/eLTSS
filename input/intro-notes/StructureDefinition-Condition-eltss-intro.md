@@ -9,11 +9,11 @@ The following aids in finding the location of eLTSS data elements. See [R4 FHIR 
       <th>FHIR R4 Resource Element(s)</th>
       <th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
       <th>Additional Mapping Details</th>
-	  <th class="stu-note">Important change</th>
+	  <!--th class="stu-note">Important change</th-->
     </tr>	
 	
 	
-	<tr bgcolor="#fff2ff">
+	<tr >
       <td>Person Centered Planning</td>
       <td>Assessed Need</td>
       <td>The clinical and/or community-based necessity or desire as identified through an assessment that should be addressed by a service. </td>
@@ -31,7 +31,7 @@ Condition &#8594; category</td>
 3) Each assessed need should go into a separate Condition element so each can potentially be linked to a service(s) that addresses it.<br/>
 4) Category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis and health-concern. The additional 'assessed-need' code can be used to relate that the Condition instance is about the clinical and/or community-based necessity or desire, as identified through an assessment, that should be addressed by a service. Consider also using the US Core 6.1.0 screening-assessment categories  https://www.hl7.org/fhir/us/core/ValueSet-us-core-screening-assessment-condition-category.html.<br/>
 5) An "assessed need" condition can refer to another condition via the condition-dueTo extension.</td>
-      <td class="stu-note">Now using US CORE Condition Category value set element "Health Concern"</td>
+      <!--td class="stu-note">Now using US CORE Condition Category value set element "Health Concern"</td-->
     </tr>
 	
 	

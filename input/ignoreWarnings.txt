@@ -50,10 +50,8 @@ The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" canno
 The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
 
 
-# As in US CORE, using standard extension capabilitystatement-expectation for CapabilityStatement in additional contexts to fully express intended capabilities: see FHIR-12419. Two suppression expressions as the Publisher alternates between the two messages
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-cibuild
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0-ballot1
-
+# As in US CORE, using standard extension capabilitystatement-expectation for CapabilityStatement in additional contexts to fully express intended capabilities: see FHIR-12419.
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.1.0
 
 # Inherited from base Resource specification and cannot be changed
 WARNING: StructureDefinition/CarePlan-eltss: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour

@@ -9,10 +9,10 @@ The following aids in finding the location of eLTSS data elements. See [R4 FHIR 
       <th>FHIR R4 Resource Element(s)</th>
       <th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
       <th>Additional Mapping Details</th>
-	  <th class="stu-note">Important change</th>
+	  <!--th class="stu-note">Important change</th-->
     </tr>
 
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Goals &amp; Strengths</td>
       <td>Step or Action</td>
       <td>A planned measurable step or action that needs to be taken to accomplish a goal identified by the person.</td>
@@ -34,7 +34,7 @@ CarePlan &#8594; activity<br/>
 5) text is where the Step or Action text would be provided.<br/>
 6) text is required by FHIR if note is provided.<br/>
 7) Note that a stated goal may lead directly to a service, and not necessarily to an explicit Step or Action. For example, a person's goal could be to attend church regularly, and this would be achieved through a transportation service.</td>
-	<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td>
+	<!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
     </tr>
     <tr>
       <td>Goals &amp; Strengths</td>
@@ -72,9 +72,9 @@ Condition &#8594; category</td>
 .........text 0..1<br/>
 ......category 1..*</td>
       <td>1) Will use CarePlan &#8594; addresses to reference the Condition(s) for the care plan being developed.<br/>
-2) code is required by US Core and is a CodeableConcept which per US Core is bound to the extensible Problem Value Set. That value set is based on SNOMED-CT and includes very specific values that do not line up with assessed needs. Per US Core's documentation on extensible CodeableConcepts, the CodeableConcept's text element can be used "if no suitable codes exist", so we can use the text element for the assessed need.<br/>
+2) code is required by US Core and is a CodeableConcept which per US Core is bound to the extensible Problem Value Set. That value set is based on SNOMED-CT and includes very specific values that do not line up with assessed needs. Per US Core's documentation on extensible CodeableConcepts, the CodeableConcept's text element can be used "if no suitable codes exist", so we can use the text element for the assessed need. Additionally, the Gravity SDOH FHIR IG has a value set of SDOH conditions.<br/>
 3) Each assessed need should go into a separate Condition element so each can potentially be linked to a service(s) that addresses it.<br/>
-4) category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis. Could use the value "problem-list-item" to indicate the underlying condition, and extend the value set to add the value "assessed-need".<br/>
+4) Category is required by US Core and is a CodeableConcept which per US Core is bound to the extensible US Core Condition Category Codes value set (http://hl7.org/fhir/ValueSet/condition-category) which has values: problem-list-item, encounter-diagnosis and health-concern. The additional 'assessed-need' code can be used to relate that the Condition instance is about the clinical and/or community-based necessity or desire, as identified through an assessment, that should be addressed by a service. Consider also using the US Core 6.1.0 screening-assessment categories  https://www.hl7.org/fhir/us/core/ValueSet-us-core-screening-assessment-condition-category.html.<br/>
 5) An "assessed need" condition can refer to another condition via the condition-dueTo extension.</td>
     </tr>
 
@@ -286,7 +286,7 @@ CarePlan &#8594; category &#8594; coding &#8594; code</td>
       <td>1) Per US Core, one category must appear, and must include system with the value "http://hl7.org/fhir/us/core/CodeSystem/careplan-category" and  code with the value "assess-plan".<br/>
 2) US Core does not restrict the number of additional category elements that may appear.</td>
     </tr>
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>CarePlan Activity Status<br/>
 FHIR</td>
       <td>Identifies what progress is being made for the specific activity.</td>
@@ -304,7 +304,7 @@ CarePlan<br/>
 </td>
       <td>1) status is required by FHIR in Resources Reference by CarePlan.activity.reference. Possible values are: not-started, scheduled, in-progress, on-hold, completed, cancelled, stopped, unknown, and entered-in-error.<br/>
 	  2) There is also CarePlan.activity.progress to add a free-text description of the progress, or note. CarePlan.activity.progress is an Annotation data type in FHIR, this means it can be dated and contain the identification of the person who uttered the text. This might be used, for example, when the status stays in the same state, i.e. 'in-progress,' but where there is a evolution of that progress.</td>	  
-	<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the use of the status element in the referenced activity and CarePlan.activity.progress free-text annotation</td>
+	<!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the use of the status element in the referenced activity and CarePlan.activity.progress free-text annotation</td-->
     </tr>
 	
   </table>

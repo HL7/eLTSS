@@ -9,10 +9,10 @@ The following aids in finding the location of eLTSS data elements. See [R4 FHIR 
       <th>FHIR R4 Resource Element(s)</th>
       <th>FHIR R4 Resource Element Cardinality (with US Core Constraints)</th>
       <th>Additional Mapping Details</th>
-	  <th class="stu-note">Important change</th>
+	  <!--th class="stu-note">Important change</th-->
     </tr>
 
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Goals &amp; Strengths</td>
       <td>Goal</td>
       <td>A statement of a desired result that the person wants to achieve.</td>
@@ -30,9 +30,9 @@ Goal &#8594; description &#8594; text</td>
 <!--Updated 4) in response to JIRA #23047 and matching XLS-->
 4) A Goal can be referenced from a Step or Action or from a service. For a goal related to a step or action, use extension(pertainsToGoal). For a service request specific goal, also use extension(pertainsToGoal). Logically, these goals are exclusive to each other and the same goal isn't duplicated at both levels.<br/>
 5) US Core requires the use of Goal &#8594; Subject to reference back to the Patient. </td>
-<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td>
+<!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
     </tr>
-    <tr bgcolor="#fff2ff">
+    <tr >
       <td>Goals &amp; Strengths</td>
       <td>Step or Action</td>
       <td>A planned measurable step or action that needs to be taken to accomplish a goal identified by the person.</td>
@@ -54,7 +54,7 @@ CarePlan &#8594; activity<br/>
 5) text is where the Step or Action text would be provided.<br/>
 6) text is required by FHIR if note is provided.<br/>
 7) Note that a stated goal may lead directly to a service, and not necessarily to an explicit Step or Action. For example, a person's goal could be to attend church regularly, and this would be achieved through a transportation service.</td>
-	<td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td>
+	<!--td class="stu-note">Replaced use of CarePlan.activity.detail, and emphasized the extension pertainsToGoal</td-->
     </tr>
 	
   </table>
