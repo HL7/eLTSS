@@ -60,12 +60,12 @@
   <dependsOn >
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions"/>
-    <version value="current"/>
+    <version value="5.1.0"/>
   </dependsOn>  
   <dependsOn >
     <uri value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"/>
     <packageId value="hl7.fhir.uv.smart-app-launch"/>
-    <version value="current"/>
+    <version value="2.2.0"/>
   </dependsOn>
   <!--dependsOn id="hl7_fhir_us_mcc">
     <uri value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc"/>
