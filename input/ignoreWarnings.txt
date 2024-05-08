@@ -68,4 +68,3 @@ No code provided, and a code should be provided from the value set 'US Core Goal
 
 # These are meant to be repeatable
 INFORMATION: StructureDefinition/Practitioner-eltss: StructureDefinition.snapshot.element[18].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/Observation-eltss: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

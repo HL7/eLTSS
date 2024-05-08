@@ -38,6 +38,7 @@ Description: "Observation resource mapping for eLTSS"
 //* category ^slicing.discriminator.path = "$this"
 //* category ^slicing.rules = #open
 //* category contains eltss 0..1 MS
+* category[us-core] 1..1
 * category[us-core] = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 
 * code MS
