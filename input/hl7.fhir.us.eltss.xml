@@ -159,12 +159,12 @@ http://hl7.org/fhir/us/davinci-pct/2022Jan/ -->
     </grouping>
     <!-- Here be the resources listed in the IG -->
     <!-- Extensions -->
-    <resource>
+    <!--resource>
       <reference>
         <reference value="StructureDefinition/eltss-dueTo"/>
       </reference>
       <groupingId value="extensions"/>
-    </resource>
+    </resource-->
     <resource>
       <reference>
         <reference value="StructureDefinition/eltss-RiskPlan"/>

@@ -10,7 +10,6 @@ ELTSS_Condition_Category_Codes               CodeSystem  codesystems\ELTSS_Condi
 ELTSS_Condition_Category_code                ValueSet    valuesets\ELTSS_Condition_Category_code.fsh
 ELTSS_Observation_Codes                      CodeSystem  codesystems\ELTSS_Observation_Codes.fsh
 ELTSS_Observation_code                       ValueSet    valuesets\ELTSS_Observation_code.fsh
-ELTSS_dueTo                                  Extension   extensions\ELTSS_dueTo.fsh
 Eltss_directedBy                             Extension   extensions\Eltss_directedBy.fsh
 EpisodeOfCare_eltss                          Profile     profiles\EpisodeOfCare_eltss.fsh
 Goal_eltss                                   Profile     profiles\Goal_eltss.fsh
