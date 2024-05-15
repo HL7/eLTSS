@@ -645,7 +645,7 @@ Usage: #example
 * meta.lastUpdated = "2020-09-03T10:16:03.512-04:00"
 * meta.source = "#KZ0jzPjXDrhCiMif"
 * meta.profile = "http://hl7.org/fhir/us/eltss/StructureDefinition/Condition-eltss"
-* extension.url = "http://hl7.org/fhir/us/eltss/StructureDefinition/eltss-dueTo"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-dueTo"
 * extension.valueReference = Reference(Condition/need3)
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed

@@ -11,7 +11,7 @@
       </tr>
       <tr>
         <td style="column-width:30%">
-          <a href="StructureDefinition-eltss-dueTo.html">Condition dueTo</a>
+          <a href="http://hl7.org/fhir/StructureDefinition/condition-dueTo">Condition dueTo</a>
         </td>
         <td>Further conditions, problems, diagnoses, procedures or events or the substance that caused/triggered a Condition.</td>
       </tr>
